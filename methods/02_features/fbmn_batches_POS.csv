@@ -5,3 +5,4 @@ batch,name,approx_samples,features,primary_kingdoms,gnps2_task_id
 04,OE26-1POS,~40,43206,"Protozoa, Fungi, Archaea, Bacteria",26e41456c73f457cbfd6d471b207f37a
 05,OE25-1-ALL,~15,20424,"Protozoa (Amoebozoa), Bacteria",5f9c17db47c94bcda93ea3cd12ac1b64
 06,ALL-25-2-POS,~50,60234,"Bacteria (Bacillota), Viruses, Actinomycetota",9f8b16574b08468f88acf4eca84d2805
+backbone,classical_networking_all_batches,,,"Alignment backbone (Supp Method 1 stage 3)",d5e1938adf2d499eab7e01457521af08
