@@ -1,0 +1,16 @@
+# Normalize line endings so files look the same on Windows, macOS and Linux.
+* text=auto
+
+# Shell scripts must keep Unix line endings to run inside Docker/Linux.
+*.sh text eol=lf
+
+# Binary formats: never touch their bytes.
+*.png binary
+*.jpg binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.gz binary
+*.zip binary
+*.rds binary

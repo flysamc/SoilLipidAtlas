@@ -1,0 +1,33 @@
+# ============================================================
+# Safety net: things that must never end up in git, even if a
+# whole folder is copied in by accident.
+# (A file can still be force-added deliberately with `git add -f`.)
+# ============================================================
+
+# --- Windows / macOS / editor noise ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# --- rebuildable environments and caches ---
+.r-library/
+.Rproj.user/
+.Rhistory
+.RData
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+
+# --- temporary and scratch work ---
+tmp/
+.tmp/
+*.tmp
+
+# --- big data: stays on disk / data archive, tracked by checksum lists only ---
+external/
+*.raw
+*.mzML
+*.mzXML
