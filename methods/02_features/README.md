@@ -48,8 +48,15 @@ Used by: → 03 biomarker atlas and everything after it.
   full package + recovery archive). The exports themselves are safe locally;
   the IDs are provenance only — recoverable from the GNPS2 account job history.
 - The **negative-mode alignment producer script** does not exist in any
-  archive. Candidate fix: rerun the positive-mode script pointed at the NEG
-  batches and verify it reproduces the existing NEG consensus table.
+  archive, and a reproduction test (2026-08-07) proved the NEG table was made
+  by a **different, symmetric algorithm** — not the reference-centric POS
+  script (different ID scheme; no batch present in all multi-batch rows).
+  The POS producer itself was positively verified (0 of 57,586 multi-batch
+  rows missing the reference batch). The NEG table is treated as a frozen,
+  checksum-registered input until its producer is found.
+- The Supplementary Method 1 wording ("mapped to the classical networking
+  backbone") does not match the verified POS code ("direct alignment without
+  backbone") — flagged for the Methods text revision.
 - MZmine project/parameter files (sub-step 0) are in no archive (confirmed:
   no .mzbatch anywhere); they remain on lab storage / the original Mac.
   MZmine 4.9, IIMN workflow, blank subtraction (per Methods + MGF filenames).
