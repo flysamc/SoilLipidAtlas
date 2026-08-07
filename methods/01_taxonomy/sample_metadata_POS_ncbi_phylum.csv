@@ -1,0 +1,264 @@
+original_header,sample_name,kingdom,phylum,class,order,family,genus,species,batch,source_phylum,ncbi_phylum,taxonomy_scope,ecological_group,taxonomy_release
+sample:102891POS,102891POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:22POS,22POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:23POS,23POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:24A1-A2-A3POS,24A1-A2-A3POS,Protozoa,Evosea,Dictyostelia,Dictyosteliida,Dictyosteliidae,Dictyostelium discoideum QS1024_apo,,batch_05_OE25-1-ALL,Evosea,Evosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:24S3POS,24S3POS,Protozoa,Evosea,Dictyostelia,Dictyosteliida,Dictyosteliidae,Dictyostelium discoideum QS1024_sym,,batch_05_OE25-1-ALL,Evosea,Evosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:25S1-S2POS,25S1-S2POS,Protozoa,Evosea,Dictyostelia,Dictyosteliida,Dictyosteliidae,Dictyostelium discoideum QS1024_sym,,batch_05_OE25-1-ALL,Evosea,Evosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:27POS,27POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:68A1-A2-A3POS,68A1-A2-A3POS,Protozoa,Evosea,Dictyostelia,Dictyosteliida,Dictyosteliidae,Dictyostelium discoideum QS68_apo,,batch_05_OE25-1-ALL,Evosea,Evosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:68S1-S2-S3POS,68S1-S2-S3POS,Protozoa,Evosea,Dictyostelia,Dictyosteliida,Dictyosteliidae,Dictyostelium discoideum QS68_sym,,batch_05_OE25-1-ALL,Evosea,Evosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:ACNeff1POS,ACNeff1POS,Protozoa,Discosea,Discosea,Centramoebida,Acanthamoebidae,Acanthamoeba terricola,Acanthamoeba terricola Neff,batch_05_OE25-1-ALL,Discosea,Discosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:ACNeff234POS,ACNeff234POS,Protozoa,Discosea,Discosea,Centramoebida,Acanthamoebidae,Acanthamoeba terricola,Acanthamoeba terricola Neff,batch_05_OE25-1-ALL,Discosea,Discosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:ACNeffE25-123POS,ACNeffE25-123POS,Protozoa,Discosea,Discosea,Centramoebida,Acanthamoebidae,Acanthamoeba terricola,Acanthamoeba terricola Neff-E25,batch_05_OE25-1-ALL,Discosea,Discosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:B34POS,B34POS,Mixed,Mixed,,,,OE25B34POS.mzML,,batch_06_ALL-25-2,Mixed,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:BIGD-4BFL26POS,BIGD-4BFL26POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:BIGDo-4BFL26POS,BIGDo-4BFL26POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:BIGV3-POS,BIGV3-POS,Viruses,Nucleocytoviricota,Megaviricetes,Imitervirales,Mimiviridae,Bodo saltans virus,,batch_06_ALL-25-2,Nucleocytoviricota,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:Cafet-RC0970POS,Cafet-RC0970POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:Cafet-RCC970POS,Cafet-RCC970POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:CroVPOS,CroVPOS,Viruses,Nucleocytoviricota,Megaviricetes,Imitervirales,Mimiviridae,Cafeteria roenbergensis virus,,batch_06_ALL-25-2,Nucleocytoviricota,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:DSM1988-2POS,DSM1988-2POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:DSM1988POS,DSM1988POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:EISTD1POS,EISTD1POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:HPPOS,HPPOS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:I5POS_20240925024318,I5POS_20240925024318,Animalia,Arthropoda,Malacostraca,Isopoda,Armadillidiidae,Armadillidium,Armadillidium vulgare,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:I8POS,I8POS,Animalia,Mollusca,Gastropoda,Littorinimorpha,Pomatiidae,Pomatias,Pomatias elegans,batch_03_OE23-POS,Mollusca,Mollusca,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:I8POS_20240925010944,I8POS_20240925010944,Animalia,Mollusca,Gastropoda,Littorinimorpha,Pomatiidae,Pomatias,Pomatias elegans,batch_03_OE23-POS,Mollusca,Mollusca,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:I9POS,I9POS,Animalia,Arthropoda,Diplopoda,Glomerida,Glomeridae,Glomeris,Glomeris marginata,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:LHKa1POS,LHKa1POS,Bacteria,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella aerogenes,,batch_05_OE25-1-ALL,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:LHKa2POS,LHKa2POS,Bacteria,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella aerogenes,,batch_05_OE25-1-ALL,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:LHKa3POS,LHKa3POS,Bacteria,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella aerogenes,,batch_05_OE25-1-ALL,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:Lu03POS_20240924172144,Lu03POS_20240924172144,Animalia,Arthropoda,arachnida,Sarcoptiformes,Galumnidae,Allogalumna,Allogalumna longipluma,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu04-2POS,Lu04-2POS,,,,,,,,batch_03_OE23-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:Lu04POS_20240924110720,Lu04POS_20240924110720,Animalia,Arthropoda,Collembola,Entomobryomorpha,Orchesellidae,Heteromurus,Heteromurus nitidus,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu05POS,Lu05POS,Animalia,Arthropoda,Collembola,Entomobryomorpha,Entomobryidae,Sinella,Sinella curviseta,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu07POS_20240924182408,Lu07POS_20240924182408,Animalia,Arthropoda,Collembola,Poduromorpha,Onychiuridae,Protaphorura,Protaphorura fimata,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu08POS,Lu08POS,Animalia,Arthropoda,Collembola,Entomobryomorpha,Entomobryidae,Sinella,Sinella curviseta,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu11POS,Lu11POS,Animalia,Arthropoda,arachnida,Sarcoptiformes,Galumnidae,Allogalumna,Allogalumna longipluma,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu12POS,Lu12POS,Animalia,Arthropoda,Arachnida,Sarcoptiformes,Scheloribatidae,Scheloribates,unclassified,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu13POS,Lu13POS,Animalia,Arthropoda,Collembola,Entomobryomorpha,Isotomidae,Folsomia,Folsomia candida,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu16POS,Lu16POS,Animalia,Arthropoda,Collembola,Entomobryomorpha,Orchesellidae,Heteromurus,Heteromurus nitidus,batch_03_OE23-POS,Arthropoda,Arthropoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:Lu18POS,Lu18POS,Plantae,Streptophyta,Liliopsida,Poales,Poaceae,wheatgrass,wheatgrass (Grass),batch_03_OE23-POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:Lu19POS,Lu19POS,Mixed,Cyanobacteriota,,,,lichen,lichen (Lichen),batch_03_OE23-POS,Cyanobacteriota,Cyanobacteriota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:Lu20POS_20240925014054,Lu20POS_20240925014054,,,,,,,,batch_03_OE23-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:M303POS,M303POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:MCP28POS,MCP28POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:N-clarki-1POS,N-clarki-1POS,Protozoa,Heterolobosea,Heterolobosea,Schizopyrenida,Vahlkampfiidae,Naegleria,Naegleria clarki,batch_05_OE25-1-ALL,Heterolobosea,Heterolobosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:N1POS,N1POS,Animalia,Nematoda,Chromadorea,Rhabditida,Heterorhabditidae,Heterorhabditis,Heterorhabditis Sp,batch_03_OE23-POS,Nematoda,Nematoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:N2POS,N2POS,Animalia,Nematoda,Chromadorea,Rhabditida,Steinernematidae,Steinernema,Steinernema feltiae,batch_03_OE23-POS,Nematoda,Nematoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:N2POS_20240925051918,N2POS_20240925051918,Animalia,Nematoda,Chromadorea,Rhabditida,Steinernematidae,Steinernema,Steinernema feltiae,batch_03_OE23-POS,Nematoda,Nematoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:N3POS,N3POS,Animalia,Nematoda,Chromadorea,Rhabditida,Steinernematidae,Steinernema,Steinernema Carpocapsae,batch_03_OE23-POS,Nematoda,Nematoda,core_candidate,Animalia,ncbi-phylum-2026-08-04-v1
+sample:NClarki2POS,NClarki2POS,Protozoa,Heterolobosea,Heterolobosea,Schizopyrenida,Vahlkampfiidae,Naegleria,Naegleria clarki,batch_05_OE25-1-ALL,Heterolobosea,Heterolobosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:NEH18POS,NEH18POS,,,,,,,,batch_06_ALL-25-2,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:Nkorea-1POS,Nkorea-1POS,Protozoa,Heterolobosea,Heterolobosea,Schizopyrenida,Vahlkampfiidae,Naegleria,Naegleria koreanum,batch_05_OE25-1-ALL,Heterolobosea,Heterolobosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:Nkorea2POS,Nkorea2POS,Protozoa,Heterolobosea,Heterolobosea,Schizopyrenida,Vahlkampfiidae,Naegleria,Naegleria koreanum,batch_05_OE25-1-ALL,Heterolobosea,Heterolobosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E4-A1POS,OE11-3-E4-A1POS,Bacteria,Actinomycetota,Actinomycetia,Mycobacteriales,Nocardiaceae,Rhodococcus,unclassified,batch_01_OE11-3-POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E4-A4POS,OE11-3-E4-A4POS,Archaea,Methanobacteriota,Halobacteria,Halobacteriales,Halobacteriaceae,Haloferax ,Haloferax volcanii,batch_01_OE11-3-POS,Halobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E4-B5POS,OE11-3-E4-B5POS,Bacteria,Actinomycetota,Actinobacteridae,Actinomycetales,Micrococcaceae,Arthrobacter,unclassified,batch_01_OE11-3-POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E4-F6POS,OE11-3-E4-F6POS,Fungi,Mucoromycota,Mucoromycetes,Mucorales,Rhizopodaceae,Rhizopus,Rhizopus Oligosporus,batch_01_OE11-3-POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E4-P18POS,OE11-3-E4-P18POS,Plantae,Streptophyta,Magnoliopsida,Apiales,Apiaceae,Petroelinum,Petroselinum crispum (leaves),batch_01_OE11-3-POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E4-P27POS,OE11-3-E4-P27POS,Plantae,Streptophyta,Ginkgoopsida,Ginkgoales,Ginkgoaceae,Ginkgo,Ginkgo biloba,batch_01_OE11-3-POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E4-SRM1POS,OE11-3-E4-SRM1POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E4-SRM1POS_20230211043148,OE11-3-E4-SRM1POS_20230211043148,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3-E5-SRM2POS,OE11-3-E5-SRM2POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3ISTD-1POS,OE11-3ISTD-1POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3POOL-1COND1POS,OE11-3POOL-1COND1POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3POOL-1COND2POS,OE11-3POOL-1COND2POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3POOL-QC2POS,OE11-3POOL-QC2POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3POOL-QC3POS,OE11-3POOL-QC3POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3POOL-QC4POS,OE11-3POOL-QC4POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3POOL-QC4POS_20230211084106,OE11-3POOL-QC4POS_20230211084106,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3POOL-QC5POS,OE11-3POOL-QC5POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-3POOL-QC6POS,OE11-3POOL-QC6POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-A5POS,OE11-E4-A5POS,,,,,,,,batch_01_OE11-3-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-A7POS,OE11-E4-A7POS,Archaea,Methanobacteriota,Methanomicrobia,Methanosarcinales,Methanosarcinaceae,Methanosarcina,Methanosarcina spelaei,batch_01_OE11-3-POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-B1POS,OE11-E4-B1POS,,,,,,,,batch_01_OE11-3-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-B3POS,OE11-E4-B3POS,Archaea,Methanobacteriota,Methanopyri,Methanopyrales,Methanopyraceae,Methanopyrus,Methanopyrus kandleri,batch_01_OE11-3-POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-B4POS,OE11-E4-B4POS,Bacteria,Actinomycetota,Actinobacteridae,Actinomycetales,Streptosporangiaceae,Streptosporangium,Streptosporangium roseum,batch_01_OE11-3-POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-B6POS,OE11-E4-B6POS,,,,,,,,batch_01_OE11-3-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-F15POS,OE11-E4-F15POS,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Amanitaceae,Amanita,Amanita caserea,batch_01_OE11-3-POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-F2POS,OE11-E4-F2POS,Fungi,Ascomycota,Sordariomycetes,Hypocreales,Hypocreaceae,Gliocladium,Gliocladium flavofuscum,batch_01_OE11-3-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-F47POS,OE11-E4-F47POS,Fungi,Mucoromycota,Mucoromycetes,Mucorales,Mucoraceae,Mucor,Mucor hiemalis,batch_01_OE11-3-POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-ISTD-2POS_20230212113007,OE11-E4-ISTD-2POS_20230212113007,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-P11POS,OE11-E4-P11POS,Plantae,Streptophyta,Polypodiopsida,Equisetales,Equisetaceae,Equisetum,Equisetum arvense,batch_01_OE11-3-POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-P14POS,OE11-E4-P14POS,Plantae,Streptophyta,Liliopsida,Asparagales,Amaryllidaceae,Allium,Allium ursinum,batch_01_OE11-3-POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE11-E4-P26POS,OE11-E4-P26POS,Plantae,Streptophyta,Magnoliopsida,Asterales,Asteraceae,Taraxcum,Taraxacum officinale (roots),batch_01_OE11-3-POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-11POS,OE21-4-11POS,Bacteria,Bacillota,Bacilli,Caryophanales,Bacillaceae,Priestia,Priestia aryabhattai,batch_02_OE21-4-POS,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-19POS,OE21-4-19POS,Bacteria,Bacillota,Bacilli,Bacillales,Bacillaceae,Exiguobacterium ,Exiguobacterium aestuarii,batch_02_OE21-4-POS,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-19_B9POS,OE21-4-19_B9POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-28POS,OE21-4-28POS,Bacteria,Bacillota,Bacilli,Caryophanales,Bacillaceae,Bacillus,Bacillus proteolyticus,batch_02_OE21-4-POS,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-31POS,OE21-4-31POS,Bacteria,Bacillota,Bacilli,Caryophanales,Bacillaceae,Peribacillus,Peribacillus frigoritolerans,batch_02_OE21-4-POS,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-34POS,OE21-4-34POS,Bacteria,Bacillota,Bacilli,Caryophanales,Bacillaceae,Priestia,Priestia megaterium,batch_02_OE21-4-POS,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A10POS,OE21-4-A10POS,Archaea,Methanobacteriota,Methanococci,Methanococcales,Methanocaldococcaceae,Methanocaldococcus,Methanocaldococcus jannaschii,batch_02_OE21-4-POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A11POS,OE21-4-A11POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A12POS,OE21-4-A12POS,Archaea,Methanobacteriota,Methanomicrobia,Methanomicrobiales,Methanospirillaceae,Methanospirillum,Methanospirillum stamsii,batch_02_OE21-4-POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A1POS,OE21-4-A1POS,Archaea,Thermoproteota,Thermoprotei,Sulfolobales,Sulfolobaceae,Sulfolobus,Sulfolobus islandicus,batch_02_OE21-4-POS,Thermoproteota,Thermoproteota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A1POS_20240618215255,OE21-4-A1POS_20240618215255,Archaea,Thermoproteota,Thermoprotei,Sulfolobales,Sulfolobaceae,Sulfolobus,Sulfolobus islandicus,batch_02_OE21-4-POS,Thermoproteota,Thermoproteota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A3POS,OE21-4-A3POS,Archaea,Thermoproteota,Thermoprotei,Sulfolobales,Sulfolobaceae,Sulfolobus,Sulfolobus acidocaldarius,batch_02_OE21-4-POS,Thermoproteota,Thermoproteota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A5POS,OE21-4-A5POS,Archaea,Methanobacteriota,Methanococci,Methanococcales,Methanococcaceae�,Methanothermococcus,Methanothermococcus okinawensis,batch_02_OE21-4-POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A6POS,OE21-4-A6POS,Archaea,Methanobacteriota,Methanococci,Methanococcales,Methanocaldococcaceae,Methanotorris,Methanotorris igneus,batch_02_OE21-4-POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-A9POS,OE21-4-A9POS,Archaea,Methanobacteriota,Halobacteria,Halobacteriales,Halobacteriaceae,Haloferax ,Haloferax volcanii,batch_02_OE21-4-POS,Halobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-B9POS,OE21-4-B9POS,Bacteria,Actinomycetota,Actinobacteridae,Actinomycetales,Streptosporangiaceae,Streptosporangium,Streptosporangium roseum,batch_02_OE21-4-POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-C16POS,OE21-4-C16POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-C18POS,OE21-4-C18POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-C44POS,OE21-4-C44POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-C5POS,OE21-4-C5POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E6C13POS,OE21-4-E6C13POS,Bacteria,Actinomycetota,Actinobacteridae,Actinomycetales,Streptomycataceae,Stretomyces,unclassified,batch_02_OE21-4-POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E6C21POS,OE21-4-E6C21POS,Bacteria,Actinomycetota,Actinomycetia,Mycobacteriales,Nocardiaceae,Rhodococcus,unclassified,batch_02_OE21-4-POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E6C4POS,OE21-4-E6C4POS,Bacteria,Actinomycetota,Actinomycetia,Mycobacteriales,Nocardiaceae,Rhodococcus,unclassified,batch_02_OE21-4-POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E6C6POS,OE21-4-E6C6POS,Bacteria,Actinomycetota,Actinomycetia,Mycobacteriales,Nocardiaceae,Rhodococcus,unclassified,batch_02_OE21-4-POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F16POS,OE21-4-E8F16POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F38POS,OE21-4-E8F38POS,Fungi,Ascomycota,Eurotiomycetes,Eurotiales,Aspergillaceae,Aspergillus,Aspergillus nidulans,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F40,OE21-4-E8F40,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F41POS,OE21-4-E8F41POS,Fungi,Ascomycota,Sordariomycetes,Glomerellales,Plectosphaerellaceae,Gibellulopsis,Gibellulopsis nigrescens,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F42POS,OE21-4-E8F42POS,Fungi,Ascomycota,Pezizomycetes,Pezizales,Otideaceae,Warcupia,unclassified,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F44POS,OE21-4-E8F44POS,Fungi,Ascomycota,Chaetothyriomycetes,Chaetothyriales,Herpotrichiellaceae,Exophiala,unclassified,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F45POS,OE21-4-E8F45POS,Fungi,Ascomycota,Saccharomycetes,Saccharomycetales,Trichomonascaceae,Blastobotrys,unclassified,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F48,OE21-4-E8F48,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F51POS,OE21-4-E8F51POS,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Cucurbitariaceae,Neocucurbitaria,Neocucurbitaria cava,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F55POS,OE21-4-E8F55POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8F56POS,OE21-4-E8F56POS,Fungi,Ascomycota,Leotiomycetes,Thelebolales,Pseuderotiaceae,Geomyces,Unclassified,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8ISTDPOS,OE21-4-E8ISTDPOS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8SBLK1POS,OE21-4-E8SBLK1POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-E8SRM7POS,OE21-4-E8SRM7POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-EQ102POS,OE21-4-EQ102POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-EQ103POS,OE21-4-EQ103POS,,,,,,,,batch_02_OE21-4-POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-F10POS,OE21-4-F10POS,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Omphalotaceae,Lentinula,Lentinula Edodes,batch_02_OE21-4-POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-F12POS,OE21-4-F12POS,Fungi,Basidiomycota,Agaricomycetes,Cantharellales,Hydnaceae,Carterellus,Carterellus cornucopioides,batch_02_OE21-4-POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-F29POS,OE21-4-F29POS,Fungi,Ascomycota,Leotiomycetes,Helotiales,Helotiaceae,Tetracladium,Tetracladium marchalianum,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-F3POS,OE21-4-F3POS,Fungi,Ascomycota,Pezizomycetes,Pezizales,Tuberaceae,Tuber Sp,,batch_02_OE21-4-POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-F5POS,OE21-4-F5POS,Fungi,Basidiomycota,Agaricomycetes,Agaricales,hymenogastraceae,Psilocybe,Psilocybe cyanescens,batch_02_OE21-4-POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-F7POS,OE21-4-F7POS,Fungi,Basidiomycota,Agaricomycetes,Auriculariales,Auriculariaceae,Auricularia,Auricularia nigricans,batch_02_OE21-4-POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-F8POS,OE21-4-F8POS,Fungi,Basidiomycota,Agaricomycetes,Russulales,Hericiaceae,Hericium,Hericium erinaceus,batch_02_OE21-4-POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-F9POS,OE21-4-F9POS,Fungi,Basidiomycota,Agaricomycetes,Polyporales,Grifolaceae,Grifola,Grifola Frondosa,batch_02_OE21-4-POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-P1POS,OE21-4-P1POS,Plantae,Streptophyta,Bryopsida,Pottiales,Pottiaceae,Tortella,Tortella Tortuosa,batch_02_OE21-4-POS,Bryophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-P2POS,OE21-4-P2POS,Plantae,Streptophyta,Polytrichopsida,Polytrichales,Polytrichaceae,Artichum,Artichum Undulatum,batch_02_OE21-4-POS,Bryophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-P4POS,OE21-4-P4POS,Plantae,Streptophyta,Bryopsida,Hypnales,Hypnaceae,Hypnum,Hypnum cupressiforme,batch_02_OE21-4-POS,Bryophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-P5POS,OE21-4-P5POS,Plantae,Streptophyta,Marchantiopsida,Marchantiales,Marchantiaceae,Marchantia,Marchantia polymorpha,batch_02_OE21-4-POS,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-P6POS,OE21-4-P6POS,Plantae,Streptophyta,Jungermanniopsida,Lepidoziales,Lepidoziaceae,Bazzania,Bazzania trilobata,batch_02_OE21-4-POS,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-P7POS,OE21-4-P7POS,Plantae,Streptophyta,Sphagnopsida,Sphagnales,Sphagnaceae,Sphagnum,Sphagnum magellanicum,batch_02_OE21-4-POS,Bryophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-P9POS,OE21-4-P9POS,Plantae,Streptophyta,Jungermanniopsida,Metzgeriales,Metygeriaceae,Metzgeria,Metzgeria conjugata,batch_02_OE21-4-POS,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-POOL1POS,OE21-4-POOL1POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-POOL2POS,OE21-4-POOL2POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-QC1POS,OE21-4-QC1POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-QC2POS,OE21-4-QC2POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-QC3POS,OE21-4-QC3POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-QC4POS,OE21-4-QC4POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-QC5POS,OE21-4-QC5POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-QC6POS,OE21-4-QC6POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-QC7POS,OE21-4-QC7POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-QC8POS,OE21-4-QC8POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-SRM6POS,OE21-4-SRM6POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE21-4-SRMPOS,OE21-4-SRMPOS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE25102891POS,OE25102891POS,Bacteria,Actinomycetota,Actinomycetes,Micrococcales,Micrococcaceae,Arthrobacter,Arthrobacter sp,batch_04_OE26-1POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE25AC1BU-2POS,OE25AC1BU-2POS,Protozoa,Discosea,Discosea,Centramoebida,Acanthamoebidae,Acantamoeba castelanii 1BU,,batch_04_OE26-1POS,Discosea,Discosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:OE25AC1BU1POS,OE25AC1BU1POS,Protozoa,Discosea,Discosea,Centramoebida,Acanthamoebidae,Acantamoeba castelanii 1BU,,batch_04_OE26-1POS,Discosea,Discosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:OE25AC1BU3POS,OE25AC1BU3POS,Protozoa,Discosea,Discosea,Centramoebida,Acanthamoebidae,Acantamoeba castelanii 1BU,,batch_04_OE26-1POS,Discosea,Discosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:OE25AGS-3POS,OE25AGS-3POS,Protozoa,Discosea,Discosea,Centramoebida,Acanthamoebidae,Acantamoeba griffini Sawyer,,batch_04_OE26-1POS,Discosea,Discosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:OE25B34POS,OE25B34POS,Mixed,Mixed,,,,OE25B34POS.mzML,,batch_04_OE26-1POS,Mixed,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:OE25CaferRCC970POS,OE25CaferRCC970POS,Protozoa,Bicosoecida,Bikosea,Bicosoecida,Cafeteriaceae,Cafeteria,Cafeteria algaeOE25CaferRCC970POS.mzML,batch_04_OE26-1POS,Bicosoecida,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:OE25D053POS,OE25D053POS,,,,,,,,batch_04_OE26-1POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE25DSM1988POS,OE25DSM1988POS,Fungi,Ascomycota,Eurotiomycetes,Eurotiales,Aspergillaceae,Aspergillus,Aspergillus brasiliensis,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25ECOLI1POS,OE25ECOLI1POS,Bacteria,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,batch_04_OE26-1POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE25ECOLI2POS,OE25ECOLI2POS,Bacteria,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,batch_04_OE26-1POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE25ECOLI3POS,OE25ECOLI3POS,Bacteria,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,batch_04_OE26-1POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:OE25ESTD1POS,OE25ESTD1POS,,,,,,,,batch_04_OE26-1POS,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:OE25F11POS,OE25F11POS,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Agaricaceae,Agaricus,Agaricus bisporus,batch_04_OE26-1POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F13POS,OE25F13POS,Fungi,Ascomycota,Pezizomycetes,Pezizales,Morchellaceae,Morchella,Morchella elata,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F15POS,OE25F15POS,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Amanitaceae,Amanita,Amanita caesarea,batch_04_OE26-1POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F1POS,OE25F1POS,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Periconiaceae,Periconia,Periconia macrospinosa,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F2POS,OE25F2POS,Fungi,Ascomycota,Sordariomycetes,Hypocreales,Hypocreaceae,Trichoderma,Trichoderma flavofuscum,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F30POS,OE25F30POS,Fungi,Ascomycota,Schizosaccharomycetes,Schizosaccharomycetales,Schizosaccharomycetaceae,Schizosaccharomyces,Schizosaccharomyces pombe,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F31POS,OE25F31POS,Fungi,Mortierellomycota,Mortierellomycetes,Mortierellales,Mortierellaceae,Linnemannia,Linnemannia gamsii,batch_04_OE26-1POS,Mortierellomycota,Mortierellomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F32POS,OE25F32POS,Fungi,Mucoromycota,Mucoromycetes,Mucorales,Rhizopodaceae,Rhizopus,Rhizopus oryzae,batch_04_OE26-1POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F34POS,OE25F34POS,Fungi,Ascomycota,Leotiomycetes,Helotiales,Ploettnerulaceae,Cadophora,Cadophora finlandica,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F36POS,OE25F36POS,Fungi,Ascomycota,Pezizomycetes,Pezizales,Pezizaceae,Peziza,Peziza ostracoderma,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F37POS,OE25F37POS,Fungi,Ascomycota,Saccharomycetes,Saccharomycetales,Pichiaceae,Pichia,Pichia fermentans,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F3POS,OE25F3POS,Fungi,Ascomycota,Pezizomycetes,Pezizales,Tuberaceae,Tuber Sp,,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F40POS,OE25F40POS,Fungi,Ascomycota,Dothideomycetes,Pleosporales,Pleosporaceae,Alternaria,Alternaria alternata,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F41POS,OE25F41POS,Fungi,Ascomycota,Sordariomycetes,Glomerellales,Plectosphaerellaceae,Gibellulopsis,Gibellulopsis nigrescens NG,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F42POS,OE25F42POS,Fungi,Ascomycota,Pezizomycetes,Pezizales,Pyronemataceae,Warcupia,Warcupia sp,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F45POS,OE25F45POS,Fungi,Ascomycota,Saccharomycetes,Saccharomycetales,Trichomonascaceae,Blastobotrys,Blastobotrys sp,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F47POS,OE25F47POS,Fungi,Mucoromycota,Mucoromycetes,Mucorales,Mucoraceae,Mucor,Mucor hiemalis,batch_04_OE26-1POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F48POS,OE25F48POS,Fungi,Ascomycota,Saccharomycetes,Saccharomycetales,Debaryomycetaceae,Schwanniomyces,Schwanniomyces capriottii,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F4POS,OE25F4POS,Fungi,Basidiomycota,Agaricomycetes,Agaricales,Physalacriaceae,Armillaria,Armillaria bulbosa,batch_04_OE26-1POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F52POS,OE25F52POS,Fungi,Ascomycota,Sordariomycetes,Hypocreales,Nectriaceae,Fusarium,Fusarium fujikuroi,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F53POS,OE25F53POS,Fungi,Ascomycota,Sordariomycetes,Microascales,Microascaceae,Cephalotrichum,Cephalotrichum microsporum,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F55POS,OE25F55POS,Fungi,Mucoromycota,Umbelopsidomycetes,Umbelopsidales,Umbelopsidaceae,Umbelopsis,Umbelopsis vinacea,batch_04_OE26-1POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F57POS,OE25F57POS,Fungi,Mucoromycota,Umbelopsidomycetes,Umbelopsidales,Umbelopsidaceae,Umbelopsis,Umbelopsis ramanniana,batch_04_OE26-1POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F61POS,OE25F61POS,Fungi,Ascomycota,Eurotiomycetes,Onygenales,Onygenaceae,Heydenia Sp.,Heydenia Sp. OE25F61POS.mzML,batch_04_OE26-1POS,Ascomycota,Ascomycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25F6POS,OE25F6POS,Fungi,Mucoromycota,Mucoromycetes,Mucorales,Rhizopodaceae,Rhizopus,Rhizopus oligosporus,batch_04_OE26-1POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,ncbi-phylum-2026-08-04-v1
+sample:OE25FSNELMIPOS,OE25FSNELMIPOS,Archaea,Methanobacteriota,Methanosarcinia,Methanosarcinales,Methanosarcinaceae,Methanosarcina,Methanosarcina spelaei,batch_04_OE26-1POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE25HVOLCANIPOS,OE25HVOLCANIPOS,Archaea,Methanobacteriota,Halobacteria,Haloferacales,Haloferacaceae,Haloferax,Haloferax volcanii,batch_04_OE26-1POS,Halobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE25MFERIDUSPOS,OE25MFERIDUSPOS,Archaea,Methanobacteriota,Methanobacteria,Methanobacteriales,Methanothermaceae,Methanothermus fervidus,,batch_04_OE26-1POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE25MJAMPOS,OE25MJAMPOS,Archaea,Methanobacteriota,Methanococci,Methanococcales,Methanocaldococcaceae,Methanocaldococcus,Methanocaldococcus jannaschii,batch_04_OE26-1POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE25MKANDELERIPOS,OE25MKANDELERIPOS,Archaea,Methanobacteriota,Methanopyri,Methanopyrales,Methanopyraceae,Methanopyrus,Methanopyrus kandleri,batch_04_OE26-1POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE25MMURBA-POS,OE25MMURBA-POS,Archaea,Methanobacteriota,Methanobacteria,Methanobacteriales,Methanobacteriaceae,Methanothermobacter,Methanothermobacter marburgensis,batch_04_OE26-1POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE25MOKINAWAPOS,OE25MOKINAWAPOS,Archaea,Methanobacteriota,Methanococci,Methanococcales,Methanococcaceae,Methanothermococcus,Methanothermococcus okinawensis,batch_04_OE26-1POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE25MSTAMSIIPOS,OE25MSTAMSIIPOS,Archaea,Methanobacteriota,Methanomicrobia,Methanomicrobiales,Methanospirillaceae,Methanospirillum,Methanospirillum stamsii,batch_04_OE26-1POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,ncbi-phylum-2026-08-04-v1
+sample:OE25NG1POS,OE25NG1POS,Protozoa,Heterolobosea,Heterolobosea,Schizopyrenida,Vahlkampfiidae,Naegleria,Naegleria galeacystis,batch_04_OE26-1POS,Heterolobosea,Heterolobosea,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:OE25Rhogo-1POS,OE25Rhogo-1POS,Protozoa,Cercozoa,Granofilosea,Tectofilosida,Rhogostomidae,Rhogostoma,Rhogostoma minus,batch_04_OE26-1POS,Cercozoa,Cercozoa,core_candidate,Protists,ncbi-phylum-2026-08-04-v1
+sample:P-ALGOPOS,P-ALGOPOS,Bacteria,Bacillota,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus,Paenibacillus alginolyticus,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12075-1POS,P12075-1POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12075-2POS,P12075-2POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12075-3POS,P12075-3POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12075-4POS,P12075-4POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12082POS,P12082POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12103-FTPOS,P12103-FTPOS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Paenisporosarcina sp. nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12233-1POS,P12233-1POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Paenisporosarcina sp. nov,,batch_05_OE25-1-ALL,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12233-2POS,P12233-2POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Paenisporosarcina sp. nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12233-3POS,P12233-3POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Paenisporosarcina sp. nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12233-4POS,P12233-4POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Paenisporosarcina sp. nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12265-1POS,P12265-1POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12265-2POS,P12265-2POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12265-3POS,P12265-3POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P12265-4POS,P12265-4POS,Bacteria,Bacillota,Bacilli,Caryophanales,Planococcaceae,Sporosarcina/Planococcus sp.nov,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P13602POS,P13602POS,Bacteria,Bacillota,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus sp. nov.,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P34POS,P34POS,Bacteria,Cyanobacteriota,Cyanophyceae,Nostocales,Nostocaceae,Anabaena,Anabaena torulosa,batch_03_OE23-POS,Cyanobacteriota,Cyanobacteriota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:P37POS,P37POS,Plantae,Streptophyta,Zygnematophyceae,Desmidiales,Desmidiaceae,Micrasterias,Micrasterias mahabuleshwarensis,batch_03_OE23-POS,Charophyta,Streptophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:P46POS,P46POS,Plantae,Chlorophyta,Ulvophyceae,Cladophorales,Cladophoraceae,Cladophora,Various species,batch_03_OE23-POS,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:P49POS,P49POS,Plantae,Chlorophyta,Ulvophyceae,Bryopsidales,Udoteaceae,Chlorodesmis,Various species,batch_03_OE23-POS,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:P55POS,P55POS,Plantae,Chlorophyta,Ulvophyceae,Bryopsidales,Bryopsidaceae,Bryopsis,Various species,batch_03_OE23-POS,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:P56POS_20240924144544,P56POS_20240924144544,Plantae,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,Various species,batch_03_OE23-POS,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:P58POS_20240924151656,P58POS_20240924151656,Plantae,Chlorophyta,Chlorophyceae,Chlamydomonadales,Chlamydomonadaceae,Chlamydomonas,Chlamydomonas sp.,batch_03_OE23-POS,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,ncbi-phylum-2026-08-04-v1
+sample:POOL4-10-POS,POOL4-10-POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-11-POS,POOL4-11-POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-12-POS,POOL4-12-POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-13-POS,POOL4-13-POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-14-POS,POOL4-14-POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-1POS,POOL4-1POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-2POS,POOL4-2POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-3POS,POOL4-3POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-4POS,POOL4-4POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-5POS,POOL4-5POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-6POS,POOL4-6POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-7POS,POOL4-7POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-8POS,POOL4-8POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:POOL4-9POS,POOL4-9POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:RN10POS,RN10POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN11POS,RN11POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN12POS,RN12POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN1POS,RN1POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN2POS,RN2POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN3POS,RN3POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN4POS,RN4POS,Mixed,Rootnodules,,,,Root nodule,,batch_05_OE25-1-ALL,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN5POS,RN5POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN6POS,RN6POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN7POS,RN7POS,Mixed,Rootnodules,,,,Root nodule,,batch_05_OE25-1-ALL,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN8POS,RN8POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:RN9POS,RN9POS,Mixed,Rootnodules,,,,Root nodule,,batch_06_ALL-25-2,Rootnodules,,descriptive_only,,ncbi-phylum-2026-08-04-v1
+sample:SRM1POS,SRM1POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:SRM2POS,SRM2POS,,,,,,,,,,,excluded,,ncbi-phylum-2026-08-04-v1
+sample:UV120-FIRSTPOS,UV120-FIRSTPOS,Bacteria,Actinomycetota,Actinomycetes,Propionibacteriales,Nocardioidaceae,Nocardioides sp. nov.,,batch_06_ALL-25-2,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV231-1POS,UV231-1POS,Bacteria,Bacillota,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus sp. nov.,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV231-2POS,UV231-2POS,Bacteria,Bacillota,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus sp. nov.,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV231-3POS,UV231-3POS,Bacteria,Bacillota,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus sp. nov.,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV231-4POS,UV231-4POS,Bacteria,Bacillota,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus sp. nov.,,batch_06_ALL-25-2,Bacillota,Bacillota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV238POS,UV238POS,Bacteria,Actinomycetota,Actinomycetes,Micrococcales,Micrococcaceae,Pseudarthrobacter psychrotolerans,,batch_06_ALL-25-2,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV264POS,UV264POS,Bacteria,Pseudomonadota,Alphaproteobacteria,Rhizobiales,Bradyrhizobiaceae,Bradyrhizobium sp. nov.,,batch_06_ALL-25-2,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV287-1POS,UV287-1POS,Bacteria,Actinomycetota,Actinomycetes,Micrococcales,Micrococcaceae,Arthrobacter glacialis,,batch_06_ALL-25-2,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV287-2POS,UV287-2POS,Bacteria,Actinomycetota,Actinomycetes,Micrococcales,Micrococcaceae,Arthrobacter glacialis,,batch_06_ALL-25-2,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV287-3POS,UV287-3POS,Bacteria,Actinomycetota,Actinomycetes,Micrococcales,Micrococcaceae,Arthrobacter glacialis,,batch_06_ALL-25-2,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV287-4POS,UV287-4POS,Bacteria,Actinomycetota,Actinomycetes,Micrococcales,Micrococcaceae,Arthrobacter glacialis,,batch_06_ALL-25-2,Actinomycetota,Actinomycetota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1
+sample:UV331POS,UV331POS,Bacteria,Pseudomonadota,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas sp. nov.,,batch_06_ALL-25-2,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,ncbi-phylum-2026-08-04-v1

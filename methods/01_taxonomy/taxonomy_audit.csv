@@ -1,0 +1,464 @@
+mode,sample_id,source_phylum,ncbi_phylum,taxonomy_scope,ecological_group,changed,reason,taxonomy_release
+POS,sample:102891POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:22POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:23POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:24A1-A2-A3POS,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:24S3POS,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:25S1-S2POS,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:27POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:68A1-A2-A3POS,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:68S1-S2-S3POS,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:ACNeff1POS,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:ACNeff234POS,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:ACNeffE25-123POS,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:B34POS,Mixed,,descriptive_only,,false,mixed sample,ncbi-phylum-2026-08-04-v1
+POS,sample:BIGD-4BFL26POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:BIGDo-4BFL26POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:BIGV3-POS,Nucleocytoviricota,,descriptive_only,,false,virus samples retained in inventory but excluded by study scope,ncbi-phylum-2026-08-04-v1
+POS,sample:Cafet-RC0970POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:Cafet-RCC970POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:CroVPOS,Nucleocytoviricota,,descriptive_only,,false,virus samples retained in inventory but excluded by study scope,ncbi-phylum-2026-08-04-v1
+POS,sample:DSM1988-2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:DSM1988POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:EISTD1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:HPPOS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:I5POS_20240925024318,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:I8POS,Mollusca,Mollusca,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:I8POS_20240925010944,Mollusca,Mollusca,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:I9POS,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:LHKa1POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:LHKa2POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:LHKa3POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu03POS_20240924172144,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu04-2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu04POS_20240924110720,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu05POS,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu07POS_20240924182408,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu08POS,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu11POS,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu12POS,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu13POS,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu16POS,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu18POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu19POS,Cyanobacteriota,Cyanobacteriota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Lu20POS_20240925014054,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:M303POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:MCP28POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:N-clarki-1POS,Heterolobosea,Heterolobosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:N1POS,Nematoda,Nematoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:N2POS,Nematoda,Nematoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:N2POS_20240925051918,Nematoda,Nematoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:N3POS,Nematoda,Nematoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:NClarki2POS,Heterolobosea,Heterolobosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:NEH18POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:Nkorea-1POS,Heterolobosea,Heterolobosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:Nkorea2POS,Heterolobosea,Heterolobosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E4-A1POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E4-A4POS,Halobacteriota,Methanobacteriota,core_candidate,Archaea,true,mapped to NCBI phylum Methanobacteriota,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E4-B5POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E4-F6POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E4-P18POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E4-P27POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E4-SRM1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E4-SRM1POS_20230211043148,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3-E5-SRM2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3ISTD-1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3POOL-1COND1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3POOL-1COND2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3POOL-QC2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3POOL-QC3POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3POOL-QC4POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3POOL-QC4POS_20230211084106,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3POOL-QC5POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-3POOL-QC6POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-A5POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-A7POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-B1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-B3POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-B4POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-B6POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-F15POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-F2POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-F47POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-ISTD-2POS_20230212113007,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-P11POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-P14POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE11-E4-P26POS,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-11POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-19POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-19_B9POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-28POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-31POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-34POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A10POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A11POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A12POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A1POS,Thermoproteota,Thermoproteota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A1POS_20240618215255,Thermoproteota,Thermoproteota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A3POS,Thermoproteota,Thermoproteota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A5POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A6POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-A9POS,Halobacteriota,Methanobacteriota,core_candidate,Archaea,true,mapped to NCBI phylum Methanobacteriota,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-B9POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-C16POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-C18POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-C44POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-C5POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E6C13POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E6C21POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E6C4POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E6C6POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F16POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F38POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F40,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F41POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F42POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F44POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F45POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F48,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F51POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F55POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8F56POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8ISTDPOS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8SBLK1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-E8SRM7POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-EQ102POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-EQ103POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-F10POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-F12POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-F29POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-F3POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-F5POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-F7POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-F8POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-F9POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-P1POS,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-P2POS,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-P4POS,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-P5POS,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-P6POS,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-P7POS,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-P9POS,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-POOL1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-POOL2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-QC1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-QC2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-QC3POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-QC4POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-QC5POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-QC6POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-QC7POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-QC8POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-SRM6POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE21-4-SRMPOS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25102891POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25AC1BU-2POS,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25AC1BU1POS,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25AC1BU3POS,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25AGS-3POS,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25B34POS,Mixed,,descriptive_only,,false,mixed sample,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25CaferRCC970POS,Bicosoecida,,descriptive_only,,false,NCBI lineage for the sampled Cafeteria isolate contains no phylum-rank ancestor,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25D053POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25DSM1988POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25ECOLI1POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25ECOLI2POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25ECOLI3POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25ESTD1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F11POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F13POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F15POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F1POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F2POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F30POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F31POS,Mortierellomycota,Mortierellomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F32POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F34POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F36POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F37POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F3POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F40POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F41POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F42POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F45POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F47POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F48POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F4POS,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F52POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F53POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F55POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F57POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F61POS,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25F6POS,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25FSNELMIPOS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25HVOLCANIPOS,Halobacteriota,Methanobacteriota,core_candidate,Archaea,true,mapped to NCBI phylum Methanobacteriota,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25MFERIDUSPOS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25MJAMPOS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25MKANDELERIPOS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25MMURBA-POS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25MOKINAWAPOS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25MSTAMSIIPOS,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25NG1POS,Heterolobosea,Heterolobosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:OE25Rhogo-1POS,Cercozoa,Cercozoa,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P-ALGOPOS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12075-1POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12075-2POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12075-3POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12075-4POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12082POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12103-FTPOS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12233-1POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12233-2POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12233-3POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12233-4POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12265-1POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12265-2POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12265-3POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P12265-4POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P13602POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P34POS,Cyanobacteriota,Cyanobacteriota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P37POS,Charophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+POS,sample:P46POS,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P49POS,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P55POS,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P56POS_20240924144544,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:P58POS_20240924151656,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-10-POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-11-POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-12-POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-13-POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-14-POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-3POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-4POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-5POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-6POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-7POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-8POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:POOL4-9POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:RN10POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN11POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN12POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN1POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN2POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN3POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN4POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN5POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN6POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN7POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN8POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:RN9POS,Rootnodules,,descriptive_only,,false,mixed environmental material rather than a pure taxonomic phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:SRM1POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:SRM2POS,,,excluded,,false,no taxonomic label,ncbi-phylum-2026-08-04-v1
+POS,sample:UV120-FIRSTPOS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV231-1POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV231-2POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV231-3POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV231-4POS,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV238POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV264POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV287-1POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV287-2POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV287-3POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV287-4POS,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+POS,sample:UV331POS,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:102891NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:23NEG,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:24A1-A2-A3NEG,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:24S3NEG,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:25S1-S2NEG,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:27NEG,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:68A1-A2-A3NEG,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:68S1-S2-S3NEG,Evosea,Evosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:ACNeff1NEG,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:ACNeff234NEG,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:ACNeffE25-123NEG,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:BIGV3-NEG,Nucleocytoviricota,,descriptive_only,,false,virus samples retained in inventory but excluded by study scope,ncbi-phylum-2026-08-04-v1
+NEG,sample:Cafet-RC0970NEG,Bicosoecida,,descriptive_only,,false,NCBI lineage for the sampled Cafeteria isolate contains no phylum-rank ancestor,ncbi-phylum-2026-08-04-v1
+NEG,sample:Cafet-RCC970NEG,Bicosoecida,,descriptive_only,,false,NCBI lineage for the sampled Cafeteria isolate contains no phylum-rank ancestor,ncbi-phylum-2026-08-04-v1
+NEG,sample:CroVNEG,Nucleocytoviricota,,descriptive_only,,false,virus samples retained in inventory but excluded by study scope,ncbi-phylum-2026-08-04-v1
+NEG,sample:DSM1988-2NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:DSM1988NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:I10NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:I11NEG,Mollusca,Mollusca,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:I12NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:I5NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:I6NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:I7NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:I8NEG,Mollusca,Mollusca,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:I9NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:LHKa1NEG,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:LHKa2NEG,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:LHKa3NEG,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu01NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu02NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu03NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu04-2NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu04NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu05NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu06NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu07NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu08NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu10NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu11NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu12NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu13NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu14NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu15NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu16NEG,Arthropoda,Arthropoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu17NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:Lu18NEG,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:N1NEG,Nematoda,Nematoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:N2NEG,Nematoda,Nematoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:N3NEG,Nematoda,Nematoda,core_candidate,Animalia,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-3-E4-A1NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-3-E4-A4NEG,Halobacteriota,Methanobacteriota,core_candidate,Archaea,true,mapped to NCBI phylum Methanobacteriota,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-3-E4-B5NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-3-E4-F6NEG,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-3-E4-P18NEG,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-A7NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-B3NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-B4NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-F15NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-F2NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-F47NEG,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-P11NEG,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-P14NEG,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE11-E4-P26NEG,Tracheophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-11NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-28NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-31NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-34NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-A10NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-A1NEG,Thermoproteota,Thermoproteota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-A3NEG,Thermoproteota,Thermoproteota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-E6C13NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-E6C4NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-E8F40NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-E8F48NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-F10NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-P1NEG,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-2-P6NEG,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-11NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-19NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-28NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-31NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-34NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-A10NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-A12NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-A1NEG,Thermoproteota,Thermoproteota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-A3NEG,Thermoproteota,Thermoproteota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-A5NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-A6NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-A9NEG,Halobacteriota,Methanobacteriota,core_candidate,Archaea,true,mapped to NCBI phylum Methanobacteriota,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-B9NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E6C13NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E6C21NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E6C4NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E6C6NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F38NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F40NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F41NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F42NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F44NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F45NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F48NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F51NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-E8F56NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-F10NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-F12NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-F29NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-F5NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-F7NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-F8NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-F9NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-P1NEG,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-P2NEG,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-P4NEG,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-P5NEG,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-P6NEG,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-P7NEG,Bryophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE21-4-P9NEG,Marchantiophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25102891NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25AC1BU-2NEG,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25AC1BU1NEG,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25AGS-3NEG,Discosea,Discosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25CaferRCC970NEG,Bicosoecida,,descriptive_only,,false,NCBI lineage for the sampled Cafeteria isolate contains no phylum-rank ancestor,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25D053NEG,Heterolobosea,Heterolobosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25DSM1988NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25ECOLI1NEG,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25ECOLI2NEG,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F11NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F13NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F15NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F1NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F2NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F30NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F31NEG,Mortierellomycota,Mortierellomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F32NEG,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F34NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F36NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F3NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F40NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F41NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F42NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F45NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F47NEG,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F48NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F4NEG,Basidiomycota,Basidiomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F52NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F53NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F55NEG,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F57NEG,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F61NEG,Ascomycota,Ascomycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25F6NEG,Mucoromycota,Mucoromycota,core_candidate,Fungi,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25FSNELMINEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25HVOLCANINEG,Halobacteriota,Methanobacteriota,core_candidate,Archaea,true,mapped to NCBI phylum Methanobacteriota,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25MJAMNEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25MKANDELERINEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25MMURBA-NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25MOKINAWANEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25MSTAMSIINEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25NG1NEG,Heterolobosea,Heterolobosea,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25Rhogo-1NEG,Cercozoa,Cercozoa,core_candidate,Protists,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:OE25WM1NEG,Methanobacteriota,Methanobacteriota,core_candidate,Archaea,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P-ALGONEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12075-1NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12075-2NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12075-3NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12075-4NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12082NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12103-FTNEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12233-2NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12233-3NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12233-4NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12265-1NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12265-2NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12265-3NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P12265-4NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P13602NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P34NEG,Cyanobacteriota,Cyanobacteriota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P37NEG,Charophyta,Streptophyta,core_candidate,Viridiplantae,true,mapped to NCBI phylum Streptophyta,ncbi-phylum-2026-08-04-v1
+NEG,sample:P42NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P46NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P47NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P49NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P52NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P54NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P55NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P56NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P58-2NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:P58NEG,Chlorophyta,Chlorophyta,core_candidate,Viridiplantae,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV120-FIRSTNEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV231-1NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV231-2NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV231-3NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV231-4NEG,Bacillota,Bacillota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV238NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV264NEG,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV287-1NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV287-2NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV287-3NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV287-4NEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV290-FIRSTNEG,Actinomycetota,Actinomycetota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
+NEG,sample:UV331NEG,Pseudomonadota,Pseudomonadota,core_candidate,Bacteria,false,unchanged verified NCBI phylum,ncbi-phylum-2026-08-04-v1
