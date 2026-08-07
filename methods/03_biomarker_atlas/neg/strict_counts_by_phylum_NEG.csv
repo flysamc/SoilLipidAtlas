@@ -1,0 +1,17 @@
+phylum,kingdom,strict_analysis_samples,composite_platinum,composite_diamond,composite_silver,composite_total,indval_pair_rows,indval_unique_features,indval_only_features,strict_atlas_total
+Actinomycetota,Bacteria,19,0,0,3,3,45,45,43,46
+Arthropoda,Animalia,22,753,96,0,753,0,0,0,753
+Ascomycota,Fungi,32,0,0,0,0,942,937,937,937
+Bacillota,Bacteria,28,50,3,0,50,236,234,196,246
+Basidiomycota,Fungi,11,0,0,1,1,176,154,153,154
+Chlorophyta,Plantae,10,316,33,0,316,0,0,0,316
+Discosea,Protozoa,6,0,0,5,5,8,8,3,8
+Evosea,Protozoa,5,440,226,0,440,0,0,0,440
+Heterolobosea,Protozoa,2,561,3,0,561,0,0,0,561
+Methanobacteriota,Archaea,17,0,0,1,1,17,17,17,18
+Mollusca,Animalia,2,327,45,0,327,0,0,0,327
+Mucoromycota,Fungi,7,0,0,3,3,16,16,14,17
+Nematoda,Animalia,3,249,91,0,249,0,0,0,249
+Pseudomonadota,Bacteria,8,21,0,0,21,155,154,144,165
+Streptophyta,Plantae,16,13,0,0,13,1461,1457,1444,1457
+Thermoproteota,Archaea,4,3,0,0,3,0,0,0,3

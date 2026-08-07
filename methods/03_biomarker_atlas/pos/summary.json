@@ -1,0 +1,142 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "scope": "Figure 2A POS, strict shared 16-phylum set",
+  "status": "candidate",
+  "reproduction": {
+    "base_platinum_expected": 8587,
+    "base_platinum_observed": 8587,
+    "base_platinum_pair_overlap": 8587,
+    "silver_expected": 227,
+    "silver_observed": 227,
+    "silver_pair_overlap": 227,
+    "indval_pairs_expected": 2906,
+    "indval_pairs_observed": 2906,
+    "indval_pair_overlap": 2906,
+    "indval_unique_expected": 2847,
+    "indval_unique_observed": 2847,
+    "composite_input_note": "The archived Composite score table predates later sample additions in sample_metadata.csv; selection is therefore checked exactly on phyla whose sample and batch counts are unchanged.",
+    "composite_stable_phyla": [
+      "Actinomycetota",
+      "Amoebozoa",
+      "Arthropoda",
+      "Ascomycota",
+      "Bacillota",
+      "Basidiomycota",
+      "Bryophyta",
+      "Charophyta",
+      "Chlorophyta",
+      "Crenarchaeota",
+      "Cyanobacteriota",
+      "Euryarchaeota",
+      "Magnoliophyta",
+      "Marchantiophyta",
+      "Methanobacteriota",
+      "Mollusca",
+      "Mucoromycota",
+      "Nematoda",
+      "Pseudomonadota",
+      "Rootnodules",
+      "Thermoproteota",
+      "Trachaeophyta",
+      "Virus"
+    ],
+    "composite_changed_phyla": [],
+    "stable_platinum_expected": 8587,
+    "stable_platinum_observed": 8587,
+    "stable_platinum_pair_overlap": 8587,
+    "stable_silver_expected": 227,
+    "stable_silver_observed": 227,
+    "stable_silver_pair_overlap": 227,
+    "pass": true
+  },
+  "archlips_assignment_reproduction_accuracy": 1.0,
+  "strict_selection": {
+    "composite_platinum": 2480,
+    "composite_silver": 222,
+    "composite_total": 2702,
+    "indval_pair_rows": 7844,
+    "indval_unique": 7751,
+    "archlips_candidates": 1095,
+    "composite_with_archlips": 3784
+  },
+  "annotation_coverage": {
+    "biomarkers": 11371,
+    "phyla": 16,
+    "previous_full_pipeline": 4735,
+    "previously_annotated": 3893,
+    "previously_processed_unidentified": 842,
+    "new_need_full_annotation_pipeline": 6636,
+    "new_with_assigned_ms2_cache": 316,
+    "new_without_current_annotation": 6320,
+    "currently_annotated_after_cache_reuse": 4209,
+    "currently_unidentified": 7162
+  },
+  "validation": {
+    "atlas_rows": 11371,
+    "distinct_feature_ids": 11371,
+    "duplicate_feature_ids": 0,
+    "observed_phyla": 16,
+    "expected_phyla": 16,
+    "unexpected_phyla": [],
+    "tier_total": 11371,
+    "annotation_partition_total": 11371,
+    "annotation_queue_rows": 6636
+  },
+  "remaining_external_producers": [
+    "fresh SIRIUS/CANOPUS, DreaMS, fastMASST and Pan-ReDU results for newly selected feature IDs",
+    "exact historical 66-entry/52.8-percent classifier producer"
+  ],
+  "software": {
+    "python": "3.10.11",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9"
+  },
+  "inputs": {
+    "consensus": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\03_alignment\\consensus_aligned_table.csv",
+      "sha256": "ef28300dfb6f075c52819ffe7c101c11ef322b6a59c2ba9d0ea020d33abc4f4c"
+    },
+    "old_metadata": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\01_composite_scoring\\sample_metadata.csv",
+      "sha256": "14e1da7e4e8e5b0d9bda4798b71e23ccb30884e69891a4a459a29851c1f9094e"
+    },
+    "old_composite_workbook": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-13\\repository_bundle\\01_input_data\\GNPS_Master_Sample_Mapping_Positive.xlsx",
+      "sha256": "f4702be86a615669ef7e1e3162fc59de5f678eacd93523e21711dba564b94a2a"
+    },
+    "old_platinum_raw": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\04_platinum_diamond\\phylum_biomarkers_platinum.csv",
+      "sha256": "c7bc076bf384d7ed0f293600987815197a749e3da8b136f53a61b7cfc9ef1850"
+    },
+    "old_silver_raw": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\04_platinum_diamond\\phylum_biomarkers_silver.csv",
+      "sha256": "2876aeaebb9e92b59570b04847cf0f5bb2538c3b20417b867fbfb740887e3a5c"
+    },
+    "old_platinum_pre_archlips": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\04_platinum_diamond\\atlas_platinum_biomarkers_final_backup_pre_fullbatch.csv",
+      "sha256": "4b6cb0b074762677ac0bb15028434cfe38af174bbfa8eb05453ce770adc82f2a"
+    },
+    "old_platinum_final": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\04_platinum_diamond\\atlas_platinum_biomarkers_final.csv",
+      "sha256": "c15669f331298e16e6cb7c7e9ed85786a4b60cff4e97996c7fa04b9cf5337f9c"
+    },
+    "old_indval_pairs": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-17\\positive\\03_within_batch\\multi_batch_indicators.csv",
+      "sha256": "6914cf041173ea55498b72bcbda65000ab922ccd8101bec885ccea8375297ed9"
+    },
+    "old_atlas": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\04_platinum_diamond\\atlas_expanded_final.csv",
+      "sha256": "9ee3c422ba7a55092bc874599587dbaa79258d842b35b61cfaeccfa477a7c0e1"
+    },
+    "harmonized_annotations": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\10_annotation_harmonization\\harmonized_annotations.csv",
+      "sha256": "9a5c300e8c5e0af5202c5bf7720918e44ea00338a5a8abe1dd6b2866380a172d"
+    },
+    "ms2_cache": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\06_ms2_structural\\ms2_diagnostic_classification.csv",
+      "sha256": "786b19ecf3dc23d7f733d607c39525452bac75e9461696ebac4f721171a0afc2"
+    }
+  },
+  "seconds": 25.244
+}

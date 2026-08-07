@@ -1,0 +1,129 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "status": "feature_set_frozen_annotation_pending",
+  "checks": {
+    "historical_reproduction_pass": true,
+    "archlips_reproduction_pass": true,
+    "deterministic_scientific_outputs": true,
+    "taxonomy_release_match": true,
+    "sixteen_analysis_phyla": true,
+    "unique_feature_ids": true,
+    "queue_partition_matches": true,
+    "queue_ms2_partition_matches": true
+  },
+  "counts": {
+    "biomarkers": 11371,
+    "analysis_phyla": 16,
+    "composite_platinum": 2480,
+    "composite_silver": 222,
+    "indval_pair_rows": 7844,
+    "indval_unique": 7751,
+    "new_feature_queue": 6636,
+    "recovered_annotation_evidence": 2393,
+    "unresolved_annotation_queue": 4243,
+    "queue_with_recovered_ms2": 6306,
+    "queue_without_recovered_ms2": 330
+  },
+  "outputs": [
+    {
+      "path": "atlas_pos_strict.csv",
+      "bytes": 3544300,
+      "sha256": "4046c86569b801903220fe836e390a8318de2f570dfa6bae4887daf618939cf5"
+    },
+    {
+      "path": "composite_platinum_strict.csv",
+      "bytes": 307263,
+      "sha256": "f915d208190166ee1f5634c260fa89ed32f09a28b4e2bc028936152447e714d2"
+    },
+    {
+      "path": "composite_silver_strict.csv",
+      "bytes": 29613,
+      "sha256": "bbf8f9804ad2002eddb5baedb75a089d3f4b7973bf1f2ddb264783cd22a167b0"
+    },
+    {
+      "path": "indval_pairs_strict.csv",
+      "bytes": 1075930,
+      "sha256": "019b76ec286320072eb0270ad2cde4eda5fa24722fb343e5cf40d6ee2f2e1cf2"
+    },
+    {
+      "path": "indval_unique_strict.csv",
+      "bytes": 1156579,
+      "sha256": "5c7db5c53490c929409c704fbcf79baff2dca57cbfb35dcf75c483e8f35fc2a1"
+    },
+    {
+      "path": "archlips_assignments_strict.csv",
+      "bytes": 52233,
+      "sha256": "f2dd37a3d56758a6e58a45e31aa62a65598d9d2ea8de7140b0b51db6b2b43d3e"
+    },
+    {
+      "path": "figure2a_tier_counts.csv",
+      "bytes": 1917,
+      "sha256": "85f8856cf28bbdac20219b023971c0a83b49b46955e88ed1161cc9d5d43ce330"
+    },
+    {
+      "path": "biomarker_counts_by_phylum.csv",
+      "bytes": 898,
+      "sha256": "b8bf7b244f5de694c99cfe2603ec80fe84892035b57801f5b5f13108cd8722aa"
+    },
+    {
+      "path": "discovery_method_by_phylum.csv",
+      "bytes": 702,
+      "sha256": "085f18dac111b044649ad95964ecd8ab587e117fde80c106631298bfd2d2cdd9"
+    },
+    {
+      "path": "annotation_queue_new_features.csv",
+      "bytes": 835081,
+      "sha256": "3e067821a66da0e7477d4232df05153349bdf1e3d21c354b3310619e1325e41d"
+    },
+    {
+      "path": "historical_control/composite_platinum_reproduced.csv",
+      "bytes": 1098147,
+      "sha256": "96afeb3f2e2ed9f646e95a3a3f7f9dc2329e04771ed45ec3918be63e198ac250"
+    },
+    {
+      "path": "historical_control/composite_silver_reproduced.csv",
+      "bytes": 30284,
+      "sha256": "c7799af645df346d097f7c4c498ecb3330bed95d6920a444765aade3ee730c24"
+    },
+    {
+      "path": "historical_control/indval_pairs_reproduced.csv",
+      "bytes": 395357,
+      "sha256": "27e92eb60a0c366333654434e134e596d4bff8dc84b17bbc401d4f907c779a60"
+    },
+    {
+      "path": "historical_control/indval_unique_reproduced.csv",
+      "bytes": 410977,
+      "sha256": "76f8cb7f18d3b7c53c387adb9c1d01f78f72cdda1a624bf7f9c995d6204492c3"
+    },
+    {
+      "path": "historical_control/reproduction_gate.json",
+      "bytes": 1364,
+      "sha256": "a286f2dfd1125ba86825cf87015bfe236d37ab7afa9877f0e772ce8b800f7454"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 6764,
+      "sha256": "aa94042cedcfb374bd10da21849f0d7bc40ea8dd6a822b6173a20b334e97ef90"
+    },
+    {
+      "path": "reproducibility_check.json",
+      "bytes": 5879,
+      "sha256": "85cb41a762cef7eb8a0ff730393f5b1b15910748678e8cb176ad007b8ebc9924"
+    },
+    {
+      "path": "annotation_recovery/audit_report.json",
+      "bytes": 1791,
+      "sha256": "ddc4bbaad337d89f28b61e43b1e9f4e1c21d1f092d694b600350648b3abf8296"
+    },
+    {
+      "path": "annotation_recovery/annotation_queue_recovered_evidence.csv",
+      "bytes": 626513,
+      "sha256": "1862de8789732a721e8cd1a6cb904a209a2b18df6e8f17b413dd723599d28e5a"
+    },
+    {
+      "path": "annotation_recovery/annotation_queue_unresolved.csv",
+      "bytes": 1097225,
+      "sha256": "300b71d649463d85fe39b5a80de9a3bd251aaad213a2c632aef7370dc0173c59"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "candidate": "C:\\Users\\Shadow\\Desktop\\P2R\\outputs\\analysis\\ncbi-phylum-2026-08-04-v1\\biomarker_discovery",
+  "rerun": "C:\\Users\\Shadow\\Desktop\\P2R\\outputs\\analysis\\ncbi-phylum-2026-08-04-v1\\biomarker_discovery_reprocheck",
+  "scientific_outputs_pass": true,
+  "all_required_csvs_byte_identical": true,
+  "summary_identical_excluding_runtime_seconds": true,
+  "historical_gate_identical": true,
+  "figures_byte_identical": false,
+  "csv_checks": [
+    {
+      "path": "atlas_pos_strict.csv",
+      "candidate_sha256": "4046c86569b801903220fe836e390a8318de2f570dfa6bae4887daf618939cf5",
+      "rerun_sha256": "4046c86569b801903220fe836e390a8318de2f570dfa6bae4887daf618939cf5",
+      "byte_identical": true
+    },
+    {
+      "path": "composite_platinum_strict.csv",
+      "candidate_sha256": "f915d208190166ee1f5634c260fa89ed32f09a28b4e2bc028936152447e714d2",
+      "rerun_sha256": "f915d208190166ee1f5634c260fa89ed32f09a28b4e2bc028936152447e714d2",
+      "byte_identical": true
+    },
+    {
+      "path": "composite_silver_strict.csv",
+      "candidate_sha256": "bbf8f9804ad2002eddb5baedb75a089d3f4b7973bf1f2ddb264783cd22a167b0",
+      "rerun_sha256": "bbf8f9804ad2002eddb5baedb75a089d3f4b7973bf1f2ddb264783cd22a167b0",
+      "byte_identical": true
+    },
+    {
+      "path": "indval_pairs_strict.csv",
+      "candidate_sha256": "019b76ec286320072eb0270ad2cde4eda5fa24722fb343e5cf40d6ee2f2e1cf2",
+      "rerun_sha256": "019b76ec286320072eb0270ad2cde4eda5fa24722fb343e5cf40d6ee2f2e1cf2",
+      "byte_identical": true
+    },
+    {
+      "path": "indval_unique_strict.csv",
+      "candidate_sha256": "5c7db5c53490c929409c704fbcf79baff2dca57cbfb35dcf75c483e8f35fc2a1",
+      "rerun_sha256": "5c7db5c53490c929409c704fbcf79baff2dca57cbfb35dcf75c483e8f35fc2a1",
+      "byte_identical": true
+    },
+    {
+      "path": "archlips_assignments_strict.csv",
+      "candidate_sha256": "f2dd37a3d56758a6e58a45e31aa62a65598d9d2ea8de7140b0b51db6b2b43d3e",
+      "rerun_sha256": "f2dd37a3d56758a6e58a45e31aa62a65598d9d2ea8de7140b0b51db6b2b43d3e",
+      "byte_identical": true
+    },
+    {
+      "path": "figure2a_tier_counts.csv",
+      "candidate_sha256": "85f8856cf28bbdac20219b023971c0a83b49b46955e88ed1161cc9d5d43ce330",
+      "rerun_sha256": "85f8856cf28bbdac20219b023971c0a83b49b46955e88ed1161cc9d5d43ce330",
+      "byte_identical": true
+    },
+    {
+      "path": "biomarker_counts_by_phylum.csv",
+      "candidate_sha256": "b8bf7b244f5de694c99cfe2603ec80fe84892035b57801f5b5f13108cd8722aa",
+      "rerun_sha256": "b8bf7b244f5de694c99cfe2603ec80fe84892035b57801f5b5f13108cd8722aa",
+      "byte_identical": true
+    },
+    {
+      "path": "annotation_coverage_by_feature.csv",
+      "candidate_sha256": "55484da25092e0c6e9553b6e1520b273fd63823a49777c040211676d2aa1ea61",
+      "rerun_sha256": "55484da25092e0c6e9553b6e1520b273fd63823a49777c040211676d2aa1ea61",
+      "byte_identical": true
+    },
+    {
+      "path": "annotation_coverage_by_phylum.csv",
+      "candidate_sha256": "11626c4dc2cf1baf801739bf4ac48d3ef8d1261cd83e06346beb2d05f0fde128",
+      "rerun_sha256": "11626c4dc2cf1baf801739bf4ac48d3ef8d1261cd83e06346beb2d05f0fde128",
+      "byte_identical": true
+    },
+    {
+      "path": "discovery_method_by_phylum.csv",
+      "candidate_sha256": "085f18dac111b044649ad95964ecd8ab587e117fde80c106631298bfd2d2cdd9",
+      "rerun_sha256": "085f18dac111b044649ad95964ecd8ab587e117fde80c106631298bfd2d2cdd9",
+      "byte_identical": true
+    },
+    {
+      "path": "annotation_queue_new_features.csv",
+      "candidate_sha256": "3e067821a66da0e7477d4232df05153349bdf1e3d21c354b3310619e1325e41d",
+      "rerun_sha256": "3e067821a66da0e7477d4232df05153349bdf1e3d21c354b3310619e1325e41d",
+      "byte_identical": true
+    },
+    {
+      "path": "historical_control/composite_platinum_reproduced.csv",
+      "candidate_sha256": "96afeb3f2e2ed9f646e95a3a3f7f9dc2329e04771ed45ec3918be63e198ac250",
+      "rerun_sha256": "96afeb3f2e2ed9f646e95a3a3f7f9dc2329e04771ed45ec3918be63e198ac250",
+      "byte_identical": true
+    },
+    {
+      "path": "historical_control/composite_silver_reproduced.csv",
+      "candidate_sha256": "c7799af645df346d097f7c4c498ecb3330bed95d6920a444765aade3ee730c24",
+      "rerun_sha256": "c7799af645df346d097f7c4c498ecb3330bed95d6920a444765aade3ee730c24",
+      "byte_identical": true
+    },
+    {
+      "path": "historical_control/indval_pairs_reproduced.csv",
+      "candidate_sha256": "27e92eb60a0c366333654434e134e596d4bff8dc84b17bbc401d4f907c779a60",
+      "rerun_sha256": "27e92eb60a0c366333654434e134e596d4bff8dc84b17bbc401d4f907c779a60",
+      "byte_identical": true
+    },
+    {
+      "path": "historical_control/indval_unique_reproduced.csv",
+      "candidate_sha256": "76f8cb7f18d3b7c53c387adb9c1d01f78f72cdda1a624bf7f9c995d6204492c3",
+      "rerun_sha256": "76f8cb7f18d3b7c53c387adb9c1d01f78f72cdda1a624bf7f9c995d6204492c3",
+      "byte_identical": true
+    }
+  ],
+  "figure_checks": [
+    {
+      "path": "Figure_2a_strict_16phyla.png",
+      "candidate_sha256": "c2ecac229f15ecd83813cf3836769d491887e0866bac799206e648e108f81035",
+      "rerun_sha256": "c2ecac229f15ecd83813cf3836769d491887e0866bac799206e648e108f81035",
+      "byte_identical": true
+    },
+    {
+      "path": "Figure_2a_strict_16phyla.pdf",
+      "candidate_sha256": "115c45275439812b6109c155d6e7ddbbe1892088325f08d1480e33522588e2db",
+      "rerun_sha256": "4faef8d13796c9827f1614cad29240c4a098dddd707ac8d76c0e38a48959d888",
+      "byte_identical": false
+    },
+    {
+      "path": "Figure_2a_strict_16phyla.svg",
+      "candidate_sha256": "3484c6cc29736aeb6833b3bb1f9ce245cbde9cd52ebd793db29b25284aca8a2d",
+      "rerun_sha256": "9f56cc6c9abc5103f0ff4a71b9657ea57e12fe685a001c18c6f3bf1d0640db63",
+      "byte_identical": false
+    }
+  ]
+}

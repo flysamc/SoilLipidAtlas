@@ -1,0 +1,17 @@
+phylum,Gold,Silver,Bronze,Unidentified,pos_samples,ecological_group,total_biomarkers
+Actinomycetota,38.0,25.0,172.0,39.0,15,Bacteria,274.0
+Arthropoda,8.0,118.0,82.0,174.0,11,Animalia,382.0
+Ascomycota,3.0,9.0,181.0,68.0,27,Fungi,261.0
+Bacillota,119.0,81.0,612.0,209.0,25,Bacteria,1021.0
+Basidiomycota,28.0,21.0,308.0,84.0,10,Fungi,441.0
+Chlorophyta,14.0,45.0,136.0,258.0,5,Viridiplantae,453.0
+Discosea,1.0,0.0,10.0,24.0,7,Protists,35.0
+Evosea,0.0,0.0,0.0,650.0,5,Protists,650.0
+Heterolobosea,0.0,0.0,7.0,24.0,5,Protists,31.0
+Methanobacteriota,89.0,171.0,725.0,32.0,16,Archaea,1017.0
+Mollusca,0.0,102.0,140.0,213.0,2,Animalia,455.0
+Mucoromycota,1.0,0.0,24.0,7.0,7,Fungi,32.0
+Nematoda,0.0,8.0,28.0,386.0,4,Animalia,422.0
+Pseudomonadota,62.0,41.0,245.0,65.0,8,Bacteria,413.0
+Streptophyta,4.0,4.0,330.0,4830.0,14,Viridiplantae,5168.0
+Thermoproteota,45.0,41.0,131.0,99.0,3,Archaea,316.0
