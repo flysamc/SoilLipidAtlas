@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="fig1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1010" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="5.2" refY="4.2" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1,1 L7.2,4.2 L1,7.4" fill="none" stroke="#5b626a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text{fill:#1a1a1a;}
+      .lett{font-size:30px;font-weight:700;}
+      .ti{font-size:25px;font-weight:700;}
+      .cap{font-size:22px;fill:#3c4248;}
+      .sm{font-size:20px;fill:#5b626a;}
+      .tiny{font-size:18px;fill:#5b626a;}
+      .num{font-weight:700;fill:#1a1a1a;}
+      .it{font-style:italic;}
+      .box{fill:#fff;stroke:#c9ced3;stroke-width:1.6;}
+      .flow{stroke:#5b626a;stroke-width:1.8;fill:none;}
+    </style>
+  </defs>
+
+  <text x="40" y="44" font-size="22" font-weight="700">Fig. 1</text>
+
+  <!-- ===================== FLOW ARROWS ===================== -->
+  <line x1="566"  y1="281" x2="635"  y2="281" class="flow" marker-end="url(#ah)"/>
+  <line x1="1163" y1="281" x2="1232" y2="281" class="flow" marker-end="url(#ah)"/>
+  <line x1="1497" y1="478" x2="1497" y2="598" class="flow" marker-end="url(#ah)"/>
+  <line x1="1234" y1="795" x2="1165" y2="795" class="flow" marker-end="url(#ah)"/>
+  <line x1="637"  y1="795" x2="568"  y2="795" class="flow" marker-end="url(#ah)"/>
+
+  <!-- ============================================================ -->
+  <!--  a — Cross-kingdom reference profiling                       -->
+  <!-- ============================================================ -->
+  <g transform="translate(40,86)">
+    <rect class="box" width="526" height="390" rx="3"/>
+    <text class="lett" x="16" y="44">a</text>
+    <text class="ti" x="58" y="38">Cross-kingdom</text>
+    <text class="ti" x="58" y="66">reference profiling</text>
+
+    <!-- monoline kingdom icons -->
+    <g fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Bacteria -->
+      <g transform="translate(35,108)" stroke="#0072B2">
+        <path d="M21,19 h14 a9,9 0 0 1 0,18 h-14 a9,9 0 0 1 0,-18 z"/>
+        <path d="M12,28 q-6,-4 -10,0 q-3,3 -7,1"/>
+      </g>
+      <!-- Archaea -->
+      <g transform="translate(119,108)" stroke="#E69F00">
+        <path d="M28,8 L46,18 L46,38 L28,48 L10,38 L10,18 Z"/>
+        <circle cx="28" cy="28" r="7"/>
+      </g>
+      <!-- Fungi -->
+      <g transform="translate(203,108)" stroke="#009E73">
+        <path d="M10,28 a18,13 0 0 1 36,0"/>
+        <path d="M10,28 H46"/>
+        <path d="M22,28 V44 q6,3 12,0 V28"/>
+      </g>
+      <!-- Plantae -->
+      <g transform="translate(287,108)" stroke="#56B4E9">
+        <path d="M28,48 V24"/>
+        <path d="M28,30 C16,28 11,17 13,12 C24,12 30,19 28,30 Z"/>
+        <path d="M28,34 C40,31 45,21 43,15 C33,16 27,24 28,34 Z"/>
+      </g>
+      <!-- Animalia -->
+      <g transform="translate(371,108)" stroke="#D55E00">
+        <ellipse cx="30" cy="28" rx="15" ry="9"/>
+        <circle cx="13" cy="28" r="5"/>
+        <path d="M9,25 L2,19"/><path d="M9,31 L2,37"/>
+        <path d="M24,37 L22,46"/><path d="M31,37 L31,47"/><path d="M38,37 L41,46"/>
+        <path d="M45,28 L52,24"/><path d="M45,29 L52,33"/>
+      </g>
+      <!-- Protozoa -->
+      <g transform="translate(455,108)" stroke="#CC79A7">
+        <path d="M27,7 C36,5 40,14 36,19 C45,17 50,26 42,31 C46,40 35,43 30,37 C23,46 13,39 17,31 C8,31 8,21 17,21 C14,11 19,9 27,7 Z"/>
+        <circle cx="28" cy="25" r="5"/>
+      </g>
+    </g>
+    <g class="tiny" text-anchor="middle">
+      <text x="63" y="186">Bacteria</text>
+      <text x="147" y="186">Archaea</text>
+      <text x="231" y="186">Fungi</text>
+      <text x="315" y="186">Plantae</text>
+      <text x="399" y="186">Animalia</text>
+      <text x="483" y="186">Protozoa</text>
+    </g>
+
+    <line x1="24" y1="214" x2="502" y2="214" stroke="#edeff1" stroke-width="1.4"/>
+    <text class="cap" x="24" y="252"><tspan class="num">112</tspan> organisms&#8194;·&#8194;<tspan class="num">6</tspan> kingdoms&#8194;·&#8194;<tspan class="num">27</tspan> phyla</text>
+    <text class="sm" x="24" y="282">170 biological samples</text>
+    <text class="sm" x="24" y="332">Untargeted LC&#8211;MS/MS</text>
+    <text class="sm" x="24" y="360">both polarities (ESI&#8201;+&#8201;/&#8201;&#8722;)</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!--  b — Phylum-enriched biomarker atlas                         -->
+  <!-- ============================================================ -->
+  <g transform="translate(637,86)">
+    <rect class="box" width="526" height="390" rx="3"/>
+    <text class="lett" x="16" y="44">b</text>
+    <text class="ti" x="58" y="38">Phylum-enriched</text>
+    <text class="ti" x="58" y="66">biomarker atlas</text>
+
+    <!-- overlapping sets: enriched, not exclusive -->
+    <g transform="translate(263,168)">
+      <circle cx="-34" cy="-6" r="52" fill="#0072B2" opacity="0.26"/>
+      <circle cx="34"  cy="-6" r="52" fill="#009E73" opacity="0.26"/>
+      <circle cx="0"   cy="40" r="52" fill="#E69F00" opacity="0.26"/>
+      <circle cx="0" cy="8" r="14" fill="#ffffff" opacity="0.55"/>
+    </g>
+
+    <line x1="24" y1="262" x2="502" y2="262" stroke="#edeff1" stroke-width="1.4"/>
+    <text class="cap" x="24" y="300">cross-batch IndVal</text>
+    <text class="cap" x="24" y="328">+ composite scoring</text>
+    <text class="sm it" x="24" y="362">enriched &#8212; not taxon-exclusive</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!--  c — Lipidomes recapitulate phylogeny                        -->
+  <!-- ============================================================ -->
+  <g transform="translate(1234,86)">
+    <rect class="box" width="526" height="390" rx="3"/>
+    <text class="lett" x="16" y="44">c</text>
+    <text class="ti" x="58" y="38">Lipidomes recover</text>
+    <text class="ti" x="58" y="66">the tree of life</text>
+
+    <!-- dendrogram, kingdom-tinted tips -->
+    <g transform="translate(70,108)">
+      <g stroke="#1a1a1a" stroke-width="1.7" fill="none">
+        <path d="M55,8 H330"/><path d="M150,32 H330"/><path d="M150,8 V32"/><path d="M150,20 H92"/>
+        <path d="M185,56 H330"/><path d="M185,80 H330"/><path d="M185,56 V80"/><path d="M185,68 H135"/>
+        <path d="M92,20 V68"/><path d="M92,44 H55"/>
+        <path d="M220,104 H330"/><path d="M220,128 H330"/><path d="M220,104 V128"/><path d="M220,116 H55"/>
+        <path d="M55,44 V116"/><path d="M55,80 H28"/>
+      </g>
+      <g>
+        <circle cx="330" cy="8"   r="5" fill="#E69F00"/><circle cx="330" cy="32"  r="5" fill="#0072B2"/>
+        <circle cx="330" cy="56"  r="5" fill="#009E73"/><circle cx="330" cy="80"  r="5" fill="#56B4E9"/>
+        <circle cx="330" cy="104" r="5" fill="#D55E00"/><circle cx="330" cy="128" r="5" fill="#CC79A7"/>
+      </g>
+    </g>
+
+    <line x1="24" y1="262" x2="502" y2="262" stroke="#edeff1" stroke-width="1.4"/>
+    <text class="cap" x="24" y="300">UPGMA · Bray&#8211;Curtis</text>
+    <text class="cap" x="24" y="328">cross-batch features</text>
+    <text class="sm it" x="24" y="362">chemotaxonomy &#8776; phylogeny</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!--  d — Distributed fingerprints (SIMPER)                       -->
+  <!-- ============================================================ -->
+  <g transform="translate(1234,600)">
+    <rect class="box" width="526" height="390" rx="3"/>
+    <text class="lett" x="16" y="44">d</text>
+    <text class="ti" x="58" y="38">Distributed</text>
+    <text class="ti" x="58" y="66">fingerprints (SIMPER)</text>
+
+    <!-- ranked barcode -->
+    <g transform="translate(40,118)">
+      <rect x="0"   y="14" width="7" height="62" fill="#0072B2"/><rect x="18" y="28" width="7" height="48" fill="#c9ced3"/>
+      <rect x="36"  y="6"  width="7" height="70" fill="#009E73"/><rect x="54" y="34" width="7" height="42" fill="#c9ced3"/>
+      <rect x="72"  y="20" width="7" height="56" fill="#56B4E9"/><rect x="90" y="40" width="7" height="36" fill="#c9ced3"/>
+      <rect x="108" y="10" width="7" height="66" fill="#E69F00"/><rect x="126" y="30" width="7" height="46" fill="#c9ced3"/>
+      <rect x="144" y="24" width="7" height="52" fill="#D55E00"/><rect x="162" y="44" width="7" height="32" fill="#c9ced3"/>
+      <rect x="180" y="16" width="7" height="60" fill="#CC79A7"/><rect x="198" y="36" width="7" height="40" fill="#c9ced3"/>
+      <rect x="216" y="46" width="7" height="30" fill="#c9ced3"/><rect x="234" y="40" width="7" height="36" fill="#c9ced3"/>
+      <rect x="252" y="50" width="7" height="26" fill="#c9ced3"/><rect x="270" y="48" width="7" height="28" fill="#c9ced3"/>
+      <rect x="288" y="54" width="7" height="22" fill="#c9ced3"/><rect x="306" y="52" width="7" height="24" fill="#c9ced3"/>
+      <rect x="324" y="58" width="7" height="18" fill="#c9ced3"/><rect x="342" y="56" width="7" height="20" fill="#c9ced3"/>
+    </g>
+
+    <line x1="24" y1="262" x2="502" y2="262" stroke="#edeff1" stroke-width="1.4"/>
+    <text class="cap" x="24" y="300">SIMPER extracts the features</text>
+    <text class="cap" x="24" y="328">that separate each phylum</text>
+    <text class="sm it" x="24" y="362">signal is distributed, not single markers</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!--  e — Fingerprint matching & correction                       -->
+  <!-- ============================================================ -->
+  <g transform="translate(637,600)">
+    <rect class="box" width="526" height="390" rx="3"/>
+    <text class="lett" x="16" y="44">e</text>
+    <text class="ti" x="58" y="38">Fingerprint matching</text>
+    <text class="ti" x="58" y="66">&amp; correction</text>
+
+    <!-- partial match: atlas set ∩ soil set -->
+    <g transform="translate(263,150)">
+      <circle cx="-30" cy="0" r="44" fill="none" stroke="#5b626a" stroke-width="1.8"/>
+      <circle cx="30"  cy="0" r="44" fill="#0072B2" opacity="0.22" stroke="#0072B2" stroke-width="1.8"/>
+      <text class="tiny" x="-52" y="-54" text-anchor="middle">atlas</text>
+      <text class="tiny" x="54" y="-54" text-anchor="middle">soil</text>
+    </g>
+    <!-- four correction steps -->
+    <g transform="translate(60,210)" class="tiny" fill="#5b626a">
+      <g fill="#1a1a1a"><circle cx="0" cy="0" r="9"/><circle cx="110" cy="0" r="9"/><circle cx="220" cy="0" r="9"/><circle cx="330" cy="0" r="9"/></g>
+      <g fill="#fff" font-size="13" text-anchor="middle">
+        <text x="0" y="4">1</text><text x="110" y="4">2</text><text x="220" y="4">3</text><text x="330" y="4">4</text>
+      </g>
+    </g>
+
+    <line x1="24" y1="262" x2="502" y2="262" stroke="#edeff1" stroke-width="1.4"/>
+    <text class="cap" x="24" y="300">partial fingerprint matching</text>
+    <text class="cap" x="24" y="328">+ 4-step quantification correction</text>
+    <text class="sm it" x="24" y="362">fold-change-weighted Bray&#8211;Curtis</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!--  f — Six-kingdom community decomposition                     -->
+  <!-- ============================================================ -->
+  <g transform="translate(40,600)">
+    <rect class="box" width="526" height="390" rx="3"/>
+    <text class="lett" x="16" y="44">f</text>
+    <text class="ti" x="58" y="38">Six-kingdom community</text>
+    <text class="ti" x="58" y="66">decomposition</text>
+
+    <!-- stacked bar -->
+    <g transform="translate(24,140)">
+      <rect x="0"     y="0" width="170" height="40" fill="#0072B2"/>
+      <rect x="170"   y="0" width="141" height="40" fill="#009E73"/>
+      <rect x="311"   y="0" width="90"  height="40" fill="#56B4E9"/>
+      <rect x="401"   y="0" width="43"  height="40" fill="#E69F00"/>
+      <rect x="444"   y="0" width="14"  height="40" fill="#D55E00"/>
+      <rect x="458"   y="0" width="17"  height="40" fill="#CC79A7"/>
+    </g>
+    <!-- climate treatment chips -->
+    <g transform="translate(24,210)" class="tiny" fill="#5b626a">
+      <text x="0" y="0">ambient · drought · future climate · future + drought</text>
+    </g>
+
+    <line x1="24" y1="262" x2="502" y2="262" stroke="#edeff1" stroke-width="1.4"/>
+    <text class="cap" x="24" y="300">ClimGrass climate-manipulation</text>
+    <text class="cap" x="24" y="328">grassland soils</text>
+    <text class="sm it" x="24" y="362">one extract per plot &#8594; six kingdoms</text>
+  </g>
+
+</svg>

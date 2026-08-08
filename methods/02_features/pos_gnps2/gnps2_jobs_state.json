@@ -1,0 +1,47 @@
+{
+  "jobs": {
+    "batch_01_OE11-3-POS": {
+      "task_id": "57a91e57a53f4ab7ac5ccd69fbab2c4e",
+      "job_name": "SOILMASS_POS_FBMN_batch01_OE11-3-POS",
+      "submitted": "2026-02-24T06:45:43.272770",
+      "status": "SUBMITTED",
+      "source": "manual"
+    },
+    "batch_02_OE21-4-POS": {
+      "task_id": "8e0f0e314b814193b42bbcca4af86982",
+      "job_name": "SOILMASS_POS_FBMN_batch02_OE21-4-POS",
+      "submitted": "2026-02-24T06:45:43.914542",
+      "status": "SUBMITTED",
+      "source": "manual"
+    },
+    "batch_03_OE23-POS": {
+      "task_id": "bb4fd387ab584c32bae96e74a00b0b08",
+      "job_name": "SOILMASS_POS_FBMN_batch03_OE23-POS",
+      "submitted": "2026-02-24T06:45:44.605967",
+      "status": "SUBMITTED",
+      "source": "manual"
+    },
+    "batch_04_OE26-1POS": {
+      "task_id": "26e41456c73f457cbfd6d471b207f37a",
+      "job_name": "SOILMASS_POS_FBMN_batch04_OE26-1POS",
+      "submitted": "2026-02-24T06:45:45.287568",
+      "status": "SUBMITTED",
+      "source": "manual"
+    },
+    "batch_05_OE25-1-ALL": {
+      "task_id": "5f9c17db47c94bcda93ea3cd12ac1b64",
+      "job_name": "SOILMASS_POS_FBMN_batch05_OE25-1-ALL",
+      "submitted": "2026-02-24T06:45:55.030185",
+      "status": "SUBMITTED",
+      "source": "manual"
+    },
+    "batch_06_ALL-25-2": {
+      "task_id": "9f8b16574b08468f88acf4eca84d2805",
+      "job_name": "SOILMASS_POS_FBMN_batch06_ALL-25-2",
+      "submitted": "2026-02-24T06:45:55.708740",
+      "status": "SUBMITTED",
+      "source": "manual"
+    }
+  },
+  "last_updated": "2026-02-24T06:45:55.708747"
+}

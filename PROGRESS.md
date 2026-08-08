@@ -14,4 +14,4 @@ Details inside each folder's README.
 | 07 Decomposition | Source decomposition framework + negative control | ☐ to review | ☐ |
 | 08 ClimGrass | Applies fingerprints to field soil; quantification correction (IS/RIE) | 🚧 in progress — spectral matcher being reworked | ☐ |
 | Figures | Built from finished steps above | ☐ not started | ☐ |
-| Figure 1 | Being updated by hand (Rahul) | ⏸ | ☐ |
+| Figure 1 | Being updated by hand (Rahul); editable SVG sources recovered 2026-08-07 (2 versions in `figures/figure1/`) | ⏸ | 🟡 sources only |

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wizard>
+    <wiz_part part="DATA_IMPORT" preset="Data">
+        <parameter name="Metadata file" selected="false">
+            <current_file>/lisc/home/user/samrat/D:\OneDrive - mzio GmbH\mzio\Example data\Thermo\20 years mzmine\metadata_PA.tsv</current_file>
+        </parameter>
+        <parameter name="File names">
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/MQ1POS2.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I7POS_20240925044806.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS3.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS2.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS3.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu19POS_20240924175256.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS4.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/N1POS_20240924192632.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SBLKPOS6_20240925041654.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu16POS_20240925021206.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu10POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P46POS_20240925031430.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu01POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu07POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/MQ1POS5.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I12POS_20240924220232.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS5.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I9POS_20240924141432.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I12POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu06POS_20240924120944.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS5_20240925000720.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS4_20240924124056.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS1.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS2.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/MQ1POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu08POS_20240924113832.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS6.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS1.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS6_20240924195744.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I10POS_20240924154808.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu04POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I11POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P56POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu03POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS11.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P52POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu17POS_20240924213120.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/N3POS_20240924185520.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SRMPOS1_20240924093344.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I10POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I7POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P58POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P42POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P58-2POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu14POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P52POS_20240924210008.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P34POS_20240924100456.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9EBLKPOS2.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I5POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu06POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P49POS_20240924103608.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS10.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P47POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SRMPOS3.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu17POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu02POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS9.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/EQ104POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P54POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS8.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu15POS_20240924230456.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SRMPOS2.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu20POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu05POS_20240924134320.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I6POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SBLKPOS9.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P58-2POS_20240924223344.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/EQ102POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu15POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu08POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS4.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS5.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu13POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SBLKPOS8.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu16POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/N3POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P58POS_20240924151656.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS5_20240924161920.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P46POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P56POS_20240924144544.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu12POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu11POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS3_20240924090216.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I8POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SBLKPOS6.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS8_20240925034542.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P37POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS2_20240924131208.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/MQ1POS3.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/N2POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/N2POS_20240925051918.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SRMPOS2_20240925003832.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9EBLKPOS1.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SRMPOS1.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I5POS_20240925024318.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS3_20240924165032.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu05POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu20POS_20240925014054.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9SBLKPOS7.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu18POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I9POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/N1POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS7.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu03POS_20240924172144.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu07POS_20240924182408.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu04-2POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu04POS_20240924110720.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P49POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P34POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/I8POS_20240925010944.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/P55POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/Lu19POS.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/E9POOLPOS7_20240924233608.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/MQ1POS4.raw</file>
+            <file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/SBLKPOS4_20240924202856.raw</file>
+        </parameter>
+    </wiz_part>
+    <wiz_part part="ION_INTERFACE" preset="UHPLC">
+        <parameter name="Smoothing">true</parameter>
+        <parameter name="Stable ionization across samples">true</parameter>
+        <parameter name="Crop retention time">
+            <min>0.3</min>
+            <max>30.0</max>
+        </parameter>
+        <parameter name="Max peaks in chromatogram">15</parameter>
+        <parameter name="Minimum consecutive scans">6</parameter>
+        <parameter name="Approximate feature FWHM" unit="MINUTES">0.03</parameter>
+        <parameter name="RT tolerance (intra-sample)" unit="MINUTES">0.04</parameter>
+        <parameter name="RT tolerance (sample-to-sample)" unit="MINUTES">0.1</parameter>
+    </wiz_part>
+    <wiz_part part="IMS" preset="NO_IMS">
+        <parameter name="IMS active">false</parameter>
+        <parameter name="Smoothing">true</parameter>
+        <parameter name="IMS type">NONE</parameter>
+        <parameter name="Minimum consecutive scans">5</parameter>
+        <parameter name="Approximate feature FWHM">0.01</parameter>
+    </wiz_part>
+    <wiz_part part="MS" preset="Orbitrap">
+        <parameter name="Ion mode">Positive</parameter>
+        <parameter choices="ABSOLUTE_NOISE_LEVEL,FACTOR_OF_LOWEST_SIGNAL" ms1_level="5.0" msn_level="2.5" name="Noise threshold" selected_value="FACTOR_OF_LOWEST_SIGNAL"/>
+        <parameter name="Minimum feature height">500000.0</parameter>
+        <parameter name="m/z tolerance (scan-to-scan)">
+            <absolutetolerance>0.002</absolutetolerance>
+            <ppmtolerance>10.0</ppmtolerance>
+        </parameter>
+        <parameter name="m/z tolerance (intra-sample)">
+            <absolutetolerance>0.0015</absolutetolerance>
+            <ppmtolerance>3.0</ppmtolerance>
+        </parameter>
+        <parameter name="m/z tolerance (sample-to-sample)">
+            <absolutetolerance>0.0015</absolutetolerance>
+            <ppmtolerance>5.0</ppmtolerance>
+        </parameter>
+    </wiz_part>
+    <wiz_part part="FILTER" preset="Filters">
+        <parameter name="Original feature list">REMOVE</parameter>
+        <parameter name="Minimum aligned samples">
+            <abs>3</abs>
+            <rel>0.0</rel>
+        </parameter>
+        <parameter name="Minimum aligned samples (in any group)" selected="true">
+            <parameter name="Minimum samples">
+                <abs>3</abs>
+                <rel>0.0</rel>
+            </parameter>
+            <parameter name="Metadata grouping">condition</parameter>
+        </parameter>
+        <parameter name="Pooled QC area RSD ≤ 20%">false</parameter>
+        <parameter name="Only keep features with 13C">false</parameter>
+        <parameter name="Apply strict shape filtering">false</parameter>
+    </wiz_part>
+    <wiz_part part="ANNOTATION" preset="Annotation">
+        <parameter name="Local compound database search" selected="false">
+            <parameter name="Database file"/>
+            <parameter name="Use precursor m/z">as calculated from neutral mass (or formula/smiles) + ions</parameter>
+            <parameter name="Filename column (for library generation)" selected="false">filename</parameter>
+            <parameter name="Columns">
+                <importtype column="neutral_mass" datatype="io.github.mzmine.datamodel.features.types.numbers.NeutralMassType" selected="true"/>
+                <importtype column="mz" datatype="io.github.mzmine.datamodel.features.types.numbers.PrecursorMZType" selected="true"/>
+                <importtype column="rt" datatype="io.github.mzmine.datamodel.features.types.numbers.RTType" selected="true"/>
+                <importtype column="ri_record" datatype="io.github.mzmine.datamodel.features.types.RIRecordType" selected="false"/>
+                <importtype column="formula" datatype="io.github.mzmine.datamodel.features.types.annotations.formula.FormulaType" selected="true"/>
+                <importtype column="smiles" datatype="io.github.mzmine.datamodel.features.types.annotations.SmilesStructureType" selected="true"/>
+                <importtype column="inchi" datatype="io.github.mzmine.datamodel.features.types.annotations.InChIStructureType" selected="false"/>
+                <importtype column="inchi_key" datatype="io.github.mzmine.datamodel.features.types.annotations.InChIKeyStructureType" selected="false"/>
+                <importtype column="name" datatype="io.github.mzmine.datamodel.features.types.annotations.CompoundNameType" selected="true"/>
+                <importtype column="CCS" datatype="io.github.mzmine.datamodel.features.types.numbers.CCSType" selected="false"/>
+                <importtype column="mobility" datatype="io.github.mzmine.datamodel.features.types.numbers.MobilityType" selected="false"/>
+                <importtype column="comment" datatype="io.github.mzmine.datamodel.features.types.annotations.CommentType" selected="true"/>
+                <importtype column="adduct" datatype="io.github.mzmine.datamodel.features.types.annotations.iin.IonTypeType" selected="false"/>
+                <importtype column="PubChemCID" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.PubChemIdType" selected="false"/>
+                <importtype column="molecular_class" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.MolecularClassType" selected="false"/>
+                <importtype column="classyfire_superclass" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.ClassyFireSuperclassType" selected="false"/>
+                <importtype column="classyfire_class" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.ClassyFireClassType" selected="false"/>
+                <importtype column="classyfire_subclass" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.ClassyFireSubclassType" selected="false"/>
+                <importtype column="classyfire_direct_parent" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.ClassyFireParentType" selected="false"/>
+                <importtype column="npclassifier_superclass" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.NPClassifierSuperclassType" selected="false"/>
+                <importtype column="npclassifier_class" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.NPClassifierClassType" selected="false"/>
+                <importtype column="npclassifier_pathway" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.NPClassifierPathwayType" selected="false"/>
+                <importtype column="q3_quantifier_mz" datatype="io.github.mzmine.datamodel.features.types.numbers.Q3QuantMzType" selected="false"/>
+                <importtype column="iupac_name" datatype="io.github.mzmine.datamodel.features.types.identifiers.IupacNameType" selected="false"/>
+                <importtype column="cas" datatype="io.github.mzmine.datamodel.features.types.identifiers.CASType" selected="false"/>
+                <importtype column="internal_id" datatype="io.github.mzmine.datamodel.features.types.identifiers.InternalIdType" selected="false"/>
+            </parameter>
+        </parameter>
+        <parameter name="Annotate lipids">true</parameter>
+        <parameter name="Formula prediction (for m/z &lt; X)" selected="false">600.0</parameter>
+        <parameter name="Spectral library files"/>
+    </wiz_part>
+    <wiz_part part="WORKFLOW" preset="DDA">
+        <parameter name="Apply spectral networking (FBMN/IIMN)">true</parameter>
+        <parameter name="Export path" selected="true">
+            <current_file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/OE23</current_file>
+            <last_file>/lisc/home/user/samrat/snakeautomatic/data/raw/OE23-POS/OE23</last_file>
+            <last_file>/lisc/home/user/samrat/D:\workshop\mzmine-microbial-results</last_file>
+        </parameter>
+        <parameter name="Export for molecular networking (e.g., GNPS, FBMN, IIMN, MetGem)">true</parameter>
+        <parameter name="Export for SIRIUS">true</parameter>
+        <parameter name="Export annotation graphics">false</parameter>
+    </wiz_part>
+</wizard>

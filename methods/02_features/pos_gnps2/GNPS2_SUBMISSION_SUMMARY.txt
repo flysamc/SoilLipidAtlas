@@ -1,0 +1,254 @@
+================================================================================
+GNPS2 FBMN SUBMISSION PREPARATION SUMMARY
+Generated: 2026-02-23
+================================================================================
+
+PROJECT OVERVIEW
+================================================================================
+This document summarizes the preparation of 6 separate GNPS2 Feature-Based 
+Molecular Networking (FBMN) submission folders, each containing:
+  1. Quantification CSV (from MZmine)
+  2. Spectrum MGF file
+  3. GNPS2 metadata TSV with taxonomic and sample type annotations
+  4. README with dataset statistics
+
+BATCH SUBMISSION STRUCTURE
+================================================================================
+All batch folders are located in:
+  /sessions/lucid-zealous-fermi/mnt/soilmass-viewer/analysis/FBMN_all_batches_POS/
+
+Folder structure:
+  batch_01_OE11-3-POS/
+  ├── OE11-3-POS_iimn_gnps_quant.csv (7.3 MB)
+  ├── OE11-3-POS_iimn_gnps.mgf (78 MB)
+  ├── gnps2_metadata.tsv
+  └── README.txt
+
+  [Similar structure for batch_02 through batch_06]
+
+
+METADATA INTEGRATION STRATEGY
+================================================================================
+Samples were matched to taxonomic metadata from:
+  GNPS_Master_Sample_Mapping_Positive.xlsx (262 entries)
+
+Matching strategies (in order of priority):
+  1. Strip ".raw Peak area" suffix from column names (direct match)
+  2. Case-insensitive exact match
+  3. Strip timestamp suffixes (e.g., _20230211043148)
+  4. Extract short code by removing batch prefixes (OE11-3-E4-, OE21-4-, etc.)
+  5. Match short codes with metadata having batch prefixes stripped
+  6. For OE21-2 samples, match against OE21-4 metadata (same organisms)
+  7. Check if sample appears in GNPS Filename column
+
+Sample Classification:
+  - BIOLOGICAL: Matched to metadata with Kingdom assigned
+  - QC: Sample name contains POOL, QC, SRM, ISTD, COND, ESTD, BLANK, SBLK, EQ
+  - UNKNOWN: All other samples (unable to match to metadata)
+
+
+BATCH SUMMARY
+================================================================================
+
+BATCH 1: batch_01_OE11-3-POS
+  CSV File: OE11-3-POS_iimn_gnps_quant.csv
+  MGF File: OE11-3-POS_iimn_gnps.mgf
+  Features: 40,936
+  Spectra: 37,887
+  Total Samples: 32
+    - Biological: 15
+    - QC: 13
+    - Unmapped: 4
+  Kingdom Distribution:
+    - Plantae: 5 (Ginkgo, Petroselinum, Zea, Brassica, Ocimum)
+    - Fungi: 4 (Rhizopus, Aspergillus, Saccharomyces, Penicillium)
+    - Bacteria: 3 (Rhodococcus, Arthrobacter, Bacillus)
+    - Archaea: 3 (Haloferax, Sulfolobus, Pyrobaculum)
+
+BATCH 2: batch_02_OE21-4-POS
+  CSV File: OE21-4-POS_ALL_iimn_gnps_quant.csv
+  MGF File: OE21-4-POS_ALL_iimn_gnps.mgf
+  Features: 84,347
+  Spectra: 79,564
+  Total Samples: 68
+    - Biological: 42
+    - QC: 17
+    - Unmapped: 9
+  Kingdom Distribution:
+    - Fungi: 17
+    - Bacteria: 10
+    - Archaea: 8
+    - Plantae: 7
+
+BATCH 3: batch_03_OE23-POS
+  CSV File: OE23-POS_iimn_gnps_quant_blanksub.csv
+  MGF File: OE23-POS_iimn_gnps_blanksub.mgf
+  Features: 89,731
+  Spectra: 82,835
+  Total Samples: 29
+    - Biological: 27
+    - QC: 0
+    - Unmapped: 2
+  Kingdom Distribution:
+    - Animalia: 17 (root nodule organisms, various insects)
+    - Plantae: 7 (plant tissues)
+    - Mixed: 2 (mixed/unclear classification)
+    - Bacteria: 1
+
+BATCH 4: batch_04_OE26-1POS
+  CSV File: OE26-1POS_iimn_gnps_quant.csv
+  MGF File: OE26-1POS_iimn_gnps.mgf
+  Features: 43,206
+  Spectra: 41,103
+  Total Samples: 49
+    - Biological: 45
+    - QC: 1
+    - Unmapped: 3
+  Kingdom Distribution:
+    - Fungi: 26
+    - Protozoa: 7 (Acanthamoeba, Cafeteria)
+    - Bacteria: 4
+    - Archaea: 8
+
+BATCH 5: batch_05_OE25-1-ALL
+  CSV File: OE25-1-ALL-POS_iimn_gnps_quant.csv
+  MGF File: OE25-1-ALL-POS_iimn_gnps.mgf
+  Features: 20,424
+  Spectra: 18,974
+  Total Samples: 19
+    - Biological: 18
+    - QC: 0
+    - Unmapped: 1
+  Kingdom Distribution:
+    - Protozoa: 12 (Acanthamoeba, Naegleria, Achlya)
+    - Bacteria: 4
+    - Mixed: 2
+
+BATCH 6: batch_06_ALL-25-2
+  CSV File: ALL-25-2-POS_iimn_gnps_quant.csv
+  MGF File: ALL-25-2-POS_iimn_gnps.mgf
+  Features: 60,234
+  Spectra: 56,601
+  Total Samples: 72
+    - Biological: 41
+    - QC: 17
+    - Unmapped: 14
+  Kingdom Distribution:
+    - Bacteria: 28
+    - Mixed: 8
+    - Viruses: 2
+    - Protozoa: 1
+    - Plantae: 1
+    - Fungi: 1
+
+
+METADATA TSV FORMAT
+================================================================================
+Each gnps2_metadata.tsv file contains the following columns:
+
+  filename                    - Original sample column name from CSV
+  ATTRIBUTE_Kingdom           - Kingdom (Bacteria, Archaea, Fungi, Animalia, 
+                                Plantae, Protozoa, Viruses, Mixed, QC, or empty)
+  ATTRIBUTE_Phylum            - Phylum/division level classification
+  ATTRIBUTE_Class             - Class level classification
+  ATTRIBUTE_Order             - Order level classification
+  ATTRIBUTE_Family            - Family level classification
+  ATTRIBUTE_Genus             - Genus level classification
+  ATTRIBUTE_Species           - Species and strain information
+  ATTRIBUTE_SampleType        - Original sample type from master metadata
+  ATTRIBUTE_KingdomGroup      - Simplified kingdom group for GNPS2
+                                (Bacteria, Archaea, Fungi, Animalia, 
+                                 Plantae, Other, QC)
+
+Quality Control markers are labeled with Kingdom="QC" across all taxonomic 
+levels to maintain data integrity and distinguish them from biological samples.
+
+
+MAPPING STATISTICS ACROSS ALL BATCHES
+================================================================================
+Total Samples (all batches): 269
+  - Successfully mapped to metadata: 203 (75.5%)
+  - QC samples: 63 (23.4%)
+  - Unmapped samples: 47 (17.5%)
+
+Total Features across all batches: 378,878
+Total Spectra across all batches: 316,964
+
+Kingdom Distribution (all biological samples):
+  - Bacteria: 58
+  - Fungi: 64
+  - Protozoa: 20
+  - Archaea: 19
+  - Plantae: 22
+  - Animalia: 17
+  - Viruses: 2
+  - Mixed: 12
+
+
+SUBMISSION CHECKLIST
+================================================================================
+For each batch folder, verify:
+
+  [ ] CSV file is present and readable
+  [ ] MGF file is present and readable  
+  [ ] gnps2_metadata.tsv is present with correct format (tab-separated)
+  [ ] README.txt contains accurate statistics
+  [ ] All sample filenames in metadata match CSV column names exactly
+  [ ] Biological samples have Kingdom assigned
+  [ ] QC samples are properly labeled with Kingdom="QC"
+  [ ] ATTRIBUTE_KingdomGroup is populated for all samples
+  [ ] No trailing spaces or special characters in filenames
+
+
+NEXT STEPS FOR GNPS2 SUBMISSION
+================================================================================
+1. Navigate to https://gnps2.org/
+2. Select "Feature-Based Molecular Networking (FBMN)"
+3. For each batch:
+   a. Upload CSV file (quantification matrix)
+   b. Upload MGF file (spectra)
+   c. Upload gnps2_metadata.tsv (sample metadata)
+   d. Submit with appropriate workflow parameters
+4. Monitor job progress and review output networks
+5. Generate reports and figures for biomarker analysis
+
+
+FILES GENERATED
+================================================================================
+Each batch folder now contains:
+  - gnps2_metadata.tsv (tab-separated metadata for GNPS2)
+  - README.txt (dataset statistics and kingdom distribution)
+  - Original FBMN files (CSV and MGF) - COPIED from source
+
+Python script used to generate metadata:
+  /tmp/generate_gnps2_metadata.py
+
+Master metadata source:
+  /sessions/lucid-zealous-fermi/mnt/soilmass-viewer/analysis/analysis-13/
+  repository_bundle/01_input_data/GNPS_Master_Sample_Mapping_Positive.xlsx
+
+
+NOTES & CONSIDERATIONS
+================================================================================
+1. OE21-2 batch samples were matched against OE21-4 metadata entries since
+   they represent the same organisms run in a different analytical batch.
+
+2. Some samples (particularly from batches 4 and 6) contain short codes
+   without batch prefixes, requiring extraction and matching against the
+   full metadata database.
+
+3. Samples labeled with "Mixed" kingdom represent samples with unclear or
+   multiple organism classifications in the metadata.
+
+4. Unmapped samples are classified as "Unknown" but may represent QC or
+   batch-specific identifiers not present in the master metadata file.
+
+5. The "Other" KingdomGroup includes Protozoa, Viruses, and Mixed organisms
+   that fall outside the standard 6 GNPS2 kingdom groups.
+
+6. Quality control samples are uniformly labeled as "QC" across all taxonomic
+   fields to ensure proper filtering and identification in GNPS2 analysis.
+
+================================================================================
+END OF SUMMARY
+================================================================================
