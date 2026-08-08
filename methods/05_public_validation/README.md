@@ -18,8 +18,18 @@ Searches every atlas biomarker against the world's public MS/MS data:
 ## Where it stands (2026-08-08)
 
 Paused 2026-08-06 when the GNPS2 backend died mid-run; resumed 2026-08-08
-after verified recovery. At resume: 3,281 POS + 3,726 NEG durable successes
-preserved, checkpoint integrity confirmed, ~6,090 queries remaining.
+after verified recovery.
+
+⚠ **NEG restarted from zero the same day.** The first NEG run completed its
+5,695/5,695 gate but every result file was empty: the wrapper sent
+`precursor_charge: -1`, and the FASST API expects the charge **magnitude** —
+negative values silently match nothing. Proven with known-positive features
+(12/17/20 historical matches: 0 with −1, exact historical reproduction with
++1). POS is unaffected (+1 either way). The wrapper is fixed (see the comment
+at its charge-parsing block), the void run is quarantined in P2R as the bug
+record, and the corrected NEG run (`fastmasst_async_neg_v2_20260808`) is in
+progress. Lesson recorded: verify result *content* after bulk runs — an
+all-empty set passes format checks.
 
 ## How it survives outages (the engineering)
 
