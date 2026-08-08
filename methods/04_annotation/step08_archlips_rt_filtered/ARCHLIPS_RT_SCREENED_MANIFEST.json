@@ -1,0 +1,69 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "purpose": "Step 8 ArchLips results screened against Step 5 retention-time consistency; ArchLips reference-compound counts.",
+  "generated_utc": "2026-08-05T11:25:28.306063+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\scripts\\step8_rt_filtered_summary.py",
+  "producer_sha256": "3c45f697b6d6257ffcfaf056d81e5f72080d80f5a589e97e802368250e105ce5",
+  "database_scope": "Counts refer to the external ArchLips spectral library (Zheng et al., 2026) ONLY. The project's own 124-entry custom archaeal reference database (Supplementary Method 3 Step 7) is a separate resource, its producer is unrecovered, and Step 7 has not been run for this release.",
+  "rt_screen": "Features flagged RT-uncertain in Step 5 by either grouping are marked rt_uncertain=True and excluded from the post-screen counts. Rows are retained, never deleted.",
+  "summary": [
+    {
+      "mode": "POS",
+      "features_validated_before_rt": 632,
+      "features_validated_after_rt": 546,
+      "features_rt_excluded": 86,
+      "gold_silver_before_rt": 406,
+      "gold_silver_after_rt": 368,
+      "tiers_before_rt": {
+        "Gold": 271,
+        "Bronze": 226,
+        "Silver": 135
+      },
+      "tiers_after_rt": {
+        "Gold": 248,
+        "Bronze": 178,
+        "Silver": 120
+      },
+      "tiers_rt_excluded": {
+        "Bronze": 48,
+        "Gold": 23,
+        "Silver": 15
+      },
+      "archlips_compounds_all_matches": 449,
+      "archlips_compounds_validated": 449,
+      "archlips_compounds_after_rt": 387
+    },
+    {
+      "mode": "NEG",
+      "features_validated_before_rt": 10,
+      "features_validated_after_rt": 10,
+      "features_rt_excluded": 0,
+      "gold_silver_before_rt": 0,
+      "gold_silver_after_rt": 0,
+      "tiers_before_rt": {
+        "Bronze": 10
+      },
+      "tiers_after_rt": {
+        "Bronze": 10
+      },
+      "tiers_rt_excluded": {},
+      "archlips_compounds_all_matches": 353,
+      "archlips_compounds_validated": 30,
+      "archlips_compounds_after_rt": 30
+    }
+  ],
+  "outputs": {
+    "archlips_neg_rt_screened.csv": {
+      "bytes": 324662,
+      "sha256": "56abdff64f72136271a03773a4ce75f3abd364e54b0275931f0f0de891e7e172"
+    },
+    "archlips_pos_rt_screened.csv": {
+      "bytes": 174180,
+      "sha256": "88e988351bd9385055a5ca2c84dd2c6713a94153f1a060be1e2cc2d7a38d0455"
+    },
+    "archlips_rt_screened_summary.csv": {
+      "bytes": 521,
+      "sha256": "beaa05191ee8ebd9db6e6d8c587d20d5446a38dcd0ee4095ceaf2a20c592b8e0"
+    }
+  }
+}

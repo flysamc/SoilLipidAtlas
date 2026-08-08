@@ -1,0 +1,95 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "step": "Supplementary Method 3, Step 4: molecular family propagation",
+  "generated_utc": "2026-08-05T11:13:11.170275+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\scripts\\step4_family_propagation_release.py",
+  "producer_sha256": "5603c4f05b2816de273729139f998783a477c73e9deb2c2a48b08dbdd6e87bcf",
+  "semantic_source": {
+    "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-16\\negative_mode\\04_biomarker_discovery\\08_network_propagation\\network_propagation_neg.py"
+  },
+  "parameters": {
+    "min_agreement": 0.5,
+    "min_annotated": 1,
+    "rounds": 2,
+    "singletons_excluded": true,
+    "upgrade_tier": "Bronze",
+    "upgrade_source": "Network_propagation"
+  },
+  "vocabulary_decision": {
+    "release_default": "normalised (annotation_superclass)",
+    "comparison": "verbatim (annotation_class_verbatim)",
+    "why": "The historical vocabulary was unnormalised, so string agreement at the 50% threshold suppressed genuine upgrades. Both runs are emitted so the difference is measured, not asserted."
+  },
+  "summary": [
+    {
+      "mode": "POS",
+      "strict_features": 11371,
+      "unidentified_before": 5080,
+      "features_in_families": 1441,
+      "families": 1081,
+      "normalised_upgrades": 155,
+      "verbatim_upgrades": 154,
+      "delta_from_normalisation": 1,
+      "detail": {
+        "normalised": {
+          "upgrades": 155,
+          "features_upgraded": 155,
+          "round1": 155,
+          "round2": 0
+        },
+        "verbatim": {
+          "upgrades": 154,
+          "features_upgraded": 154,
+          "round1": 154,
+          "round2": 0
+        }
+      }
+    },
+    {
+      "mode": "NEG",
+      "strict_features": 5697,
+      "unidentified_before": 3906,
+      "features_in_families": 1651,
+      "families": 1187,
+      "normalised_upgrades": 98,
+      "verbatim_upgrades": 98,
+      "delta_from_normalisation": 0,
+      "detail": {
+        "normalised": {
+          "upgrades": 98,
+          "features_upgraded": 98,
+          "round1": 98,
+          "round2": 0
+        },
+        "verbatim": {
+          "upgrades": 98,
+          "features_upgraded": 98,
+          "round1": 98,
+          "round2": 0
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "propagated_neg_normalised.csv": {
+      "bytes": 7433,
+      "sha256": "18a915f2495e3ed4ea1c0ac57e6661e112170523fe2ee976fddade6216df34c8"
+    },
+    "propagated_neg_verbatim.csv": {
+      "bytes": 6305,
+      "sha256": "eeb648d19f06b20cd39fea18176e4f290781725c8dd33af0597e4bb578f30b04"
+    },
+    "propagated_pos_normalised.csv": {
+      "bytes": 11747,
+      "sha256": "021a69fd5cfc62d21562fc9826b81dae9990ec3237d4a03bc4a96dc49bb7e454"
+    },
+    "propagated_pos_verbatim.csv": {
+      "bytes": 10158,
+      "sha256": "259c7cd5c43f6cf6daf800863937ade1b0205754ff940c5df07e6e305d5af229"
+    },
+    "step4_summary.csv": {
+      "bytes": 204,
+      "sha256": "9b5e1e4dd0f49466909a1a6cdb79b2eb25d15b21b767e4ac79c380e498890c86"
+    }
+  }
+}

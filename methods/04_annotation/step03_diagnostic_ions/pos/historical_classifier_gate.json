@@ -1,0 +1,23 @@
+{
+  "archived_rows": 2698,
+  "archived_non_unknown": 1767,
+  "missing_archived_spectra": 82,
+  "class_exact": 2698,
+  "subclass_exact": 2698,
+  "classified_confidence_exact": 1767,
+  "pass": true,
+  "inputs": {
+    "archived_output": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-17\\positive\\ms2_indval\\indval_ms2_classification.csv",
+      "sha256": "4c3ac93e85f3e11bc8f81438bcb8a1f28f3a7c64f4ff802008dd1280d3007907"
+    },
+    "consensus": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\03_alignment\\consensus_aligned_table.csv",
+      "sha256": "ef28300dfb6f075c52819ffe7c101c11ef322b6a59c2ba9d0ea020d33abc4f4c"
+    },
+    "historical_mgf": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\FBMN_all_batches_POS\\batch_03_OE23-POS\\OE23-POS_iimn_gnps_blanksub.mgf",
+      "sha256": "19693ee24da25b593c093c3ce95f3531a88890363b3276151cba98080c9244a2"
+    }
+  }
+}

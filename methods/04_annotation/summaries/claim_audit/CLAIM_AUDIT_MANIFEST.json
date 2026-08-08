@@ -1,0 +1,23 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "purpose": "AGENTS.md rerun order item 8: claim/denominator audit (annotation scope)",
+  "generated_utc": "2026-08-06T10:45:20.046011+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\scripts\\annotation_claim_audit.py",
+  "producer_sha256": "d2ff8cec556af793306193887518fbfc4248751749b223963ce85ca69e8145b2",
+  "claim_source": "submission_source/SLA-Supplementary-nature-comms.docx",
+  "status_counts": {
+    "CHANGED": 7,
+    "UNVERIFIABLE": 5,
+    "PENDING": 2,
+    "RUNNING": 2,
+    "DEAD_LABEL": 1
+  },
+  "total_claims": 17,
+  "note": "Release values are computed live from step outputs. Re-run this producer after any step completes to refresh the audit.",
+  "outputs": {
+    "annotation_claim_audit.csv": {
+      "bytes": 8296,
+      "sha256": "f52e2b3c72fbee35e17e003e7210182e24ff792612c66f92dbb8d312242b29c6"
+    }
+  }
+}

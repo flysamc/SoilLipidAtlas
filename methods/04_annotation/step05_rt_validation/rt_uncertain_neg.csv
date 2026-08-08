@@ -1,0 +1,35 @@
+feature_id,grouping,group_key,group_size,consensus_rt,group_median_rt,q1,q3,iqr,lower_fence,upper_fence,rt_deviation_min,z_score,severity,rt_status,phylum,kingdom,annotation_superclass,annotation_tier
+NEG_9713,molecular_family,OE23-NEG:866,10,11.8359,7.9175,6.3179,8.285,1.9671,3.3672,11.2357,3.9184,1.968,mild,RT_uncertain,Arthropoda,Animalia,,Unidentified
+NEG_8365,molecular_family,OE23-NEG:1136,4,5.2537,4.5896,4.5559,4.7652,0.2093,4.2419,5.0792,0.6641,2.183,moderate,RT_uncertain,Arthropoda,Animalia,,Unidentified
+NEG_39065,molecular_family,OE26-1-NEG:131,6,16.8414,15.3367,14.791,15.5992,0.8082,13.5786,16.8116,1.5047,1.073,mild,RT_uncertain,Heterolobosea,Protozoa,,Unidentified
+NEG_41516,molecular_family,OE26-1-NEG:131,6,12.2423,15.3367,14.791,15.5992,0.8082,13.5786,16.8116,-3.0943,-2.206,moderate,RT_uncertain,Heterolobosea,Protozoa,,Unidentified
+NEG_36973,molecular_family,OE23-NEG:3092,5,7.2965,9.513,9.3104,9.5786,0.2682,8.9082,9.9808,-2.2165,-0.603,mild,RT_uncertain,Mollusca,Animalia,,Unidentified
+NEG_79052,molecular_family,OE23-NEG:3092,5,17.8649,9.513,9.3104,9.5786,0.2682,8.9082,9.9808,8.3519,2.273,moderate,RT_uncertain,Arthropoda,Animalia,,Unidentified
+NEG_38243,molecular_family,OE26-1-NEG:358,6,2.7459,2.5583,2.5146,2.596,0.0814,2.3925,2.7181,0.1876,2.231,moderate,RT_uncertain,Heterolobosea,Protozoa,,Unidentified
+NEG_43853,molecular_family,OE25-1-NEG:129,4,19.493,17.45,17.3357,17.9911,0.6555,16.3525,18.9743,2.043,2.165,moderate,RT_uncertain,Evosea,Protozoa,Glycerophospholipids,Bronze
+NEG_40016,molecular_family,OE25-1-NEG:53,9,2.792,12.1599,11.6974,13.4668,1.7693,9.0434,16.1208,-9.3679,-2.1,moderate,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_104154,molecular_family,OE25-1-NEG:53,9,2.7915,12.1599,11.6974,13.4668,1.7693,9.0434,16.1208,-9.3684,-2.1,moderate,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_42894,molecular_family,OE25-1-NEG:10,8,2.1635,12.3988,9.5298,13.7428,4.213,3.2103,20.0623,-10.2352,-2.151,moderate,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_45499,molecular_family,OE25-1-NEG:10,8,3.0304,12.3988,9.5298,13.7428,4.213,3.2103,20.0623,-9.3684,-1.969,mild,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_70975,molecular_family,OE23-NEG:3699,4,3.5536,4.8947,4.5431,4.9341,0.3909,3.9567,5.5205,-1.3411,-2.252,moderate,RT_uncertain,Arthropoda,Animalia,,Unidentified
+NEG_90383,molecular_family,OE25-1-NEG:185,4,16.6657,13.5239,13.0252,14.4501,1.4249,10.8879,16.5873,3.1418,1.872,mild,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_87866,molecular_family,OE23-NEG:3110,4,10.2196,11.1433,10.8947,11.2869,0.3922,10.3064,11.8751,-0.9237,-1.791,mild,RT_uncertain,Mollusca,Animalia,,Unidentified
+NEG_112079,molecular_family,OE26-1-NEG:1522,6,13.6527,13.7546,13.7492,13.7609,0.0117,13.7316,13.7784,-0.1019,-2.598,moderate,RT_uncertain,Heterolobosea,Protozoa,,Unidentified
+NEG_113470,molecular_family,OE25-1-NEG:40,15,17.4615,16.4262,16.3856,16.6744,0.2888,15.9525,17.1075,1.0353,3.603,severe,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_113888,molecular_family,OE23-NEG:178,6,16.1597,16.3675,16.3644,16.3776,0.0132,16.3447,16.3974,-0.2077,-1.939,mild,RT_uncertain,Arthropoda,Animalia,,Unidentified
+NEG_115114,molecular_family,OE23-NEG:178,6,16.528,16.3675,16.3644,16.3776,0.0132,16.3447,16.3974,0.1606,1.499,mild,RT_uncertain,Arthropoda,Animalia,Glycerophospholipids,Bronze
+NEG_117307,molecular_family,OE25-1-NEG:152,5,14.8293,12.6167,12.2742,12.6195,0.3453,11.7564,13.1374,2.2126,2.29,moderate,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_118170,molecular_family,OE25-1-NEG:88,5,15.1073,15.1123,15.1121,15.1126,0.0004,15.1115,15.1132,-0.005,-0.111,mild,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_118745,molecular_family,OE25-1-NEG:88,5,15.2243,15.1123,15.1121,15.1126,0.0004,15.1115,15.1132,0.1119,2.47,moderate,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_119726,molecular_family,OE25-1-NEG:115,5,13.1567,12.7756,12.7329,12.7834,0.0505,12.6571,12.8592,0.3811,2.302,moderate,RT_uncertain,Evosea,Protozoa,,Unidentified
+NEG_37568,lipid_superclass,Sphingolipids,112,2.4966,14.7065,11.9089,17.7458,5.8369,3.1536,26.5011,-12.2099,-2.257,moderate,RT_uncertain,Heterolobosea,Protozoa,Sphingolipids,Bronze
+NEG_37775,lipid_superclass,Sphingolipids,112,2.5009,14.7065,11.9089,17.7458,5.8369,3.1536,26.5011,-12.2056,-2.256,moderate,RT_uncertain,Heterolobosea,Protozoa,Sphingolipids,Bronze
+NEG_2632,lipid_superclass,Sphingolipids,112,1.7793,14.7065,11.9089,17.7458,5.8369,3.1536,26.5011,-12.9272,-2.389,moderate,RT_uncertain,Streptophyta,Plantae,Sphingolipids,Bronze
+NEG_14752,lipid_superclass,Sphingolipids,112,2.3168,14.7065,11.9089,17.7458,5.8369,3.1536,26.5011,-12.3897,-2.29,moderate,RT_uncertain,Streptophyta,Plantae,Sphingolipids,Bronze
+NEG_12230,lipid_superclass,Sphingolipids,112,2.6346,14.7065,11.9089,17.7458,5.8369,3.1536,26.5011,-12.0718,-2.231,moderate,RT_uncertain,Basidiomycota,Fungi,Sphingolipids,Bronze
+NEG_1971,lipid_superclass,Sphingolipids,112,2.0871,14.7065,11.9089,17.7458,5.8369,3.1536,26.5011,-12.6194,-2.332,moderate,RT_uncertain,Streptophyta,Plantae,Sphingolipids,Bronze
+NEG_15355,lipid_superclass,Sphingolipids,112,3.0471,14.7065,11.9089,17.7458,5.8369,3.1536,26.5011,-11.6594,-2.155,moderate,RT_uncertain,Basidiomycota,Fungi,Sphingolipids,Bronze
+NEG_16855,lipid_superclass,Sphingolipids,112,1.6919,14.7065,11.9089,17.7458,5.8369,3.1536,26.5011,-13.0145,-2.405,moderate,RT_uncertain,Streptophyta,Plantae,Sphingolipids,Bronze
+NEG_25754,lipid_superclass,Fatty acyls,144,16.8604,4.3771,2.7248,7.9777,5.2529,-5.1544,15.857,12.4833,2.912,moderate,RT_uncertain,Arthropoda,Animalia,Fatty acyls,Gold
+NEG_1486,lipid_superclass,Fatty acyls,144,16.0294,4.3771,2.7248,7.9777,5.2529,-5.1544,15.857,11.6523,2.718,moderate,RT_uncertain,Evosea,Protozoa,Fatty acyls,Bronze
+NEG_7584,lipid_superclass,Archaeal lipids,11,2.5509,18.6324,17.0708,19.1338,2.0629,13.9764,22.2281,-16.0815,-3.423,severe,RT_uncertain,Arthropoda,Animalia,Archaeal lipids,Bronze

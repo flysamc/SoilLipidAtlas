@@ -1,0 +1,144 @@
+mode,phylum,kingdom,annotation_superclass,n_features,phylum_annotated_total,fraction
+NEG,Actinomycetota,Bacteria,Glycerolipids,2,15,0.13333333333333333
+NEG,Actinomycetota,Bacteria,Glycerophospholipids,13,15,0.8666666666666667
+NEG,Arthropoda,Animalia,Archaeal lipids,1,241,0.004149377593360996
+NEG,Arthropoda,Animalia,Fatty acyls,27,241,0.11203319502074689
+NEG,Arthropoda,Animalia,Glycerolipids,16,241,0.06639004149377593
+NEG,Arthropoda,Animalia,Glycerophospholipids,145,241,0.6016597510373444
+NEG,Arthropoda,Animalia,Sphingolipids,52,241,0.2157676348547718
+NEG,Ascomycota,Fungi,Fatty acyls,71,500,0.142
+NEG,Ascomycota,Fungi,Glycerolipids,24,500,0.048
+NEG,Ascomycota,Fungi,Glycerophospholipids,389,500,0.778
+NEG,Ascomycota,Fungi,Sphingolipids,16,500,0.032
+NEG,Bacillota,Bacteria,Glycerophospholipids,76,78,0.9743589743589743
+NEG,Bacillota,Bacteria,Prenol lipids,1,78,0.01282051282051282
+NEG,Bacillota,Bacteria,Sphingolipids,1,78,0.01282051282051282
+NEG,Basidiomycota,Fungi,Fatty acyls,10,82,0.12195121951219512
+NEG,Basidiomycota,Fungi,Glycerolipids,6,82,0.07317073170731707
+NEG,Basidiomycota,Fungi,Glycerophospholipids,58,82,0.7073170731707317
+NEG,Basidiomycota,Fungi,Sphingolipids,8,82,0.0975609756097561
+NEG,Chlorophyta,Plantae,Glycerolipids,18,36,0.5
+NEG,Chlorophyta,Plantae,Glycerophospholipids,16,36,0.4444444444444444
+NEG,Chlorophyta,Plantae,Prenol lipids,1,36,0.027777777777777776
+NEG,Chlorophyta,Plantae,Sphingolipids,1,36,0.027777777777777776
+NEG,Discosea,Protozoa,Glycerophospholipids,1,1,1.0
+NEG,Evosea,Protozoa,Fatty acyls,2,71,0.028169014084507043
+NEG,Evosea,Protozoa,Glycerolipids,1,71,0.014084507042253521
+NEG,Evosea,Protozoa,Glycerophospholipids,67,71,0.9436619718309859
+NEG,Evosea,Protozoa,Sphingolipids,1,71,0.014084507042253521
+NEG,Heterolobosea,Protozoa,Glycerolipids,2,99,0.020202020202020204
+NEG,Heterolobosea,Protozoa,Glycerophospholipids,88,99,0.8888888888888888
+NEG,Heterolobosea,Protozoa,Prenol lipids,1,99,0.010101010101010102
+NEG,Heterolobosea,Protozoa,Sphingolipids,8,99,0.08080808080808081
+NEG,Methanobacteriota,Archaea,Archaeal lipids,8,10,0.8
+NEG,Methanobacteriota,Archaea,Sphingolipids,2,10,0.2
+NEG,Mollusca,Animalia,Fatty acyls,1,65,0.015384615384615385
+NEG,Mollusca,Animalia,Glycerolipids,4,65,0.06153846153846154
+NEG,Mollusca,Animalia,Glycerophospholipids,56,65,0.8615384615384616
+NEG,Mollusca,Animalia,Sphingolipids,4,65,0.06153846153846154
+NEG,Mucoromycota,Fungi,Glycerophospholipids,8,8,1.0
+NEG,Nematoda,Animalia,Fatty acyls,1,64,0.015625
+NEG,Nematoda,Animalia,Glycerolipids,3,64,0.046875
+NEG,Nematoda,Animalia,Glycerophospholipids,49,64,0.765625
+NEG,Nematoda,Animalia,Sphingolipids,11,64,0.171875
+NEG,Pseudomonadota,Bacteria,Fatty acyls,2,65,0.03076923076923077
+NEG,Pseudomonadota,Bacteria,Glycerophospholipids,63,65,0.9692307692307692
+NEG,Streptophyta,Plantae,Fatty acyls,36,552,0.06521739130434782
+NEG,Streptophyta,Plantae,Glycerolipids,178,552,0.322463768115942
+NEG,Streptophyta,Plantae,Glycerophospholipids,314,552,0.5688405797101449
+NEG,Streptophyta,Plantae,Prenol lipids,4,552,0.007246376811594203
+NEG,Streptophyta,Plantae,Sphingolipids,20,552,0.036231884057971016
+NEG,Thermoproteota,Archaea,Archaeal lipids,2,2,1.0
+POS,Actinomycetota,Bacteria,Glycerolipids,99,180,0.55
+POS,Actinomycetota,Bacteria,Glycerophospholipids,73,180,0.40555555555555556
+POS,Actinomycetota,Bacteria,Glycerophospholipids|Sphingolipids,1,180,0.005555555555555556
+POS,Actinomycetota,Bacteria,Prenol lipids,1,180,0.005555555555555556
+POS,Actinomycetota,Bacteria,Sphingolipids,6,180,0.03333333333333333
+POS,Arthropoda,Animalia,Fatty acyls,1,145,0.006896551724137931
+POS,Arthropoda,Animalia,Glycerolipids,13,145,0.0896551724137931
+POS,Arthropoda,Animalia,Glycerophospholipids,49,145,0.33793103448275863
+POS,Arthropoda,Animalia,Glycerophospholipids|Sphingolipids,31,145,0.21379310344827587
+POS,Arthropoda,Animalia,Prenol lipids,31,145,0.21379310344827587
+POS,Arthropoda,Animalia,Sphingolipids,19,145,0.1310344827586207
+POS,Arthropoda,Animalia,Sterol lipids,1,145,0.006896551724137931
+POS,Ascomycota,Fungi,Fatty acyls,11,131,0.08396946564885496
+POS,Ascomycota,Fungi,Glycerolipids,57,131,0.4351145038167939
+POS,Ascomycota,Fungi,Glycerophospholipids,37,131,0.2824427480916031
+POS,Ascomycota,Fungi,Glycerophospholipids|Sphingolipids,10,131,0.07633587786259542
+POS,Ascomycota,Fungi,Prenol lipids,5,131,0.03816793893129771
+POS,Ascomycota,Fungi,Sphingolipids,11,131,0.08396946564885496
+POS,Bacillota,Bacteria,Betaine lipids,1,448,0.002232142857142857
+POS,Bacillota,Bacteria,Fatty acyls,20,448,0.044642857142857144
+POS,Bacillota,Bacteria,Glycerolipids,179,448,0.39955357142857145
+POS,Bacillota,Bacteria,Glycerophospholipids,208,448,0.4642857142857143
+POS,Bacillota,Bacteria,Glycerophospholipids|Sphingolipids,4,448,0.008928571428571428
+POS,Bacillota,Bacteria,Prenol lipids,3,448,0.006696428571428571
+POS,Bacillota,Bacteria,Sphingolipids,28,448,0.0625
+POS,Bacillota,Bacteria,Sterol lipids,5,448,0.011160714285714286
+POS,Basidiomycota,Fungi,Archaeal lipids,1,258,0.003875968992248062
+POS,Basidiomycota,Fungi,Fatty acyls,9,258,0.03488372093023256
+POS,Basidiomycota,Fungi,Glycerolipids,129,258,0.5
+POS,Basidiomycota,Fungi,Glycerophospholipids,90,258,0.3488372093023256
+POS,Basidiomycota,Fungi,Glycerophospholipids|Sphingolipids,6,258,0.023255813953488372
+POS,Basidiomycota,Fungi,Prenol lipids,4,258,0.015503875968992248
+POS,Basidiomycota,Fungi,Sphingolipids,18,258,0.06976744186046512
+POS,Basidiomycota,Fungi,Sterol lipids,1,258,0.003875968992248062
+POS,Chlorophyta,Viridiplantae,Betaine lipids,1,83,0.012048192771084338
+POS,Chlorophyta,Viridiplantae,Glycerolipids,28,83,0.3373493975903614
+POS,Chlorophyta,Viridiplantae,Glycerophospholipids,20,83,0.24096385542168675
+POS,Chlorophyta,Viridiplantae,Glycerophospholipids|Sphingolipids,9,83,0.10843373493975904
+POS,Chlorophyta,Viridiplantae,Prenol lipids,23,83,0.27710843373493976
+POS,Chlorophyta,Viridiplantae,Sphingolipids,2,83,0.024096385542168676
+POS,Discosea,Protists,Glycerolipids,5,21,0.23809523809523808
+POS,Discosea,Protists,Glycerophospholipids,16,21,0.7619047619047619
+POS,Evosea,Protists,Fatty acyls,2,352,0.005681818181818182
+POS,Evosea,Protists,Glycerolipids,36,352,0.10227272727272728
+POS,Evosea,Protists,Glycerophospholipids,112,352,0.3181818181818182
+POS,Evosea,Protists,Glycerophospholipids|Sphingolipids,137,352,0.38920454545454547
+POS,Evosea,Protists,Prenol lipids,57,352,0.16193181818181818
+POS,Evosea,Protists,Sphingolipids,4,352,0.011363636363636364
+POS,Evosea,Protists,Sterol lipids,4,352,0.011363636363636364
+POS,Heterolobosea,Protists,Glycerophospholipids,6,23,0.2608695652173913
+POS,Heterolobosea,Protists,Glycerophospholipids|Sphingolipids,16,23,0.6956521739130435
+POS,Heterolobosea,Protists,Prenol lipids,1,23,0.043478260869565216
+POS,Methanobacteriota,Archaea,Archaeal lipids,403,467,0.8629550321199143
+POS,Methanobacteriota,Archaea,Fatty acyls,7,467,0.014989293361884369
+POS,Methanobacteriota,Archaea,Glycerolipids,33,467,0.07066381156316917
+POS,Methanobacteriota,Archaea,Glycerophospholipids,16,467,0.034261241970021415
+POS,Methanobacteriota,Archaea,Glycerophospholipids|Sphingolipids,4,467,0.008565310492505354
+POS,Methanobacteriota,Archaea,Sphingolipids,4,467,0.008565310492505354
+POS,Mollusca,Animalia,Glycerolipids,1,61,0.01639344262295082
+POS,Mollusca,Animalia,Glycerophospholipids,19,61,0.3114754098360656
+POS,Mollusca,Animalia,Glycerophospholipids|Sphingolipids,10,61,0.16393442622950818
+POS,Mollusca,Animalia,Prenol lipids,27,61,0.4426229508196721
+POS,Mollusca,Animalia,Sphingolipids,2,61,0.03278688524590164
+POS,Mollusca,Animalia,Sterol lipids,2,61,0.03278688524590164
+POS,Mucoromycota,Fungi,Glycerolipids,6,13,0.46153846153846156
+POS,Mucoromycota,Fungi,Glycerophospholipids,7,13,0.5384615384615384
+POS,Nematoda,Animalia,Archaeal lipids,74,152,0.4868421052631579
+POS,Nematoda,Animalia,Betaine lipids,1,152,0.006578947368421052
+POS,Nematoda,Animalia,Fatty acyls,2,152,0.013157894736842105
+POS,Nematoda,Animalia,Glycerolipids,13,152,0.08552631578947369
+POS,Nematoda,Animalia,Glycerophospholipids,12,152,0.07894736842105263
+POS,Nematoda,Animalia,Glycerophospholipids|Sphingolipids,16,152,0.10526315789473684
+POS,Nematoda,Animalia,Prenol lipids,24,152,0.15789473684210525
+POS,Nematoda,Animalia,Sphingolipids,10,152,0.06578947368421052
+POS,Pseudomonadota,Bacteria,Fatty acyls,3,238,0.012605042016806723
+POS,Pseudomonadota,Bacteria,Glycerolipids,65,238,0.27310924369747897
+POS,Pseudomonadota,Bacteria,Glycerophospholipids,151,238,0.634453781512605
+POS,Pseudomonadota,Bacteria,Prenol lipids,19,238,0.07983193277310924
+POS,Streptophyta,Viridiplantae,Archaeal lipids,13,3642,0.0035694673256452497
+POS,Streptophyta,Viridiplantae,Betaine lipids,24,3642,0.006589785831960461
+POS,Streptophyta,Viridiplantae,Fatty acyls,44,3642,0.012081274025260845
+POS,Streptophyta,Viridiplantae,Glycerolipids,1437,3642,0.39456342668863265
+POS,Streptophyta,Viridiplantae,Glycerophospholipids,517,3642,0.14195496979681493
+POS,Streptophyta,Viridiplantae,Glycerophospholipids|Sphingolipids,718,3642,0.1971444261394838
+POS,Streptophyta,Viridiplantae,Prenol lipids,649,3642,0.17819879187259746
+POS,Streptophyta,Viridiplantae,Sphingolipids,145,3642,0.03981328940142779
+POS,Streptophyta,Viridiplantae,Sterol lipids,95,3642,0.026084568918176825
+POS,Thermoproteota,Archaea,Archaeal lipids,112,146,0.7671232876712328
+POS,Thermoproteota,Archaea,Fatty acyls,2,146,0.0136986301369863
+POS,Thermoproteota,Archaea,Glycerolipids,13,146,0.08904109589041095
+POS,Thermoproteota,Archaea,Glycerophospholipids,9,146,0.06164383561643835
+POS,Thermoproteota,Archaea,Prenol lipids,9,146,0.06164383561643835
+POS,Thermoproteota,Archaea,Sterol lipids,1,146,0.00684931506849315

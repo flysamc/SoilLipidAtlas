@@ -1,0 +1,105 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "status": "complete_within_recovered_50_rule_scope_unmatched_features_remain_explicit",
+  "method": {
+    "name": "recovered executable 50-rule positive-mode diagnostic-ion classifier",
+    "mz_tolerance_da": 0.03,
+    "minimum_relative_intensity_pct": 5.0,
+    "interpretation": "Non-Unknown calls are Bronze-level class candidates, not structural identifications.",
+    "rule_counts": {
+      "diagnostic_fragments": 24,
+      "neutral_losses": 5,
+      "terpenoid_fragments": 21,
+      "total": 50,
+      "classifier_labels": 13
+    },
+    "classifier": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\outputs\\analysis\\ncbi-phylum-2026-08-04-v1\\biomarker_discovery\\annotation_local_diagnostic_50rule_authority\\source\\ms2_classify_indval.py",
+      "bytes": 24080,
+      "sha256": "5d7a93ec83f110a27895535363c85520c2a2c3164ba38eb03d20c42a9d832431"
+    },
+    "authority_manifest": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\outputs\\analysis\\ncbi-phylum-2026-08-04-v1\\biomarker_discovery\\annotation_local_diagnostic_50rule_authority\\stage_manifest.json",
+      "bytes": 4185,
+      "sha256": "d60c538d82bfb0499b131f7671dacc2bfb4b63426145f24c0518cb10984a35c6"
+    },
+    "historical_scope_note": "The manuscript's historical 66-entry claim is unsupported; the missing 16 rules are not inferred."
+  },
+  "historical_gate": {
+    "archived_rows": 2698,
+    "archived_non_unknown": 1767,
+    "missing_archived_spectra": 82,
+    "class_exact": 2698,
+    "subclass_exact": 2698,
+    "classified_confidence_exact": 1767,
+    "pass": true,
+    "inputs": {
+      "archived_output": {
+        "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-17\\positive\\ms2_indval\\indval_ms2_classification.csv",
+        "sha256": "4c3ac93e85f3e11bc8f81438bcb8a1f28f3a7c64f4ff802008dd1280d3007907"
+      },
+      "consensus": {
+        "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\03_alignment\\consensus_aligned_table.csv",
+        "sha256": "ef28300dfb6f075c52819ffe7c101c11ef322b6a59c2ba9d0ea020d33abc4f4c"
+      },
+      "historical_mgf": {
+        "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\FBMN_all_batches_POS\\batch_03_OE23-POS\\OE23-POS_iimn_gnps_blanksub.mgf",
+        "sha256": "19693ee24da25b593c093c3ce95f3531a88890363b3276151cba98080c9244a2"
+      }
+    }
+  },
+  "counts": {
+    "input_without_recovered_annotation_evidence": 4243,
+    "spectra_exported": 4006,
+    "features_without_usable_ms2": 237,
+    "diagnostic_annotation_candidates": 2075,
+    "remaining_without_annotation_evidence": 2168
+  },
+  "class_counts": {
+    "Phospholipid": 1017,
+    "Terpenoid": 728,
+    "Sterol": 85,
+    "Sphingolipid": 75,
+    "Quinone": 55,
+    "Archaeal_Lipid": 50,
+    "Betaine_Lipid": 26,
+    "Pentacyclic_Triterpenoid": 22,
+    "Glycolipid": 17
+  },
+  "confidence_counts": {
+    "Medium": 1168,
+    "High": 711,
+    "Low": 196
+  },
+  "remaining_scope": [
+    "Features with usable MS2 but no match to the 50 recovered rules remain Unknown for Step 3.",
+    "Features without usable MS2 cannot be classified by diagnostic ions.",
+    "SIRIUS/CANOPUS, DreaMS, fastMASST, and Pan-ReDU are separate evidence producers and do not enlarge the Step 3 rule database."
+  ],
+  "outputs": {
+    "diagnostic_ms2_classification.csv": {
+      "bytes": 905940,
+      "sha256": "79a705ea54a066f0716fe63f727de71d94a84e4f9f1961297836b86846288275"
+    },
+    "diagnostic_annotation_candidates.csv": {
+      "bytes": 663880,
+      "sha256": "98ca05b28fe9e34b2db536fe71d0975e807f758a166b487b5e27cbe03b58c699"
+    },
+    "remaining_without_annotation_evidence.csv": {
+      "bytes": 558780,
+      "sha256": "773f00b040634ae7d52f8f45637bebfb5e8566f1aa7b1d081c29e53b8e155011"
+    },
+    "features_without_usable_ms2.csv": {
+      "bytes": 61902,
+      "sha256": "b2b7e8c520fddcb15c353b44967f229934c3a8598f43bf0e36dcacf5770a9cb3"
+    },
+    "external_annotation_queue.mgf": {
+      "bytes": 8602430,
+      "sha256": "d81287516c86db2bef61f0842137b4df0448230cad0b4d110635ddc1fba61d82"
+    },
+    "historical_classifier_gate.json": {
+      "bytes": 1175,
+      "sha256": "318f5c279c856cf3f6219cdbd42dd358f10de3dd413fff2026055bcc2da0a9e1"
+    }
+  }
+}

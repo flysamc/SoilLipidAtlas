@@ -1,0 +1,5 @@
+set,strict_features,present_in_mapping,with_lipid_annotation,annotation_pct,grade_A_or_B,grade_AB_pct,tier_gold,tier_silver,tier_bronze
+POS strict atlas,11371,11371,3619,31.83,1304,11.47,979,1334,1306
+POS newly selected,6636,6636,2275,34.28,880,13.26,636,752,887
+POS strict atlas (superseded JSON-routed mapping),11371,11371,2349,20.66,592,5.21,0,0,0
+NEG strict atlas,5697,5697,961,16.87,512,8.99,394,316,251

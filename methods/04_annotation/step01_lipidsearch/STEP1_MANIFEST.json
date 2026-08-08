@@ -1,0 +1,89 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "step": "Supplementary Method 3, Step 1: LipidSearch database matching",
+  "generated_utc": "2026-08-05T10:28:46.071751+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\scripts\\step1_lipidsearch_release.py",
+  "producer_sha256": "642b6e17072cfaba8b25be30cb29917d4f367bc12e2584b3cdaa45f0e84d9fb4",
+  "parameters": {
+    "mz_tolerance_ppm": 5,
+    "rt_tolerance_min": 0.3,
+    "rt_window_min": [
+      1.5,
+      25.0
+    ],
+    "gold_min_idscore": 0.2,
+    "silver_min_idscore": 0.1,
+    "bronze_min_idscore": 0.01,
+    "note": "Tolerances match Supplementary Method 3 Step 1 and the recovered step6b producer."
+  },
+  "positive": {
+    "provenance": "exact_reuse_of_recovered_producer_output",
+    "primary_source": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\02_lipidsearch_annotations\\consensus_lipidsearch_direct.csv",
+    "primary_source_sha256": "62c4dca043af64b02b09c3d3431f2051a9b498a7b7cfc6cdea5ee5b5749f060c",
+    "primary_source_rows": 273248,
+    "crosscheck_source": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\04_biomarker_discovery\\02_lipidsearch_annotations\\consensus_lipidsearch_annotations.csv",
+    "crosscheck_source_sha256": "34b5f5469e1b5b7c3cc74edd851b8546bf715a4d742b199870b63c0e04ffa5d8",
+    "crosscheck_source_rows": 273248,
+    "recovered_producer": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\scripts\\step6b_direct_lipidsearch_mapping.py",
+    "recovered_producer_sha256": "0c15d066a889103abc0299eb67b16240d722bbdefc48f731d1024fd88615d0db",
+    "note": "step6b parses the raw LipidSearch exports directly and supersedes step6, which routed through a stale GNPS classical-network JSON."
+  },
+  "negative": {
+    "provenance": "NEW_producer_ported_from_recovered_step6b",
+    "semantic_source": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\scripts\\step6b_direct_lipidsearch_mapping.py",
+    "semantic_source_sha256": "0c15d066a889103abc0299eb67b16240d722bbdefc48f731d1024fd88615d0db",
+    "raw_export_dir": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\soilmass-viewer\\data\\LIPIDSEARCH",
+    "raw_files_parsed": 177,
+    "raw_annotation_rows": 74106,
+    "clusters_retained": 17214,
+    "consensus_table": "C:\\Users\\Shadow\\Desktop\\P2R\\analysis\\analysis-16\\negative_mode\\03_alignment\\consensus_aligned_table.csv",
+    "consensus_table_sha256": "71fb530e8db583e172e196bf64cef8ae8fda783021bdec0564061c236fba3752",
+    "consensus_features": 122571,
+    "matched_features": 8649,
+    "warning": "This mapping did not previously exist. It is a new computation, not a recovered result, and must be declared as such in any manuscript text."
+  },
+  "outputs": {
+    "neg_consensus_lipidsearch_direct.csv": {
+      "bytes": 10519116,
+      "sha256": "8b94ccce81e98f8bd8237ff40563543e9d680541365cd02fe4406188062838e4"
+    },
+    "neg_strict_atlas_lipidsearch.csv": {
+      "bytes": 363078,
+      "sha256": "648c0937d70dac87b3805ee45d11b690d1b07ef234e4431e8e3391e610877fd2"
+    },
+    "neg_strict_atlas_lipidsearch_by_phylum.csv": {
+      "bytes": 586,
+      "sha256": "bc34157932cae580e63a171278d9b353080d3bf31588ec309130ae6ad8b7f14c"
+    },
+    "pos_newly_selected_lipidsearch.csv": {
+      "bytes": 578083,
+      "sha256": "903a3a83b771c6e8fd576aad290a461a46e9b35fa269c336bbf5049f406774d7"
+    },
+    "pos_newly_selected_lipidsearch_by_phylum.csv": {
+      "bytes": 538,
+      "sha256": "b2c2e72d158e7ab0471f0e0caa177d69fe7f97ed06fea800d79b7d0233ef5c40"
+    },
+    "pos_strict_atlas_lipidsearch.csv": {
+      "bytes": 962680,
+      "sha256": "56638f4844000322fc6379611481d2629df58910171ac8b174a0f35d0c925603"
+    },
+    "pos_strict_atlas_lipidsearch_by_phylum.csv": {
+      "bytes": 608,
+      "sha256": "980191c2673954716d215086101b68ddeacb0e67206986c60a76756824c5179a"
+    },
+    "step1_coverage_summary.csv": {
+      "bytes": 414,
+      "sha256": "46924c3d9e0025298b5242c9f255ba50526811f97231bb884828b9dc207a44ab"
+    }
+  },
+  "decisions_required": [
+    {
+      "id": "pos_lipidsearch_mapping_choice",
+      "question": "Which POS LipidSearch mapping defines the Gold tier for the revised manuscript: the direct raw-file mapping (step6b) or the superseded JSON-routed mapping (step6)?",
+      "grade_AB_direct": 1304,
+      "grade_AB_superseded": 592,
+      "recommendation": "Use the direct mapping. step6b was written to replace step6 and parses the raw exports instead of a stale network JSON.",
+      "status": "OPEN - user decision required before tier rates are published"
+    }
+  ]
+}

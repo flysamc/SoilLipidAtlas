@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "method_id": "pos-rt-sumcomp-v1-2026-08-05",
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "polarity": "POS",
+  "status": "pass_review_only_no_tier_mutation",
+  "method_date": "2026-08-05",
+  "producer": "paper2_repro/scripts/pos_rt_sum_composition_v1.py",
+  "producer_sha256": "2ba87bc734178d9e8fae343253943e7f56397626a557a9c8f825b84c027ab281",
+  "historical_reproduction": false,
+  "method_change_authority": "User explicitly approved a new versioned POS RT method on 2026-08-05.",
+  "inputs": {
+    "strict_atlas": {
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/atlas_pos_strict.csv",
+      "sha256": "4046c86569b801903220fe836e390a8318de2f570dfa6bae4887daf618939cf5"
+    },
+    "strict_lipidsearch": {
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/annotation/step1_lipidsearch/pos_strict_atlas_lipidsearch.csv",
+      "sha256": "56638f4844000322fc6379611481d2629df58910171ac8b174a0f35d0c925603"
+    },
+    "harmonised_annotations": {
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/annotation/step2_harmonization/harmonised_annotations_pos.csv",
+      "sha256": "9783ab1bf806d18cf7ab8f92dcb99f73eb9733317c6b5d4cf3c0ef930573844a"
+    },
+    "current_diagnostic_classification": {
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/annotation_local_diagnostic/diagnostic_ms2_classification.csv",
+      "sha256": "79a705ea54a066f0716fe63f727de71d94a84e4f9f1961297836b86846288275"
+    }
+  },
+  "contract": {
+    "training": "strict POS Grade A/B LipidSearch identities with parseable C:DB, exact class and adduct",
+    "rt_model": "per-class OLS: RT ~ total_carbon + total_double_bonds; deterministic five-fold CV",
+    "mass_model": "robust median class/adduct intercept for mz = intercept + 14.01565*C - 2.01565*DB; 20 ppm training-inlier filter",
+    "model_acceptance": {
+      "min_n": 20,
+      "min_cv_r2": 0.2,
+      "max_cv_mae_min": 2.0
+    },
+    "candidate_acceptance": {
+      "max_mass_error_ppm": 10.0,
+      "max_rt_error_min": 2.0,
+      "min_rt_margin_min": 0.25
+    },
+    "target": "strict Bronze class-level feature without an existing molecular/sum species; exact current usable-MS2 diagnostic subclass agreement required",
+    "tier_action": "none; candidates are review-only"
+  },
+  "counts": {
+    "grade_ab_parseable_training_rows": 1286,
+    "mass_inlier_training_rows": 951,
+    "mass_models": 21,
+    "rt_models_evaluated": 11,
+    "rt_models_accepted": 11,
+    "audited_bronze_class_level_targets": 2075,
+    "current_diagnostic_compatible_targets": 2075,
+    "review_only_candidates": 1,
+    "candidate_confidence": {
+      "medium": 1
+    },
+    "target_decisions": {
+      "best_candidate_exceeds_rt_tolerance": 1,
+      "candidate_staged_review_only": 1,
+      "no_accepted_class_rt_model": 1951,
+      "no_candidate_within_mass_tolerance": 122
+    }
+  },
+  "guardrails": [
+    "No historical pickle was loaded or reverse-engineered into invented feature names.",
+    "No mass-only reuse or prediction is allowed.",
+    "Ambiguous PC/SM and generic classes are excluded because no exact class model exists.",
+    "No annotation tier or manuscript-facing file is modified.",
+    "This is a versioned method replacement, not reproduction of the submitted Step 6."
+  ],
+  "checks": {
+    "atlas_feature_ids_unique": true,
+    "lipidsearch_feature_ids_unique": true,
+    "harmonised_feature_ids_unique": true,
+    "diagnostic_feature_ids_unique": true,
+    "training_is_grade_a_or_b_only": true,
+    "accepted_rt_models_pass_declared_gates": true,
+    "candidate_feature_ids_unique": true,
+    "candidates_have_current_diagnostic_class_agreement": true,
+    "candidates_pass_mass_gate": true,
+    "candidates_pass_rt_gate": true,
+    "candidates_pass_ambiguity_gate": true,
+    "no_annotation_atlas_output_written": true
+  },
+  "outputs": {
+    "mass_models.csv": {
+      "bytes": 1760,
+      "sha256": "65fd535abb60bf6cce64089798628c3481b0f54ebc7ccc81f51c763908416e25"
+    },
+    "rt_model_validation.csv": {
+      "bytes": 1634,
+      "sha256": "bb398386be73ce4f564ea2c199109c66ac68a632910fe36650f0079c76b20a26"
+    },
+    "rt_sum_composition_candidates.csv": {
+      "bytes": 551,
+      "sha256": "c52e3103e62f812e2418002555809bb598745ed4ac1acbf7e48f7015695f58d3"
+    },
+    "target_audit.csv": {
+      "bytes": 141793,
+      "sha256": "b272bc4554dfe571fcf6bf4e81ba5ac1ae6b5ed85c80f7985d91ab7e014779fb"
+    }
+  }
+}

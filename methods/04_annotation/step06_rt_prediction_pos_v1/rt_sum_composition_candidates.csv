@@ -1,0 +1,2 @@
+feature_id,source_class,model_class,diagnostic_subclass,diagnostic_confidence,adduct,predicted_total_carbon,predicted_total_db,predicted_sum_species,observed_mz,predicted_mz,mass_error_ppm,observed_rt,predicted_rt,rt_error_min,rt_model_cv_mae_min,rt_model_cv_r2,alternative_compositions,rt_margin_min,candidate_confidence,status
+A15_142222,PE,PE,PE,High,M+H,32,1,PE 32:1,690.49921,690.5060839999999,9.955116385904653,13.7267,15.011155212509196,1.2844552125091973,0.7810265191808935,0.6001414379426993,0,inf,medium,review_only_candidate_no_tier_change

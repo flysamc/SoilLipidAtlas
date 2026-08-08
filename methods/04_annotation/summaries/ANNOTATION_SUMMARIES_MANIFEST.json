@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "generated_utc": "2026-08-06T10:44:06.117367+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\annotation_summaries.py",
+  "producer_sha256": "7cf8dc8a9b612d549737aedac7100836541764e459dd2f8eb092c7f0ad7a32bc",
+  "status": "complete_with_declared_blocked_steps_no_invented_tier_actions",
+  "summary": [
+    {
+      "mode": "POS",
+      "strict_features": 11371,
+      "annotated_pre_release": 6291,
+      "family_propagation_upgrades": 155,
+      "archlips_rt_exclusions": 86,
+      "release_eligible_annotated": 6360,
+      "release_gold_silver": 1668,
+      "sirius_formula_evidence": 5865,
+      "canopus_class_evidence": 5325,
+      "dreams_evidence": 7095,
+      "ms2lda_membership": 10611
+    },
+    {
+      "mode": "NEG",
+      "strict_features": 5697,
+      "annotated_pre_release": 1791,
+      "family_propagation_upgrades": 98,
+      "archlips_rt_exclusions": 0,
+      "release_eligible_annotated": 1889,
+      "release_gold_silver": 512,
+      "sirius_formula_evidence": 3862,
+      "canopus_class_evidence": 3495,
+      "dreams_evidence": 5695,
+      "ms2lda_membership": 5466
+    }
+  ],
+  "blocked_steps_quarantined": [
+    "Step 6 NEG historical RT producer",
+    "Step 7 custom 124-entry archaeal database",
+    "Step 9 historical 564/640/12 tier-action producer"
+  ],
+  "guardrails": [
+    "SIRIUS, CANOPUS, CSI:FingerID, DreaMS and MS2LDA are evidence only.",
+    "No Step 9 tier transition is inferred from evidence availability.",
+    "RT-inconsistent ArchLips evidence is retained in pre-release audit columns but excluded from release tiers.",
+    "No manuscript-facing or submission_source file is modified."
+  ],
+  "outputs": {
+    "annotation_evidence_neg.csv": {
+      "bytes": 2260204,
+      "sha256": "4fac5e492ef41c147c85a872ee6fde98376b4ecc1a03686fd8402c6b80fcd884"
+    },
+    "annotation_evidence_pos.csv": {
+      "bytes": 4098897,
+      "sha256": "74903392e9206903558e667ded12485eccfe4bfc7284bd2389c2f94706773c64"
+    },
+    "annotation_release_summary.csv": {
+      "bytes": 326,
+      "sha256": "c164ad95a709dd9572d9aa9bbe0be7828a0bb4eacf037eca8326bd3a476b29ec"
+    },
+    "lipid_classes.csv": {
+      "bytes": 9749,
+      "sha256": "fc9e4a03995715a7592d2934e58dfca2e9c834eb0a7627c92fc0e62d2a634a30"
+    },
+    "tier_counts.csv": {
+      "bytes": 3503,
+      "sha256": "212030e5dae4abbc89df6ef0eb1cf25b1c8c37926d79d224ef2e80fa86a9b87c"
+    },
+    "waterfall.csv": {
+      "bytes": 3381,
+      "sha256": "ab32ecbc64a5ee680e3ecd2c7da2627f783e4f035dbebad5a2dba3d5202d9333"
+    }
+  }
+}

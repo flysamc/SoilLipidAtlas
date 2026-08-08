@@ -1,0 +1,156 @@
+feature_id,batch,component,propagated_label,family_size,annotated_members,agreement,round,phylum,kingdom
+A15_12697,ALL-25-2-POS,250,Glycerophospholipids,4,1,1.0,1,Bacillota,Bacteria
+A15_139645,ALL-25-2-POS,250,Glycerophospholipids,4,1,1.0,1,Bacillota,Bacteria
+A15_89231,ALL-25-2-POS,250,Glycerophospholipids,4,1,1.0,1,Bacillota,Bacteria
+A15_8814,ALL-25-2-POS,508,Glycerophospholipids|Sphingolipids,4,2,1.0,1,Bacillota,Bacteria
+A15_9993,ALL-25-2-POS,508,Glycerophospholipids|Sphingolipids,4,2,1.0,1,Basidiomycota,Fungi
+A15_96856,OE23-POS,582,Prenol lipids,12,2,1.0,1,Mollusca,Animalia
+A15_89902,OE23-POS,582,Prenol lipids,12,2,1.0,1,Mollusca,Animalia
+A15_100221,OE23-POS,582,Prenol lipids,12,2,1.0,1,Mollusca,Animalia
+A15_131405,OE23-POS,582,Prenol lipids,12,2,1.0,1,Nematoda,Animalia
+A15_96857,OE23-POS,582,Prenol lipids,12,2,1.0,1,Mollusca,Animalia
+A15_161332,OE23-POS,582,Prenol lipids,12,2,1.0,1,Nematoda,Animalia
+A15_179865,OE23-POS,582,Prenol lipids,12,2,1.0,1,Nematoda,Animalia
+A15_178316,OE23-POS,582,Prenol lipids,12,2,1.0,1,Nematoda,Animalia
+A15_161464,OE23-POS,582,Prenol lipids,12,2,1.0,1,Nematoda,Animalia
+A15_178218,OE23-POS,582,Prenol lipids,12,2,1.0,1,Nematoda,Animalia
+A15_14361,ALL-25-2-POS,205,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_42834,ALL-25-2-POS,3354,Prenol lipids,2,1,1.0,1,Pseudomonadota,Bacteria
+A15_66220,ALL-25-2-POS,639,Prenol lipids,2,1,1.0,1,Pseudomonadota,Bacteria
+A15_106019,ALL-25-2-POS,91,Prenol lipids,2,1,1.0,1,Pseudomonadota,Bacteria
+A15_51515,ALL-25-2-POS,585,Prenol lipids,3,1,1.0,1,Basidiomycota,Fungi
+A15_46619,ALL-25-2-POS,585,Prenol lipids,3,1,1.0,1,Ascomycota,Fungi
+A15_128847,ALL-25-2-POS,805,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_117423,ALL-25-2-POS,6248,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_142986,ALL-25-2-POS,8525,Prenol lipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_15060,ALL-25-2-POS,2514,Glycerolipids,3,2,1.0,1,Bacillota,Bacteria
+A15_227764,OE23-POS,4302,Prenol lipids,7,1,1.0,1,Mollusca,Animalia
+A15_229879,OE23-POS,4302,Prenol lipids,7,1,1.0,1,Mollusca,Animalia
+A15_229497,OE23-POS,4302,Prenol lipids,7,1,1.0,1,Mollusca,Animalia
+A15_220277,OE23-POS,4302,Prenol lipids,7,1,1.0,1,Mollusca,Animalia
+A15_223864,OE23-POS,4302,Prenol lipids,7,1,1.0,1,Mollusca,Animalia
+A15_222759,OE23-POS,4302,Prenol lipids,7,1,1.0,1,Mollusca,Animalia
+A15_35648,OE23-POS,1801,Prenol lipids,2,1,1.0,1,Mollusca,Animalia
+A15_52102,ALL-25-2-POS,841,Prenol lipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_83238,ALL-25-2-POS,94,Prenol lipids,3,2,1.0,1,Actinomycetota,Bacteria
+A15_1267,ALL-25-2-POS,1811,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_108380,OE23-POS,208,Sphingolipids,5,1,1.0,1,Nematoda,Animalia
+A15_108381,OE23-POS,208,Sphingolipids,5,1,1.0,1,Nematoda,Animalia
+A15_108382,OE23-POS,208,Sphingolipids,5,1,1.0,1,Nematoda,Animalia
+A15_44903,OE23-POS,208,Sphingolipids,5,1,1.0,1,Nematoda,Animalia
+A15_40722,ALL-25-2-POS,209,Glycerophospholipids|Sphingolipids,2,1,1.0,1,Basidiomycota,Fungi
+A15_30374,ALL-25-2-POS,733,Glycerolipids,4,2,0.5,1,Bacillota,Bacteria
+A15_103381,ALL-25-2-POS,733,Glycerolipids,4,2,0.5,1,Bacillota,Bacteria
+A15_110194,OE11-3-POS,451,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_112516,ALL-25-2-POS,248,Betaine lipids,2,1,1.0,1,Bacillota,Bacteria
+A15_45569,OE23-POS,3567,Glycerophospholipids,2,1,1.0,1,Arthropoda,Animalia
+A15_22372,ALL-25-2-POS,876,Glycerolipids,2,1,1.0,1,Actinomycetota,Bacteria
+A15_161931,OE23-POS,633,Glycerophospholipids,8,3,1.0,1,Nematoda,Animalia
+A15_195194,OE23-POS,633,Glycerophospholipids,8,3,1.0,1,Mollusca,Animalia
+A15_205611,OE23-POS,633,Glycerophospholipids,8,3,1.0,1,Mollusca,Animalia
+A15_195195,OE23-POS,633,Glycerophospholipids,8,3,1.0,1,Mollusca,Animalia
+A15_199269,OE23-POS,633,Glycerophospholipids,8,3,1.0,1,Mollusca,Animalia
+A15_58655,ALL-25-2-POS,84,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_79846,OE11-3-POS,136,Glycerophospholipids,2,1,1.0,1,Ascomycota,Fungi
+A15_86729,ALL-25-2-POS,765,Glycerolipids,2,1,1.0,1,Bacillota,Bacteria
+A15_100210,ALL-25-2-POS,10327,Glycerophospholipids,2,1,1.0,1,Bacillota,Bacteria
+A15_61248,OE23-POS,561,Glycerophospholipids|Sphingolipids,4,1,1.0,1,Mollusca,Animalia
+A15_71482,OE23-POS,561,Glycerophospholipids|Sphingolipids,4,1,1.0,1,Mollusca,Animalia
+A15_67580,OE23-POS,561,Glycerophospholipids|Sphingolipids,4,1,1.0,1,Arthropoda,Animalia
+A15_62329,OE23-POS,1046,Prenol lipids,5,2,0.5,1,Arthropoda,Animalia
+A15_46416,OE23-POS,1046,Prenol lipids,5,2,0.5,1,Mollusca,Animalia
+A15_81023,OE23-POS,1046,Prenol lipids,5,2,0.5,1,Mollusca,Animalia
+A15_148446,ALL-25-2-POS,139,Glycerolipids,3,2,1.0,1,Bacillota,Bacteria
+A15_61370,ALL-25-2-POS,2099,Glycerophospholipids,2,1,1.0,1,Pseudomonadota,Bacteria
+A15_70931,OE23-POS,563,Glycerophospholipids,5,2,1.0,1,Arthropoda,Animalia
+A15_71104,OE23-POS,563,Glycerophospholipids,5,2,1.0,1,Arthropoda,Animalia
+A15_104957,OE23-POS,563,Glycerophospholipids,5,2,1.0,1,Mollusca,Animalia
+A15_133237,ALL-25-2-POS,168,Prenol lipids,3,2,0.5,1,Streptophyta,Viridiplantae
+A15_154309,ALL-25-2-POS,3254,Glycerolipids,2,1,1.0,1,Chlorophyta,Viridiplantae
+A15_85867,ALL-25-2-POS,80,Prenol lipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_47604,OE23-POS,4245,Glycerophospholipids,2,1,1.0,1,Mollusca,Animalia
+A15_121097,ALL-25-2-POS,687,Glycerophospholipids,5,4,0.5,1,Streptophyta,Viridiplantae
+A15_138770,ALL-25-2-POS,372,Glycerolipids,5,3,1.0,1,Bacillota,Bacteria
+A15_143918,ALL-25-2-POS,372,Glycerolipids,5,3,1.0,1,Streptophyta,Viridiplantae
+A15_146133,ALL-25-2-POS,764,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_141842,ALL-25-2-POS,104,Glycerolipids,3,2,1.0,1,Bacillota,Bacteria
+A15_5551,OE23-POS,697,Glycerophospholipids|Sphingolipids,3,2,0.5,1,Arthropoda,Animalia
+A15_80878,ALL-25-2-POS,1375,Glycerolipids,2,1,1.0,1,Chlorophyta,Viridiplantae
+A15_146247,ALL-25-2-POS,436,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_129475,ALL-25-2-POS,77,Glycerolipids,3,2,1.0,1,Streptophyta,Viridiplantae
+A15_46374,OE21-4-POS,995,Glycerophospholipids|Sphingolipids,2,1,1.0,1,Arthropoda,Animalia
+A15_22464,OE21-4-POS,1702,Glycerophospholipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_119861,OE23-POS,223,Glycerolipids,2,1,1.0,1,Chlorophyta,Viridiplantae
+A15_105202,ALL-25-2-POS,1432,Glycerophospholipids,3,2,0.5,1,Streptophyta,Viridiplantae
+A15_208218,OE23-POS,57,Glycerolipids,6,2,0.5,1,Nematoda,Animalia
+A15_206140,OE23-POS,57,Glycerolipids,6,2,0.5,1,Nematoda,Animalia
+A15_207972,OE23-POS,57,Glycerolipids,6,2,0.5,1,Nematoda,Animalia
+A15_212833,OE23-POS,57,Glycerolipids,6,2,0.5,1,Nematoda,Animalia
+A15_215755,OE21-4-POS,610,Sterol lipids,3,2,0.5,1,Streptophyta,Viridiplantae
+A15_155422,OE23-POS,8041,Sphingolipids,2,1,1.0,1,Arthropoda,Animalia
+A15_150606,OE23-POS,2141,Glycerophospholipids|Sphingolipids,2,1,1.0,1,Arthropoda,Animalia
+A15_224,OE23-POS,838,Glycerophospholipids,4,2,1.0,1,Arthropoda,Animalia
+A15_201,OE23-POS,838,Glycerophospholipids,4,2,1.0,1,Arthropoda,Animalia
+A15_56301,ALL-25-2-POS,4231,Glycerolipids,2,1,1.0,1,Chlorophyta,Viridiplantae
+A15_88831,ALL-25-2-POS,5630,Glycerophospholipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_154595,ALL-25-2-POS,61,Glycerophospholipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_63106,ALL-25-2-POS,249,Glycerophospholipids,2,1,1.0,1,Basidiomycota,Fungi
+A15_145991,ALL-25-2-POS,5653,Glycerophospholipids,2,1,1.0,1,Pseudomonadota,Bacteria
+A15_223024,OE23-POS,9702,Glycerophospholipids|Sphingolipids,2,1,1.0,1,Mollusca,Animalia
+A15_146090,ALL-25-2-POS,12023,Glycerolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_107652,OE23-POS,820,Sphingolipids,2,1,1.0,1,Chlorophyta,Viridiplantae
+A15_92144,ALL-25-2-POS,169,Glycerophospholipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_75328,ALL-25-2-POS,458,Glycerophospholipids|Sphingolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_99370,ALL-25-2-POS,32,Glycerophospholipids|Sphingolipids,2,1,1.0,1,Streptophyta,Viridiplantae
+A15_73144,OE23-POS,64,Glycerophospholipids|Sphingolipids,3,1,1.0,1,Chlorophyta,Viridiplantae
+A15_67931,OE23-POS,64,Glycerophospholipids|Sphingolipids,3,1,1.0,1,Chlorophyta,Viridiplantae
+A15_130381,OE23-POS,440,Glycerophospholipids,12,5,1.0,1,Chlorophyta,Viridiplantae
+A15_112820,OE23-POS,440,Glycerophospholipids,12,5,1.0,1,Chlorophyta,Viridiplantae
+A15_131825,OE23-POS,440,Glycerophospholipids,12,5,1.0,1,Chlorophyta,Viridiplantae
+A15_131315,OE23-POS,440,Glycerophospholipids,12,5,1.0,1,Chlorophyta,Viridiplantae
+A15_117797,OE23-POS,440,Glycerophospholipids,12,5,1.0,1,Chlorophyta,Viridiplantae
+A15_128030,OE23-POS,440,Glycerophospholipids,12,5,1.0,1,Chlorophyta,Viridiplantae
+A15_203858,OE23-POS,440,Glycerophospholipids,12,5,1.0,1,Chlorophyta,Viridiplantae
+A15_225249,OE23-POS,5354,Glycerolipids,2,1,1.0,1,Chlorophyta,Viridiplantae
+A15_218565,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_218868,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_220794,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_220693,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_220037,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_220999,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_222583,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_214667,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_217535,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_218357,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_218869,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_217517,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_220136,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_220688,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_217492,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_223804,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_222585,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_221001,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_219351,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_221625,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_220625,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_212272,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_214156,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_217272,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_219352,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_215703,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_219648,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_218587,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_221523,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_219649,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_221412,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_217096,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_220362,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_219354,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_219923,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_221413,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_222681,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_221627,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_219548,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_223351,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_223270,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia
+A15_225019,OE23-POS,82,Archaeal lipids,56,14,1.0,1,Nematoda,Animalia

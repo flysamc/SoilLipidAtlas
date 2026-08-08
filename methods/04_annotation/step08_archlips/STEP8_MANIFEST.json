@@ -1,0 +1,75 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "step": "Supplementary Method 3 Step 8 / Method 7 Round 1 (targeted)",
+  "generated_utc": "2026-08-05T10:59:57.991850+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\scripts\\step8_archlips_release.py",
+  "producer_sha256": "cc120147962811e9031ee5bc8dfc6909f28ad435e33902a9e5053bce241e4525",
+  "semantic_sources": {
+    "POS": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-17\\positive\\scripts\\archlips_indval_search.py",
+      "sha256": "6e9fba7861ace4b1b0d1a9ef0bb018b747ba357fd78567f78d02c7c6635af5bd"
+    },
+    "NEG": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-16\\negative_mode\\04_biomarker_discovery\\07_archlips\\archlips_search_neg.py",
+      "sha256": "37c051b05fd26627f2fe45fd5688b5a5d4fb2e5d9c2735346f9f169fb62bcc86"
+    }
+  },
+  "libraries": {
+    "high_confidence": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\Archlips_High_confidence_spectral_library.msp",
+      "sha256": "7d5640016f2eb6a19587f4594ed69dac8d84c9abd75bcc5dbc44b8399cc1e1db"
+    },
+    "full": {
+      "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\Archlips_Full_spectral_library.msp",
+      "sha256": "cb6b98d768e93b419068874c2c701671c72913142a594d497b3946362c8f110a"
+    },
+    "polarity_note": "ArchLips holds positive-mode reference spectra only ([M+H]+ / [M+NH4]+). NEG therefore uses computed negative adducts plus diagnostic-ion validation, never cosine."
+  },
+  "parameters": {
+    "ppm_tolerance": 10.0,
+    "fragment_tolerance_da": 0.02,
+    "cosine_min_pos": 0.3,
+    "noise_threshold_fraction": 0.05,
+    "neg_adducts": {
+      "[M-H]-": -1.00728,
+      "[M+HCOO]-": 44.9982,
+      "[M+CH3COO]-": 59.01385
+    },
+    "pos_tiers": "Gold cos>=0.7 & >=4 peaks; Silver cos>=0.5 & >=3; Bronze cos>=0.3 & >=2",
+    "neg_tiers": "ladder on |ppm|, diagnostic-ion+NL count, archaeal detection rate"
+  },
+  "summary": [
+    {
+      "mode": "POS",
+      "archaeal_strict_features": 1333,
+      "features_with_match": 632,
+      "features_validated": 632,
+      "validated_pct": 47.41,
+      "gold_silver_features": 406,
+      "gold_silver_pct": 30.46
+    },
+    {
+      "mode": "NEG",
+      "archaeal_strict_features": 21,
+      "features_with_match": 17,
+      "features_validated": 10,
+      "validated_pct": 47.62,
+      "gold_silver_features": 0,
+      "gold_silver_pct": 0.0
+    }
+  ],
+  "outputs": {
+    "archlips_neg_strict_matches.csv": {
+      "bytes": 288223,
+      "sha256": "ea23486d233548bd2cd4b5f11c9fa8fd1adf5ab62f7414c9cb4f4cf9ca5645d9"
+    },
+    "archlips_pos_strict_matches.csv": {
+      "bytes": 170654,
+      "sha256": "7e78caab6ff57c8220c98b66c68116e041215567958aa141108bf5616b066fde"
+    },
+    "step8_coverage_summary.csv": {
+      "bytes": 181,
+      "sha256": "4f09b95c612dd04610e664f582a10373370ec1db7d4a49a0b65e4b73563a0d85"
+    }
+  }
+}

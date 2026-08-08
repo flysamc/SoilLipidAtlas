@@ -1,0 +1,3 @@
+mode,strict_features,annotated,annotated_pct,gold_silver,gold_silver_pct,distinct_class_verbatim,distinct_class_normalised,distinct_superclass,superclass_unmapped
+POS,11371,6291,55.32,1706,15.0,49,49,9,0
+NEG,5697,1791,31.44,512,8.99,34,34,6,0

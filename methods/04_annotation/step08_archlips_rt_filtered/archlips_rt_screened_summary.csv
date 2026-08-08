@@ -1,0 +1,3 @@
+mode,features_validated_before_rt,features_validated_after_rt,features_rt_excluded,gold_silver_before_rt,gold_silver_after_rt,tiers_before_rt,tiers_after_rt,tiers_rt_excluded,archlips_compounds_all_matches,archlips_compounds_validated,archlips_compounds_after_rt
+POS,632,546,86,406,368,"{""Gold"": 271, ""Bronze"": 226, ""Silver"": 135}","{""Gold"": 248, ""Bronze"": 178, ""Silver"": 120}","{""Bronze"": 48, ""Gold"": 23, ""Silver"": 15}",449,449,387
+NEG,10,10,0,0,0,"{""Bronze"": 10}","{""Bronze"": 10}",{},353,30,30

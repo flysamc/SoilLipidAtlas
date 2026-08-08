@@ -1,0 +1,3 @@
+mode,features_with_rt,features_in_families,families_assessed,rt_uncertain_by_family,rt_uncertain_by_family_features,family_severity,rt_uncertain_by_superclass,rt_uncertain_by_superclass_features,superclass_severity
+POS,11371,1441,1081,11,11,"{""moderate"": 9, ""mild"": 2}",97,97,"{""moderate"": 68, ""severe"": 16, ""mild"": 13}"
+NEG,5697,1651,1187,23,23,"{""moderate"": 13, ""mild"": 9, ""severe"": 1}",11,11,"{""moderate"": 10, ""severe"": 1}"

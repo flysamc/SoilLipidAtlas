@@ -1,0 +1,84 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "step": "Supplementary Method 3, Step 5: RT validation",
+  "generated_utc": "2026-08-05T11:19:04.152324+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\scripts\\step5_rt_validation_release.py",
+  "producer_sha256": "0b5ebc353424df787fc733c7046e9a869c3496f9a746ea284a8a112b4a4b6916",
+  "parameters": {
+    "iqr_multiplier": 1.5,
+    "min_group_size": 4,
+    "severity": "|z|>3 severe, |z|>2 moderate, else mild"
+  },
+  "producer_status": {
+    "state": "DOCUMENTED_METHOD_REIMPLEMENTED_ORIGINAL_PRODUCER_UNRECOVERED",
+    "submitted_claim": "Supplementary Method 3 Step 5: 'Retention time coherence within molecular families was assessed using IQR-based outlier detection. 104 features flagged as RT-uncertain.'",
+    "candidates_checked": {
+      "step12_rt_validation.py": {
+        "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\scripts\\step12_rt_validation.py",
+        "sha256": "5351540b43b4db3d64e1940c6e02d04ff81d3bec2fba156483d212d32e8621e2",
+        "grouping": "lipid class",
+        "historical_output_rows": 577
+      },
+      "platinum_unified_annotations_rt_validated.csv": {
+        "grouping": "expected RT range per class",
+        "historical_violations": 209,
+        "historical_rt_valid_false": 243
+      }
+    },
+    "warning": "No located producer yields 104. The submitted figure is therefore UNVERIFIED. Nothing here reproduces it and it must not be restated in the revision until its producer is recovered."
+  },
+  "summary": [
+    {
+      "mode": "POS",
+      "features_with_rt": 11371,
+      "features_in_families": 1441,
+      "families_assessed": 1081,
+      "rt_uncertain_by_family": 11,
+      "rt_uncertain_by_family_features": 11,
+      "family_severity": {
+        "moderate": 9,
+        "mild": 2
+      },
+      "rt_uncertain_by_superclass": 97,
+      "rt_uncertain_by_superclass_features": 97,
+      "superclass_severity": {
+        "moderate": 68,
+        "severe": 16,
+        "mild": 13
+      }
+    },
+    {
+      "mode": "NEG",
+      "features_with_rt": 5697,
+      "features_in_families": 1651,
+      "families_assessed": 1187,
+      "rt_uncertain_by_family": 23,
+      "rt_uncertain_by_family_features": 23,
+      "family_severity": {
+        "moderate": 13,
+        "mild": 9,
+        "severe": 1
+      },
+      "rt_uncertain_by_superclass": 11,
+      "rt_uncertain_by_superclass_features": 11,
+      "superclass_severity": {
+        "moderate": 10,
+        "severe": 1
+      }
+    }
+  ],
+  "outputs": {
+    "rt_uncertain_neg.csv": {
+      "bytes": 5937,
+      "sha256": "1ba263bfc0d2c8a2577d66e75ef3ae1b927f4e85837e44080dac787d87fa9483"
+    },
+    "rt_uncertain_pos.csv": {
+      "bytes": 21189,
+      "sha256": "6a9738879fed9205e64f4b266fe7428385575287ed84b8362781dbe5c96ec5f1"
+    },
+    "step5_summary.csv": {
+      "bytes": 450,
+      "sha256": "edb273841c236f135a9536e312199efa813c80390c356546f826317e677ac447"
+    }
+  }
+}

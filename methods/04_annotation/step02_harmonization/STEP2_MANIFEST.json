@@ -1,0 +1,106 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "step": "Supplementary Method 3, Step 2: annotation harmonisation",
+  "generated_utc": "2026-08-05T11:11:27.906710+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\scripts\\step2_harmonization_release.py",
+  "producer_sha256": "b51b6d0650a52d4ef9cc64c947005555aa6a45bab9dad4d61261dd3a22069635",
+  "recovered_mapping_source": {
+    "path": "C:\\Users\\Shadow\\Desktop\\P2R\\external\\SOILMASS_PRODUCER_RECOVERY_2026-08-04\\payload\\core\\workspace\\analysis\\analysis-15\\scripts\\step11_harmonization.py",
+    "sha256": "3be8c3707100a4cd6689c38d09ea117d0b26d3d4b2952c3a8f53b0287ce8474e"
+  },
+  "priority_hierarchy": [
+    "1. LipidSearch molecular species (Grade A/B)",
+    "1b. ArchLips Gold/Silver structural match (archaeal-specific)",
+    "3. LipidSearch sum composition / lower grade",
+    "1c. ArchLips Bronze",
+    "4. MS2 diagnostic class assignment",
+    "5. molecular family propagation (Step 4, not yet run)"
+  ],
+  "decisions_required": [
+    {
+      "id": "ms2_vocabulary_normalisation",
+      "status": "APPLIED - user approved normalisation",
+      "note": "MS2_TO_SUPERCLASS is a NEW mapping declared by this producer. The recovered step11_harmonization.py maps only LipidSearch and ClassyFire vocabularies. 'Archaeal lipids' and 'Betaine lipids' extend beyond the six LIPID MAPS superclasses because this dataset requires them.",
+      "ms2_to_superclass": {
+        "Phospholipid": "Glycerophospholipids",
+        "Glycerophospholipid": "Glycerophospholipids",
+        "PC": "Glycerophospholipids",
+        "PE": "Glycerophospholipids",
+        "PG": "Glycerophospholipids",
+        "PI": "Glycerophospholipids",
+        "PS": "Glycerophospholipids",
+        "PA": "Glycerophospholipids",
+        "Sphingolipid": "Sphingolipids",
+        "GlcCer": "Sphingolipids",
+        "Ceramide": "Sphingolipids",
+        "SM": "Sphingolipids",
+        "Glycolipid": "Glycerolipids",
+        "MGDG": "Glycerolipids",
+        "DGDG": "Glycerolipids",
+        "SQDG": "Glycerolipids",
+        "Sterol": "Sterol lipids",
+        "Terpenoid": "Prenol lipids",
+        "Pentacyclic_Triterpenoid": "Prenol lipids",
+        "Hopanoid": "Prenol lipids",
+        "Quinone": "Prenol lipids",
+        "Ubiquinone": "Prenol lipids",
+        "Archaeal_Lipid": "Archaeal lipids",
+        "Betaine_Lipid": "Betaine lipids",
+        "FA": "Fatty acyls",
+        "Fatty_Acid": "Fatty acyls",
+        "OAHFA": "Fatty acyls",
+        "MGMG": "Glycerolipids",
+        "DGMG": "Glycerolipids",
+        "SQMG": "Glycerolipids"
+      },
+      "combined_headgroup_labels": {
+        "PC/SM": "Glycerophospholipids|Sphingolipids"
+      },
+      "non_class_flags_excluded": [
+        "No_MS2",
+        "No_MS2_spectrum",
+        "Unknown"
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "mode": "POS",
+      "strict_features": 11371,
+      "annotated": 6291,
+      "annotated_pct": 55.32,
+      "gold_silver": 1706,
+      "gold_silver_pct": 15.0,
+      "distinct_class_verbatim": 49,
+      "distinct_class_normalised": 49,
+      "distinct_superclass": 9,
+      "superclass_unmapped": 0
+    },
+    {
+      "mode": "NEG",
+      "strict_features": 5697,
+      "annotated": 1791,
+      "annotated_pct": 31.44,
+      "gold_silver": 512,
+      "gold_silver_pct": 8.99,
+      "distinct_class_verbatim": 34,
+      "distinct_class_normalised": 34,
+      "distinct_superclass": 6,
+      "superclass_unmapped": 0
+    }
+  ],
+  "outputs": {
+    "harmonised_annotations_neg.csv": {
+      "bytes": 387832,
+      "sha256": "323f8915817cc56dddad9506cf13f0ba58821981673fb98495ad259a453b379f"
+    },
+    "harmonised_annotations_pos.csv": {
+      "bytes": 940461,
+      "sha256": "9783ab1bf806d18cf7ab8f92dcb99f73eb9733317c6b5d4cf3c0ef930573844a"
+    },
+    "step2_summary.csv": {
+      "bytes": 246,
+      "sha256": "ee4d59bda428414b6b2ffe0d448b8c88ffb6379b4c0f6537cdd81c6d63aaa7b4"
+    }
+  }
+}

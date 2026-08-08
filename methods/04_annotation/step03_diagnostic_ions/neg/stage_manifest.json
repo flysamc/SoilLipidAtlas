@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "stage_id": "negative_diagnostic_annotation_strict",
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "polarity": "NEG",
+  "status": "local_strict_complete",
+  "submitted": false,
+  "inputs": [
+    {
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/annotation_recovery_neg/strict_feature_spectrum_ledger.csv",
+      "bytes": 1125695,
+      "sha256": "cf7dc8cdd22c742238bec7f75d477349fd440625cf7b5adfc55dfd94244624b2"
+    },
+    {
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/annotation_recovery_neg/spectra/strict_full_usable_ms2_NEG.mgf",
+      "bytes": 23293852,
+      "sha256": "86924e5a15614914d3ed562ab25f69c6b4ab7c7629a84d51afc44c69efb5dad3"
+    },
+    {
+      "path": "external/SOILMASS_PRODUCER_RECOVERY_2026-08-04/payload/core/workspace/analysis/analysis-16/negative_mode/04_biomarker_discovery/05_ms2_structural/ms2_diagnostic_neg.py",
+      "bytes": 18013,
+      "sha256": "9819dd18fa5a9a6a9bc6013451267ca5fece05c94f24f2d3d40578caf6cd7580"
+    },
+    {
+      "path": "external/SOILMASS_PRODUCER_RECOVERY_2026-08-04/payload/core/workspace/analysis/analysis-16/negative_mode/04_biomarker_discovery/05_ms2_structural/neg_diagnostic_ions_db.py",
+      "bytes": 19728,
+      "sha256": "a0aa84e90002ea9f681997d96f1cc52c82965b6a46cd5e0fe6fb175ca2bdb990"
+    }
+  ],
+  "counts": {
+    "strict_features": 5697,
+    "strict_usable_ms2": 5695,
+    "strict_without_usable_ms2": 2,
+    "new_or_changed_features": 3521,
+    "new_or_changed_usable_ms2": 3520
+  },
+  "parameters": {
+    "noise_threshold_fraction_of_base_peak": 0.05
+  },
+  "blockers": [],
+  "outputs": [
+    {
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/annotation_recovery_neg/diagnostic_annotation/strict_diagnostic_annotation_NEG.csv",
+      "bytes": 1494008,
+      "sha256": "6fb8769b51c1c02049f69100610b16beff200cfd31a9b324aa716b4e21bbc629"
+    },
+    {
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/annotation_recovery_neg/diagnostic_annotation/strict_diagnostic_annotation_summary.json",
+      "bytes": 1189,
+      "sha256": "5f255bb2473cf51d31aeb21995401c1db1625c7784d5a3853c3bf7fcbb64cffa"
+    }
+  ]
+}

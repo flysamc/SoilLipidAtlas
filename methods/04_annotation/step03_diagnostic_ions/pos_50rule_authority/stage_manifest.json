@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "stage_id": "positive_diagnostic_ion_50_rule_authority_import",
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "polarity": "POS",
+  "status": "pass_authoritative_recovered_scope",
+  "source_archive": {
+    "original_path": "C:\\Users\\Shadow\\Downloads\\DIAGNOSTIC_ION_CORRECTION_2026-08-05.zip",
+    "bytes": 16867,
+    "sha256": "3c295dcead6a3ab49e9e8ea4cedf5b1df8bbbf25a5865eeac030c719d33cb557"
+  },
+  "scope": {
+    "total_rules": 50,
+    "rules_by_type": {
+      "fragment": 24,
+      "neutral_loss": 5,
+      "terpenoid_fragment": 21
+    },
+    "classifier_labels": 13,
+    "labels": [
+      "Archaeal_Lipid",
+      "Betaine_Lipid",
+      "Glycolipid",
+      "Hopanoid",
+      "PE",
+      "PG",
+      "PI",
+      "PS",
+      "Phospholipid",
+      "Quinone",
+      "Sphingolipid",
+      "Sterol",
+      "Terpenoid"
+    ],
+    "historical_claimed_rules": 66,
+    "unrecovered_rules": 16
+  },
+  "checks": {
+    "archive_members_complete": true,
+    "flattened_rule_count_is_50": true,
+    "fragment_rules_are_24": true,
+    "neutral_loss_rules_are_5": true,
+    "terpenoid_fragment_rules_are_21": true,
+    "classifier_labels_are_13": true,
+    "archive_classifier_matches_previously_recovered_classifier": true
+  },
+  "members": [
+    {
+      "archive_member": "DIAGNOSTIC_ION_CORRECTION_2026-08-05/README_SHADOW_PC.md",
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/annotation_local_diagnostic_50rule_authority/README_SHADOW_PC.md",
+      "bytes": 1221,
+      "sha256": "dd295682199ff05b6ffd1ab6c21fba04fd8981fb493e80db8ac75cb0abafa0c6"
+    },
+    {
+      "archive_member": "DIAGNOSTIC_ION_CORRECTION_2026-08-05/documentation/CORRECTION_NOTE.md",
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/annotation_local_diagnostic_50rule_authority/documentation/CORRECTION_NOTE.md",
+      "bytes": 2184,
+      "sha256": "8b87e2b884eed391b7da0f83a20a842b50e23b71db067e2f53f82617960aeb26"
+    },
+    {
+      "archive_member": "DIAGNOSTIC_ION_CORRECTION_2026-08-05/source/build_supp_table_S3.py",
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/annotation_local_diagnostic_50rule_authority/source/build_supp_table_S3.py",
+      "bytes": 2128,
+      "sha256": "5ddcfea8d07c7c39fe87467f13e4f9cc02f0ddda1a18ada7d245af7c2af1e7b9"
+    },
+    {
+      "archive_member": "DIAGNOSTIC_ION_CORRECTION_2026-08-05/source/ms2_classify_indval.py",
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/annotation_local_diagnostic_50rule_authority/source/ms2_classify_indval.py",
+      "bytes": 24080,
+      "sha256": "5d7a93ec83f110a27895535363c85520c2a2c3164ba38eb03d20c42a9d832431"
+    },
+    {
+      "archive_member": "DIAGNOSTIC_ION_CORRECTION_2026-08-05/table/Table_S3_diagnostic_ion_database_50_rules.csv",
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/annotation_local_diagnostic_50rule_authority/table/Table_S3_diagnostic_ion_database_50_rules.csv",
+      "bytes": 2448,
+      "sha256": "cd275db2a89a494684d6e0676cdd6fac5b71c00e7e034007130ed6df7b2584ac"
+    },
+    {
+      "archive_member": "DIAGNOSTIC_ION_CORRECTION_2026-08-05/table/Table_S3_diagnostic_ion_database_50_rules.xlsx",
+      "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/annotation_local_diagnostic_50rule_authority/table/Table_S3_diagnostic_ion_database_50_rules.xlsx",
+      "bytes": 6453,
+      "sha256": "a7fd48d48c0bf3b9d999108f1d7fcba41cecf2dafb58a2cd9bff48166100a862"
+    }
+  ],
+  "decision": [
+    "Use the executable 50-rule positive-mode classifier as the reproducible Step 3 authority.",
+    "Do not invent or infer the unrecovered 16 rules.",
+    "The 33-entry literature quick-reference is background and is not the executable classifier.",
+    "The imported classifier is byte-identical to the classifier already used for the strict POS diagnostic rerun, so feature-level outputs do not change.",
+    "The imported S3 workbook and CSV are staged for review only and do not replace submitted or manuscript tables."
+  ]
+}
