@@ -15,5 +15,12 @@ Methods, accessions, sequences, and the tree:
 Panels a and c use lipids only. Panel b’s x-axis is SSU patristic
 distance, not the five-rank NCBI framework in Table S15.
 
+Panel a dendrogram branches are rotated toward the fixed biological
+display order of `r/data/phyla.csv` (Bacteria → Archaea → Protists →
+Fungi → Viridiplantae → Animalia) so the POS and NEG trees and the
+panel c heatmaps read in a comparable order. Rotation is
+topology-preserving: UPGMA merge heights and cophenetic correlations
+are unchanged.
+
 `figure3_strict_composite_review_only.R` draws the three-panel layout
 (183 × 195 mm). House style: `r/soilmass_style.R`.
