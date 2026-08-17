@@ -270,7 +270,13 @@ build_panel <- function(bray, mode_label, show_legend) {
 }
 
 p_pos <- build_panel(pos_bray, "Positive mode", show_legend = FALSE)
-p_neg <- build_panel(neg_bray, "Negative mode", show_legend = TRUE)
+p_neg <- build_panel(neg_bray, "Negative mode", show_legend = FALSE)
+legend_grob <- local({
+  g <- ggplot2::ggplotGrob(build_panel(neg_bray, "Negative mode", show_legend = TRUE))
+  idx <- which(grepl("^guide-box", g$layout$name))
+  if (!length(idx)) stop("Could not extract the Figure 3c colour legend")
+  g$grobs[[idx[[1]]]]
+})
 
 draw_figure <- function(path, kind) {
   width_in <- NC_DOUBLE * MM_TO_IN
@@ -285,11 +291,16 @@ draw_figure <- function(path, kind) {
     stop("Unknown output device: ", kind)
   }
   grid::grid.newpage()
+  # Equal heatmap viewports; legend sits in its own column so coord_fixed
+  # does not shrink the negative-mode tiles to make room for the colour bar.
   grid::pushViewport(grid::viewport(
-    layout = grid::grid.layout(1, 2, widths = grid::unit(c(0.47, 0.53), "null"))
+    layout = grid::grid.layout(1, 3, widths = grid::unit(c(1, 1, 0.20), "null"))
   ))
   print(p_pos, vp = grid::viewport(layout.pos.row = 1, layout.pos.col = 1))
   print(p_neg, vp = grid::viewport(layout.pos.row = 1, layout.pos.col = 2))
+  grid::pushViewport(grid::viewport(layout.pos.row = 1, layout.pos.col = 3))
+  grid::grid.draw(legend_grob)
+  grid::popViewport()
   grid::popViewport()
   grid::grid.text("c", x = grid::unit(2, "mm"), y = grid::unit(height_in * 25.4 - 2, "mm"),
                  just = c("left", "top"), gp = grid::gpar(fontsize = NC_TAG_PT, fontface = "bold"))
