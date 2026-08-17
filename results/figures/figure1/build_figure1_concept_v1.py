@@ -209,12 +209,14 @@ for i, (name, col) in enumerate(groups):
         S.append("  " + frag)
     S.append('</g>')
 
-# stats row — design-scale facts only (organism count intentionally omitted:
-# the strict S1 producer records the species count as not reliably derivable)
+# stats row — design-scale facts only. Organism count intentionally omitted
+# (strict S1: species count not reliably derivable); per-mode sample counts
+# omitted too (168 POS vs 195 NEG reads as confusing in a workflow figure —
+# they live in Table S1 and Methods).
 sy = gy + 78
 line(30, sy - 16, 526, sy - 16, stroke="#DDDDDD")
-stats = ("19 collection phyla (16 analysis)   |   "
-         f"{N_POS_CORE} POS / {N_NEG_CORE} NEG samples   |   6 batches")
+stats = ("19 collection phyla (16 in analysis)   |   "
+         "6 measurement batches, two ionisation modes")
 text(278, sy, stats, size=11, anchor="middle")
 line(30, sy + 10, 526, sy + 10, stroke="#DDDDDD")
 
@@ -243,23 +245,24 @@ text(160, ay + 28, "Cross-batch alignment", size=10.5, weight="bold",
 text(160, ay + 42, "(retention-time correction +", size=8.5, anchor="middle")
 text(160, ay + 53, "m/z consensus, both modes)", size=8.5, anchor="middle")
 arrow(288, ay + 34, 314, ay + 34)
-rect(320, ay + 13, 180, 42, fill="#F1F1F1", stroke=INK, sw=1.2, rx=4)
-text(410, ay + 30, "Consensus atlas", size=9.5, weight="bold", anchor="middle")
-text(410, ay + 44, "273,248 aligned features", size=8.5, anchor="middle")
+rect(320, ay + 10, 180, 50, fill="#F1F1F1", stroke=INK, sw=1.2, rx=4)
+text(410, ay + 25, "Consensus atlas", size=9.5, weight="bold", anchor="middle")
+text(410, ay + 38, "273,248 features (positive)", size=8.5, anchor="middle")
+text(410, ay + 50, "122,571 features (negative)", size=8.5, anchor="middle")
 S.append('</g>')
 
 # ============================================================ PANEL B =======
 S.append('<g id="panel_b">')
 panel_letter(562, 34, "b", "Two complementary analytical layers")
 
-bx1, bx2, by, bw, bh = 562, 822, 50, 246, 268
+bx1, bx2, by, bw, bh = 562, 822, 50, 246, 280
 # --- layer 1: biomarker atlas
 rect(bx1, by, bw, bh, fill="white", stroke=LINE, sw=1.2, rx=8)
 text(bx1 + bw / 2, by + 20, "1. Phylum-enriched biomarker atlas", size=11,
      weight="bold", fill=PURPLE, anchor="middle")
-text(bx1 + bw / 2, by + 44, "Cross-batch composite score", size=9.5,
+text(bx1 + bw / 2, by + 44, "Which lipids mark each phylum?", size=9.5,
      weight="bold", anchor="middle")
-text(bx1 + bw / 2, by + 57, "+ indicator-value statistics (IndVal)", size=9,
+text(bx1 + bw / 2, by + 57, "(composite score + indicator statistics)", size=9,
      anchor="middle")
 arrow(bx1 + bw / 2, by + 66, bx1 + bw / 2, by + 80)
 text(bx1 + bw / 2, by + 96, f"{N_BIOMARKERS:,} biomarkers", size=12,
@@ -293,41 +296,43 @@ text(bx1 + bw / 2, lg_y + 60, "public soil data (fastMASST)", size=9.5,
 rect(bx2, by, bw, bh, fill="white", stroke=LINE, sw=1.2, rx=8)
 text(bx2 + bw / 2, by + 20, "2. Distributed fingerprint analysis", size=11,
      weight="bold", fill=BLUE, anchor="middle")
-text(bx2 + bw / 2, by + 44, "Quality-filtered cross-batch", size=9.5,
+text(bx2 + bw / 2, by + 44, "How do whole lipidomes differ", size=9.5,
      weight="bold", anchor="middle")
-text(bx2 + bw / 2, by + 57, "feature space (whole lipidomes)", size=9.5,
+text(bx2 + bw / 2, by + 57, "between phyla? (all quality features)", size=9.5,
      weight="bold", anchor="middle")
 arrow(bx2 + bw / 2, by + 66, bx2 + bw / 2, by + 80)
-text(bx2 + bw / 2, by + 96, "Bray–Curtis dissimilarity", size=9.5,
+text(bx2 + bw / 2, by + 96, "Lipidome similarity (Bray–Curtis)", size=9.5,
      weight="bold", anchor="middle")
-text(bx2 + bw / 2, by + 109, "Ordination & UPGMA dendrograms", size=8.5,
+text(bx2 + bw / 2, by + 109, "clustering & ordination recover", size=8.5,
      anchor="middle")
-text(bx2 + bw / 2, by + 120, "(chemotaxonomic structure)", size=8.5,
+text(bx2 + bw / 2, by + 120, "taxonomic structure", size=8.5,
      anchor="middle", fill=GREY)
 arrow(bx2 + bw / 2, by + 128, bx2 + bw / 2, by + 140)
-text(bx2 + bw / 2, by + 154, "SIMPER fingerprints per phylum", size=9.5,
+text(bx2 + bw / 2, by + 154, "Fingerprint per phylum: its top", size=9.5,
+     weight="bold", fill=BLUE, anchor="middle")
+text(bx2 + bw / 2, by + 166, "distinguishing features (SIMPER)", size=9.5,
      weight="bold", fill=BLUE, anchor="middle")
 # schematic mini-heatmap
-hm_x, hm_y, cell = bx2 + 46, by + 164, 13
+hm_x, hm_y, cell = bx2 + 46, by + 176, 11
 shades = ["#27346E", "#3D55A8", "#5E7BC4", "#8FA6DB", "#C3CfEC", "#E9EDF8"]
 random.seed(11)
 for r in range(4):
     lab = ["Phylum 1", "Phylum 2", "...", "Phylum n"][r]
-    text(hm_x - 5, hm_y + r * cell + 10, lab, size=7.5, anchor="end")
+    text(hm_x - 5, hm_y + r * cell + 9, lab, size=7.5, anchor="end")
     for c in range(9):
         col = shades[min(5, abs(c - r * 2) if r < 3 else random.randint(0, 5))]
         rect(hm_x + c * cell, hm_y + r * cell + 1, cell - 1.5, cell - 1.5,
              fill=col, rx=1.5)
 # colorbar
-cb_y = hm_y + 4 * cell + 8
+cb_y = hm_y + 4 * cell + 6
 for i, col in enumerate(reversed(shades)):
     rect(hm_x + 22 + i * 12, cb_y, 12, 6, fill=col)
 text(hm_x + 18, cb_y + 6, "Low", size=7, anchor="end")
 text(hm_x + 22 + 6 * 12 + 4, cb_y + 6, "High (contribution)", size=7)
 arrow(bx2 + bw / 2, cb_y + 10, bx2 + bw / 2, cb_y + 18)
-text(bx2 + bw / 2, cb_y + 30, "Cross-method validation", size=9.5,
+text(bx2 + bw / 2, cb_y + 30, "Confirmed by independent methods", size=9.5,
      weight="bold", fill=BLUE, anchor="middle")
-text(bx2 + bw / 2, cb_y + 42, "SCBD | CAP | L1  &  MS2LDA motifs", size=8.5,
+text(bx2 + bw / 2, cb_y + 42, "(SCBD, CAP, L1; MS2LDA motifs)", size=8.5,
      anchor="middle")
 
 # link arrow between layers
@@ -423,24 +428,26 @@ dc_y = cy0 + 208
 arrow(150, tg_y + 2 * tg_h + 8, 150, dc_y - 4)
 arrow(vm_x + 56, fm_y + 6 * fc_cell + 16, vm_x + 56, dc_y - 4)
 rect(96, dc_y, 356, 34, fill=BOX, stroke=INK, sw=1, rx=5)
-text(274, dc_y + 15, "Fold-change-weighted Bray–Curtis decomposition",
+text(274, dc_y + 15, "Each soil lipidome decomposed into phylum contributions",
      size=9.5, weight="bold", anchor="middle")
-text(274, dc_y + 27, "(against phylum reference fingerprints)", size=8.5,
-     fill=GREY, anchor="middle")
+text(274, dc_y + 27, "(compared against every phylum's reference fingerprint)",
+     size=8.5, fill=GREY, anchor="middle")
 S.append('</g>')
 
 # ============================================================ PANEL D =======
 S.append('<g id="panel_d">')
-panel_letter(562, 402, "d", "Lipid framework: correction and lipid-derived output")
+panel_letter(562, 402, "d", "From lipid signal to community composition")
 
 dy0 = 420
-# correction chain box
+# correction chain box — plain-language phrasing of the three corrections
+# (internally: Rule A response calibration, Rule C shared-biomarker split,
+# ArchLips-restricted archaeal reference)
 rect(562, dy0, 236, 108, fill="white", stroke=LINE, sw=1.2, rx=8)
-text(680, dy0 + 17, "Quantification correction", size=10.5, weight="bold",
-     anchor="middle")
-corr = [("Rule A", "out-of-range RIE → uncalibrated (1.0)"),
-        ("Rule C", "enriched weight split across k phyla"),
-        ("ArchLips", "restricted archaeal reference")]
+text(680, dy0 + 17, "Making lipid signals comparable", size=10.5,
+     weight="bold", anchor="middle")
+corr = [("Calibrate", "signal weighted by lipid response"),
+        ("Share", "shared biomarkers split across phyla"),
+        ("Archaea", "only validated ether lipids counted")]
 for i, (t1, t2) in enumerate(corr):
     yy = dy0 + 38 + i * 22
     rect(574, yy - 11, 52, 16, fill="#F1F1F1", stroke=LINE, sw=0.8, rx=3)

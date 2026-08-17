@@ -56,7 +56,7 @@
   <circle cx="-6.5" cy="3.5" r="1.9"/>
 </g>
 <line x1="30.0" y1="128.0" x2="526.0" y2="128.0" stroke="#DDDDDD" stroke-width="1"/>
-<text x="278.0" y="144.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#1A1A1A" font-weight="normal" text-anchor="middle">19 collection phyla (16 analysis)   |   168 POS / 195 NEG samples   |   6 batches</text>
+<text x="278.0" y="144.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#1A1A1A" font-weight="normal" text-anchor="middle">19 collection phyla (16 in analysis)   |   6 measurement batches, two ionisation modes</text>
 <line x1="30.0" y1="154.0" x2="526.0" y2="154.0" stroke="#DDDDDD" stroke-width="1"/>
 <rect x="30.0" y="170.0" width="88.0" height="42.0" rx="5" fill="#FAFAFA" stroke="#BFBFBF" stroke-width="1"/>
 <text x="74.0" y="187.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Biomass</text>
@@ -82,17 +82,18 @@
 <text x="160.0" y="278.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(retention-time correction +</text>
 <text x="160.0" y="289.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">m/z consensus, both modes)</text>
 <line x1="288.0" y1="270.0" x2="314.0" y2="270.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
-<rect x="320.0" y="249.0" width="180.0" height="42.0" rx="4" fill="#F1F1F1" stroke="#1A1A1A" stroke-width="1.2"/>
-<text x="410.0" y="266.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Consensus atlas</text>
-<text x="410.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">273,248 aligned features</text>
+<rect x="320.0" y="246.0" width="180.0" height="50.0" rx="4" fill="#F1F1F1" stroke="#1A1A1A" stroke-width="1.2"/>
+<text x="410.0" y="261.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Consensus atlas</text>
+<text x="410.0" y="274.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">273,248 features (positive)</text>
+<text x="410.0" y="286.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">122,571 features (negative)</text>
 </g>
 <g id="panel_b">
 <text x="562.0" y="34.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1A1A1A" font-weight="bold" text-anchor="start">b</text>
 <text x="586.0" y="34.0" font-family="Helvetica, Arial, sans-serif" font-size="14.5" fill="#1A1A1A" font-weight="bold" text-anchor="start">Two complementary analytical layers</text>
-<rect x="562.0" y="50.0" width="246.0" height="268.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
+<rect x="562.0" y="50.0" width="246.0" height="280.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
 <text x="685.0" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#7B52AB" font-weight="bold" text-anchor="middle">1. Phylum-enriched biomarker atlas</text>
-<text x="685.0" y="94.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Cross-batch composite score</text>
-<text x="685.0" y="107.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="middle">+ indicator-value statistics (IndVal)</text>
+<text x="685.0" y="94.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Which lipids mark each phylum?</text>
+<text x="685.0" y="107.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(composite score + indicator statistics)</text>
 <line x1="685.0" y1="116.0" x2="685.0" y2="130.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <text x="685.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#7B52AB" font-weight="bold" text-anchor="middle">11,371 biomarkers</text>
 <text x="685.0" y="159.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">across 16 phyla (positive mode)</text>
@@ -113,80 +114,81 @@
 <line x1="685.0" y1="256.0" x2="685.0" y2="268.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <text x="685.0" y="282.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#6E6E6E" font-weight="bold" text-anchor="middle">External validation in</text>
 <text x="685.0" y="294.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#6E6E6E" font-weight="bold" text-anchor="middle">public soil data (fastMASST)</text>
-<rect x="822.0" y="50.0" width="246.0" height="268.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
+<rect x="822.0" y="50.0" width="246.0" height="280.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
 <text x="945.0" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#2E5FA3" font-weight="bold" text-anchor="middle">2. Distributed fingerprint analysis</text>
-<text x="945.0" y="94.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Quality-filtered cross-batch</text>
-<text x="945.0" y="107.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">feature space (whole lipidomes)</text>
+<text x="945.0" y="94.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">How do whole lipidomes differ</text>
+<text x="945.0" y="107.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">between phyla? (all quality features)</text>
 <line x1="945.0" y1="116.0" x2="945.0" y2="130.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
-<text x="945.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Bray–Curtis dissimilarity</text>
-<text x="945.0" y="159.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">Ordination &amp; UPGMA dendrograms</text>
-<text x="945.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">(chemotaxonomic structure)</text>
+<text x="945.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Lipidome similarity (Bray–Curtis)</text>
+<text x="945.0" y="159.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">clustering &amp; ordination recover</text>
+<text x="945.0" y="170.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">taxonomic structure</text>
 <line x1="945.0" y1="178.0" x2="945.0" y2="190.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
-<text x="945.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#2E5FA3" font-weight="bold" text-anchor="middle">SIMPER fingerprints per phylum</text>
-<text x="863.0" y="224.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="end">Phylum 1</text>
-<rect x="868.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#27346E" stroke="none" stroke-width="1"/>
-<rect x="881.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
-<rect x="894.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
-<rect x="907.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
-<rect x="920.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<rect x="933.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
-<rect x="946.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
-<rect x="959.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
-<rect x="972.0" y="215.0" width="11.5" height="11.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
-<text x="863.0" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="end">Phylum 2</text>
-<rect x="868.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
-<rect x="881.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
-<rect x="894.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#27346E" stroke="none" stroke-width="1"/>
-<rect x="907.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
-<rect x="920.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
-<rect x="933.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
-<rect x="946.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<rect x="959.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
-<rect x="972.0" y="228.0" width="11.5" height="11.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
-<text x="863.0" y="250.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="end">...</text>
-<rect x="868.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<rect x="881.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
-<rect x="894.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
-<rect x="907.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
-<rect x="920.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#27346E" stroke="none" stroke-width="1"/>
-<rect x="933.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
-<rect x="946.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
-<rect x="959.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
-<rect x="972.0" y="241.0" width="11.5" height="11.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<text x="863.0" y="263.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="end">Phylum n</text>
-<rect x="868.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
-<rect x="881.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<rect x="894.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
-<rect x="907.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
-<rect x="920.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<rect x="933.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<rect x="946.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
-<rect x="959.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
-<rect x="972.0" y="254.0" width="11.5" height="11.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<rect x="890.0" y="274.0" width="12.0" height="6.0" rx="0" fill="#E9EDF8" stroke="none" stroke-width="1"/>
-<rect x="902.0" y="274.0" width="12.0" height="6.0" rx="0" fill="#C3CfEC" stroke="none" stroke-width="1"/>
-<rect x="914.0" y="274.0" width="12.0" height="6.0" rx="0" fill="#8FA6DB" stroke="none" stroke-width="1"/>
-<rect x="926.0" y="274.0" width="12.0" height="6.0" rx="0" fill="#5E7BC4" stroke="none" stroke-width="1"/>
-<rect x="938.0" y="274.0" width="12.0" height="6.0" rx="0" fill="#3D55A8" stroke="none" stroke-width="1"/>
-<rect x="950.0" y="274.0" width="12.0" height="6.0" rx="0" fill="#27346E" stroke="none" stroke-width="1"/>
-<text x="886.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="7" fill="#1A1A1A" font-weight="normal" text-anchor="end">Low</text>
-<text x="966.0" y="280.0" font-family="Helvetica, Arial, sans-serif" font-size="7" fill="#1A1A1A" font-weight="normal" text-anchor="start">High (contribution)</text>
-<line x1="945.0" y1="284.0" x2="945.0" y2="292.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
-<text x="945.0" y="304.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#2E5FA3" font-weight="bold" text-anchor="middle">Cross-method validation</text>
-<text x="945.0" y="316.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">SCBD | CAP | L1  &amp;  MS2LDA motifs</text>
+<text x="945.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#2E5FA3" font-weight="bold" text-anchor="middle">Fingerprint per phylum: its top</text>
+<text x="945.0" y="216.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#2E5FA3" font-weight="bold" text-anchor="middle">distinguishing features (SIMPER)</text>
+<text x="863.0" y="235.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="end">Phylum 1</text>
+<rect x="868.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#27346E" stroke="none" stroke-width="1"/>
+<rect x="879.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
+<rect x="890.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
+<rect x="901.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
+<rect x="912.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<rect x="923.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
+<rect x="934.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
+<rect x="945.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
+<rect x="956.0" y="227.0" width="9.5" height="9.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
+<text x="863.0" y="246.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="end">Phylum 2</text>
+<rect x="868.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
+<rect x="879.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
+<rect x="890.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#27346E" stroke="none" stroke-width="1"/>
+<rect x="901.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
+<rect x="912.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
+<rect x="923.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
+<rect x="934.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<rect x="945.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
+<rect x="956.0" y="238.0" width="9.5" height="9.5" rx="1.5" fill="#E9EDF8" stroke="none" stroke-width="1"/>
+<text x="863.0" y="257.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="end">...</text>
+<rect x="868.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<rect x="879.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
+<rect x="890.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
+<rect x="901.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
+<rect x="912.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#27346E" stroke="none" stroke-width="1"/>
+<rect x="923.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
+<rect x="934.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#5E7BC4" stroke="none" stroke-width="1"/>
+<rect x="945.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
+<rect x="956.0" y="249.0" width="9.5" height="9.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<text x="863.0" y="268.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="end">Phylum n</text>
+<rect x="868.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
+<rect x="879.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<rect x="890.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
+<rect x="901.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#8FA6DB" stroke="none" stroke-width="1"/>
+<rect x="912.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<rect x="923.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<rect x="934.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
+<rect x="945.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
+<rect x="956.0" y="260.0" width="9.5" height="9.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<rect x="890.0" y="276.0" width="12.0" height="6.0" rx="0" fill="#E9EDF8" stroke="none" stroke-width="1"/>
+<rect x="902.0" y="276.0" width="12.0" height="6.0" rx="0" fill="#C3CfEC" stroke="none" stroke-width="1"/>
+<rect x="914.0" y="276.0" width="12.0" height="6.0" rx="0" fill="#8FA6DB" stroke="none" stroke-width="1"/>
+<rect x="926.0" y="276.0" width="12.0" height="6.0" rx="0" fill="#5E7BC4" stroke="none" stroke-width="1"/>
+<rect x="938.0" y="276.0" width="12.0" height="6.0" rx="0" fill="#3D55A8" stroke="none" stroke-width="1"/>
+<rect x="950.0" y="276.0" width="12.0" height="6.0" rx="0" fill="#27346E" stroke="none" stroke-width="1"/>
+<text x="886.0" y="282.0" font-family="Helvetica, Arial, sans-serif" font-size="7" fill="#1A1A1A" font-weight="normal" text-anchor="end">Low</text>
+<text x="966.0" y="282.0" font-family="Helvetica, Arial, sans-serif" font-size="7" fill="#1A1A1A" font-weight="normal" text-anchor="start">High (contribution)</text>
+<line x1="945.0" y1="286.0" x2="945.0" y2="294.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="945.0" y="306.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#2E5FA3" font-weight="bold" text-anchor="middle">Confirmed by independent methods</text>
+<text x="945.0" y="318.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(SCBD, CAP, L1; MS2LDA motifs)</text>
 <line x1="810" y1="165" x2="820" y2="165" stroke="#6E6E6E" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr)" marker-start="url(#arr)"/>
-<rect x="562.0" y="332.0" width="9.0" height="9.0" rx="2" fill="#7B52AB" stroke="none" stroke-width="1"/>
-<text x="575.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Bacteria</text>
-<rect x="645.6" y="332.0" width="9.0" height="9.0" rx="2" fill="#1B9E8F" stroke="none" stroke-width="1"/>
-<text x="658.6" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Archaea</text>
-<rect x="722.0" y="332.0" width="9.0" height="9.0" rx="2" fill="#D9A420" stroke="none" stroke-width="1"/>
-<text x="735.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Fungi</text>
-<rect x="784.0" y="332.0" width="9.0" height="9.0" rx="2" fill="#3E9C35" stroke="none" stroke-width="1"/>
-<text x="797.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Viridiplantae</text>
-<rect x="903.6" y="332.0" width="9.0" height="9.0" rx="2" fill="#D64541" stroke="none" stroke-width="1"/>
-<text x="916.6" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Animalia</text>
-<rect x="987.2" y="332.0" width="9.0" height="9.0" rx="2" fill="#3B6FD4" stroke="none" stroke-width="1"/>
-<text x="1000.2" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Protists</text>
+<rect x="562.0" y="344.0" width="9.0" height="9.0" rx="2" fill="#7B52AB" stroke="none" stroke-width="1"/>
+<text x="575.0" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Bacteria</text>
+<rect x="645.6" y="344.0" width="9.0" height="9.0" rx="2" fill="#1B9E8F" stroke="none" stroke-width="1"/>
+<text x="658.6" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Archaea</text>
+<rect x="722.0" y="344.0" width="9.0" height="9.0" rx="2" fill="#D9A420" stroke="none" stroke-width="1"/>
+<text x="735.0" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Fungi</text>
+<rect x="784.0" y="344.0" width="9.0" height="9.0" rx="2" fill="#3E9C35" stroke="none" stroke-width="1"/>
+<text x="797.0" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Viridiplantae</text>
+<rect x="903.6" y="344.0" width="9.0" height="9.0" rx="2" fill="#D64541" stroke="none" stroke-width="1"/>
+<text x="916.6" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Animalia</text>
+<rect x="987.2" y="344.0" width="9.0" height="9.0" rx="2" fill="#3B6FD4" stroke="none" stroke-width="1"/>
+<text x="1000.2" y="352.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Protists</text>
 </g>
 <g id="panel_c">
 <text x="16.0" y="402.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1A1A1A" font-weight="bold" text-anchor="start">c</text>
@@ -293,25 +295,25 @@
 <line x1="150.0" y1="598.0" x2="150.0" y2="624.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <line x1="464.0" y1="556.0" x2="464.0" y2="624.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <rect x="96.0" y="628.0" width="356.0" height="34.0" rx="5" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="1"/>
-<text x="274.0" y="643.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Fold-change-weighted Bray–Curtis decomposition</text>
-<text x="274.0" y="655.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">(against phylum reference fingerprints)</text>
+<text x="274.0" y="643.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Each soil lipidome decomposed into phylum contributions</text>
+<text x="274.0" y="655.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">(compared against every phylum's reference fingerprint)</text>
 </g>
 <g id="panel_d">
 <text x="562.0" y="402.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1A1A1A" font-weight="bold" text-anchor="start">d</text>
-<text x="586.0" y="402.0" font-family="Helvetica, Arial, sans-serif" font-size="14.5" fill="#1A1A1A" font-weight="bold" text-anchor="start">Lipid framework: correction and lipid-derived output</text>
+<text x="586.0" y="402.0" font-family="Helvetica, Arial, sans-serif" font-size="14.5" fill="#1A1A1A" font-weight="bold" text-anchor="start">From lipid signal to community composition</text>
 <rect x="562.0" y="420.0" width="236.0" height="108.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
-<text x="680.0" y="437.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Quantification correction</text>
+<text x="680.0" y="437.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Making lipid signals comparable</text>
 <rect x="574.0" y="447.0" width="52.0" height="16.0" rx="3" fill="#F1F1F1" stroke="#BFBFBF" stroke-width="0.8"/>
-<text x="600.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Rule A</text>
-<text x="632.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">out-of-range RIE → uncalibrated (1.0)</text>
+<text x="600.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Calibrate</text>
+<text x="632.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">signal weighted by lipid response</text>
 <line x1="600.0" y1="464.0" x2="600.0" y2="468.0" stroke="#6E6E6E" stroke-width="0.9" marker-end="url(#arr)"/>
 <rect x="574.0" y="469.0" width="52.0" height="16.0" rx="3" fill="#F1F1F1" stroke="#BFBFBF" stroke-width="0.8"/>
-<text x="600.0" y="480.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Rule C</text>
-<text x="632.0" y="480.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">enriched weight split across k phyla</text>
+<text x="600.0" y="480.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Share</text>
+<text x="632.0" y="480.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">shared biomarkers split across phyla</text>
 <line x1="600.0" y1="486.0" x2="600.0" y2="490.0" stroke="#6E6E6E" stroke-width="0.9" marker-end="url(#arr)"/>
 <rect x="574.0" y="491.0" width="52.0" height="16.0" rx="3" fill="#F1F1F1" stroke="#BFBFBF" stroke-width="0.8"/>
-<text x="600.0" y="502.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">ArchLips</text>
-<text x="632.0" y="502.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">restricted archaeal reference</text>
+<text x="600.0" y="502.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Archaea</text>
+<text x="632.0" y="502.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">only validated ether lipids counted</text>
 <rect x="562.0" y="542.0" width="236.0" height="64.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
 <text x="680.0" y="560.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Framework validation</text>
 <text x="680.0" y="576.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">Leave-one-out negative control on</text>
