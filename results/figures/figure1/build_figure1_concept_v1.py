@@ -1,19 +1,30 @@
-"""Figure 1 concept rebuild — editable vector skeleton (v1).
+"""Figure 1 concept rebuild — editable vector skeleton (v2, concept-only).
 
-Rebuilds the AI-generated Figure 1 mock as a true SVG: every label is live text,
-every shape a vector object, grouped per panel (a-d) so the file can be edited
-in Illustrator/Inkscape/Affinity. Data-driven values are read from the
-ncbi-phylum-2026-08-04-v1 release outputs; unresolved items are rendered as
-clearly-marked [TBD] slots.
+Rebuilds Figure 1 as a true SVG: every label is live text, every shape a
+vector object, grouped per panel (a-d) so the file can be edited in
+Illustrator/Inkscape/Affinity.
+
+v2 design decision (2026-08-17): Figure 1 is a WORKFLOW figure — it carries
+only design-scale facts (phyla, samples, batches, feature counts) and no
+statistical results. Tier percentages, validation percentages, composite
+weights, alignment tolerances, and the real composition forest plot were
+removed; those results live in Figs 2 & 5 and Supp Fig 5. Panel d's output
+plot is an explicitly schematic sketch. The organism count was dropped
+entirely (the strict S1 producer records the species count as not reliably
+derivable; submitted main text and S1 disagree at 110 vs 112).
+
+Data-driven values that remain: 11,371 biomarkers / 16 phyla, 168/195 core
+samples, 736 decoded fingerprint features, 273,248 consensus features.
 
 Output: outputs/analysis/ncbi-phylum-2026-08-04-v1/figure1_redesign_2026-08-11_v1/
         Figure1_concept_skeleton.svg
 
-Canvas: 180 x 120 mm (Nature Comms double column), viewBox 1080 x 720
-(6 units per mm; 6 pt text = 2.117 mm = 12.7 units).
+Canvas: 180 x 120 mm (Nature Comms double column), viewBox 1080 x 720.
 """
 
 import json
+import math
+import random
 from pathlib import Path
 
 import pandas as pd
@@ -24,45 +35,29 @@ OUT_DIR = REL / "figure1_redesign_2026-08-11_v1"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------- data inputs
-tier_counts = pd.read_csv(REL / "annotation" / "tier_counts.csv")
-pos_tiers = (tier_counts[tier_counts["mode"] == "POS"]
-             .groupby("annotation_tier")["n_features"].sum())
-TIER_ORDER = ["Gold", "Silver", "Bronze", "Unidentified"]
-tier_pct = {t: 100.0 * pos_tiers.get(t, 0) / pos_tiers.sum() for t in TIER_ORDER}
-
-# fc-weighted + rules = the PRIMARY estimate in the final house-style render
-# (r_render/fig6_climgrass_v2.R uses this composition; marker_panel not shown)
-fcw = pd.read_csv(REL / "climgrass" / "figure5_redesign_2026-08-08_v2_archlips"
-                  / "composition_fcweighted_kingdom_ci.csv")
-fc = {r["kingdom"]: r for _, r in fcw.iterrows()}
-
-simper = json.load(open(REL / "simper" / "summary.json"))
 bio = json.load(open(REL / "biomarker_discovery" / "summary.json"))
 N_BIOMARKERS = bio["validation"]["atlas_rows"]          # 11371
 N_BIO_PHYLA = bio["validation"]["observed_phyla"]       # 16
 
 arch = json.load(open(REL / "climgrass" / "strict16_archlips_extended_2026-08-08_v1"
                       / "RUN_SUMMARY.json"))
-N_MATCHES = arch["spectral_qc"]["rows"]                 # 2313
 N_SUBSTRATE = arch["simper_features"] + arch["archlips_added"]  # 736
 
 sub = json.load(open(REL / "figure3" / "substrate" / "substrate_summary.json"))
 N_POS_CORE = sub["population"]["collection_core_samples"]["POS"]   # 168
 N_NEG_CORE = sub["population"]["collection_core_samples"]["NEG"]   # 195
 
-N_FILTERED_POS = 45525  # figure3/substrate/pos.csv row count (verified 2026-08-11)
-
-# literature-expected ranges (README figure5_redesign v2; development anchors)
-EXPECTED = {"Bacteria": (35, 50), "Fungi": (15, 30), "Plantae": (15, 30),
-            "Animalia": (1, 5), "Protozoa": (0, 1), "Archaea": (2, 8)}
-
 # ------------------------------------------------------------------- palette
 KING = {
     "Bacteria": "#7B52AB", "Archaea": "#1B9E8F", "Fungi": "#D9A420",
     "Plantae": "#3E9C35", "Animalia": "#D64541", "Protozoa": "#3B6FD4",
 }
+# locked ecological_group policy — display labels only. Data keys stay legacy.
+DISPLAY = {"Plantae": "Viridiplantae", "Protozoa": "Protists"}
+def disp(n): return DISPLAY.get(n, n)
 TIER_COL = {"Gold": "#E8B931", "Silver": "#B8B8B8", "Bronze": "#C98A4B",
             "Unidentified": "#E3E3E3"}
+TIER_ORDER = ["Gold", "Silver", "Bronze", "Unidentified"]
 INK = "#1A1A1A"
 GREY = "#6E6E6E"
 LINE = "#BFBFBF"
@@ -125,7 +120,7 @@ S.append('<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" '
          f'<path d="M 0 1 L 9 5 L 0 9 z" fill="{GREY}"/></marker></defs>')
 S.append('<rect x="0" y="0" width="1080" height="720" fill="white"/>')
 
-# panel divider lines (mock style)
+# panel divider lines
 line(545, 12, 545, 708, stroke="#E4E4E4", sw=1)
 line(12, 372, 1068, 372, stroke="#E4E4E4", sw=1)
 
@@ -138,48 +133,87 @@ groups = list(KING.items())
 gx0, gy = 30, 66
 text(gx0, gy, "Six organism groups", size=11.5, weight="bold")
 slot_w = 84
+
+
+def icon_paths(name, col):
+    """Line-art for one organism group, drawn in LOCAL coordinates centred on
+    (0,0) inside a ~32 x 32 box. The caller wraps these in a <g> that carries the
+    translate/scale, stroke colour and joins, so each icon is an independently
+    editable object in Illustrator/Inkscape. Bodies get a light tint of their own
+    colour so the silhouette still reads at 15 mm; details stay unfilled.
+    """
+    A = f' fill="{col}" fill-opacity="0.12"'      # tinted body
+    p = []
+    if name == "Bacteria":
+        # three bacilli (rod-shaped cells) + a trailing flagellum
+        for tx, ty, rot, L in ((-8, -7, -28, 19), (9, -4, 18, 18), (-2, 7, -7, 21)):
+            p.append(f'<rect x="{-L/2:.1f}" y="-3.9" width="{L}" height="7.8" '
+                     f'rx="3.9"{A} transform="translate({tx},{ty}) rotate({rot})"/>')
+        p.append('<path d="M 9.5 9 q 4.5 -3.2 8 -0.4 q 3.4 2.8 6.2 0.2"/>')
+    elif name == "Archaea":
+        # coccoid packet (Methanosarcina-like), hexagonal close packing
+        p.append(f'<circle cx="0" cy="0" r="4.6"{A}/>')
+        for k in range(6):
+            a = math.radians(k * 60 - 90)
+            p.append(f'<circle cx="{9.9*math.cos(a):.1f}" cy="{9.9*math.sin(a):.1f}" '
+                     f'r="4.6"{A}/>')
+    elif name == "Fungi":
+        # capped sporocarp + stipe + basal hyphae
+        p.append(f'<path d="M -12 0 C -12 -10.5 -6.5 -14.5 0 -14.5 '
+                 f'C 6.5 -14.5 12 -10.5 12 0 Z"{A}/>')
+        p.append(f'<path d="M -3.2 0.5 C -3.8 5 -3.8 8.5 -5 12.5 L 5 12.5 '
+                 f'C 3.8 8.5 3.8 5 3.2 0.5"{A}/>')
+        p.append('<path d="M -5 12.5 c -3.2 0.6 -5 2 -6.4 3.8 '
+                 'M 5 12.5 c 3.2 0.6 5 2 6.4 3.8"/>')
+    elif name == "Plantae":
+        # three tapered grass blades from a common base
+        p.append(f'<path d="M 0 15 C -5 6 -9 -2 -12 -11 C -5.5 -2.5 -2 6 0 15 Z"{A}/>')
+        p.append(f'<path d="M 0 15 C -2.5 4 -1.5 -6 1 -15.5 C 3.5 -6 3 4 0 15 Z"{A}/>')
+        p.append(f'<path d="M 0 15 C 5 7 8.5 0.5 12.5 -8 C 6.5 0.5 2.5 7 0 15 Z"{A}/>')
+    elif name == "Animalia":
+        # oribatid soil mite, dorsal view: idiosoma + gnathosoma + EIGHT legs
+        # (Acari are arachnids — the previous six-legged icon was incorrect)
+        p.append(f'<ellipse cx="2.5" cy="0" rx="10.5" ry="7.2"{A}/>')
+        p.append('<path d="M -7.6 -3.4 C -10 -3.6 -11.6 -2 -11.6 0 '
+                 'C -11.6 2 -10 3.6 -7.6 3.4"/>')          # gnathosoma (mouthparts)
+        # four leg pairs; front pairs sweep forward, rear pairs back, so the
+        # outline reads as an arthropod rather than a radial starburst
+        for x1, y1, x2, y2, x3, y3 in (
+                (-4.5, -6, -9.5, -10.5, -15, -12.5),
+                (-0.5, -7, -3.5, -12, -7.5, -15.5),
+                (4, -6.9, 6.5, -12, 10.5, -14.5),
+                (8, -5, 12.5, -8.5, 15.5, -10.5)):
+            for s in (-1, 1):
+                p.append(f'<path d="M {x1} {s*y1} L {x2} {s*y2} L {x3} {s*y3}"/>')
+    else:
+        # amoeboid protist: lobopodia + nucleus + contractile vacuole
+        p.append(f'<path d="M -13.5 -3 C -15 -9 -9.5 -13.5 -4.5 -11 C -2.5 -16 5.5 -16 7 -10 '
+                 f'C 13 -12.5 16.5 -5 12 -1 C 16 3.5 12.5 10 6.5 8 '
+                 f'C 4.5 13.5 -3 14.5 -6 8.5 C -12 10.5 -16 3 -13.5 -3 Z"{A}/>')
+        p.append(f'<circle cx="2.5" cy="-2" r="3.2" fill="{col}" fill-opacity="0.32"/>')
+        p.append('<circle cx="-6.5" cy="3.5" r="1.9"/>')
+    return p
+
+
 for i, (name, col) in enumerate(groups):
     cx = gx0 + 12 + i * slot_w
-    text(cx + 18, gy + 20, name, size=11, fill=col, weight="bold", anchor="middle")
-    icy = gy + 44
-    S.append(f'<g id="icon_{name.lower()}" stroke="{col}" fill="none" stroke-width="1.6">')
-    if name == "Bacteria":     # three rods
-        for j, (dx, dy, rot) in enumerate([(-10, -4, -20), (4, -8, 15), (-2, 6, 5)]):
-            S.append(f'<rect x="{cx+dx:.0f}" y="{icy+dy:.0f}" width="20" height="8" '
-                     f'rx="4" transform="rotate({rot} {cx+dx+10} {icy+dy+4})"/>')
-    elif name == "Archaea":    # cluster of cocci
-        for dx, dy in [(-8, -6), (4, -8), (10, 2), (-2, 2), (-12, 5), (2, 10)]:
-            S.append(f'<circle cx="{cx+dx+8:.0f}" cy="{icy+dy:.0f}" r="4.6"/>')
-    elif name == "Fungi":      # mushroom
-        S.append(f'<path d="M {cx-6} {icy} q 14 -18 28 0 z"/>')
-        S.append(f'<path d="M {cx+5} {icy} l 0 12 m 4 -12 l 0 12"/>')
-    elif name == "Plantae":    # grass blades
-        S.append(f'<path d="M {cx+8} {icy+12} q -10 -8 -12 -22 M {cx+8} {icy+12} '
-                 f'q 0 -14 2 -24 M {cx+8} {icy+12} q 10 -6 14 -20"/>')
-    elif name == "Animalia":   # mite: body + legs
-        S.append(f'<ellipse cx="{cx+8:.0f}" cy="{icy:.0f}" rx="10" ry="7"/>')
-        for sgn in (-1, 1):
-            for k in range(3):
-                S.append(f'<path d="M {cx+8+sgn*9} {icy-4+k*4} l {sgn*8} {-2+k*2}"/>')
-    else:                      # Protozoa: amoeba blob + flagellate
-        S.append(f'<path d="M {cx-4} {icy} q -4 -10 6 -10 q 4 -6 10 -2 q 8 -2 8 6 '
-                 f'q 6 6 -2 9 q -2 6 -9 4 q -8 4 -11 -2 q -6 -1 -2 -5 z"/>')
-        S.append(f'<circle cx="{cx+7:.0f}" cy="{icy:.0f}" r="2" fill="{col}" stroke="none"/>')
+    _glab = disp(name)
+    text(cx + 18, gy + 20, _glab, size=10 if len(_glab) > 9 else 11,
+         fill=col, weight="bold", anchor="middle")
+    icy = gy + 42
+    S.append(f'<g id="icon_{disp(name).lower()}" '
+             f'transform="translate({cx+18},{icy}) scale(0.9)" '
+             f'stroke="{col}" fill="none" stroke-width="1.8" '
+             'stroke-linecap="round" stroke-linejoin="round">')
+    for frag in icon_paths(name, col):
+        S.append("  " + frag)
     S.append('</g>')
 
-# stats row (organism count = taxid-resolved analysis units, Figure 3b SSU
-# curated freeze v3: 105 distinct NCBI taxids across the 16 analysis phyla)
-units = pd.read_csv(REL / "figure3" / "evolutionary_tree_reference"
-                    / "curated_freeze_v3"
-                    / "ssu_curated_unit_representations_v3.csv")
-N_ANALYSIS_ORG = units["analysis_unit_taxid"].nunique()   # 105
-# + 4 collection-only organisms in the below-threshold phyla (Anabaena torulosa,
-# lichen composite, Linnemannia gamsii, Rhogostoma minus) -> 109 collected
-N_COLLECTED_ORG = N_ANALYSIS_ORG + 4
+# stats row — design-scale facts only (organism count intentionally omitted:
+# the strict S1 producer records the species count as not reliably derivable)
 sy = gy + 78
 line(30, sy - 16, 526, sy - 16, stroke="#DDDDDD")
-stats = (f"{N_COLLECTED_ORG} organisms ({N_ANALYSIS_ORG} in statistics)   |   "
-         "19 collection phyla (16 analysis)   |   "
+stats = ("19 collection phyla (16 analysis)   |   "
          f"{N_POS_CORE} POS / {N_NEG_CORE} NEG samples   |   6 batches")
 text(278, sy, stats, size=11, anchor="middle")
 line(30, sy + 10, 526, sy + 10, stroke="#DDDDDD")
@@ -201,28 +235,17 @@ for i, (t1, t2) in enumerate(steps):
     if i < 4:
         arrow(x + step_w + 1, py - 5, x + step_w + gap - 1, py - 5)
 
-# cross-batch alignment box (dashed, mock style)
+# alignment summary (concept only — tolerances live in Supplementary Method 1)
 ay = py + 40
-rect(30, ay, 496, 84, fill="white", stroke=GREY, sw=1, rx=6, dash="5 4")
-text(278, ay + 17, "Cross-batch alignment (positive mode)", size=11,
-     weight="bold", anchor="middle")
-al_items = [(">15,000 anchor", "features (5 ppm / 2.0 min)"),
-            ("LOESS retention", "time correction"),
-            ("5 ppm m/z, 0.5 min RT", "consensus alignment")]
-ax0 = 44
-for i, (t1, t2) in enumerate(al_items):
-    x = ax0 + i * 122
-    text(x + 50, ay + 42, t1, size=9, anchor="middle")
-    text(x + 50, ay + 54, t2, size=9, anchor="middle")
-    if i < 2:
-        arrow(x + 104, ay + 44, x + 120, ay + 44)
-arrow(ax0 + 348, ay + 44, ax0 + 364, ay + 44)
-rect(ax0 + 366, ay + 22, 116, 42, fill="#F1F1F1", stroke=INK, sw=1.2, rx=4)
-text(ax0 + 424, ay + 36, "Consensus atlas", size=9.5, weight="bold", anchor="middle")
-text(ax0 + 424, ay + 48, "273,248 features", size=8, anchor="middle")
-text(ax0 + 424, ay + 58, "(1.5–25.0 min RT)", size=8, anchor="middle")
-text(278, ay + 76, "Negative mode processed in parallel", size=9, fill=GREY,
-     anchor="middle", style="italic")
+rect(30, ay, 496, 68, fill="white", stroke=GREY, sw=1, rx=6, dash="5 4")
+text(160, ay + 28, "Cross-batch alignment", size=10.5, weight="bold",
+     anchor="middle")
+text(160, ay + 42, "(retention-time correction +", size=8.5, anchor="middle")
+text(160, ay + 53, "m/z consensus, both modes)", size=8.5, anchor="middle")
+arrow(288, ay + 34, 314, ay + 34)
+rect(320, ay + 13, 180, 42, fill="#F1F1F1", stroke=INK, sw=1.2, rx=4)
+text(410, ay + 30, "Consensus atlas", size=9.5, weight="bold", anchor="middle")
+text(410, ay + 44, "273,248 aligned features", size=8.5, anchor="middle")
 S.append('</g>')
 
 # ============================================================ PANEL B =======
@@ -234,80 +257,63 @@ bx1, bx2, by, bw, bh = 562, 822, 50, 246, 268
 rect(bx1, by, bw, bh, fill="white", stroke=LINE, sw=1.2, rx=8)
 text(bx1 + bw / 2, by + 20, "1. Phylum-enriched biomarker atlas", size=11,
      weight="bold", fill=PURPLE, anchor="middle")
-text(bx1 + bw / 2, by + 40, "Cross-batch composite score", size=9.5,
+text(bx1 + bw / 2, by + 44, "Cross-batch composite score", size=9.5,
      weight="bold", anchor="middle")
-text(bx1 + bw / 2, by + 52,
-     "(w₁=0.30, w₂=0.25, w₃=0.20, w₄=0.15, w₅=0.10)",
-     size=8.5, anchor="middle")
-text(bx1 + bw / 2, by + 64, "+ cross-batch IndVal (P < 0.05, FDR)", size=8.5,
+text(bx1 + bw / 2, by + 57, "+ indicator-value statistics (IndVal)", size=9,
      anchor="middle")
-arrow(bx1 + bw / 2, by + 70, bx1 + bw / 2, by + 82)
-text(bx1 + bw / 2, by + 96, f"{N_BIOMARKERS:,} biomarkers", size=11.5,
+arrow(bx1 + bw / 2, by + 66, bx1 + bw / 2, by + 80)
+text(bx1 + bw / 2, by + 96, f"{N_BIOMARKERS:,} biomarkers", size=12,
      weight="bold", fill=PURPLE, anchor="middle")
-text(bx1 + bw / 2, by + 108, f"across {N_BIO_PHYLA} phyla (positive mode)",
+text(bx1 + bw / 2, by + 109, f"across {N_BIO_PHYLA} phyla (positive mode)",
      size=8.5, anchor="middle")
-arrow(bx1 + bw / 2, by + 114, bx1 + bw / 2, by + 126)
-text(bx1 + bw / 2, by + 140, "Annotation confidence (positive mode)", size=9.5,
+arrow(bx1 + bw / 2, by + 118, bx1 + bw / 2, by + 132)
+text(bx1 + bw / 2, by + 148, "Annotation confidence tiers", size=9.5,
      weight="bold", fill=PURPLE, anchor="middle")
-# stacked annotation bar (data-driven)
-bar_x, bar_y, bar_w, bar_h = bx1 + 22, by + 150, bw - 44, 14
-cx = bar_x
-for t in TIER_ORDER:
-    w = bar_w * tier_pct[t] / 100.0
-    rect(cx, bar_y, w, bar_h, fill=TIER_COL[t], stroke="white", sw=0.5)
-    if tier_pct[t] >= 8:
-        text(cx + w / 2, bar_y + 10.5, f"{tier_pct[t]:.1f}%", size=7.5,
-             anchor="middle",
-             fill="white" if t in ("Bronze",) else INK)
-    cx += w
-# tier legend (2 x 2)
-lg_y = bar_y + 26
+# schematic tier chips (equal widths — real proportions are in Fig. 2a)
+chip_w = (bw - 44) / 4
 for i, t in enumerate(TIER_ORDER):
-    lx = bar_x + (i % 2) * (bar_w / 2)
+    cxx = bx1 + 22 + i * chip_w
+    rect(cxx, by + 156, chip_w - 3, 12, fill=TIER_COL[t], stroke=LINE, sw=0.5,
+         rx=2)
+lg_y = by + 184
+for i, t in enumerate(TIER_ORDER):
+    lx = bx1 + 22 + (i % 2) * ((bw - 44) / 2)
     ly = lg_y + (i // 2) * 14
     rect(lx, ly - 8, 9, 9, fill=TIER_COL[t], stroke=LINE, sw=0.5)
     lab = {"Gold": "Gold (molecular species)", "Silver": "Silver (partial)",
            "Bronze": "Bronze (lipid class)", "Unidentified": "Unidentified"}[t]
     text(lx + 13, ly, lab, size=7.5)
-arrow(bx1 + bw / 2, lg_y + 24, bx1 + bw / 2, lg_y + 36)
-text(bx1 + bw / 2, lg_y + 50, "External validation", size=9.5, weight="bold",
-     fill=GREY, anchor="middle")
-text(bx1 + bw / 2, lg_y + 62,
-     "fastMASST | Pan-ReDU  [rerun pending for this atlas]", size=8,
-     fill=GREY, anchor="middle", style="italic")
+arrow(bx1 + bw / 2, lg_y + 22, bx1 + bw / 2, lg_y + 34)
+text(bx1 + bw / 2, lg_y + 48, "External validation in", size=9.5,
+     weight="bold", fill=GREY, anchor="middle")
+text(bx1 + bw / 2, lg_y + 60, "public soil data (fastMASST)", size=9.5,
+     weight="bold", fill=GREY, anchor="middle")
 
 # --- layer 2: distributed fingerprints
 rect(bx2, by, bw, bh, fill="white", stroke=LINE, sw=1.2, rx=8)
 text(bx2 + bw / 2, by + 20, "2. Distributed fingerprint analysis", size=11,
      weight="bold", fill=BLUE, anchor="middle")
-text(bx2 + bw / 2, by + 40, "Quality-filtered cross-batch feature space",
-     size=9.5, weight="bold", anchor="middle")
-text(bx2 + bw / 2, by + 52,
-     f"({N_FILTERED_POS:,} positive-mode features", size=8.5, anchor="middle")
-text(bx2 + bw / 2, by + 64,
-     f"across {simper['n_phyla']} phyla for fingerprinting)", size=8.5,
-     anchor="middle")
-arrow(bx2 + bw / 2, by + 70, bx2 + bw / 2, by + 82)
+text(bx2 + bw / 2, by + 44, "Quality-filtered cross-batch", size=9.5,
+     weight="bold", anchor="middle")
+text(bx2 + bw / 2, by + 57, "feature space (whole lipidomes)", size=9.5,
+     weight="bold", anchor="middle")
+arrow(bx2 + bw / 2, by + 66, bx2 + bw / 2, by + 80)
 text(bx2 + bw / 2, by + 96, "Bray–Curtis dissimilarity", size=9.5,
      weight="bold", anchor="middle")
-text(bx2 + bw / 2, by + 108, "Ordination & UPGMA dendrograms", size=8.5,
+text(bx2 + bw / 2, by + 109, "Ordination & UPGMA dendrograms", size=8.5,
      anchor="middle")
-text(bx2 + bw / 2, by + 119, "(chemotaxonomic structure)", size=8.5,
+text(bx2 + bw / 2, by + 120, "(chemotaxonomic structure)", size=8.5,
      anchor="middle", fill=GREY)
-arrow(bx2 + bw / 2, by + 125, bx2 + bw / 2, by + 137)
-text(bx2 + bw / 2, by + 151, "SIMPER per phylum", size=9.5, weight="bold",
-     fill=BLUE, anchor="middle")
-text(bx2 + bw / 2, by + 163, "(top 3,000 features ranked)", size=8.5,
-     anchor="middle")
+arrow(bx2 + bw / 2, by + 128, bx2 + bw / 2, by + 140)
+text(bx2 + bw / 2, by + 154, "SIMPER fingerprints per phylum", size=9.5,
+     weight="bold", fill=BLUE, anchor="middle")
 # schematic mini-heatmap
-hm_x, hm_y, cell = bx2 + 46, by + 172, 13
+hm_x, hm_y, cell = bx2 + 46, by + 164, 13
 shades = ["#27346E", "#3D55A8", "#5E7BC4", "#8FA6DB", "#C3CfEC", "#E9EDF8"]
-import random
 random.seed(11)
 for r in range(4):
     lab = ["Phylum 1", "Phylum 2", "...", "Phylum n"][r]
     text(hm_x - 5, hm_y + r * cell + 10, lab, size=7.5, anchor="end")
-    ramp = sorted(random.sample(range(6), 6))
     for c in range(9):
         col = shades[min(5, abs(c - r * 2) if r < 3 else random.randint(0, 5))]
         rect(hm_x + c * cell, hm_y + r * cell + 1, cell - 1.5, cell - 1.5,
@@ -318,10 +324,10 @@ for i, col in enumerate(reversed(shades)):
     rect(hm_x + 22 + i * 12, cb_y, 12, 6, fill=col)
 text(hm_x + 18, cb_y + 6, "Low", size=7, anchor="end")
 text(hm_x + 22 + 6 * 12 + 4, cb_y + 6, "High (contribution)", size=7)
-arrow(bx2 + bw / 2, cb_y + 12, bx2 + bw / 2, cb_y + 22)
-text(bx2 + bw / 2, cb_y + 34, "Cross-method validation", size=9.5,
+arrow(bx2 + bw / 2, cb_y + 10, bx2 + bw / 2, cb_y + 18)
+text(bx2 + bw / 2, cb_y + 30, "Cross-method validation", size=9.5,
      weight="bold", fill=BLUE, anchor="middle")
-text(bx2 + bw / 2, cb_y + 46, "SCBD | CAP | L1  &  MS2LDA motifs", size=8.5,
+text(bx2 + bw / 2, cb_y + 42, "SCBD | CAP | L1  &  MS2LDA motifs", size=8.5,
      anchor="middle")
 
 # link arrow between layers
@@ -331,11 +337,12 @@ S.append(f'<line x1="{bx1+bw+2}" y1="{by+115}" x2="{bx2-2}" y2="{by+115}" '
 
 # kingdom legend
 ky = by + bh + 22
-lx = 570
+lx = 562
 for name, col in KING.items():
+    _llab = disp(name)
     rect(lx, ky - 8, 9, 9, fill=col, rx=2)
-    text(lx + 13, ky, name, size=9)
-    lx += 14 + 7.2 * len(name) + 18
+    text(lx + 13, ky, _llab, size=9)
+    lx += 14 + 7.2 * len(_llab) + 12
 S.append('</g>')
 
 # ============================================================ PANEL C =======
@@ -365,38 +372,38 @@ for i, (r1, r2, col) in enumerate(cells):
     text(x + tg_w / 2 - 1, y + 31, r2, size=8, anchor="middle")
     text(x + tg_w / 2 - 1, y + 43, "(n = 3)", size=7.5, fill=GREY, anchor="middle")
 
-# middle: MS/MS matching
+# middle: MS/MS matching (thresholds live in Methods, not here)
 mm_x = 250
 text(mm_x + 60, cy0 + 10, "Soil lipidomes (positive mode)", size=10.5,
      weight="bold", anchor="middle")
-text(mm_x + 60, cy0 + 40, "Atlas matching by MS/MS", size=9.5, weight="bold",
+text(mm_x + 60, cy0 + 44, "MS/MS spectral matching", size=9.5, weight="bold",
      anchor="middle")
-text(mm_x + 60, cy0 + 52, "(spectral cosine ≥ 0.70 and", size=8.5, anchor="middle")
-text(mm_x + 60, cy0 + 64, "≥ 4 matched peaks)", size=8.5, anchor="middle")
+text(mm_x + 60, cy0 + 56, "against the reference atlas", size=8.5,
+     anchor="middle")
 # mirrored spectra sketch
 sp_x, sp_y = mm_x + 14, cy0 + 116
 line(sp_x, sp_y, sp_x + 92, sp_y, stroke=INK, sw=0.8)
 random.seed(7)
 for i in range(9):
-    fx = sp_x + 6 + i * 10
+    fx_ = sp_x + 6 + i * 10
     up = 8 + random.random() * 26
     dn = 8 + random.random() * 26
     matched = i in (1, 3, 4, 6, 8)
     cu = PURPLE if matched else "#B9B9B9"
-    line(fx, sp_y, fx, sp_y - up, stroke=cu, sw=1.4)
-    line(fx, sp_y, fx, sp_y + dn, stroke=cu if matched else "#D3D3D3", sw=1.4)
+    line(fx_, sp_y, fx_, sp_y - up, stroke=cu, sw=1.4)
+    line(fx_, sp_y, fx_, sp_y + dn, stroke=cu if matched else "#D3D3D3", sw=1.4)
     if matched:
-        circle(fx, sp_y - up - 3, 1.6, PURPLE)
+        circle(fx_, sp_y - up - 3, 1.6, PURPLE)
 text(sp_x + 46, sp_y + 44, "Soil spectrum (top) vs reference (bottom)",
      size=7.5, fill=GREY, anchor="middle")
 
-# right: verified matches + mini heatmap
+# right: verified fingerprint features + mini heatmap
 vm_x = 408
-text(vm_x + 56, cy0 + 10, f"{N_MATCHES:,} verified spectral", size=10.5,
+text(vm_x + 56, cy0 + 10, "Spectrally verified soil", size=10.5,
      weight="bold", anchor="middle")
-text(vm_x + 56, cy0 + 22, "matches → " + f"{N_SUBSTRATE} diagnostic",
+text(vm_x + 56, cy0 + 22, f"substrate: {N_SUBSTRATE} diagnostic",
      size=10.5, weight="bold", anchor="middle")
-text(vm_x + 56, cy0 + 34, f"fingerprint features ({simper['n_phyla']} phyla)",
+text(vm_x + 56, cy0 + 34, f"fingerprint features ({N_BIO_PHYLA} phyla)",
      size=10.5, weight="bold", anchor="middle")
 fm_x, fm_y, fc_cell = vm_x + 16, cy0 + 48, 12
 random.seed(3)
@@ -442,81 +449,58 @@ for i, (t1, t2) in enumerate(corr):
     if i < 2:
         arrow(600, yy + 6, 600, yy + 10, sw=0.9)
 
-# framework validation box (placeholder — producer not rerun)
+# framework validation box — pointer only; the results live in Supp. Fig. 5
 fv_y = dy0 + 122
-rect(562, fv_y, 236, 92, fill="#FCFCFC", stroke=LINE, sw=1.2, rx=8, dash="5 4")
-text(680, fv_y + 17, "Framework validation", size=10.5, weight="bold",
+rect(562, fv_y, 236, 64, fill="white", stroke=LINE, sw=1.2, rx=8)
+text(680, fv_y + 18, "Framework validation", size=10.5, weight="bold",
      anchor="middle")
-text(680, fv_y + 40, "[TBD — negative-control rerun pending", size=8.5,
-     fill=GREY, anchor="middle", style="italic")
-text(680, fv_y + 52, "on the current substrate; old n=163 /", size=8.5,
-     fill=GREY, anchor="middle", style="italic")
-text(680, fv_y + 64, "80% / <2% claims are pre-correction]", size=8.5,
-     fill=GREY, anchor="middle", style="italic")
+text(680, fv_y + 34, "Leave-one-out negative control on", size=8.5,
+     anchor="middle")
+text(680, fv_y + 46, "pure isolates (Supp. Fig. 5)", size=8.5,
+     anchor="middle")
 
-# forest plot (data-driven)
+arrow(680, fv_y + 70, 680, fv_y + 84)
+rect(562, fv_y + 90, 236, 40, fill=BOX, stroke=INK, sw=1, rx=6)
+text(680, fv_y + 106, "Phylum-resolved community", size=9.5, weight="bold",
+     anchor="middle")
+text(680, fv_y + 120, "composition estimate (Fig. 5)", size=9.5, weight="bold",
+     anchor="middle")
+
+# schematic output sketch — ILLUSTRATIVE positions only (real values: Fig. 5)
 fp_x, fp_y, fp_w, fp_h = 866, dy0 + 26, 176, 200
-axis_max = 50.0
-def fx(v):
-    return fp_x + fp_w * min(v, axis_max) / axis_max
-
-text(fp_x + fp_w / 2, dy0 + 4, "Lipid-derived proportion of", size=9.5,
+text(fp_x + fp_w / 2, dy0 + 4, "Lipid-derived composition", size=9.5,
      weight="bold", anchor="middle")
-text(fp_x + fp_w / 2, dy0 + 16, "matched & corrected signal", size=9.5,
-     weight="bold", anchor="middle")
+text(fp_x + fp_w / 2, dy0 + 16, "(schematic — see Fig. 5)", size=8.5,
+     fill=GREY, anchor="middle", style="italic")
 rows = ["Bacteria", "Archaea", "Fungi", "Plantae", "Animalia", "Protozoa"]
-STATUS_COL = {"within": "#3F8E3F", "above": "#C46210", "below": "#666666"}
+# fixed illustrative geometry: (range_lo, range_hi, dot) in axis units 0-50
+SKETCH = {"Bacteria": (30, 44, 37), "Archaea": (3, 10, 6),
+          "Fungi": (16, 30, 24), "Plantae": (14, 28, 20),
+          "Animalia": (2, 8, 5), "Protozoa": (1, 6, 3)}
 row_h = fp_h / len(rows)
+def fx(v):
+    return fp_x + fp_w * v / 50.0
 for i, k in enumerate(rows):
     yy = fp_y + row_h * (i + 0.5)
-    lab = "Archaea†" if k == "Archaea" else k
-    text(fp_x - 8, yy + 3, lab, size=9.5, fill=KING[k], weight="bold", anchor="end")
-    lo, hi = EXPECTED[k]
+    lab = disp(k)
+    text(fp_x - 8, yy + 3, lab, size=8 if len(lab) > 9 else 9.5,
+         fill=KING[k], weight="bold", anchor="end")
+    lo, hi, dot = SKETCH[k]
     rect(fx(lo), yy - 6, fx(hi) - fx(lo), 12, fill="#DCDCDC")
-    m = fc[k]
-    mv, ml, mh = 100 * m["mean"], 100 * m["ci_lo"], 100 * m["ci_hi"]
-    line(fx(ml), yy, fx(mh), yy, stroke=KING[k], sw=1.4)
-    circle(fx(mv), yy, 3.4, KING[k])
-    status = "within" if lo <= mv <= hi else ("above" if mv > hi else "below")
-    sc = STATUS_COL[status]
-    sx, sy_ = fx(min(mh, axis_max)) + 8, yy
-    if status == "within":
-        circle(sx, sy_, 2.6, sc)
-    elif status == "above":
-        S.append(f'<path d="M {sx:.1f} {sy_-3.4:.1f} l 3.4 6 l -6.8 0 z" '
-                 f'fill="{sc}"/>')
-    else:
-        S.append(f'<path d="M {sx:.1f} {sy_+3.4:.1f} l 3.4 -6 l -6.8 0 z" '
-                 f'fill="{sc}"/>')
-# axis
+    line(fx(max(lo - 4, 0.5)), yy, fx(min(hi + 4, 49)), yy, stroke=KING[k],
+         sw=1.4)
+    circle(fx(dot), yy, 3.4, KING[k])
+# unlabelled axis line (schematic — no scale)
 axy = fp_y + fp_h + 6
 line(fp_x, axy, fp_x + fp_w, axy, stroke=INK, sw=1)
-for v in (0, 10, 20, 30, 40, 50):
-    line(fx(v), axy, fx(v), axy + 3, stroke=INK, sw=1)
-    text(fx(v), axy + 13, str(v), size=8, anchor="middle")
-text(fp_x + fp_w / 2, axy + 26, "% of matched & corrected lipid signal",
+text(fp_x + fp_w / 2, axy + 14, "% of matched & corrected lipid signal",
      size=8.5, anchor="middle")
-# legend (left column, under the validation box — clear of the plot)
-lgx, lgy = 574, fv_y + 112
+# legend
+lgx, lgy = fp_x, axy + 32
 rect(lgx, lgy - 8, 12, 10, fill="#DCDCDC")
 text(lgx + 16, lgy, "Literature-expected range", size=7.5)
 circle(lgx + 5, lgy + 12, 3.2, INK)
-text(lgx + 16, lgy + 15, "fc-weighted estimate (mean, 95% CI)", size=7.5)
-circle(lgx + 3, lgy + 26, 2.4, STATUS_COL["within"])
-text(lgx + 9, lgy + 29, "within", size=7.5, fill=GREY)
-S.append(f'<path d="M {lgx+46:.0f} {lgy+23:.0f} l 3 5.4 l -6 0 z" '
-         f'fill="{STATUS_COL["above"]}"/>')
-text(lgx + 53, lgy + 29, "above", size=7.5, fill=GREY)
-S.append(f'<path d="M {lgx+90:.0f} {lgy+28.4:.0f} l 3 -5.4 l -6 0 z" '
-         f'fill="{STATUS_COL["below"]}"/>')
-text(lgx + 97, lgy + 29, "below expected", size=7.5, fill=GREY)
-# note
-text(816, 700, "Note: values are lipid-derived proportions of matched & "
-     "corrected signal, not absolute biomass fractions.", size=8, fill=GREY,
-     anchor="middle", style="italic")
-text(816, 712, "Archaea scale uncertain without ether-lipid RIE standards "
-     "(†).  Animalia reflects the known holobiont-reference bias.",
-     size=8, fill=GREY, anchor="middle", style="italic")
+text(lgx + 16, lgy + 15, "Lipid-derived estimate (with CI)", size=7.5)
 S.append('</g>')
 
 S.append('</svg>')
@@ -524,6 +508,6 @@ S.append('</svg>')
 out = OUT_DIR / "Figure1_concept_skeleton.svg"
 out.write_text("\n".join(S), encoding="utf-8")
 print("wrote", out)
-print("tier pct:", {k: round(v, 1) for k, v in tier_pct.items()})
-print("fcw mean [ci]:", {k: (round(100 * v["mean"], 1), round(100 * v["ci_lo"], 1),
-                             round(100 * v["ci_hi"], 1)) for k, v in fc.items()})
+print("design-scale numbers:", dict(
+    biomarkers=N_BIOMARKERS, phyla=N_BIO_PHYLA, pos=N_POS_CORE,
+    neg=N_NEG_CORE, substrate=N_SUBSTRATE))
