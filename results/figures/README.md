@@ -20,7 +20,7 @@ original was hand-drawn vector art, not a data plot).
 
 | Fig | Folder | What it shows | R render | Plotted data | Caveat / open decision |
 |---|---|---|---|---|---|
-| 1 | `figure1/` | Concept schematic (4 panels, data-driven SVG) | — (schematic exception: SVG generator `build_figure1_concept_v1.py`) | reads release CSVs + RUN_SUMMARYs live | final skeleton; submitted Fig 1 may be reused pending author confirmation |
+| 1 | `figure1/` | Concept-only workflow figure (4 panels, data-driven SVG; v2.1) | — (schematic exception: SVG generator `build_figure1_concept_v1.py`; legend in `figure1/LEGEND.md`) | reads release summaries live (six design-scale numbers only) | replaces the submitted Fig 1; no results shown by design (panel-d plot is schematic) |
 | 2 | `figure2/` | Atlas biomarker counts (a) + public/soil validation (b, c) | `r/fig2_atlas.R` | `figure2/r/` CSVs (tier counts, soil validation; prepared by archive scripts `build_fig2_strict16_render.py`, `build_fig2bc_strict.py`) | wide-a layout locked; panel-c selection sets inverted vs submitted (IndVal 7,254 / composite 3,613) |
 | 3 | `figure3/` | Dendrograms, lipidome–phylogeny Mantel, similarity heatmaps | `figure3_strict_composite_review_only.R` | `REL/figure3/main_figure3_review_only/` + curated SSU v3 | 16 phyla / 120 pairs; Mantel r 0.509/0.553 (locked to SSU v3); 4 multi-anchor units non-monophyletic |
 | 4 | `figure4/` | SIMPER fingerprints (a), lipid-class heatmap (b), redundancy (c) | `r/fig5_fingerprint.R` (the recovered original R script) | strict SIMPER + `REL/annotation/lipid_classes.csv` (prepared by archive scripts `prepare/finalize_figure4_old_r_strict.py`) | panel-b denominator (full-atlas vs classified-only) still an open decision |

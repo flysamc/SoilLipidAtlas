@@ -25,6 +25,10 @@ FIGURE_MAP = {
         "source": ANALYSIS_DIR / "figure1_redesign_2026-08-11_v1" / "Figure1_concept_skeleton.svg",
         "target": REPO_ROOT / "figures" / "figure1" / "Figure1_concept_skeleton.svg",
     },
+    "figure1_preview": {
+        "source": ANALYSIS_DIR / "figure1_redesign_2026-08-11_v1" / "Figure1_concept_skeleton_preview.png",
+        "target": REPO_ROOT / "figures" / "figure1" / "Figure1_concept_skeleton_preview.png",
+    },
 }
 
 # main figures 2-5: submission-package picks
