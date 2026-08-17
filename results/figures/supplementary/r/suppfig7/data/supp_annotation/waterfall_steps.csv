@@ -1,0 +1,31 @@
+mode,kind,label,gold,silver,bronze,amount
+POS,positive,"LipidSearch
+database",254,184,857,1295
+POS,positive,"MS2 diagnostic
++ RT prediction",0,673,3167,3840
+POS,positive,"Annotation
+harmonization",123,325,0,448
+POS,positive,"ArchLips
+(archaeal library)",162,362,784,1308
+POS,positive,"CANOPUS / CSI
+(SIRIUS v2)",0,66,347,413
+POS,positive,"Network
+propagation",0,7,16,23
+POS,positive,Other sources,0,15,506,521
+POS,negative,"Annotation
+depth audit",0,0,0,62
+POS,negative,"5% noise
+threshold",0,0,0,227
+NEG,positive,"LipidSearch
+database",99,34,23,156
+NEG,positive,"MS2 diagnostic
++ RT prediction",20,63,507,590
+NEG,positive,"Annotation
+harmonization",0,0,0,0
+NEG,positive,"ArchLips
+(archaeal library)",30,14,4,48
+NEG,positive,"CANOPUS / CSI
+(SIRIUS v2)",0,83,1353,1436
+NEG,positive,"Network
+propagation",0,10,482,492
+NEG,positive,Other sources,16,0,1,17

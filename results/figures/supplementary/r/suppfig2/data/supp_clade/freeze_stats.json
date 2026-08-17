@@ -1,0 +1,18 @@
+{
+  "pos_n_quality_features": 45525,
+  "neg_n_quality_features": 14896,
+  "detection_threshold_per_phylum": 0.05,
+  "n_clades": 9,
+  "method": "Shared = detected in EVERY phylum of clade. Exclusive = shared AND not detected in any phylum outside clade. \"Detected in phylum\" = >=5% detection rate within that phylum.",
+  "framework": "five-rank Adl 2019 + NCBI cladogram (Table S15), strict-16 membership",
+  "reproduction_gate": "PASS \u2014 published clade_counts.csv recovered exactly (POS+NEG)",
+  "dropped": [
+    "Euryarchaeota_sg (same taxon twice)",
+    "Embryophyta (collapses into Streptophyta)"
+  ],
+  "added": [
+    "Amoebozoa (Discosea + Evosea)",
+    "Opisthokonta (PROPOSED, pending author decision)"
+  ],
+  "caveat": "clade-conserved counts scale with samples per unit (5% threshold < 1 sample for every unit); open author decision"
+}

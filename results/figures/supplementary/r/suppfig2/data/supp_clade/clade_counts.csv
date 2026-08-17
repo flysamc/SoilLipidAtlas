@@ -1,0 +1,10 @@
+clade,kingdom,n_members,members,pos_shared,pos_exclusive,neg_shared,neg_exclusive
+Dikarya,Fungi,2,Ascomycota; Basidiomycota,25487,1,6559,5
+Ecdysozoa,Animalia,2,Arthropoda; Nematoda,19027,10,3818,19
+Amoebozoa,Protozoa,2,Discosea; Evosea,7283,0,930,1
+All Animalia,Animalia,3,Arthropoda; Nematoda; Mollusca,11799,20,2575,12
+All Archaea,Archaea,2,Methanobacteriota; Thermoproteota,4426,0,200,0
+All Fungi,Fungi,3,Ascomycota; Basidiomycota; Mucoromycota,9018,0,2208,13
+All Bacteria,Bacteria,3,Actinomycetota; Bacillota; Pseudomonadota,5629,3,750,42
+All Plantae,Plantae,2,Chlorophyta; Streptophyta,31242,334,7456,419
+Opisthokonta,Fungi,6,Ascomycota; Basidiomycota; Mucoromycota; Arthropoda; Nematoda; Mollusca,2657,6,398,3

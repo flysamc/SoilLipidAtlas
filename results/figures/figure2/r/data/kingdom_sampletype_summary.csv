@@ -1,0 +1,7 @@
+kingdom,n_biomarkers,n_Animal/Clinical,pct_Animal/Clinical,n_Plant,pct_Plant,n_Bacterial,pct_Bacterial,n_Fungal,pct_Fungal,n_Algae,pct_Algae,n_Environmental,pct_Environmental,n_Food/Beverage,pct_Food/Beverage,n_Mixed culture,pct_Mixed culture,n_Built environment,pct_Built environment,n_Reference material,pct_Reference material,n_any,pct_any
+Animalia,1177,351,29.8,200,17.0,140,11.9,130,11.0,89,7.6,183,15.5,130,11.0,61,5.2,60,5.1,69,5.9,379,32.2
+Archaea,1327,308,23.2,178,13.4,230,17.3,149,11.2,120,9.0,190,14.3,116,8.7,93,7.0,149,11.2,114,8.6,374,28.2
+Bacteria,1655,919,55.5,733,44.3,642,38.8,501,30.3,476,28.8,631,38.1,494,29.8,218,13.2,322,19.5,264,16.0,993,60.0
+Fungi,697,372,53.4,322,46.2,227,32.6,279,40.0,188,27.0,283,40.6,225,32.3,136,19.5,138,19.8,126,18.1,417,59.8
+Protists,678,233,34.4,159,23.5,127,18.7,108,15.9,87,12.8,148,21.8,126,18.6,45,6.6,61,9.0,70,10.3,251,37.0
+Viridiplantae,5333,1534,28.8,1797,33.7,989,18.5,882,16.5,642,12.0,1223,22.9,934,17.5,462,8.7,426,8.0,446,8.4,2135,40.0

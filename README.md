@@ -41,6 +41,7 @@ methods/
   06_fingerprints/       SIMPER fingerprints, MS2LDA motifs, cross-method checks
   07_decomposition/      source decomposition + pure-isolate negative control
   08_climgrass/          decoding real field soil; quantification correction
+  supplementary_methods/ index: SM1-SM9 + SN1 mapped to the steps above
 results/
   figures/               main figures 1–5 + supplementary 1–8, with producers
   tables/                supplementary tables S1–S15, with producers
@@ -60,7 +61,11 @@ data_registry/       checksummed index of files too large for git
      checked without downloading anything.
 3. **`results/`** — each figure and table sits next to the script that builds
    it; the READMEs there map every asset to its producer, its source data,
-   and any open decision.
+   and any open decision. **All data figures are rendered in R** (house style
+   `soilmass_style.R`); each figure folder's `r/` bundle re-renders it from
+   the included CSVs with R alone.
+   The manuscript's Supplementary Methods sections are indexed in
+   `methods/supplementary_methods/`.
 4. **`data_registry/registry.csv`** — everything too large for git, with
    SHA-256 checksums and its public home:
    - Raw LC-MS/MS data: **MassIVE MSV000102115**

@@ -1,0 +1,8 @@
+,expected_5k,POS_adopted_5k,NEG_noarch_alln,NEG_noarch_n>=5,NEG_noarch_n>=10
+Bacteria,46.7,39.3,24.1,34.4,40.7
+Fungi,24.7,32.5,21.9,31.9,33.2
+Plantae,24.7,20.9,3.7,5.2,7.3
+Animalia,3.3,3.4,26.3,13.9,18.7
+Protozoa,0.5,3.9,24.1,14.6,
+BC_from_expected,0.0,0.112,0.465,0.318,0.24
+BC_vs_POS,0.112,0.0,0.431,0.213,0.175
