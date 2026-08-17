@@ -32,7 +32,7 @@ exceptions, never guessed. Headline tables in `summaries/`
 | 10 | SIRIUS / CANOPUS / CSI:FingerID (LISC cluster) | **Gap-fill complete 2026-08-13:** POS 8,004 formulas (70.4%) / 7,336 classes / 7,199 structures; NEG 3,914 / 3,531 / 3,352 — hash-validated, exact-ID integrated | in `evidence/` + `step10_sirius_gapfill/` |
 | 11 | DreaMS deep-learning similarity | 7,095 POS + all 5,695 usable NEG features | in `evidence/` |
 | M5 | MS2LDA substructure motifs | Deterministic (bit-for-bit across reruns); 134 POS / 103 NEG significant motif–phylum pairs | in `evidence/` |
-| M6 | fastMASST + Pan-ReDU public search | ⏳ running (13,103 queries; resumed 2026-08-08) | step 05 of this repo |
+| M6 | fastMASST + Pan-ReDU public search | ✅ complete 2026-08-11 (13,103 queries) | step 05 of this repo |
 
 `scripts/` holds all producers written for this release. Step-6 recovery
 evidence (35 MB) stays in P2R (`biomarker_discovery/rt_prediction_recovery_pos/`).
