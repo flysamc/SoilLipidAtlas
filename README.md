@@ -9,11 +9,12 @@ The analysis uses the **16-phylum NCBI taxonomy set** (release
 ## How this repository is organized
 
 - **`PROGRESS.md`** — where the analysis stands, one row per step.
-- **`methods/`** — the methodology in order (01, 02, …). Each folder explains in
+- **`methods/`** — the methodology in order (01–08). Each folder explains in
   plain language what the step does, what it reads, and what it produces.
-- **`figures/`** — manuscript figures, added as the steps behind them finish.
+- **`results/`** — manuscript figures (`figures/`, main 1–5 + supplementary
+  1–8) and supplementary tables (`tables/`, S1–S15), each with the producer
+  scripts that build them. `results/sync_results.py` re-copies rendered
+  assets from the analysis working tree by checksum.
 - **`data_registry/`** — big files (raw spectra, bulk outputs) don't live in
   git; they live on MassIVE / Zenodo and are listed here with checksums so any
-  copy can be verified.
-
-Content is added one reviewed step at a time.
+  copy can be verified. Raw spectra: MassIVE MSV000102115.

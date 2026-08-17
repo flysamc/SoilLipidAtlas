@@ -27,12 +27,10 @@ cd C:\Users\Shadow\Desktop\P2R
 python paper2_repro\scripts\build_figure1_concept_v1.py
 ```
 
-Then copy the output SVG back here:
+Then copy the output SVG back here (checksum-synced):
 
-```
-C:\Users\Shadow\Desktop\P2R\outputs\analysis\ncbi-phylum-2026-08-04-v1\
-  figure1_redesign_2026-08-11_v1\Figure1_concept_skeleton.svg
-  → figures/figure1/
+```bash
+python results/sync_results.py --apply
 ```
 
 ## Notes
