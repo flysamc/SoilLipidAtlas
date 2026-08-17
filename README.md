@@ -91,3 +91,7 @@ data_registry/       checksummed index of files too large for git
 
 Scientific caveats (denominator choices, annotation scope, known biases)
 are listed at the bottom of `PROGRESS.md` and in the relevant step README.
+
+## License
+
+This repository is released under the MIT License. See `LICENSE`.
