@@ -1,18 +1,43 @@
-# Figure 1 — study design / conceptual schematic
+# Figure 1 — Conceptual study-design schematic
 
-**Status: being reworked by Rahul.** This folder holds the recovered editable
-sources, not a final figure.
+**Status: updated.** Editable Python generator and rendered SVG.
 
-For months the editable source of Figure 1 was thought lost — only a frozen
-PNG existed. On 2026-08-07 the Mac recovery found it: the figure is a
-**hand-authored SVG** (directly editable in any text or vector editor; no
-Illustrator/Inkscape file ever existed). Two versions were recovered, no
-winner picked:
+## Files
 
-| Version | Date | Files |
-|---|---|---|
-| A `Fig1_conceptual_schematic` | 2026-06-01 | .svg (the source) + .png |
-| B `Fig1_concept` | 2026-06-03 (later) | .svg (the source) + .png + .pdf |
+| File | Purpose |
+|---|---|
+| `build_figure1_concept_v1.py` | Python script that programmatically builds the SVG from analysis outputs |
+| `Figure1_concept_skeleton.svg` | Rendered editable vector (1080×720, 180×120 mm Nature Comms double-column) |
 
-Both use the same 1800×1010 canvas. Version B is the newer one and the likely
-base for the rework.
+## Description
+
+4-panel conceptual overview:
+
+- **Panel a** — Reference lipidome atlas from 6 organism groups (19 collection phyla, 16 analysed)
+- **Panel b** — Two complementary analytical layers (biomarker atlas + distributed fingerprints)
+- **Panel c** — Soil community decoding (ClimGrass 2×2 factorial design, MS/MS matching, decomposition)
+- **Panel d** — Lipid framework (quantification correction, validation, forest plot of lipid-derived proportions)
+
+## Updating
+
+To regenerate with current data:
+
+```bash
+cd C:\Users\Shadow\Desktop\P2R
+python paper2_repro\scripts\build_figure1_concept_v1.py
+```
+
+Then copy the output SVG back here:
+
+```
+C:\Users\Shadow\Desktop\P2R\outputs\analysis\ncbi-phylum-2026-08-04-v1\
+  figure1_redesign_2026-08-11_v1\Figure1_concept_skeleton.svg
+  → figures/figure1/
+```
+
+## Notes
+
+- The SVG is fully editable in any vector editor (Illustrator, Inkscape, Affinity, or text editor).
+- Six group colour palette: Bacteria `#7B52AB`, Archaea `#1B9E8F`, Fungi `#D9A420`, Viridiplantae `#3E9C35`, Animalia `#D64541`, Protists `#3B6FD4` (locked `ecological_group` labels; legacy CSV keys remain Plantae/Protozoa internally).
+- Annotation tiers: Gold (molecular species), Silver (partial), Bronze (lipid class), Unidentified.
+- All data-driven values read from the ncbi-phylum-2026-08-04-v1 analysis release.
