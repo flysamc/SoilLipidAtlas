@@ -119,11 +119,11 @@ phy_kingdom <- setNames(
 )
 phy_html <- sapply(rev(phylum_order), function(p) {
   col <- KINGDOM_COLOURS[phy_kingdom[p]]
-  paste0("<span style='color:", col, "'>", p, "</span>")
+  paste0("<b><span style='color:", col, "'>", p, "</span></b>")
 })
 
 pa_base <- ggplot(tiers, aes(x = n_features, y = phylum, fill = tier)) +
-  geom_bar(stat = "identity", width = 0.75, colour = "white", linewidth = 0.15) +
+  geom_bar(stat = "identity", width = 0.75, colour = "black", linewidth = 0.15) +
   scale_fill_manual(
     values = annot_colors[rev(annot_order)],
     breaks = annot_order,
