@@ -26,27 +26,45 @@ from lipids alone.
 Analysis release: `ncbi-phylum-2026-08-04-v1` (locked — any label change
 requires a new release ID).
 
-## Repository map
+## Repository layout
 
+```mermaid
+flowchart TB
+  ROOT["SoilLipidAtlas"]
+  ROOT --- TOP["README.md · PROGRESS.md · LICENSE · environment.yml"]
+
+  ROOT --> METHS
+  ROOT --> RESS
+  ROOT --> REG["data_registry/"]
+
+  subgraph METHS["methods/"]
+    direction LR
+    M01["01_taxonomy/"]
+    M02["02_features/"]
+    M03["03_biomarker_atlas/"]
+    M04["04_annotation/"]
+    M05["05_public_validation/"]
+    M06["06_fingerprints/"]
+    M07["07_decomposition/"]
+    M08["08_climgrass/"]
+    MSM["supplementary_methods/"]
+  end
+
+  subgraph RESS["results/"]
+    direction LR
+    FIG["figures/ — figure1–5 and supplementary/"]
+    TAB["tables/ — Table_S1.xlsx … S15"]
+  end
+
+  REG --- RC["registry.csv — large files are not in git"]
 ```
-README.md            you are here
-PROGRESS.md          methods index: one row per step, with headline numbers
-environment.yml      pinned conda environment (Python 3.12, R 4.4)
-methods/
-  01_taxonomy/           sample → phylum labels (the locked foundation)
-  02_features/           cross-batch alignment → one feature table per mode
-  03_biomarker_atlas/    phylum-enriched feature selection
-  04_annotation/         what each biomarker lipid is (11-step pipeline)
-  05_public_validation/  biomarkers searched in public MS/MS data
-  06_fingerprints/       SIMPER fingerprints, MS2LDA motifs, cross-method checks
-  07_decomposition/      source decomposition + pure-isolate negative control
-  08_climgrass/          decoding real field soil; quantification correction
-  supplementary_methods/ SM1–SM9 + SN1 mapped to the steps above
-results/
-  figures/               main figures 1–5 + supplementary 1–8, with render code
-  tables/                supplementary tables S1–S15, with producers
-data_registry/       checksummed index of files too large for git
-```
+
+What sits inside those folders:
+
+- **`methods/01_…`–`08_…`** — each step is one folder: `README.md`, `scripts/`, and the small result tables for that step.
+- **`results/figures/figureN/`** — rendered figure plus an `r/` bundle (R script, style file, plotted CSVs). Supplementary figures are under `results/figures/supplementary/`.
+- **`results/tables/`** — workbooks S1–S15 and their producer scripts.
+- **`data_registry/`** — checksums and download locations for files too large for git (MassIVE, GNPS2, Zenodo).
 
 ## How to follow the analysis
 
