@@ -10,30 +10,12 @@
 
 Source data are provided as a Source Data file.
 
----
+## Plotted data in this repository
 
-## Provenance note (not for publication)
+The legend numbers are those drawn by `r/fig2_atlas.R` from:
 
-Written from the rendered figure as the authority (strict release
-`ncbi-phylum-2026-08-04-v1`, render workspace `figure2_strict16_2026-08-11_v2_wide_a`
-in the analysis archive). All numbers re-derived from the three CSVs plotted by
-`r/fig2_atlas.R` (`tier_counts.csv`, `kingdom_sampletype_summary.csv`,
-`shared_vs_exclusive_soil.csv`). Tier definitions follow the annotation-confidence
-axis of the positive-mode methods record (Gold = molecular species; Silver = sum
-composition; Bronze = class only).
-
-The panel arrangement departs from the submitted figure on author instruction
-(panel **a** full height with a broken count axis, **b** top right, **c** beneath);
-palette, theme, type sizes and column width follow the submitted figure. All three
-panels are corrected builds, not reproductions: the submitted Figure 2a producer is
-only partially recoverable, the historical fastMASST sample-type categoriser is
-unrecovered, and both panel-**c** selection sets changed size under the strict
-release (Indicator Value 1,647 → 7,254; composite 8,962 → 3,613), so the submitted
-45.8% / 11.2% are not recomputable. Every number in the submitted caption except
-the 149 soil and environmental datasets is superseded.
-
-Notes for the manuscript pass: the main text should use a single term for the
-panel-**c** Indicator Value set (currently also called "cross-batch consensus
-biomarkers" in the submitted legend); the per-figure Source Data file promised
-above is still to be assembled and must include the per-group *n* values and the
-five ReDU sample-type categories not shown in panel **b**.
+| File | Panel |
+|---|---|
+| `r/data/tier_counts.csv` | a |
+| `r/data/kingdom_sampletype_summary.csv` | b |
+| `r/data/shared_vs_exclusive_soil.csv` | c |

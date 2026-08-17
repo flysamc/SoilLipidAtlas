@@ -30,74 +30,68 @@ requires a new release ID).
 
 ```
 README.md            you are here
-PROGRESS.md          one-row-per-step status + open author decisions
+PROGRESS.md          methods index: one row per step, with headline numbers
 environment.yml      pinned conda environment (Python 3.12, R 4.4)
 methods/
   01_taxonomy/           sample → phylum labels (the locked foundation)
   02_features/           cross-batch alignment → one feature table per mode
   03_biomarker_atlas/    phylum-enriched feature selection
   04_annotation/         what each biomarker lipid is (11-step pipeline)
-  05_public_validation/  biomarkers searched in the world's public MS/MS data
+  05_public_validation/  biomarkers searched in public MS/MS data
   06_fingerprints/       SIMPER fingerprints, MS2LDA motifs, cross-method checks
   07_decomposition/      source decomposition + pure-isolate negative control
   08_climgrass/          decoding real field soil; quantification correction
-  supplementary_methods/ index: SM1-SM9 + SN1 mapped to the steps above
+  supplementary_methods/ SM1–SM9 + SN1 mapped to the steps above
 results/
-  figures/               main figures 1–5 + supplementary 1–8, with producers
+  figures/               main figures 1–5 + supplementary 1–8, with render code
   tables/                supplementary tables S1–S15, with producers
 data_registry/       checksummed index of files too large for git
 ```
 
-## How to follow the analysis (recommended route)
+## How to follow the analysis
 
-1. **`PROGRESS.md`** — the one-page status: what each step does and where it
-   stands.
+1. **`PROGRESS.md`** — one page: what each step does, its headline result,
+   and whether the supporting files are in git or on Zenodo.
 2. **`methods/01_…` through `methods/08_…`**, in order. Every step folder
    contains:
-   - a `README.md` that explains in plain language what the step does, what
-     it reads, what it produces, and every number it contributes to the paper;
+   - a `README.md` that explains what the step does, what it reads, what it
+     produces, and every number it contributes to the paper;
    - the producer scripts that built the released artifacts;
    - the step's key result tables (small enough for git), so claims can be
      checked without downloading anything.
-3. **`results/`** — each figure and table sits next to the script that builds
-   it; the READMEs there map every asset to its producer, its source data,
-   and any open decision. **All data figures are rendered in R** (house style
-   `soilmass_style.R`); each figure folder's `r/` bundle re-renders it from
-   the included CSVs with R alone.
-   The manuscript's Supplementary Methods sections are indexed in
-   `methods/supplementary_methods/`.
-4. **`data_registry/registry.csv`** — everything too large for git, with
-   SHA-256 checksums and its public home:
+3. **`results/`** — each figure and table sits next to the script that
+   builds it. All data figures are rendered in R (house style
+   `soilmass_style.R`); each figure folder's `r/` bundle re-renders the
+   figure from the included CSVs with R alone. Figure 1 is the exception: a
+   workflow schematic in SVG, not a data plot. Supplementary Methods
+   sections are indexed in `methods/supplementary_methods/`.
+4. **`data_registry/registry.csv`** — files too large for git, with SHA-256
+   checksums and their public home:
    - Raw LC-MS/MS data: **MassIVE MSV000102115**
-   - Derived large tables: versioned **Zenodo** deposit (DOI
-     10.5281/zenodo.20811187, reserved)
+   - Per-batch FBMN results: GNPS2 task IDs in
+     `methods/02_features/fbmn_batches_{POS,NEG}.csv`
+   - Derived large tables: Zenodo **10.5281/zenodo.20811187** (reserved)
 
 ## Reproducibility
 
-- **Environment.** `environment.yml` pins the Python/R environment the
+- **Environment.** `environment.yml` pins the Python/R environment this
   release was built with.
-- **The analysis archive.** Producer scripts are committed exactly as they
-  ran; they reference the authors' local analysis workspace (the *analysis
-  archive*), whose released outputs live under the release ID above. To
-  re-run a producer, obtain its registry-listed inputs (verify by SHA-256)
-  and point the path constants at the top of the script to them. Generated
-  run reports (`STEP*_REPORT.md`, manifests) cite producer paths as they
-  were inside the archive (e.g. `paper2_repro/scripts/…`); the same scripts
-  are committed in each step's `scripts/` folder here.
-- **Reproduce-first policy.** Every rebuilt artifact was gated against the
-  release before acceptance; gates are recorded in per-step
-  `RUN_SUMMARY.json` / manifest files. Where a historical producer could not
-  be recovered, its replacement is a **declared reimplementation**, labelled
-  as such in the step README and never silently substituted.
-- **Fail-closed producers.** Multi-day external searches (SIRIUS, fastMASST)
-  run behind checkpointed, checksum-gated runners that refuse to summarise
-  incomplete inputs.
-- **Taxonomy labels.** Display labels follow the locked `ecological_group`
-  policy (Viridiplantae, Protists). Some producer-emitted CSVs retain legacy
-  internal keys (Plantae, Protozoa); this is noted wherever it occurs.
+- **What is in git.** Producer scripts and the small tables that support
+  the paper's numbers. To re-run a producer, download its registry-listed
+  inputs, verify the SHA-256, and point the path constants at the top of
+  the script to those files. Run parameters and checksums are recorded in
+  each step's `RUN_SUMMARY.json` or `*MANIFEST.json`.
+- **Declared reimplementations.** Where an earlier producer could not be
+  recovered, the replacement is labelled in that step's README and is not
+  presented as a bit-for-bit reproduction of a previous figure or table.
+- **Incomplete searches are not summarised.** Multi-day external searches
+  (SIRIUS, fastMASST) refuse to write a summary until every expected input
+  is present and checksummed.
+- **Taxonomy labels.** Display labels follow the locked policy
+  (Viridiplantae, Protists). A few producer-emitted CSVs still use the
+  older keys Plantae and Protozoa; the README of the step that emits them
+  notes this.
 
-## Status
-
-All methods steps (01–08), all figures, and all supplementary tables are
-built. Declared limitations and open items are listed at the bottom of
-`PROGRESS.md`.
+Declared limitations — annotation steps that could not be recovered,
+denominator choices, and related caveats — are listed at the bottom of
+`PROGRESS.md` and in the relevant step README.
