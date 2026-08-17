@@ -1,6 +1,6 @@
 # SoilMass Paper 2 — diagnostic-ion correction note
 
-## Decision for the correction
+## The correction
 
 Use the recovered, executable **50-rule positive-mode diagnostic classifier** as the reproducible source for Supplementary Table S3. Do not retain the unsupported statement that the database contains 66 entries.
 
@@ -17,17 +17,17 @@ The previous curated quick-reference table contains only 33 literature-reference
 
 No standalone source containing the manuscript's claimed 66 entries was found in the project repository, coauthor packages, submission bundle, or producer-recovery archive. The missing 16 entries cannot be reconstructed reliably from feature-level outputs. The 66-entry statement is therefore unsupported by the recoverable evidence.
 
-## Recommended manuscript wording
+## Wording adopted in the revised manuscript
 
-Replace wording equivalent to:
+Wording equivalent to:
 
 > a 66-entry diagnostic fragment-ion database
 
-with:
+is replaced with:
 
 > a reproducible 50-rule diagnostic MS/MS classifier comprising 24 diagnostic fragment rules, five neutral-loss rules, and 21 terpenoid-fragment rules across 13 classifier labels (Supplementary Table S3)
 
-Where the Methods summary currently says “66 entries covering 12 lipid classes,” use:
+Where the Methods summary said “66 entries covering 12 lipid classes,” the revised text uses:
 
 > 50 diagnostic rules across 13 classifier labels
 

@@ -23,9 +23,9 @@ lab-derived fingerprints decode a real soil community.
   community composition, fc-weighted primary: Bacteria 38.2%, Fungi 27.8%,
   Animalia 14.7%, Viridiplantae 9.6%, Archaea 5.5%, Protists 4.1% (bootstrap
   CIs alongside). ⚠ Known caveat: **Animalia ≈14.7% is above the literature
-  expectation range** — flagged in the manuscript, not hidden. The
-  winner-take-all estimator disagrees with fc-weighted on several groups
-  (both are reported).
+  expectation range** — explicitly flagged in the manuscript as a
+  reference-panel bias. The winner-take-all estimator disagrees with
+  fc-weighted on several groups; both estimators are reported.
 - `phylum_effects.csv` — treatment effects per phylum (CLR + permutation
   tests). Drought: only two FDR-supported phylum responses; Pseudomonadota
   q = 0.08 omnibus / 0.005 directional.
@@ -36,7 +36,7 @@ lab-derived fingerprints decode a real soil community.
 - `RUN_SUMMARY.json` — full provenance.
 
 Figure 5 (results section) renders `kingdom_composition.csv` +
-`phylum_effects.csv` via `figure5_redesign_v2.py` / `fig6_climgrass_v2.R`.
+`phylum_effects.csv` via `results/figures/figure5/r/fig5_final.R`.
 
 Big intermediates (soil MGFs, benchmark mixtures, superseded correction-rule
 workspaces) are retained in the analysis archive; they join the Zenodo

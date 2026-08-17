@@ -1,12 +1,16 @@
-# Supplementary Figure 5 - strict-16 / Figure 5 v2 render
+# Supplementary Figure 5 — render notes (strict-16)
 
-- isolates: 164 (leave-one-out)
-- analysis units: 16 strict phyla; group labels are display summaries
-- estimator shown: fc_weighted_bc (Figure 5 v2 bars; living-community estimate)
-- panel a dominant-group correct: 75.0%
-- panel b dominant-group correct: 79.3%
-- max non-archaeal to Archaea: 23.3% -> 0.8%
-- marker_panel (Fig 5 v2 diamonds) dominant-group correct: 83.5%
+| Item | Value |
+|---|---|
+| Isolates | 164 (leave-one-out) |
+| Analysis units | 16 strict phyla; group labels are display summaries |
+| Estimator shown | fc_weighted_bc (the Figure 5 bars; living-community estimate) |
+| Panel a dominant-group correct (uncorrected) | 75.0 % |
+| Panel b dominant-group correct (corrected) | ✅ **79.3 %** |
+| Max non-archaeal signal assigned to Archaea | 23.3 % → **0.8 %** |
+| Marker-panel estimator (Figure 5 diamonds) | 83.5 % dominant-group correct |
 
-Edits to the submitted renderer are lookup-level only: header provenance
-block and the two panel titles. Layout, palette and geometry untouched.
+Renderer provenance: edits to the submitted R renderer are lookup-level only
+(header provenance block and the two panel titles); layout, palette and
+geometry are untouched. Values are a declared reimplementation — see
+`methods/07_decomposition/`.

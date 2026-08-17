@@ -1,26 +1,33 @@
-# Analysis progress
+# Analysis overview
 
 One row per methodology step, in the order of the paper's Methods section.
-Details inside each folder's README.
+Each folder's `README.md` documents the step in full.
 
-| Step | What it does | Status | In repo? |
-|---|---|---|---|
-| 01 Taxonomy | Assigns each sample its NCBI phylum; 19 collected → 16 analysed | ✅ done, locked | ✅ |
-| 02 Feature lists | Cross-batch alignment → one feature table per mode (273k POS / 123k NEG) | ✅ done | 🟡 pointers + schema (tables → Zenodo) |
-| 03 Biomarker atlas | Selects phylum-enriched features (11,371 POS / 5,697 NEG) | ✅ done | ✅ |
-| 04 Annotation | Identifies what the biomarker lipids are (11-step pipeline) | ✅ done — SIRIUS gap-fill complete 2026-08-13 (POS 70.4% coverage); steps 6/7/9 = declared exceptions | ✅ |
-| 05 Public validation | Searches biomarkers in public data (fastMASST, Pan-ReDU) | ✅ done 2026-08-11 (POS 2,287 / NEG 486 soil-detected) | ✅ summaries (match sets → Zenodo) |
-| 06 Fingerprints | SIMPER per-phylum fingerprints, MS2LDA motifs, cross-method validation | ✅ done | ✅ (SIMPER atlas table → Zenodo) |
-| 07 Decomposition | Two-estimator source decomposition + pure-isolate negative control (79.3% / n=164) | ✅ done (declared reimplementation) | ✅ |
-| 08 ClimGrass | Fingerprints applied to field soil; Rule A correction; qSIP drought replication | ✅ done (Animalia ~14.7% flagged) | ✅ |
-| Figures | Main 1–5 + Supplementary 1–8, submission picks + producers | ✅ built | ✅ `results/figures/` |
-| Tables | Supplementary S1–S15 workbooks + producers | ✅ built | ✅ `results/tables/` |
+| Step | What it does | Headline result | Status | In this repo |
+|---|---|---|---|---|
+| 01 Taxonomy | Assigns each sample its NCBI phylum | 19 collected → **16 analysed** phyla | ✅ complete (locked) | ✅ full |
+| 02 Feature lists | Cross-batch alignment → one feature table per mode | **273,248 POS / 122,571 NEG** features | ✅ complete | 🗂 scripts + schema (tables → Zenodo) |
+| 03 Biomarker atlas | Selects phylum-enriched features | **11,371 POS / 5,697 NEG** biomarkers | ✅ complete | ✅ full |
+| 04 Annotation | Identifies the biomarker lipids (11-step pipeline) | 6,360 POS / 1,889 NEG annotated; SIRIUS coverage **70.4 % POS** | ✅ complete — steps 6/7/9 are declared exceptions | ✅ full |
+| 05 Public validation | Searches biomarkers in public MS/MS data | **2,287 POS / 486 NEG** soil-detected | ✅ complete | 🗂 summaries (match sets → Zenodo) |
+| 06 Fingerprints | SIMPER fingerprints, MS2LDA motifs, cross-method checks | 4 methods agree; **134/103** motif–phylum pairs | ✅ complete | ✅ full (SIMPER atlas → Zenodo) |
+| 07 Decomposition | Source decomposition + pure-isolate negative control | **79.3 %** correct dominant group (n = 164) | ✅ complete (declared reimplementation) | ✅ full |
+| 08 ClimGrass | Decodes real field soil; quantification correction | qSIP drought replication **q = 0.005** | ✅ complete | ✅ full |
+| Figures | Main 1–5 + Supplementary 1–8 | all R-rendered | ✅ built | ✅ `results/figures/` |
+| Tables | Supplementary S1–S15 workbooks | all built | ✅ built | ✅ `results/tables/` |
 
-## Open decisions (pending author confirmation)
+## Declared limitations and open items
 
-- Figure 4 panel-b denominator: full-atlas vs classified-only.
-- Supplementary Fig 3: v3 render used — confirm vs v2.
-- Table S15 / Supp Fig 1: Streptophyta clade label + tree placement.
-- Step 04 wording decisions listed in `methods/04_annotation/README.md`.
+These are documented choices and known limitations, stated in full in the
+relevant step README:
 
-Details for each row live in that step's `README.md`.
+- **Figure 4 panel b** — the denominator (full atlas vs classified-only
+  features) admits two defensible readings; both are documented in
+  `results/figures/README.md`.
+- **Supplementary Fig. 3** — the v3 render is used; v2 is retained in the
+  analysis archive for comparison.
+- **Table S15 / Supp. Fig. 1** — the clade label and tree placement for
+  Streptophyta follow the framework documented in the table notes.
+- **Annotation steps 6, 7 and 9** — historical producers were not recoverable;
+  each is handled as a declared exception, never silently substituted
+  (`methods/04_annotation/README.md`).

@@ -61,9 +61,9 @@ archaeal Gold+Silver from 3.9% to 21.3% over 895 features. This release reaches
 historical denominator, so **treat 30.46% as a new release number, not as a
 confirmation of 21.3%**.
 
-## Negative mode has NO spectral support — do not publish as validated
+## Negative mode has no spectral support — never presented as validated
 
-This is the finding that most needs attention.
+This is the step's most consequential finding.
 
 All 21 NEG archaeal spectra are of good quality (12–160 peaks, median 49). Scanning
 them against the 12 archaeal diagnostic ions and 6 neutral losses returns:
@@ -86,9 +86,9 @@ Compounding this, the NEG mass match is not specific: 918 candidate compounds ma
 just 17 features, about **54 candidates per feature**.
 
 **Conclusion: negative-mode archaeal ArchLips annotation in this release has no MS2
-evidence.** It should not be presented as validated archaeal identification. With
-0 Gold+Silver across 21 features, the manuscript cannot support archaeal
-negative-mode annotation claims from this step.
+evidence.** It is reported as mass-accuracy-only, never as validated archaeal
+identification. With 0 Gold+Silver across 21 features, the manuscript makes no
+archaeal negative-mode annotation claim from this step.
 
 ## Files
 
@@ -99,10 +99,10 @@ negative-mode annotation claims from this step.
 | `step8_coverage_summary.csv` | The results table above |
 | `STEP8_MANIFEST.json` | Parameters, library and producer sha256, polarity note |
 
-## Still outstanding for Step 8
+## Scope note
 
-This is Round 1 (targeted, archaeal-assigned features only). Supplementary Method 7
-Round 2 is a full-batch untargeted search across all six FBMN batches (historically
-42,983 raw mass matches narrowed to 7,328 archaeal-enriched candidates). Round 2 has
-not been run for this release and would be needed before the Step 8 impact figures in
-Supplementary Method 3 can be restated.
+This release runs Round 1 (targeted, archaeal-assigned features only).
+Supplementary Method 7 Round 2 is a full-batch untargeted search across all
+six FBMN batches (historically 42,983 raw mass matches narrowed to 7,328
+archaeal-enriched candidates). Round 2 was not rerun for this release, so the
+historical Round-2 impact figures in Supplementary Method 3 are not restated.

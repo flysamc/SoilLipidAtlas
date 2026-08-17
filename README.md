@@ -99,5 +99,5 @@ data_registry/       checksummed index of files too large for git
 ## Status
 
 All methods steps (01–08), all figures, and all supplementary tables are
-built. Open items awaiting author decisions are listed at the bottom of
+built. Declared limitations and open items are listed at the bottom of
 `PROGRESS.md`.

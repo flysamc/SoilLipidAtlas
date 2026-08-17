@@ -59,23 +59,25 @@ Steps 7 and 8 (custom archaeal database and ArchLips) exist, and it means the
 archaeal annotation rate in the revised manuscript will be set almost entirely by
 Step 8, not by Step 1.
 
-Note also **Heterolobosea**, the phylum at the centre of the reviewer's *Naegleria*
+Note also **Heterolobosea**, the phylum at the centre of the peer-review *Naegleria*
 correction: 31 POS features at 12.90% annotated with **0** at Grade A/B, and 561 NEG
 features at **0.53%** annotated with 0 at Grade A/B. The phylum whose taxonomy the
 correction changes is among the least annotated in the atlas.
 
-## Open decision (blocking tier publication)
+## Mapping choice (declared)
 
-Two POS LipidSearch mappings exist and they disagree materially:
+Two POS LipidSearch mappings exist in the recovered material and they disagree
+materially:
 
 - `consensus_lipidsearch_direct.csv` (step6b, parses raw exports) → **1,304** Grade A/B on the strict atlas
 - `consensus_lipidsearch_annotations.csv` (step6, routes through a stale GNPS classical-network JSON) → **592**
 
-Supplementary Method 3 Step 1 does not name which mapping produced the submitted
-numbers. Recommendation: use the **direct** mapping, since step6b was written
-explicitly to replace step6. This is recorded as an open decision in
-`STEP1_MANIFEST.json` and must be settled, and stated in the revised Methods,
-before any tier rate is published.
+Supplementary Method 3 Step 1 does not name which mapping produced the
+submitted numbers. This release uses the **direct** mapping, because step6b
+was written explicitly to replace step6 and parses the raw vendor exports
+without the stale network intermediate. The choice and its rationale are
+recorded in `STEP1_MANIFEST.json`; the revised Methods states the mapping
+used.
 
 ## Files
 

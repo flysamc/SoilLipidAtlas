@@ -18,7 +18,7 @@ Severity — POS by family: 9 moderate, 2 mild. POS by superclass: 68 moderate, 
 13 mild. NEG by family: 13 moderate, 9 mild, 1 severe. NEG by superclass: 10 moderate,
 1 severe.
 
-## The submitted description of this step is probably wrong
+## The submitted description is inconsistent with the recovered evidence
 
 Supplementary Method 3 Step 5 states:
 
@@ -47,17 +47,16 @@ No located producer reproduces 104:
 | `platinum_unified_annotations_rt_validated.csv` | expected RT range per class | 209 violations, 243 `rt_valid=False` |
 | documented family-grouped method | molecular family | not located |
 
-**The 104 figure must not be restated in the revision until its producer is recovered
-or the number is regenerated under this release.** Both variants computed here are
-emitted side by side, labelled by their `grouping` column, so neither is mistaken for
-a reproduction of it.
+**The 104 figure is therefore unverified and is not restated in the revised
+manuscript.** Both variants computed here are emitted side by side, labelled
+by their `grouping` column, so neither is mistaken for a reproduction of it.
 
-## Recommended action for the revision
+## Disposition
 
-Either recover the Step 5 producer, or correct the Methods sentence to state the
-grouping actually used and report the regenerated count. This is the third unrecovered
-producer in the package, alongside the editable Figure 1 source and the 52.8%
-classifier.
+The revised Methods states the grouping actually used and reports the
+regenerated counts. This is one of the unrecovered historical producers
+declared in this repository (see `../README.md`, "Declared limitations"),
+alongside the Step-6 caller and the Step-9 tier-action producer.
 
 ## Files
 

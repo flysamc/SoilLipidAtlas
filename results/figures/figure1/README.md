@@ -6,7 +6,7 @@ hand-typed. This is the **documented exception** to the R-only figure policy —
 Figure 1 is a workflow schematic (programmatic vector drawing), not a data
 plot.
 
-## Design contract (v2, 2026-08-17)
+## Design contract (v2)
 
 Figure 1 is a **workflow figure**: it carries the study design and its logic,
 not results. Everything that pre-reported later figures was removed —

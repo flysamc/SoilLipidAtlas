@@ -65,19 +65,20 @@ Unidentified → Bronze with source `Network_propagation`, two rounds.
 
 Both modes converged after round 1; round 2 produced no further upgrades.
 
-### Normalisation made essentially no difference — my earlier reasoning was wrong
+### Vocabulary normalisation: tested, and essentially neutral here
 
-I predicted the unnormalised vocabulary was suppressing upgrades, because the
-historical table carried `Glycerophospholipid` and `Glycerophospholipids` as separate
-strings plus a `Spingolipids` misspelling. Running both variants shows the effect is
+The historical unified table carried `Glycerophospholipid` and
+`Glycerophospholipids` as separate strings plus a `Spingolipids` misspelling,
+which raised the hypothesis that unnormalised vocabulary was suppressing
+upgrades. Running both variants side by side refutes it: the effect is
 **+1 upgrade in POS and 0 in NEG**.
 
-The reason: those variants came from CANOPUS-sourced annotations in the *historical*
-unified table. Step 2 here builds from LipidSearch, MS2 diagnostic and ArchLips, whose
-vocabularies are each internally consistent, so the variants never arise. The
-normalisation is still worth keeping — it is the correct representation and it will
-matter once CANOPUS enters at Step 10 — but it does not change the current result, and
-no claim should rest on it having done so.
+The reason: those variants came from CANOPUS-sourced annotations in the
+*historical* unified table. Step 2 here builds from LipidSearch, MS2
+diagnostic and ArchLips, whose vocabularies are each internally consistent,
+so the variants never arise. The normalisation is retained — it is the
+correct representation and becomes relevant once CANOPUS enters at Step 10 —
+but no claim rests on it having changed this step's result.
 
 ### The real limitation is family coverage
 
