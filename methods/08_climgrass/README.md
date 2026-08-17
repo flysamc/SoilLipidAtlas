@@ -23,17 +23,21 @@ lab-derived fingerprints decode a real soil community.
   community composition, fc-weighted primary: Bacteria 38.2%, Fungi 27.8%,
   Animalia 14.7%, Viridiplantae 9.6%, Archaea 5.5%, Protists 4.1% (bootstrap
   CIs alongside). **Animalia ≈14.7% is above the literature expectation
-  range** (reference-panel bias). The winner-take-all estimator disagrees
-  with fc-weighted on several groups; both estimators are reported.
+  range** (reference-panel bias). The marker-panel estimator disagrees
+  with fc-weighted on Bacteria and Viridiplantae; both are shown in Fig. 5a.
 - `phylum_effects.csv` — treatment effects per phylum (CLR + permutation
-  tests). Drought: two FDR-supported phylum responses; Pseudomonadota
-  q = 0.08 omnibus / 0.005 directional.
+  tests). No phylum reaches omnibus FDR *q* < 0.05. Pseudomonadota drought
+  *q* = 0.08 (16-phylum omnibus) / 0.005 (pre-specified qSIP directional
+  family); Evosea is nominally drought-depleted (*p* = 0.050).
 - `qsip_replication_test.csv` — the drought–Pseudomonadota signal
   replicates a published qSIP growth-suppression result (q = 0.005).
 - `benchmark_summary.csv` + `fingerprint_set_effects.csv` — synthetic-mixture
   benchmark and fingerprint-set sensitivity.
-- `RUN_SUMMARY.json` — parameters and checksums.
+- `RUN_SUMMARY.json` — parameters and checksums. The `kingdom_ci` block
+  in that file is the **marker-panel** estimator (Bacteria 18.7%,
+  Viridiplantae 28.6%), not the fc-weighted bars in Figure 5a.
 
-Figure 5 renders `kingdom_composition.csv` + `phylum_effects.csv` via
+Figure 5 renders `composition_fcweighted_kingdom_ci.csv` (bars),
+`kingdom_ci_marker_panel.csv` (diamonds), and `phylum_effects.csv` via
 `results/figures/figure5/r/fig5_final.R`. Large intermediates (soil MGFs,
 benchmark mixtures) are listed in `data_registry/registry.csv`.

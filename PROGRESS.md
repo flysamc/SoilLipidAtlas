@@ -33,5 +33,7 @@ Each folder's `README.md` documents the step in full.
   Supplementary Figures 1–2 use the five-rank NCBI framework; Streptophyta’s
   clade label follows the Table S15 notes.
 - **Figure 5 / ClimGrass.** Animalia ≈ 14.7 % lies above the literature
-  range (reference-panel bias). Negative-mode archaeal annotation has no
-  MS2 support and is not treated as a validated identification.
+  range (reference-panel bias). No phylum reaches omnibus FDR *q* < 0.05;
+  Pseudomonadota drought *q* = 0.08 (omnibus) / 0.005 (qSIP). Negative-mode
+  archaeal annotation has no MS2 support and is not treated as a validated
+  identification. Figure bundle: `results/figures/figure5/` (`LEGEND.md`).

@@ -18,16 +18,18 @@ REPO_ROOT = Path(__file__).resolve().parent
 P2R_ROOT = Path(r"C:\Users\Shadow\Desktop\P2R")
 ANALYSIS_DIR = P2R_ROOT / "outputs" / "analysis" / "ncbi-phylum-2026-08-04-v1"
 SUBMISSION_DIR = P2R_ROOT / "submission_package_strict16_2026-08-13"
+FIGURES = REPO_ROOT / "results" / "figures"
+TABLES = REPO_ROOT / "results" / "tables"
 
 FIGURE_MAP = {
     # figure 1 — data-driven concept skeleton (rendered straight from the release)
     "figure1_svg": {
         "source": ANALYSIS_DIR / "figure1_redesign_2026-08-11_v1" / "Figure1_concept_skeleton.svg",
-        "target": REPO_ROOT / "figures" / "figure1" / "Figure1_concept_skeleton.svg",
+        "target": FIGURES / "figure1" / "Figure1_concept_skeleton.svg",
     },
     "figure1_preview": {
         "source": ANALYSIS_DIR / "figure1_redesign_2026-08-11_v1" / "Figure1_concept_skeleton_preview.png",
-        "target": REPO_ROOT / "figures" / "figure1" / "Figure1_concept_skeleton_preview.png",
+        "target": FIGURES / "figure1" / "Figure1_concept_skeleton_preview.png",
     },
 }
 
@@ -35,21 +37,21 @@ FIGURE_MAP = {
 for _n in range(2, 6):
     FIGURE_MAP[f"figure{_n}"] = {
         "source": SUBMISSION_DIR / "main_figures" / f"Figure_{_n}.png",
-        "target": REPO_ROOT / "figures" / f"figure{_n}" / f"Figure_{_n}.png",
+        "target": FIGURES / f"figure{_n}" / f"Figure_{_n}.png",
     }
 
 # supplementary figures 1-8
 for _n in range(1, 9):
     FIGURE_MAP[f"suppfig{_n}"] = {
         "source": SUBMISSION_DIR / "supplementary_figures" / f"Supplementary_Figure_{_n}.png",
-        "target": REPO_ROOT / "figures" / "supplementary" / f"Supplementary_Figure_{_n}.png",
+        "target": FIGURES / "supplementary" / f"Supplementary_Figure_{_n}.png",
     }
 
 # supplementary tables S1-S15
 for _n in range(1, 16):
     FIGURE_MAP[f"table_s{_n}"] = {
         "source": SUBMISSION_DIR / "supplementary_tables" / f"Table_S{_n}.xlsx",
-        "target": REPO_ROOT / "tables" / f"Table_S{_n}.xlsx",
+        "target": TABLES / f"Table_S{_n}.xlsx",
     }
 
 
