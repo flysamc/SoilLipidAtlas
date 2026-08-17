@@ -1,22 +1,19 @@
 # Figure 3 — chemotaxonomic structure
 
-Dendrograms, lipidome–phylogeny Mantel scatter, and POS/NEG similarity
-heatmaps.
+Phylum-level lipid dendrograms, their correspondence to SSU rRNA
+evolutionary distance, and pairwise lipid similarity.
 
-**How the SSU tree was built** (SILVA + NCBI accessions, alignment,
-GTR+Γ, Mantel): [`methods/09_phylogeny/`](../../../methods/09_phylogeny/).
-That folder holds one accession table, one FASTA, and one Newick.
-**Plotted numbers** are here, combined into five CSVs.
+Methods, accessions, sequences, and the tree:
+[`methods/09_phylogeny/`](../../../methods/09_phylogeny/).
 
-The assembler `figure3_strict_composite_review_only.R` pastes three
-already-rendered R panels onto one 183 × 195 mm canvas. It requires
-panel b to be the SSU v3 freeze
-(`anchor_set_mean__inventory_weighted`).
-
-| Panel | What is plotted | File in `r/data/` |
+| Panel | What it shows | Data in `r/data/` |
 |---|---|---|
-| a | POS/NEG UPGMA dendrograms from phylum-centroid lipid Bray–Curtis (cophenetic r = 0.880 / 0.867) | `lipid_braycurtis.csv`, `phyla.csv` |
-| b | Mantel scatter: SSU distance vs lipid Bray–Curtis. r = 0.509 (POS) / 0.553 (NEG). Triangles = cross-group; circles = within-group | `panel_b_pairs.csv`, `mantel.csv` |
-| c | POS/NEG lipid similarity heatmaps (1 − Bray–Curtis). No point markers | `panel_c_heatmap.csv`, `phyla.csv` |
+| a | UPGMA dendrograms of phylum lipidomes (Bray–Curtis; cophenetic r = 0.880 POS / 0.867 NEG) | `lipid_braycurtis.csv`, `phyla.csv` |
+| b | Mantel scatter of SSU distance against lipid Bray–Curtis (r = 0.509 POS / 0.553 NEG). Triangles = cross-group pairs; circles = within-group | `panel_b_pairs.csv`, `mantel.csv` |
+| c | POS and NEG lipid similarity heatmaps (1 − Bray–Curtis) | `panel_c_heatmap.csv`, `phyla.csv` |
 
-Table S15 (five-rank NCBI framework) is **not** the x-axis of panel b.
+Panels a and c use lipids only. Panel b’s x-axis is SSU patristic
+distance, not the five-rank NCBI framework in Table S15.
+
+`figure3_strict_composite_review_only.R` draws the three-panel layout
+(183 × 195 mm). House style: `r/soilmass_style.R`.

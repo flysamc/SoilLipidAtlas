@@ -62,7 +62,7 @@ flowchart TB
 
 What sits inside those folders:
 
-- **`methods/01_…`–`09_…`** — each step is one folder: `README.md`, `scripts/`, and the small result tables for that step. Step 09 holds the SSU rRNA tree and Figure 3 pairing (accessions, alignment, Newick, Mantel tables).
+- **`methods/01_…`–`09_…`** — each step is one folder: `README.md`, `scripts/`, and the small result tables for that step. Step 09 is the SSU rRNA tree used in Figure 3.
 - **`results/figures/figureN/`** — rendered figure plus an `r/` bundle (R script, style file, plotted CSVs). Supplementary figures are under `results/figures/supplementary/`.
 - **`results/tables/`** — workbooks S1–S15 and their producer scripts.
 - **`data_registry/`** — checksums and download locations for files too large for git (MassIVE, GNPS2, Zenodo).

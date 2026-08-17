@@ -18,11 +18,10 @@ plain-language description.
 | SM9 | Negative control (pure-isolate decomposition) | [`../07_decomposition/`](../07_decomposition/) | n = 164; dominant group 79.3% corrected; archaeal self-recovery 93.1% |
 | SN1 | Feature-count substrates | cross-cutting (see below) | one table for every substrate size cited |
 
-Main-text Methods **Chemotaxonomic structure** (Figure 3 dendrograms +
-lipidome–phylogeny Mantel) is implemented in
-[`../09_phylogeny/`](../09_phylogeny/), not as a numbered SM section.
-Figure 3b uses SSU rRNA patristic distance; Table S15 / Supplementary
-Figures 1–2 use the five-rank NCBI framework.
+Main-text Methods on chemotaxonomic structure (Figure 3) live in
+[`../09_phylogeny/`](../09_phylogeny/). Figure 3b compares lipid
+distances with SSU rRNA evolutionary distance; Table S15 and
+Supplementary Figures 1–2 use the five-rank NCBI framework.
 
 ## SN1 — substrate sizes
 

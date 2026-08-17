@@ -10,7 +10,7 @@ pasted values.
 | S1 | Per-organism / per-phylum sample inventory | 19 collection phyla with a 16-analysis flag. Reports genera; a species count is not derived from the metadata |
 | S2 | FBMN batch composition | 338,878 features across the twelve GNPS2 batches |
 | S3 | MS2 diagnostic-ion database | **50-rule** executable classifier. No `build_table_s3` script — the workbook is the export of `../../methods/04_annotation/step03_diagnostic_ions/pos_50rule_authority/` |
-| S4 | Mantel distance-metric sensitivity | 16 phyla / 120 pairs. Sweeps Bray–Curtis / Jaccard / cosine **lipid** distances against the **five-rank NCBI** matrix used by Supplementary Fig. 1 — not the Figure 3b SSU tree (`methods/09_phylogeny/`) |
+| S4 | Mantel distance-metric sensitivity | Bray–Curtis, Jaccard, and cosine lipid distances versus the five-rank NCBI matrix of Supplementary Fig. 1 (16 phyla / 120 pairs). Figure 3b uses the SSU tree instead (`methods/09_phylogeny/`) |
 | S5 | Per-phylum biomarker counts by annotation tier | From `tier_counts.csv`. Tiers are not updated by SIRIUS/CANOPUS (Step 10) |
 | S6 | Expected composition ranges (literature) | Organism-group labels: Viridiplantae, Protists |
 | S7 | Empirical response (RIE) factors | Rule A: out-of-window calibration → uncalibrated factor 1.0 |
@@ -21,4 +21,4 @@ pasted values.
 | S12 | Cross-method consensus per phylum | Discosea and Evosea kept as separate phyla (not collapsed) |
 | S13 | Leave-one-out accuracy by method × K | L1 best ≈ 74 %. Supplementary Fig. 8 panel b |
 | S14 | ClimGrass overlap fractions | 696-feature verified-soil substrate. Supplementary Fig. 8 panel c |
-| S15 | Five-rank taxonomic framework | Orders Supplementary Figs. 1–2. **Not** the Figure 3b x-axis (that is SSU patristic distance; `methods/09_phylogeny/`). Streptophyta clade label is marked in the workbook notes |
+| S15 | Five-rank taxonomic framework | Used by Supplementary Figs. 1–2. Figure 3b uses SSU patristic distance (`methods/09_phylogeny/`). Streptophyta clade label is marked in the workbook notes |
