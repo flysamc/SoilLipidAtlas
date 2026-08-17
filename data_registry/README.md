@@ -10,7 +10,7 @@ Files too large for git do not live in this repository. Each row of
 | `what` | one-line description (with key dimensions) |
 | `size_bytes` | exact size |
 | `sha256` | checksum of the released file |
-| `current_location` | path inside the authors' analysis archive (internal provenance) |
+| `current_location` | path used when the file was registered |
 | `public_location` | where to obtain it: MassIVE, GNPS2 task IDs, or the Zenodo deposit |
 
 To verify that a downloaded copy is exactly the file the analysis used:

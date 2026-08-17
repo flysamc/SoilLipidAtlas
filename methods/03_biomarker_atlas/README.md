@@ -23,7 +23,7 @@ Used by: → 04 annotation, 05 public validation, 06 fingerprints.
 | `*/…indval_unique…`, `*/…indval_pairs…` | IndVal selections (single phylum / phylum pairs) |
 | `*/…counts_by_phylum…` | Biomarkers per phylum, the headline table |
 | `pos/discovery_method_by_phylum.csv` | Which method found what, per phylum |
-| `*/…summary.json` | Run summary; POS includes selection checks that matched expected counts exactly |
+| `*/…summary.json` | Run summary with selection counts |
 | `pos/reproducibility_check.json`, `pos/freeze_manifest.json` | Verification + freeze record |
 | `scripts/figure2a_strict.py` | Producer, positive mode |
 | `scripts/negative_biomarker_pipeline.py` | Producer, negative mode |

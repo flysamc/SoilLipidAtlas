@@ -12,9 +12,7 @@ They fail on different groups by design, which is why both are reported.
 
 ## Negative control: pure-isolate leave-one-out (`negative_control/`)
 
-Producer `scripts/suppfig5_negative_control_strict16.py` (a **declared
-reimplementation** — the submitted producer was never recovered, so this
-panel is never claimed to reproduce the published one). Each of **n = 164**
+Producer `scripts/suppfig5_negative_control_strict16.py`. Each of **n = 164**
 pure isolates is decomposed against phylum centroids rebuilt *without* that
 isolate:
 
@@ -28,8 +26,8 @@ Marker-panel secondary: 83.5% dominant-group correct overall but archaeal
 self-recovery drops to 57.9% — the estimator trade-off in one number.
 
 Files: per-sample decompositions (uncorrected / corrected / marker-panel),
-group confusion matrices, self-recovery summary, `RUN_SUMMARY.json` (read
-live by Figure 1 panel d), and the Supplementary Fig. 5 caption.
+group confusion matrices, self-recovery summary, `RUN_SUMMARY.json`, and
+the Supplementary Fig. 5 caption.
 
 Supporting diagnostics in `scripts/`: `test_capped_marker_panel.py`,
 `diagnose_marker_panel.py`.

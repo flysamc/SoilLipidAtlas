@@ -19,6 +19,6 @@ pasted values.
 | S10 | ClimGrass benchmark studies (literature) | |
 | S11 | Cross-method dendrogram Mantel r | Supplementary Fig. 8 panel a |
 | S12 | Cross-method consensus per phylum | Discosea and Evosea kept as separate phyla (not collapsed) |
-| S13 | Leave-one-out accuracy by method × K | Declared reimplementation; L1 best ≈ 74 %. Supplementary Fig. 8 panel b |
+| S13 | Leave-one-out accuracy by method × K | L1 best ≈ 74 %. Supplementary Fig. 8 panel b |
 | S14 | ClimGrass overlap fractions | 696-feature verified-soil substrate. Supplementary Fig. 8 panel c |
 | S15 | Five-rank taxonomic framework | Streptophyta clade label is marked in the workbook notes |

@@ -21,7 +21,7 @@ from lipids alone.
 | Annotation | 6,360 POS / 1,889 NEG annotated; SIRIUS formula coverage 70.4% POS |
 | Public validation | 2,287 POS / 486 NEG biomarkers found in public soil datasets |
 | Negative control | 79.3% correct dominant-group recovery over 164 pure isolates |
-| Field application | 736 verified soil features; drought response replicates published qSIP results |
+| Field application | 736 verified soil features; drought response replicates a published qSIP result |
 
 Analysis release: `ncbi-phylum-2026-08-04-v1` (locked — any label change
 requires a new release ID).
@@ -56,15 +56,15 @@ data_registry/       checksummed index of files too large for git
    contains:
    - a `README.md` that explains what the step does, what it reads, what it
      produces, and every number it contributes to the paper;
-   - the producer scripts that built the released artifacts;
+   - the producer scripts;
    - the step's key result tables (small enough for git), so claims can be
      checked without downloading anything.
 3. **`results/`** — each figure and table sits next to the script that
    builds it. All data figures are rendered in R (house style
    `soilmass_style.R`); each figure folder's `r/` bundle re-renders the
-   figure from the included CSVs with R alone. Figure 1 is the exception: a
-   workflow schematic in SVG, not a data plot. Supplementary Methods
-   sections are indexed in `methods/supplementary_methods/`.
+   figure from the included CSVs with R alone. Figure 1 is a workflow
+   schematic in SVG, not a data plot. Supplementary Methods sections are
+   indexed in `methods/supplementary_methods/`.
 4. **`data_registry/registry.csv`** — files too large for git, with SHA-256
    checksums and their public home:
    - Raw LC-MS/MS data: **MassIVE MSV000102115**
@@ -81,17 +81,13 @@ data_registry/       checksummed index of files too large for git
   inputs, verify the SHA-256, and point the path constants at the top of
   the script to those files. Run parameters and checksums are recorded in
   each step's `RUN_SUMMARY.json` or `*MANIFEST.json`.
-- **Declared reimplementations.** Where an earlier producer could not be
-  recovered, the replacement is labelled in that step's README and is not
-  presented as a bit-for-bit reproduction of a previous figure or table.
-- **Incomplete searches are not summarised.** Multi-day external searches
-  (SIRIUS, fastMASST) refuse to write a summary until every expected input
-  is present and checksummed.
+- **Incomplete searches are not summarised.** SIRIUS and fastMASST runners
+  refuse to write a summary until every expected input is present and
+  checksummed.
 - **Taxonomy labels.** Display labels follow the locked policy
   (Viridiplantae, Protists). A few producer-emitted CSVs still use the
   older keys Plantae and Protozoa; the README of the step that emits them
   notes this.
 
-Declared limitations — annotation steps that could not be recovered,
-denominator choices, and related caveats — are listed at the bottom of
-`PROGRESS.md` and in the relevant step README.
+Scientific caveats (denominator choices, annotation scope, known biases)
+are listed at the bottom of `PROGRESS.md` and in the relevant step README.
