@@ -41,20 +41,30 @@ def run_pan_redu(
             "fastmasst_async_full_20260806/statuses"
         )
         pan_dir = run_root / "biomarker_discovery/external_annotation_package/pan_redu_current_index_pos"
+        # 2026-08-08: exclusions extended from 343 to 345 — two features fail
+        # deterministically SERVER-side (A15_177886 malformed JSON response;
+        # A15_60807 internal 'Delta Mass' error), evidenced in their status
+        # files after dozens of retry rounds. Approved denominator: 7,406.
+        # See fastmasst_serverfail_exceptions_20260808.csv for the two rows.
         extra = [
             "--exclusions",
             str(
                 run_root
                 / (
                     "biomarker_discovery/external_annotation_package/fastmasst_all_current_index/"
-                    "figure2a_strict_indval_fastmasst_unqueryable.csv"
+                    "fastmasst_exclusions_combined_20260808.csv"
                 )
             ),
         ]
-        expected_total, expected_queryable = 7751, 7408
+        expected_total, expected_queryable = 7751, 7406
     else:
         feature_metadata = run_root / "annotation_recovery_neg/strict_feature_spectrum_ledger.csv"
-        status_dir = run_root / "annotation_recovery_neg/fastmasst_async_full_20260806/statuses"
+        # 2026-08-08: the original NEG run (fastmasst_async_full_20260806) is
+        # quarantined — all 5,695 results were empty due to the signed-charge
+        # bug (see INVALID_RUN_NOTE.md there). The corrected, content-verified
+        # rerun is fastmasst_async_neg_v2_20260808 (2,283 features with
+        # matches, 10,198,407 match rows).
+        status_dir = run_root / "annotation_recovery_neg/fastmasst_async_neg_v2_20260808/statuses"
         pan_dir = run_root / "annotation_recovery_neg/pan_redu_current_index"
         extra = ["--usable-column", "has_usable_ms2"]
         expected_total, expected_queryable = 5697, 5695

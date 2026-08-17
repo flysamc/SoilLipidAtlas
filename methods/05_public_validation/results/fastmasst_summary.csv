@@ -1,0 +1,3 @@
+mode,strict_features,queryable_features,excluded_no_usable_ms2,features_with_public_match,features_with_soil_match,total_public_matches,total_soil_matches
+POS,7751,7406,345,3978,2287,94180757,1901816
+NEG,5697,5695,2,2283,486,10198407,400009

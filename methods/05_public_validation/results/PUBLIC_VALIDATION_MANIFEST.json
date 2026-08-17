@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "generated_utc": "2026-08-11T06:43:13.862738+00:00",
+  "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\public_validation.py",
+  "producer_sha256": "e55ae7c082560c349270bf104ea72b65ab3de82599048ea20e659fd5b8a46b29",
+  "database": "metabolomicspanrepo_index_latest",
+  "status": "complete_both_polarities_one_current_index",
+  "outputs": {
+    "fastmasst_summary.csv": {
+      "bytes": 244,
+      "sha256": "6fb47e0c2dfa510928d3c0c63949066796b8f8adb0aa8d38ef35f9183c9d9db6"
+    },
+    "panredu_summary.csv": {
+      "bytes": 1505,
+      "sha256": "ce29adcd8da384fdc670521bd6c323b3aba534b88a6998ddb4db0118c48fcc5e"
+    }
+  }
+}

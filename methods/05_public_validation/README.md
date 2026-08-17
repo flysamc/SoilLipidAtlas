@@ -1,7 +1,8 @@
 # Step 05 — Public validation (fastMASST + Pan-ReDU)
 
-**Status: ⏳ running.** This is the skeleton — scripts and provenance now,
-result tables when the searches finish.
+**Status: ✅ complete (2026-08-11), both polarities, one current index.**
+Final summaries in `results/`; per-feature match sets (GBs) in the data
+registry.
 
 ## What this step does
 
@@ -15,7 +16,24 @@ Searches every atlas biomarker against the world's public MS/MS data:
    Fail-closed: it refuses to run until **both** T1 queues are 100% complete
    with exact checksums and denominators.
 
-## Where it stands (2026-08-08)
+## Results (T2 run 2026-08-11, database `metabolomicspanrepo_index_latest`)
+
+| Mode | Strict features | Queryable | Any public match | Any soil match |
+|---|---|---|---|---|
+| POS | 7,751 | 7,406 | 3,978 (54%) | 2,287 (31%) |
+| NEG | 5,697 | 5,695 | 2,283 (40%) | 486 (8.5%) |
+
+Per-kingdom and per-phylum breakdowns: `results/panredu_summary.csv`
+(NEG rows carry the producer's legacy Plantae/Protozoa keys; display labels
+are Viridiplantae/Protists per the locked taxonomy policy). Producer +
+output checksums: `results/PUBLIC_VALIDATION_MANIFEST.json`.
+
+A second, composite-selection queue (`scripts/build_composite_fastmasst_queue.py`,
+run `fastmasst_composite_20260811`) validated the alternative Figure-2c
+selection: IndVal 7,254 features / 30.9% soil-detected vs composite 3,613 /
+14.6% — the number printed in Figure 2b/c.
+
+## History: the outage and the signed-charge bug
 
 Paused 2026-08-06 when the GNPS2 backend died mid-run; resumed 2026-08-08
 after verified recovery.
@@ -27,9 +45,10 @@ negative values silently match nothing. Proven with known-positive features
 (12/17/20 historical matches: 0 with −1, exact historical reproduction with
 +1). POS is unaffected (+1 either way). The wrapper is fixed (see the comment
 at its charge-parsing block), the void run is quarantined in P2R as the bug
-record, and the corrected NEG run (`fastmasst_async_neg_v2_20260808`) is in
-progress. Lesson recorded: verify result *content* after bulk runs — an
-all-empty set passes format checks.
+record, and the corrected NEG run (`fastmasst_async_neg_v2_20260808`)
+completed its full 5,695/5,695 gate with real content. Lesson recorded:
+verify result *content* after bulk runs — an all-empty set passes format
+checks.
 
 ## How it survives outages (the engineering)
 
@@ -53,12 +72,9 @@ all-empty set passes format checks.
 | `scripts/finalize_public_validation_when_ready.py` | Watcher that triggers T2 when both queues complete |
 | `scripts/public_validation.py` | T2 — the fail-closed Pan-ReDU combined producer |
 
-The per-feature match files (~1.4 GB POS and growing) stay outside git — see
-`data_registry/registry.csv`; final checksums land there at completion.
+The per-feature match files (~1.4 GB POS + NEG v2) stay outside git — see
+`data_registry/registry.csv`.
 
-## When the queues finish
-
-1. Verify both success denominators (7,408 / 5,695) and checksum the match sets.
-2. Run `public_validation.py` (T2) with verified paths.
-3. Add the combined validation summaries here, update the registry, and the
-   step flips to ✅.
+Completion path as executed: both denominators verified (POS queryable
+7,406 of 7,751 strict; NEG 5,695), match sets checksummed, then the
+fail-closed T2 producer wrote the two summary CSVs now in `results/`.
