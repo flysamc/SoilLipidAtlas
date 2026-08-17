@@ -1,0 +1,130 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1 (locked strict policy, 16 phyla)",
+  "seed": 20260811,
+  "method_validation_old_labels": {
+    "simper": {
+      "mine": {
+        "100": 800,
+        "250": 1695,
+        "500": 2921,
+        "1000": 5032,
+        "2500": 10851
+      },
+      "frozen": {
+        "100": 800,
+        "250": 1695,
+        "500": 2921,
+        "1000": 5032,
+        "2500": 10851
+      },
+      "delta": {
+        "100": 0,
+        "250": 0,
+        "500": 0,
+        "1000": 0,
+        "2500": 0
+      },
+      "max_rel_dev": 0.0,
+      "mode": "exact_gate_pass"
+    },
+    "scbd": {
+      "mine": {
+        "100": 1191,
+        "250": 2823,
+        "500": 5294,
+        "1000": 9490,
+        "2500": 19290
+      },
+      "frozen": {
+        "100": 1191,
+        "250": 2823,
+        "500": 5294,
+        "1000": 9490,
+        "2500": 19290
+      },
+      "delta": {
+        "100": 0,
+        "250": 0,
+        "500": 0,
+        "1000": 0,
+        "2500": 0
+      },
+      "max_rel_dev": 0.0,
+      "mode": "exact_gate_pass"
+    },
+    "cap": {
+      "mine": {
+        "100": 1173,
+        "250": 2621,
+        "500": 4753,
+        "1000": 8496,
+        "2500": 17803
+      },
+      "frozen": {
+        "100": 1112,
+        "250": 2614,
+        "500": 4831,
+        "1000": 8509,
+        "2500": 17223
+      },
+      "delta": {
+        "100": 61,
+        "250": 7,
+        "500": -78,
+        "1000": -13,
+        "2500": 580
+      },
+      "max_rel_dev": 0.0549,
+      "mode": "bounded_best_fit"
+    },
+    "stability_l1": {
+      "mine": {
+        "100": 1671,
+        "250": 3987,
+        "500": 7545,
+        "1000": 13416,
+        "2500": 29475
+      },
+      "frozen": {
+        "100": 1654,
+        "250": 3951,
+        "500": 7400,
+        "1000": 12964,
+        "2500": 23771
+      },
+      "delta": {
+        "100": 17,
+        "250": 36,
+        "500": 145,
+        "1000": 452,
+        "2500": 5704
+      },
+      "max_rel_dev": 0.24,
+      "mode": "declared_reimplementation_stochastic"
+    }
+  },
+  "full_substrate": {
+    "n_samples": 164,
+    "n_features": 45525,
+    "loo_baseline": "106/164 = 0.646",
+    "full_cophenetic_r": 0.8800371415222945
+  },
+  "panel_c_verified_set": {
+    "source": "outputs\\analysis\\ncbi-phylum-2026-08-04-v1\\climgrass\\strict16_all_simper_sensitivity_2026-08-06\\strict16_verified_simper_mapping_5ppm.csv",
+    "n_on_substrate": 696,
+    "replaces": "published 769-feature list (old labels)"
+  },
+  "l1_params": {
+    "B": 50,
+    "subsample": "stratified half",
+    "path": "LARS lasso",
+    "data": "standardised Hellinger",
+    "max_steps": 160
+  },
+  "cap_params": {
+    "distance": "Bray-Curtis on TSS",
+    "axes": 7,
+    "discriminant": "one-vs-rest least squares",
+    "feature_score": "|Pearson r| vs Hellinger features"
+  }
+}

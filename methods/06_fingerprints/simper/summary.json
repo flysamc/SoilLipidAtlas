@@ -1,0 +1,19 @@
+{
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
+  "method": "centroid absolute-difference SIMPER on raw intensities; n_batches >= 2; top 3000 per phylum",
+  "published_method_reproduction": {
+    "validation_mode": "pass_bounded_not_exact",
+    "description": "bounded per-phylum n50 reproduction against frozen curves; historical per-feature atlas absent",
+    "reproduction_correlation": 0.9996075075264299,
+    "minimum_required_r": 0.995,
+    "status": "pass",
+    "shared_rows": 17,
+    "mean_absolute_n50_delta": 7.823529411764706
+  },
+  "n_features": 57586,
+  "n_samples": 164,
+  "n_phyla": 16,
+  "n50_min": 82,
+  "n50_max": 570,
+  "max_single_feature_pct": 3.9579224601809257
+}
