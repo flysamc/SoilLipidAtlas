@@ -29,7 +29,6 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(tidyr)
   library(patchwork)
-  library(forcats)
   library(scales)
   library(ggtext)
 })
@@ -109,8 +108,9 @@ hm_data <- stype |>
   mutate(sample_type = factor(sample_type, levels = heatmap_types))
 
 soil_comp <- read.csv(file.path(data_dir, "shared_vs_exclusive_soil.csv"))
+# Composite first so IndVal (the headline bar) renders on top
 soil_comp$category <- factor(soil_comp$category,
-                             levels = c("Indicator Value (IndVal)", "Composite scoring"))
+                             levels = c("Composite scoring", "Indicator Value (IndVal)"))
 
 # -- Panel a: split across the axis break -------------------------
 phy_kingdom <- setNames(
@@ -154,10 +154,13 @@ pa_left <- pa_base +
   coord_cartesian(xlim = c(0, LO_MAX)) +
   break_mark(LO_MAX - 28, 22) +
   labs(x = "Number of phylum-enriched biomarkers", y = NULL, tag = "a") +
+  # outline the legend keys so the pale Unidentified swatch reads on white
+  guides(fill = guide_legend(override.aes = list(colour = "grey60", linewidth = 0.2))) +
   theme(
     axis.text.y = element_markdown(size = 5),
     legend.position = "inside",
-    legend.position.inside = c(0.99, 0.015),
+    # 0.10, not 0.015: keeps the legend clear of the axis-break marks
+    legend.position.inside = c(0.99, 0.10),
     legend.justification = c(1, 0),
     legend.background = element_rect(fill = alpha("white", 0.9), colour = NA),
     legend.title = element_text(size = 5, face = "bold"),
@@ -191,38 +194,36 @@ panel_a <- pa_left + pa_right +
   plot_layout(widths = c(LO_MAX, HI_MAX - BREAK_HI))
 
 # -- Panel b: MASST sample-type heatmap ---------------------------
-kingdom_labels_df <- data.frame(
-  kingdom = factor(KINGDOM_ORDER, levels = rev(KINGDOM_ORDER)),
-  sample_type = factor(heatmap_types[1], levels = heatmap_types),
-  label = KINGDOM_ORDER
+# Kingdom names as true axis text (coloured, bold, 7 pt) so the panel keeps
+# its full width -- the old geom_text + 20 mm margin pushed the tiles right.
+kingdom_html <- setNames(
+  paste0("<b><span style='color:", KINGDOM_COLOURS[KINGDOM_ORDER], "'>",
+         KINGDOM_ORDER, "</span></b>"),
+  KINGDOM_ORDER
 )
 
 pb <- ggplot(hm_data, aes(x = sample_type, y = kingdom, fill = pct)) +
   geom_tile(colour = "white", linewidth = 0.5) +
   geom_text(aes(label = paste0(round(pct), "%")),
-            size = pt2mm(5.5), fontface = "bold",
+            size = pt2mm(6), fontface = "bold",
             colour = ifelse(hm_data$pct > 25, "white", "#333333")) +
-  geom_text(data = kingdom_labels_df,
-            aes(y = kingdom, label = label), inherit.aes = FALSE,
-            x = 0.35, size = pt2mm(5.5), fontface = "bold", hjust = 1,
-            colour = KINGDOM_COLOURS[kingdom_labels_df$label]) +
   scale_fill_gradientn(
     colours = c("#FFFDE7", "#FFF9C4", "#FFE082", "#FFB300", "#E65100", "#B71C1C"),
     limits  = c(0, 60),
     name    = "Detection\nrate (%)"
   ) +
   scale_x_discrete(labels = heatmap_labels) +
+  scale_y_discrete(labels = kingdom_html) +
   labs(x = "Public sample type (fastMASST)", y = NULL, tag = "b") +
-  coord_cartesian(clip = "off") +
   theme_nature() +
   theme(
-    axis.text.y  = element_blank(),
-    axis.text.x  = element_text(size = 5, lineheight = 0.85),
+    axis.text.y  = element_markdown(size = 7),
+    axis.text.x  = element_text(size = 7, face = "bold", lineheight = 0.85),
     axis.ticks.y = element_blank(),
     axis.line    = element_blank(),
     panel.grid   = element_blank(),
     legend.position = "none",
-    plot.margin  = margin(2, 2, 4, 20, "mm")
+    plot.margin  = margin(2, 2, 4, 2, "mm")
   )
 
 # -- Panel c: soil detection by selection method ------------------
@@ -237,7 +238,10 @@ pc <- ggplot(soil_comp, aes(x = pct_soil, y = category, fill = category)) +
   ) +
   geom_text(
     aes(x = 0.6, label = paste0("n = ", format(n_total, big.mark = ","))),
-    hjust = 0, size = pt2mm(5), colour = "white", fontface = "italic"
+    hjust = 0, size = pt2mm(5), fontface = "italic",
+    # white fails on the light-grey Composite bar; keep it only on the blue
+    colour = ifelse(soil_comp$category == "Indicator Value (IndVal)",
+                    "white", "#333333")
   ) +
   scale_fill_manual(values = bar_colors) +
   scale_x_continuous(
@@ -255,7 +259,7 @@ pc <- ggplot(soil_comp, aes(x = pct_soil, y = category, fill = category)) +
   )
 
 # -- Compose: a full height left, b over c on the right -----------
-right_col <- pb / pc + plot_layout(heights = c(2.5, 1))
+right_col <- pb / pc + plot_layout(heights = c(3, 1))
 
 fig2 <- panel_a | right_col
 fig2 <- fig2 + plot_layout(widths = c(1.25, 1)) &
