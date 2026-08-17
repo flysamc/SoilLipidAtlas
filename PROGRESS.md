@@ -25,7 +25,7 @@ Each folder's `README.md` documents the step in full.
   SIRIUS/CANOPUS/CSI report formula and class coverage; they do not
   promote or demote Gold/Silver/Bronze (`methods/04_annotation/README.md`).
 - **Figure 4 panel b.** The lipid-class heatmap uses the **full atlas** as
-  denominator. A classified-features-only reading is also defensible.
+  denominator. Organism-group labels are Viridiplantae and Protists.
 - **Leave-one-out accuracy** is **64.6 %** (106/164) on the 45,525-feature
   substrate (Supplementary Fig. 4, Table S13).
 - **Figure 3 and Table S15.** Figure 3b compares lipid distances with SSU

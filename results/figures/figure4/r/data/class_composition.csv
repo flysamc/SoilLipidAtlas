@@ -1,0 +1,353 @@
+mode,phylum,kingdom,class,n_features,fraction,phylum_total
+POS,Streptophyta,Plantae,PC / SM,847,0.16389318885448917,5168
+POS,Streptophyta,Plantae,PE,51,0.009868421052631578,5168
+POS,Streptophyta,Plantae,PG / PS / PI / PA,296,0.05727554179566564,5168
+POS,Streptophyta,Plantae,TG / DG,1287,0.24903250773993807,5168
+POS,Streptophyta,Plantae,Free FA / LPL,26,0.005030959752321981,5168
+POS,Streptophyta,Plantae,Sphingolipid,121,0.02341331269349845,5168
+POS,Streptophyta,Plantae,Glycolipid (MGDG/DGDG/SQDG),191,0.03695820433436533,5168
+POS,Streptophyta,Plantae,Sterol / Terpenoid,711,0.13757739938080496,5168
+POS,Streptophyta,Plantae,Archaeal ether lipid,13,0.0025154798761609907,5168
+POS,Streptophyta,Plantae,Other / specialised,99,0.019156346749226005,5168
+POS,Streptophyta,Plantae,Unclassified,1526,0.29527863777089786,5168
+POS,Pseudomonadota,Bacteria,PC / SM,37,0.08958837772397095,413
+POS,Pseudomonadota,Bacteria,PE,35,0.0847457627118644,413
+POS,Pseudomonadota,Bacteria,PG / PS / PI / PA,52,0.12590799031476999,413
+POS,Pseudomonadota,Bacteria,TG / DG,58,0.14043583535108958,413
+POS,Pseudomonadota,Bacteria,Free FA / LPL,17,0.04116222760290557,413
+POS,Pseudomonadota,Bacteria,Sphingolipid,0,0.0,413
+POS,Pseudomonadota,Bacteria,Glycolipid (MGDG/DGDG/SQDG),10,0.024213075060532687,413
+POS,Pseudomonadota,Bacteria,Sterol / Terpenoid,19,0.04600484261501211,413
+POS,Pseudomonadota,Bacteria,Archaeal ether lipid,0,0.0,413
+POS,Pseudomonadota,Bacteria,Other / specialised,10,0.024213075060532687,413
+POS,Pseudomonadota,Bacteria,Unclassified,175,0.423728813559322,413
+POS,Arthropoda,Animalia,PC / SM,46,0.12041884816753927,382
+POS,Arthropoda,Animalia,PE,3,0.007853403141361256,382
+POS,Arthropoda,Animalia,PG / PS / PI / PA,9,0.02356020942408377,382
+POS,Arthropoda,Animalia,TG / DG,14,0.03664921465968586,382
+POS,Arthropoda,Animalia,Free FA / LPL,21,0.0549738219895288,382
+POS,Arthropoda,Animalia,Sphingolipid,14,0.03664921465968586,382
+POS,Arthropoda,Animalia,Glycolipid (MGDG/DGDG/SQDG),0,0.0,382
+POS,Arthropoda,Animalia,Sterol / Terpenoid,24,0.06282722513089005,382
+POS,Arthropoda,Animalia,Archaeal ether lipid,0,0.0,382
+POS,Arthropoda,Animalia,Other / specialised,14,0.03664921465968586,382
+POS,Arthropoda,Animalia,Unclassified,237,0.6204188481675392,382
+POS,Basidiomycota,Fungi,PC / SM,27,0.061224489795918366,441
+POS,Basidiomycota,Fungi,PE,10,0.022675736961451247,441
+POS,Basidiomycota,Fungi,PG / PS / PI / PA,35,0.07936507936507936,441
+POS,Basidiomycota,Fungi,TG / DG,137,0.31065759637188206,441
+POS,Basidiomycota,Fungi,Free FA / LPL,17,0.03854875283446712,441
+POS,Basidiomycota,Fungi,Sphingolipid,20,0.045351473922902494,441
+POS,Basidiomycota,Fungi,Glycolipid (MGDG/DGDG/SQDG),1,0.0022675736961451248,441
+POS,Basidiomycota,Fungi,Sterol / Terpenoid,5,0.011337868480725623,441
+POS,Basidiomycota,Fungi,Archaeal ether lipid,1,0.0022675736961451248,441
+POS,Basidiomycota,Fungi,Other / specialised,5,0.011337868480725623,441
+POS,Basidiomycota,Fungi,Unclassified,183,0.41496598639455784,441
+POS,Bacillota,Bacteria,PC / SM,33,0.03232125367286973,1021
+POS,Bacillota,Bacteria,PE,56,0.05484818805093046,1021
+POS,Bacillota,Bacteria,PG / PS / PI / PA,96,0.0940254652301665,1021
+POS,Bacillota,Bacteria,TG / DG,189,0.1851126346718903,1021
+POS,Bacillota,Bacteria,Free FA / LPL,5,0.004897159647404506,1021
+POS,Bacillota,Bacteria,Sphingolipid,16,0.015670910871694418,1021
+POS,Bacillota,Bacteria,Glycolipid (MGDG/DGDG/SQDG),10,0.009794319294809012,1021
+POS,Bacillota,Bacteria,Sterol / Terpenoid,8,0.007835455435847209,1021
+POS,Bacillota,Bacteria,Archaeal ether lipid,0,0.0,1021
+POS,Bacillota,Bacteria,Other / specialised,35,0.034280117531831536,1021
+POS,Bacillota,Bacteria,Unclassified,573,0.5612144955925563,1021
+POS,Mollusca,Animalia,PC / SM,15,0.03296703296703297,455
+POS,Mollusca,Animalia,PE,0,0.0,455
+POS,Mollusca,Animalia,PG / PS / PI / PA,1,0.002197802197802198,455
+POS,Mollusca,Animalia,TG / DG,0,0.0,455
+POS,Mollusca,Animalia,Free FA / LPL,6,0.013186813186813187,455
+POS,Mollusca,Animalia,Sphingolipid,3,0.006593406593406593,455
+POS,Mollusca,Animalia,Glycolipid (MGDG/DGDG/SQDG),1,0.002197802197802198,455
+POS,Mollusca,Animalia,Sterol / Terpenoid,29,0.06373626373626373,455
+POS,Mollusca,Animalia,Archaeal ether lipid,0,0.0,455
+POS,Mollusca,Animalia,Other / specialised,6,0.013186813186813187,455
+POS,Mollusca,Animalia,Unclassified,394,0.865934065934066,455
+POS,Ascomycota,Fungi,PC / SM,19,0.07279693486590039,261
+POS,Ascomycota,Fungi,PE,4,0.01532567049808429,261
+POS,Ascomycota,Fungi,PG / PS / PI / PA,13,0.04980842911877394,261
+POS,Ascomycota,Fungi,TG / DG,68,0.26053639846743293,261
+POS,Ascomycota,Fungi,Free FA / LPL,8,0.03065134099616858,261
+POS,Ascomycota,Fungi,Sphingolipid,11,0.0421455938697318,261
+POS,Ascomycota,Fungi,Glycolipid (MGDG/DGDG/SQDG),0,0.0,261
+POS,Ascomycota,Fungi,Sterol / Terpenoid,5,0.019157088122605363,261
+POS,Ascomycota,Fungi,Archaeal ether lipid,0,0.0,261
+POS,Ascomycota,Fungi,Other / specialised,3,0.011494252873563218,261
+POS,Ascomycota,Fungi,Unclassified,130,0.49808429118773945,261
+POS,Nematoda,Animalia,PC / SM,21,0.04976303317535545,422
+POS,Nematoda,Animalia,PE,0,0.0,422
+POS,Nematoda,Animalia,PG / PS / PI / PA,7,0.016587677725118485,422
+POS,Nematoda,Animalia,TG / DG,13,0.030805687203791468,422
+POS,Nematoda,Animalia,Free FA / LPL,0,0.0,422
+POS,Nematoda,Animalia,Sphingolipid,8,0.018957345971563982,422
+POS,Nematoda,Animalia,Glycolipid (MGDG/DGDG/SQDG),2,0.004739336492890996,422
+POS,Nematoda,Animalia,Sterol / Terpenoid,22,0.052132701421800945,422
+POS,Nematoda,Animalia,Archaeal ether lipid,74,0.17535545023696683,422
+POS,Nematoda,Animalia,Other / specialised,5,0.011848341232227487,422
+POS,Nematoda,Animalia,Unclassified,270,0.6398104265402843,422
+POS,Chlorophyta,Plantae,PC / SM,7,0.01545253863134658,453
+POS,Chlorophyta,Plantae,PE,0,0.0,453
+POS,Chlorophyta,Plantae,PG / PS / PI / PA,6,0.013245033112582781,453
+POS,Chlorophyta,Plantae,TG / DG,22,0.04856512141280353,453
+POS,Chlorophyta,Plantae,Free FA / LPL,0,0.0,453
+POS,Chlorophyta,Plantae,Sphingolipid,4,0.008830022075055188,453
+POS,Chlorophyta,Plantae,Glycolipid (MGDG/DGDG/SQDG),6,0.013245033112582781,453
+POS,Chlorophyta,Plantae,Sterol / Terpenoid,20,0.04415011037527594,453
+POS,Chlorophyta,Plantae,Archaeal ether lipid,0,0.0,453
+POS,Chlorophyta,Plantae,Other / specialised,18,0.039735099337748346,453
+POS,Chlorophyta,Plantae,Unclassified,370,0.8167770419426048,453
+POS,Mucoromycota,Fungi,PC / SM,2,0.0625,32
+POS,Mucoromycota,Fungi,PE,0,0.0,32
+POS,Mucoromycota,Fungi,PG / PS / PI / PA,1,0.03125,32
+POS,Mucoromycota,Fungi,TG / DG,6,0.1875,32
+POS,Mucoromycota,Fungi,Free FA / LPL,4,0.125,32
+POS,Mucoromycota,Fungi,Sphingolipid,0,0.0,32
+POS,Mucoromycota,Fungi,Glycolipid (MGDG/DGDG/SQDG),0,0.0,32
+POS,Mucoromycota,Fungi,Sterol / Terpenoid,0,0.0,32
+POS,Mucoromycota,Fungi,Archaeal ether lipid,0,0.0,32
+POS,Mucoromycota,Fungi,Other / specialised,0,0.0,32
+POS,Mucoromycota,Fungi,Unclassified,19,0.59375,32
+POS,Methanobacteriota,Archaea,PC / SM,8,0.007866273352999017,1017
+POS,Methanobacteriota,Archaea,PE,0,0.0,1017
+POS,Methanobacteriota,Archaea,PG / PS / PI / PA,2,0.0019665683382497543,1017
+POS,Methanobacteriota,Archaea,TG / DG,35,0.0344149459193707,1017
+POS,Methanobacteriota,Archaea,Free FA / LPL,6,0.0058997050147492625,1017
+POS,Methanobacteriota,Archaea,Sphingolipid,2,0.0019665683382497543,1017
+POS,Methanobacteriota,Archaea,Glycolipid (MGDG/DGDG/SQDG),0,0.0,1017
+POS,Methanobacteriota,Archaea,Sterol / Terpenoid,0,0.0,1017
+POS,Methanobacteriota,Archaea,Archaeal ether lipid,413,0.4060963618485742,1017
+POS,Methanobacteriota,Archaea,Other / specialised,1,0.0009832841691248771,1017
+POS,Methanobacteriota,Archaea,Unclassified,550,0.5408062930186824,1017
+POS,Actinomycetota,Bacteria,PC / SM,52,0.1897810218978102,274
+POS,Actinomycetota,Bacteria,PE,10,0.0364963503649635,274
+POS,Actinomycetota,Bacteria,PG / PS / PI / PA,10,0.0364963503649635,274
+POS,Actinomycetota,Bacteria,TG / DG,81,0.2956204379562044,274
+POS,Actinomycetota,Bacteria,Free FA / LPL,0,0.0,274
+POS,Actinomycetota,Bacteria,Sphingolipid,3,0.010948905109489052,274
+POS,Actinomycetota,Bacteria,Glycolipid (MGDG/DGDG/SQDG),18,0.06569343065693431,274
+POS,Actinomycetota,Bacteria,Sterol / Terpenoid,1,0.0036496350364963502,274
+POS,Actinomycetota,Bacteria,Archaeal ether lipid,0,0.0,274
+POS,Actinomycetota,Bacteria,Other / specialised,5,0.01824817518248175,274
+POS,Actinomycetota,Bacteria,Unclassified,94,0.34306569343065696,274
+POS,Heterolobosea,Protozoa,PC / SM,18,0.5806451612903226,31
+POS,Heterolobosea,Protozoa,PE,2,0.06451612903225806,31
+POS,Heterolobosea,Protozoa,PG / PS / PI / PA,0,0.0,31
+POS,Heterolobosea,Protozoa,TG / DG,0,0.0,31
+POS,Heterolobosea,Protozoa,Free FA / LPL,2,0.06451612903225806,31
+POS,Heterolobosea,Protozoa,Sphingolipid,0,0.0,31
+POS,Heterolobosea,Protozoa,Glycolipid (MGDG/DGDG/SQDG),0,0.0,31
+POS,Heterolobosea,Protozoa,Sterol / Terpenoid,1,0.03225806451612903,31
+POS,Heterolobosea,Protozoa,Archaeal ether lipid,0,0.0,31
+POS,Heterolobosea,Protozoa,Other / specialised,0,0.0,31
+POS,Heterolobosea,Protozoa,Unclassified,8,0.25806451612903225,31
+POS,Discosea,Protozoa,PC / SM,5,0.14285714285714285,35
+POS,Discosea,Protozoa,PE,0,0.0,35
+POS,Discosea,Protozoa,PG / PS / PI / PA,6,0.17142857142857143,35
+POS,Discosea,Protozoa,TG / DG,5,0.14285714285714285,35
+POS,Discosea,Protozoa,Free FA / LPL,5,0.14285714285714285,35
+POS,Discosea,Protozoa,Sphingolipid,0,0.0,35
+POS,Discosea,Protozoa,Glycolipid (MGDG/DGDG/SQDG),0,0.0,35
+POS,Discosea,Protozoa,Sterol / Terpenoid,0,0.0,35
+POS,Discosea,Protozoa,Archaeal ether lipid,0,0.0,35
+POS,Discosea,Protozoa,Other / specialised,0,0.0,35
+POS,Discosea,Protozoa,Unclassified,14,0.4,35
+POS,Evosea,Protozoa,PC / SM,152,0.23384615384615384,650
+POS,Evosea,Protozoa,PE,24,0.036923076923076927,650
+POS,Evosea,Protozoa,PG / PS / PI / PA,51,0.07846153846153846,650
+POS,Evosea,Protozoa,TG / DG,37,0.05692307692307692,650
+POS,Evosea,Protozoa,Free FA / LPL,12,0.018461538461538463,650
+POS,Evosea,Protozoa,Sphingolipid,3,0.004615384615384616,650
+POS,Evosea,Protozoa,Glycolipid (MGDG/DGDG/SQDG),1,0.0015384615384615385,650
+POS,Evosea,Protozoa,Sterol / Terpenoid,52,0.08,650
+POS,Evosea,Protozoa,Archaeal ether lipid,0,0.0,650
+POS,Evosea,Protozoa,Other / specialised,20,0.03076923076923077,650
+POS,Evosea,Protozoa,Unclassified,298,0.4584615384615385,650
+POS,Thermoproteota,Archaea,PC / SM,0,0.0,316
+POS,Thermoproteota,Archaea,PE,1,0.0031645569620253164,316
+POS,Thermoproteota,Archaea,PG / PS / PI / PA,0,0.0,316
+POS,Thermoproteota,Archaea,TG / DG,11,0.03481012658227848,316
+POS,Thermoproteota,Archaea,Free FA / LPL,0,0.0,316
+POS,Thermoproteota,Archaea,Sphingolipid,0,0.0,316
+POS,Thermoproteota,Archaea,Glycolipid (MGDG/DGDG/SQDG),1,0.0031645569620253164,316
+POS,Thermoproteota,Archaea,Sterol / Terpenoid,10,0.03164556962025317,316
+POS,Thermoproteota,Archaea,Archaeal ether lipid,122,0.3860759493670886,316
+POS,Thermoproteota,Archaea,Other / specialised,1,0.0031645569620253164,316
+POS,Thermoproteota,Archaea,Unclassified,170,0.5379746835443038,316
+NEG,Streptophyta,Plantae,PC / SM,10,0.0068634179821551134,1457
+NEG,Streptophyta,Plantae,PE,11,0.0075497597803706245,1457
+NEG,Streptophyta,Plantae,PG / PS / PI / PA,120,0.08236101578586136,1457
+NEG,Streptophyta,Plantae,TG / DG,20,0.013726835964310227,1457
+NEG,Streptophyta,Plantae,Free FA / LPL,43,0.029512697323266987,1457
+NEG,Streptophyta,Plantae,Sphingolipid,20,0.013726835964310227,1457
+NEG,Streptophyta,Plantae,Glycolipid (MGDG/DGDG/SQDG),158,0.10844200411805079,1457
+NEG,Streptophyta,Plantae,Sterol / Terpenoid,4,0.002745367192862045,1457
+NEG,Streptophyta,Plantae,Archaeal ether lipid,0,0.0,1457
+NEG,Streptophyta,Plantae,Other / specialised,166,0.11393273850377487,1457
+NEG,Streptophyta,Plantae,Unclassified,905,0.6211393273850377,1457
+NEG,Chlorophyta,Plantae,PC / SM,0,0.0,316
+NEG,Chlorophyta,Plantae,PE,1,0.0031645569620253164,316
+NEG,Chlorophyta,Plantae,PG / PS / PI / PA,2,0.006329113924050633,316
+NEG,Chlorophyta,Plantae,TG / DG,5,0.015822784810126583,316
+NEG,Chlorophyta,Plantae,Free FA / LPL,0,0.0,316
+NEG,Chlorophyta,Plantae,Sphingolipid,1,0.0031645569620253164,316
+NEG,Chlorophyta,Plantae,Glycolipid (MGDG/DGDG/SQDG),13,0.04113924050632911,316
+NEG,Chlorophyta,Plantae,Sterol / Terpenoid,1,0.0031645569620253164,316
+NEG,Chlorophyta,Plantae,Archaeal ether lipid,0,0.0,316
+NEG,Chlorophyta,Plantae,Other / specialised,13,0.04113924050632911,316
+NEG,Chlorophyta,Plantae,Unclassified,280,0.8860759493670886,316
+NEG,Arthropoda,Animalia,PC / SM,31,0.041168658698539175,753
+NEG,Arthropoda,Animalia,PE,29,0.03851261620185923,753
+NEG,Arthropoda,Animalia,PG / PS / PI / PA,14,0.01859229747675963,753
+NEG,Arthropoda,Animalia,TG / DG,2,0.0026560424966799467,753
+NEG,Arthropoda,Animalia,Free FA / LPL,38,0.05046480743691899,753
+NEG,Arthropoda,Animalia,Sphingolipid,28,0.03718459495351926,753
+NEG,Arthropoda,Animalia,Glycolipid (MGDG/DGDG/SQDG),15,0.0199203187250996,753
+NEG,Arthropoda,Animalia,Sterol / Terpenoid,0,0.0,753
+NEG,Arthropoda,Animalia,Archaeal ether lipid,1,0.0013280212483399733,753
+NEG,Arthropoda,Animalia,Other / specialised,83,0.1102257636122178,753
+NEG,Arthropoda,Animalia,Unclassified,512,0.6799468791500664,753
+NEG,Actinomycetota,Bacteria,PC / SM,2,0.043478260869565216,46
+NEG,Actinomycetota,Bacteria,PE,0,0.0,46
+NEG,Actinomycetota,Bacteria,PG / PS / PI / PA,9,0.1956521739130435,46
+NEG,Actinomycetota,Bacteria,TG / DG,0,0.0,46
+NEG,Actinomycetota,Bacteria,Free FA / LPL,0,0.0,46
+NEG,Actinomycetota,Bacteria,Sphingolipid,0,0.0,46
+NEG,Actinomycetota,Bacteria,Glycolipid (MGDG/DGDG/SQDG),2,0.043478260869565216,46
+NEG,Actinomycetota,Bacteria,Sterol / Terpenoid,0,0.0,46
+NEG,Actinomycetota,Bacteria,Archaeal ether lipid,0,0.0,46
+NEG,Actinomycetota,Bacteria,Other / specialised,2,0.043478260869565216,46
+NEG,Actinomycetota,Bacteria,Unclassified,31,0.6739130434782609,46
+NEG,Nematoda,Animalia,PC / SM,2,0.008032128514056224,249
+NEG,Nematoda,Animalia,PE,3,0.012048192771084338,249
+NEG,Nematoda,Animalia,PG / PS / PI / PA,13,0.05220883534136546,249
+NEG,Nematoda,Animalia,TG / DG,1,0.004016064257028112,249
+NEG,Nematoda,Animalia,Free FA / LPL,1,0.004016064257028112,249
+NEG,Nematoda,Animalia,Sphingolipid,9,0.03614457831325301,249
+NEG,Nematoda,Animalia,Glycolipid (MGDG/DGDG/SQDG),2,0.008032128514056224,249
+NEG,Nematoda,Animalia,Sterol / Terpenoid,0,0.0,249
+NEG,Nematoda,Animalia,Archaeal ether lipid,0,0.0,249
+NEG,Nematoda,Animalia,Other / specialised,33,0.13253012048192772,249
+NEG,Nematoda,Animalia,Unclassified,185,0.7429718875502008,249
+NEG,Mollusca,Animalia,PC / SM,10,0.03058103975535168,327
+NEG,Mollusca,Animalia,PE,6,0.01834862385321101,327
+NEG,Mollusca,Animalia,PG / PS / PI / PA,9,0.027522935779816515,327
+NEG,Mollusca,Animalia,TG / DG,0,0.0,327
+NEG,Mollusca,Animalia,Free FA / LPL,3,0.009174311926605505,327
+NEG,Mollusca,Animalia,Sphingolipid,2,0.0061162079510703364,327
+NEG,Mollusca,Animalia,Glycolipid (MGDG/DGDG/SQDG),4,0.012232415902140673,327
+NEG,Mollusca,Animalia,Sterol / Terpenoid,0,0.0,327
+NEG,Mollusca,Animalia,Archaeal ether lipid,0,0.0,327
+NEG,Mollusca,Animalia,Other / specialised,31,0.09480122324159021,327
+NEG,Mollusca,Animalia,Unclassified,262,0.8012232415902141,327
+NEG,Pseudomonadota,Bacteria,PC / SM,13,0.07878787878787878,165
+NEG,Pseudomonadota,Bacteria,PE,13,0.07878787878787878,165
+NEG,Pseudomonadota,Bacteria,PG / PS / PI / PA,24,0.14545454545454545,165
+NEG,Pseudomonadota,Bacteria,TG / DG,0,0.0,165
+NEG,Pseudomonadota,Bacteria,Free FA / LPL,8,0.048484848484848485,165
+NEG,Pseudomonadota,Bacteria,Sphingolipid,0,0.0,165
+NEG,Pseudomonadota,Bacteria,Glycolipid (MGDG/DGDG/SQDG),0,0.0,165
+NEG,Pseudomonadota,Bacteria,Sterol / Terpenoid,0,0.0,165
+NEG,Pseudomonadota,Bacteria,Archaeal ether lipid,0,0.0,165
+NEG,Pseudomonadota,Bacteria,Other / specialised,7,0.04242424242424243,165
+NEG,Pseudomonadota,Bacteria,Unclassified,100,0.6060606060606061,165
+NEG,Evosea,Protozoa,PC / SM,9,0.020454545454545454,440
+NEG,Evosea,Protozoa,PE,8,0.01818181818181818,440
+NEG,Evosea,Protozoa,PG / PS / PI / PA,9,0.020454545454545454,440
+NEG,Evosea,Protozoa,TG / DG,0,0.0,440
+NEG,Evosea,Protozoa,Free FA / LPL,3,0.006818181818181818,440
+NEG,Evosea,Protozoa,Sphingolipid,1,0.0022727272727272726,440
+NEG,Evosea,Protozoa,Glycolipid (MGDG/DGDG/SQDG),1,0.0022727272727272726,440
+NEG,Evosea,Protozoa,Sterol / Terpenoid,0,0.0,440
+NEG,Evosea,Protozoa,Archaeal ether lipid,0,0.0,440
+NEG,Evosea,Protozoa,Other / specialised,40,0.09090909090909091,440
+NEG,Evosea,Protozoa,Unclassified,369,0.8386363636363636,440
+NEG,Heterolobosea,Protozoa,PC / SM,1,0.0017825311942959,561
+NEG,Heterolobosea,Protozoa,PE,5,0.008912655971479501,561
+NEG,Heterolobosea,Protozoa,PG / PS / PI / PA,8,0.0142602495543672,561
+NEG,Heterolobosea,Protozoa,TG / DG,0,0.0,561
+NEG,Heterolobosea,Protozoa,Free FA / LPL,0,0.0,561
+NEG,Heterolobosea,Protozoa,Sphingolipid,7,0.012477718360071301,561
+NEG,Heterolobosea,Protozoa,Glycolipid (MGDG/DGDG/SQDG),2,0.0035650623885918,561
+NEG,Heterolobosea,Protozoa,Sterol / Terpenoid,1,0.0017825311942959,561
+NEG,Heterolobosea,Protozoa,Archaeal ether lipid,0,0.0,561
+NEG,Heterolobosea,Protozoa,Other / specialised,75,0.13368983957219252,561
+NEG,Heterolobosea,Protozoa,Unclassified,462,0.8235294117647058,561
+NEG,Ascomycota,Fungi,PC / SM,62,0.06616862326574173,937
+NEG,Ascomycota,Fungi,PE,46,0.04909284951974386,937
+NEG,Ascomycota,Fungi,PG / PS / PI / PA,123,0.13127001067235858,937
+NEG,Ascomycota,Fungi,TG / DG,8,0.008537886872998933,937
+NEG,Ascomycota,Fungi,Free FA / LPL,103,0.10992529348986126,937
+NEG,Ascomycota,Fungi,Sphingolipid,16,0.017075773745997867,937
+NEG,Ascomycota,Fungi,Glycolipid (MGDG/DGDG/SQDG),16,0.017075773745997867,937
+NEG,Ascomycota,Fungi,Sterol / Terpenoid,0,0.0,937
+NEG,Ascomycota,Fungi,Archaeal ether lipid,0,0.0,937
+NEG,Ascomycota,Fungi,Other / specialised,126,0.1344717182497332,937
+NEG,Ascomycota,Fungi,Unclassified,437,0.4663820704375667,937
+NEG,Methanobacteriota,Archaea,PC / SM,0,0.0,18
+NEG,Methanobacteriota,Archaea,PE,0,0.0,18
+NEG,Methanobacteriota,Archaea,PG / PS / PI / PA,0,0.0,18
+NEG,Methanobacteriota,Archaea,TG / DG,0,0.0,18
+NEG,Methanobacteriota,Archaea,Free FA / LPL,0,0.0,18
+NEG,Methanobacteriota,Archaea,Sphingolipid,2,0.1111111111111111,18
+NEG,Methanobacteriota,Archaea,Glycolipid (MGDG/DGDG/SQDG),0,0.0,18
+NEG,Methanobacteriota,Archaea,Sterol / Terpenoid,0,0.0,18
+NEG,Methanobacteriota,Archaea,Archaeal ether lipid,8,0.4444444444444444,18
+NEG,Methanobacteriota,Archaea,Other / specialised,0,0.0,18
+NEG,Methanobacteriota,Archaea,Unclassified,8,0.4444444444444444,18
+NEG,Basidiomycota,Fungi,PC / SM,8,0.05194805194805195,154
+NEG,Basidiomycota,Fungi,PE,4,0.025974025974025976,154
+NEG,Basidiomycota,Fungi,PG / PS / PI / PA,23,0.14935064935064934,154
+NEG,Basidiomycota,Fungi,TG / DG,1,0.006493506493506494,154
+NEG,Basidiomycota,Fungi,Free FA / LPL,11,0.07142857142857142,154
+NEG,Basidiomycota,Fungi,Sphingolipid,8,0.05194805194805195,154
+NEG,Basidiomycota,Fungi,Glycolipid (MGDG/DGDG/SQDG),5,0.032467532467532464,154
+NEG,Basidiomycota,Fungi,Sterol / Terpenoid,0,0.0,154
+NEG,Basidiomycota,Fungi,Archaeal ether lipid,0,0.0,154
+NEG,Basidiomycota,Fungi,Other / specialised,22,0.14285714285714285,154
+NEG,Basidiomycota,Fungi,Unclassified,72,0.4675324675324675,154
+NEG,Bacillota,Bacteria,PC / SM,7,0.028455284552845527,246
+NEG,Bacillota,Bacteria,PE,12,0.04878048780487805,246
+NEG,Bacillota,Bacteria,PG / PS / PI / PA,24,0.0975609756097561,246
+NEG,Bacillota,Bacteria,TG / DG,0,0.0,246
+NEG,Bacillota,Bacteria,Free FA / LPL,0,0.0,246
+NEG,Bacillota,Bacteria,Sphingolipid,0,0.0,246
+NEG,Bacillota,Bacteria,Glycolipid (MGDG/DGDG/SQDG),0,0.0,246
+NEG,Bacillota,Bacteria,Sterol / Terpenoid,1,0.0040650406504065045,246
+NEG,Bacillota,Bacteria,Archaeal ether lipid,0,0.0,246
+NEG,Bacillota,Bacteria,Other / specialised,34,0.13821138211382114,246
+NEG,Bacillota,Bacteria,Unclassified,168,0.6829268292682927,246
+NEG,Mucoromycota,Fungi,PC / SM,0,0.0,17
+NEG,Mucoromycota,Fungi,PE,3,0.17647058823529413,17
+NEG,Mucoromycota,Fungi,PG / PS / PI / PA,2,0.11764705882352941,17
+NEG,Mucoromycota,Fungi,TG / DG,0,0.0,17
+NEG,Mucoromycota,Fungi,Free FA / LPL,0,0.0,17
+NEG,Mucoromycota,Fungi,Sphingolipid,0,0.0,17
+NEG,Mucoromycota,Fungi,Glycolipid (MGDG/DGDG/SQDG),0,0.0,17
+NEG,Mucoromycota,Fungi,Sterol / Terpenoid,0,0.0,17
+NEG,Mucoromycota,Fungi,Archaeal ether lipid,0,0.0,17
+NEG,Mucoromycota,Fungi,Other / specialised,3,0.17647058823529413,17
+NEG,Mucoromycota,Fungi,Unclassified,9,0.5294117647058824,17
+NEG,Discosea,Protozoa,PC / SM,0,0.0,8
+NEG,Discosea,Protozoa,PE,0,0.0,8
+NEG,Discosea,Protozoa,PG / PS / PI / PA,1,0.125,8
+NEG,Discosea,Protozoa,TG / DG,0,0.0,8
+NEG,Discosea,Protozoa,Free FA / LPL,0,0.0,8
+NEG,Discosea,Protozoa,Sphingolipid,0,0.0,8
+NEG,Discosea,Protozoa,Glycolipid (MGDG/DGDG/SQDG),0,0.0,8
+NEG,Discosea,Protozoa,Sterol / Terpenoid,0,0.0,8
+NEG,Discosea,Protozoa,Archaeal ether lipid,0,0.0,8
+NEG,Discosea,Protozoa,Other / specialised,0,0.0,8
+NEG,Discosea,Protozoa,Unclassified,7,0.875,8
+NEG,Thermoproteota,Archaea,PC / SM,0,0.0,3
+NEG,Thermoproteota,Archaea,PE,0,0.0,3
+NEG,Thermoproteota,Archaea,PG / PS / PI / PA,0,0.0,3
+NEG,Thermoproteota,Archaea,TG / DG,0,0.0,3
+NEG,Thermoproteota,Archaea,Free FA / LPL,0,0.0,3
+NEG,Thermoproteota,Archaea,Sphingolipid,0,0.0,3
+NEG,Thermoproteota,Archaea,Glycolipid (MGDG/DGDG/SQDG),0,0.0,3
+NEG,Thermoproteota,Archaea,Sterol / Terpenoid,0,0.0,3
+NEG,Thermoproteota,Archaea,Archaeal ether lipid,2,0.6666666666666666,3
+NEG,Thermoproteota,Archaea,Other / specialised,0,0.0,3
+NEG,Thermoproteota,Archaea,Unclassified,1,0.3333333333333333,3

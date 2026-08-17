@@ -27,9 +27,9 @@ NC_TAG_PT <- 8
 # ── Wong colour-blind-safe palette ─────────────────────────
 KINGDOM_COLOURS <- c(
   Bacteria = "#0072B2", Archaea  = "#E69F00", Fungi    = "#009E73",
-  Plantae  = "#56B4E9", Animalia = "#D55E00", Protozoa = "#CC79A7"
+  Viridiplantae = "#56B4E9", Animalia = "#D55E00", Protists = "#CC79A7"
 )
-KINGDOM_ORDER <- c("Bacteria", "Archaea", "Fungi", "Plantae", "Animalia", "Protozoa")
+KINGDOM_ORDER <- c("Bacteria", "Archaea", "Fungi", "Viridiplantae", "Animalia", "Protists")
 
 BATCH_COLOURS <- c(
   "Batch 01" = "#1b9e77", "Batch 02" = "#7570b3", "Batch 03" = "#666666",
