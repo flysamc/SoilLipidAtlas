@@ -1,0 +1,3 @@
+mode,mantel_r,mantel_p_greater,exceedances,permutations,mantel_seed,n_samples,n_phyla,n_pairs,partial_mantel_r,partial_mantel_p_greater,partial_seed
+POS,0.509272890578567,0.0001,0,9999,20720247,164,16,120,0.509979528616018,0.0001,20720248
+NEG,0.552683429333206,0.0003,2,9999,21211386,192,16,120,0.558569912038831,0.0001,21211387

@@ -22,4 +22,5 @@ release ID, never an edit).
 | `sample_metadata_NEG_ncbi_phylum.csv` | Sample → phylum table, negative mode |
 | `taxonomy_audit.csv` | Per-sample audit: how each label was verified |
 
-Used by: → every later step.
+Used by: → every later step, including `09_phylogeny/` (the organism
+list that is matched to public SSU records).

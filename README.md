@@ -47,6 +47,7 @@ flowchart TB
     M06["06_fingerprints/"]
     M07["07_decomposition/"]
     M08["08_climgrass/"]
+    M09["09_phylogeny/"]
     MSM["supplementary_methods/"]
   end
 
@@ -61,7 +62,7 @@ flowchart TB
 
 What sits inside those folders:
 
-- **`methods/01_…`–`08_…`** — each step is one folder: `README.md`, `scripts/`, and the small result tables for that step.
+- **`methods/01_…`–`09_…`** — each step is one folder: `README.md`, `scripts/`, and the small result tables for that step. Step 09 holds the SSU rRNA tree and Figure 3 pairing (accessions, alignment, Newick, Mantel tables).
 - **`results/figures/figureN/`** — rendered figure plus an `r/` bundle (R script, style file, plotted CSVs). Supplementary figures are under `results/figures/supplementary/`.
 - **`results/tables/`** — workbooks S1–S15 and their producer scripts.
 - **`data_registry/`** — checksums and download locations for files too large for git (MassIVE, GNPS2, Zenodo).
@@ -70,7 +71,7 @@ What sits inside those folders:
 
 1. **`PROGRESS.md`** — one page: what each step does, its headline result,
    and whether the supporting files are in git or on Zenodo.
-2. **`methods/01_…` through `methods/08_…`**, in order. Every step folder
+2. **`methods/01_…` through `methods/09_…`**, in order. Every step folder
    contains:
    - a `README.md` that explains what the step does, what it reads, what it
      produces, and every number it contributes to the paper;

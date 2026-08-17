@@ -13,6 +13,7 @@ Each folder's `README.md` documents the step in full.
 | 06 Fingerprints | SIMPER fingerprints, MS2LDA motifs, cross-method checks | 4 methods agree; **134/103** motif–phylum pairs | full; SIMPER atlas on Zenodo |
 | 07 Decomposition | Source decomposition + pure-isolate negative control | **79.3 %** correct dominant group (n = 164) | full (`methods/07_decomposition/`) |
 | 08 ClimGrass | Decodes real field soil; quantification correction | qSIP drought replication **q = 0.005** | full (`methods/08_climgrass/`) |
+| 09 Phylogeny | Public SSU rRNA tree + lipid–evolution Mantel (Figure 3b) | Mantel r **0.509 POS / 0.553 NEG**; 148 sequences / 103 units | full (`methods/09_phylogeny/`); plotted CSVs also in `results/figures/figure3/r/data/` |
 | Figures | Main 1–5 + Supplementary 1–8 | data figures rendered in R | `results/figures/` |
 | Tables | Supplementary S1–S15 | live-formula workbooks | `results/tables/` |
 
@@ -27,6 +28,9 @@ Each folder's `README.md` documents the step in full.
   denominator. A classified-features-only reading is also defensible.
 - **Leave-one-out accuracy** is **64.6 %** (106/164) on the 45,525-feature
   substrate (Supplementary Fig. 4, Table S13).
+- **Figure 3b vs Table S15.** Figure 3b uses SSU rRNA patristic distance
+  (`methods/09_phylogeny/`). Table S15 and Supplementary Figures 1–2 use
+  the five-rank NCBI framework (rank-to-MRCA counts), not that tree.
 - **Table S15 / Supplementary Fig. 1.** Streptophyta's clade label and tree
   placement follow the five-rank framework in the Table S15 notes.
 - **Figure 5 / ClimGrass.** Animalia ≈ 14.7 % lies above the literature

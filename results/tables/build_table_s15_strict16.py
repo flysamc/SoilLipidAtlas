@@ -2,8 +2,9 @@
 """Table S15 (five-rank taxonomic framework) on the strict phyla.
 
 Ordinal (cladistic) framework Domain > Supergroup > Organism group (kingdom) >
-Clade > Phylum, underlying the phylum phylogenetic distance matrix used in the
-lipidome-phylogeny Mantel / partial-Mantel tests (Fig. 3, Fig. 4). Pairwise
+Clade > Phylum. This matrix is the phylogenetic axis of Supplementary
+Figures 1–2 and Table S4. It is NOT the Figure 3b x-axis (that is SSU
+rRNA patristic distance; methods/09_phylogeny/). Pairwise
 distance = number of ranks from a phylum up to the most recent common ancestor,
 i.e. 5 - (matching leading ranks in [Domain, Supergroup, Organism group, Clade]);
 0 same phylum ... 5 different domain.

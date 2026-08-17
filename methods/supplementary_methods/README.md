@@ -18,6 +18,12 @@ plain-language description.
 | SM9 | Negative control (pure-isolate decomposition) | [`../07_decomposition/`](../07_decomposition/) | n = 164; dominant group 79.3% corrected; archaeal self-recovery 93.1% |
 | SN1 | Feature-count substrates | cross-cutting (see below) | one table for every substrate size cited |
 
+Main-text Methods **Chemotaxonomic structure** (Figure 3 dendrograms +
+lipidome–phylogeny Mantel) is implemented in
+[`../09_phylogeny/`](../09_phylogeny/), not as a numbered SM section.
+Figure 3b uses SSU rRNA patristic distance; Table S15 / Supplementary
+Figures 1–2 use the five-rank NCBI framework.
+
 ## SN1 — substrate sizes
 
 Different analyses run on different views of the data. These are the sizes
@@ -26,7 +32,7 @@ used in this release:
 | Substrate | Size | Where used |
 |---|---|---|
 | Consensus aligned features | 273,248 POS / 122,571 NEG | SM1, feature tables |
-| Quality-filtered analysis substrate | 45,525 features × 164 samples | dendrograms, SM4, Supp Fig 8 |
+| Quality-filtered analysis substrate | 45,525 features × 164 samples | Figure 3a/3c dendrograms and heatmaps, SM4, Supp Fig 8 |
 | Biomarker atlas | 11,371 POS / 5,697 NEG | SM2, Figure 2 |
 | SIRIUS-eligible / queried | 7,406 POS queryable of 7,751 strict validation set | SM6 |
 | ClimGrass verified-soil substrate | **736** features (722 SIMPER + 14 archaeol); 696 on the cross-method substrate (S14) | SM4, SM8, Fig 5 |
