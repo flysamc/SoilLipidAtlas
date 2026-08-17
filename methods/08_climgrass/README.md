@@ -38,5 +38,6 @@ lab-derived fingerprints decode a real soil community.
 Figure 5 (results section) renders `kingdom_composition.csv` +
 `phylum_effects.csv` via `figure5_redesign_v2.py` / `fig6_climgrass_v2.R`.
 
-Big intermediates (soil MGFs, benchmark mixtures, superseded rulefix
-workspaces) stay in P2R; register on Zenodo deposit if needed.
+Big intermediates (soil MGFs, benchmark mixtures, superseded correction-rule
+workspaces) are retained in the analysis archive; they join the Zenodo
+deposit via `data_registry/registry.csv` where needed.

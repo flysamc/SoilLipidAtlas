@@ -16,9 +16,11 @@ Details inside each folder's README.
 | Figures | Main 1–5 + Supplementary 1–8, submission picks + producers | ✅ built | ✅ `results/figures/` |
 | Tables | Supplementary S1–S15 workbooks + producers | ✅ built | ✅ `results/tables/` |
 
-## Open decisions (need coauthors / Rahul)
+## Open decisions (pending author confirmation)
 
 - Figure 4 panel-b denominator: full-atlas vs classified-only.
 - Supplementary Fig 3: v3 render used — confirm vs v2.
 - Table S15 / Supp Fig 1: Streptophyta clade label + tree placement.
 - Step 04 wording decisions listed in `methods/04_annotation/README.md`.
+
+Details for each row live in that step's `README.md`.

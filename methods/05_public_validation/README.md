@@ -44,7 +44,8 @@ after verified recovery.
 negative values silently match nothing. Proven with known-positive features
 (12/17/20 historical matches: 0 with −1, exact historical reproduction with
 +1). POS is unaffected (+1 either way). The wrapper is fixed (see the comment
-at its charge-parsing block), the void run is quarantined in P2R as the bug
+at its charge-parsing block), the void run is quarantined in the analysis
+archive as the bug
 record, and the corrected NEG run (`fastmasst_async_neg_v2_20260808`)
 completed its full 5,695/5,695 gate with real content. Lesson recorded:
 verify result *content* after bulk runs — an all-empty set passes format

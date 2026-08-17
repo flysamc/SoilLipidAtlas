@@ -2,9 +2,10 @@
 
 Built workbooks (submission copies, 2026-08-12/13 builds) + their producers.
 Each producer `build_table_s{N}_strict16.py` writes a `RUN_SUMMARY.json` and
-CSV mirrors beside the workbook in the P2R release (`REL/tables/`); the xlsx
-here are the submission-named copies. Live formulas (SUM/derived cells) are
-kept live in the workbooks, not pasted values.
+CSV mirrors beside the workbook in the analysis archive's release folder
+(`tables/` under `ncbi-phylum-2026-08-04-v1`); the xlsx here are the
+submission-named copies. Derived cells (sums, percentages) are live formulas
+in the workbooks, not pasted values.
 
 | Table | Content | Note |
 |---|---|---|
@@ -22,4 +23,4 @@ kept live in the workbooks, not pasted values.
 | S12 | Cross-method consensus per phylum | Discosea/Evosea re-derived, not relabelled |
 | S13 | LOO accuracy by method × K | declared reimplementation; L1 best ≈74% |
 | S14 | ClimGrass overlap fractions | 696-feature verified-soil substrate |
-| S15 | Five-rank taxonomic framework | Streptophyta clade label pending coauthor confirmation |
+| S15 | Five-rank taxonomic framework | Streptophyta clade label pending author confirmation |

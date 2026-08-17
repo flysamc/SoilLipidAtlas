@@ -1,11 +1,13 @@
-# Supplementary Figure 8 rerun — cross-method fingerprint validation, strict 16 phyla
+# Cross-method fingerprint validation (Supplementary Figure 8), strict 16 phyla
 
-Workspace: `outputs/analysis/ncbi-phylum-2026-08-04-v1/suppfig8_cross_method_strict16_2026-08-11_v1/`
-Producer: `paper2_repro/scripts/suppfig8_cross_method_rerun.py` (seed 20260811, refuses overwrite)
-Taxonomy: `ncbi-phylum-2026-08-04-v1` locked strict policy (16 analysis phyla)
-Status: review-only. The published producer ("analysis-20", deleted worktree) is
-unrecovered; methods were recovered by fitting the frozen per-method top-K union
-sizes, with per-method validation modes below.
+Producer: `../scripts/suppfig8_cross_method_rerun.py` (seed 20260811, refuses
+overwrite). Source workspace in the analysis archive:
+`suppfig8_cross_method_strict16_2026-08-11_v1/` under release
+`ncbi-phylum-2026-08-04-v1` (locked strict policy, 16 analysis phyla).
+
+Status: review-only. The historical producer behind the published panel was
+not recovered; the four methods were reconstructed by fitting the frozen
+per-method top-K union sizes, with per-method validation modes below.
 
 ## Method recovery status (old-label validation, hard evidence)
 

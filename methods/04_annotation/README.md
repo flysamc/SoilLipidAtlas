@@ -35,7 +35,8 @@ exceptions, never guessed. Headline tables in `summaries/`
 | M6 | fastMASST + Pan-ReDU public search | ✅ complete 2026-08-11 (13,103 queries) | step 05 of this repo |
 
 `scripts/` holds all producers written for this release. Step-6 recovery
-evidence (35 MB) stays in P2R (`biomarker_discovery/rt_prediction_recovery_pos/`).
+evidence (35 MB) is retained in the analysis archive
+(`biomarker_discovery/rt_prediction_recovery_pos/`).
 
 ## The SIRIUS submission-gap fill (2026-08-12 → 13)
 
@@ -66,7 +67,7 @@ every tier-based figure stay frozen.
 1. Lost producers blocking restated numbers: Step 5's "104 RT-uncertain",
    Step 6 POS caller, Step 7 database, Step 9 tier-action producer — declared
    exceptions, not reproduced.
-2. Decisions needed (Rahul): Step 1 mapping choice (direct 1,304 A/B —
+2. Pending author decisions: Step 1 mapping choice (direct 1,304 A/B —
    recommended — vs stale-network 592); Step 5 grouping wording (text says
    family, recovered code groups by class); how to phrase unvalidated NEG
    archaeal annotation.
