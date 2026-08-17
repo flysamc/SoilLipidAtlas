@@ -8,43 +8,52 @@
 <text x="40.0" y="34.0" font-family="Helvetica, Arial, sans-serif" font-size="14.5" fill="#1A1A1A" font-weight="bold" text-anchor="start">Reference lipidome atlas from soil organisms</text>
 <text x="30.0" y="66.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#1A1A1A" font-weight="bold" text-anchor="start">Six organism groups</text>
 <text x="60.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#7B52AB" font-weight="bold" text-anchor="middle">Bacteria</text>
-<g id="icon_bacteria" stroke="#7B52AB" fill="none" stroke-width="1.6">
-<rect x="32" y="106" width="20" height="8" rx="4" transform="rotate(-20 42 110)"/>
-<rect x="46" y="102" width="20" height="8" rx="4" transform="rotate(15 56 106)"/>
-<rect x="40" y="116" width="20" height="8" rx="4" transform="rotate(5 50 120)"/>
+<g id="icon_bacteria" transform="translate(60,108) scale(0.9)" stroke="#7B52AB" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="-9.5" y="-3.9" width="19" height="7.8" rx="3.9" fill="#7B52AB" fill-opacity="0.12" transform="translate(-8,-7) rotate(-28)"/>
+  <rect x="-9.0" y="-3.9" width="18" height="7.8" rx="3.9" fill="#7B52AB" fill-opacity="0.12" transform="translate(9,-4) rotate(18)"/>
+  <rect x="-10.5" y="-3.9" width="21" height="7.8" rx="3.9" fill="#7B52AB" fill-opacity="0.12" transform="translate(-2,7) rotate(-7)"/>
+  <path d="M 9.5 9 q 4.5 -3.2 8 -0.4 q 3.4 2.8 6.2 0.2"/>
 </g>
 <text x="144.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#1B9E8F" font-weight="bold" text-anchor="middle">Archaea</text>
-<g id="icon_archaea" stroke="#1B9E8F" fill="none" stroke-width="1.6">
-<circle cx="126" cy="104" r="4.6"/>
-<circle cx="138" cy="102" r="4.6"/>
-<circle cx="144" cy="112" r="4.6"/>
-<circle cx="132" cy="112" r="4.6"/>
-<circle cx="122" cy="115" r="4.6"/>
-<circle cx="136" cy="120" r="4.6"/>
+<g id="icon_archaea" transform="translate(144,108) scale(0.9)" stroke="#1B9E8F" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="0" cy="0" r="4.6" fill="#1B9E8F" fill-opacity="0.12"/>
+  <circle cx="0.0" cy="-9.9" r="4.6" fill="#1B9E8F" fill-opacity="0.12"/>
+  <circle cx="8.6" cy="-4.9" r="4.6" fill="#1B9E8F" fill-opacity="0.12"/>
+  <circle cx="8.6" cy="4.9" r="4.6" fill="#1B9E8F" fill-opacity="0.12"/>
+  <circle cx="0.0" cy="9.9" r="4.6" fill="#1B9E8F" fill-opacity="0.12"/>
+  <circle cx="-8.6" cy="4.9" r="4.6" fill="#1B9E8F" fill-opacity="0.12"/>
+  <circle cx="-8.6" cy="-5.0" r="4.6" fill="#1B9E8F" fill-opacity="0.12"/>
 </g>
 <text x="228.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#D9A420" font-weight="bold" text-anchor="middle">Fungi</text>
-<g id="icon_fungi" stroke="#D9A420" fill="none" stroke-width="1.6">
-<path d="M 204 110 q 14 -18 28 0 z"/>
-<path d="M 215 110 l 0 12 m 4 -12 l 0 12"/>
+<g id="icon_fungi" transform="translate(228,108) scale(0.9)" stroke="#D9A420" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -12 0 C -12 -10.5 -6.5 -14.5 0 -14.5 C 6.5 -14.5 12 -10.5 12 0 Z" fill="#D9A420" fill-opacity="0.12"/>
+  <path d="M -3.2 0.5 C -3.8 5 -3.8 8.5 -5 12.5 L 5 12.5 C 3.8 8.5 3.8 5 3.2 0.5" fill="#D9A420" fill-opacity="0.12"/>
+  <path d="M -5 12.5 c -3.2 0.6 -5 2 -6.4 3.8 M 5 12.5 c 3.2 0.6 5 2 6.4 3.8"/>
 </g>
-<text x="312.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3E9C35" font-weight="bold" text-anchor="middle">Plantae</text>
-<g id="icon_plantae" stroke="#3E9C35" fill="none" stroke-width="1.6">
-<path d="M 302 122 q -10 -8 -12 -22 M 302 122 q 0 -14 2 -24 M 302 122 q 10 -6 14 -20"/>
+<text x="312.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#3E9C35" font-weight="bold" text-anchor="middle">Viridiplantae</text>
+<g id="icon_viridiplantae" transform="translate(312,108) scale(0.9)" stroke="#3E9C35" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 0 15 C -5 6 -9 -2 -12 -11 C -5.5 -2.5 -2 6 0 15 Z" fill="#3E9C35" fill-opacity="0.12"/>
+  <path d="M 0 15 C -2.5 4 -1.5 -6 1 -15.5 C 3.5 -6 3 4 0 15 Z" fill="#3E9C35" fill-opacity="0.12"/>
+  <path d="M 0 15 C 5 7 8.5 0.5 12.5 -8 C 6.5 0.5 2.5 7 0 15 Z" fill="#3E9C35" fill-opacity="0.12"/>
 </g>
 <text x="396.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#D64541" font-weight="bold" text-anchor="middle">Animalia</text>
-<g id="icon_animalia" stroke="#D64541" fill="none" stroke-width="1.6">
-<ellipse cx="386" cy="110" rx="10" ry="7"/>
-<path d="M 377 106 l -8 -2"/>
-<path d="M 377 110 l -8 0"/>
-<path d="M 377 114 l -8 2"/>
-<path d="M 395 106 l 8 -2"/>
-<path d="M 395 110 l 8 0"/>
-<path d="M 395 114 l 8 2"/>
+<g id="icon_animalia" transform="translate(396,108) scale(0.9)" stroke="#D64541" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="2.5" cy="0" rx="10.5" ry="7.2" fill="#D64541" fill-opacity="0.12"/>
+  <path d="M -7.6 -3.4 C -10 -3.6 -11.6 -2 -11.6 0 C -11.6 2 -10 3.6 -7.6 3.4"/>
+  <path d="M -4.5 6 L -9.5 10.5 L -15 12.5"/>
+  <path d="M -4.5 -6 L -9.5 -10.5 L -15 -12.5"/>
+  <path d="M -0.5 7 L -3.5 12 L -7.5 15.5"/>
+  <path d="M -0.5 -7 L -3.5 -12 L -7.5 -15.5"/>
+  <path d="M 4 6.9 L 6.5 12 L 10.5 14.5"/>
+  <path d="M 4 -6.9 L 6.5 -12 L 10.5 -14.5"/>
+  <path d="M 8 5 L 12.5 8.5 L 15.5 10.5"/>
+  <path d="M 8 -5 L 12.5 -8.5 L 15.5 -10.5"/>
 </g>
-<text x="480.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3B6FD4" font-weight="bold" text-anchor="middle">Protozoa</text>
-<g id="icon_protozoa" stroke="#3B6FD4" fill="none" stroke-width="1.6">
-<path d="M 458 110 q -4 -10 6 -10 q 4 -6 10 -2 q 8 -2 8 6 q 6 6 -2 9 q -2 6 -9 4 q -8 4 -11 -2 q -6 -1 -2 -5 z"/>
-<circle cx="469" cy="110" r="2" fill="#3B6FD4" stroke="none"/>
+<text x="480.0" y="86.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3B6FD4" font-weight="bold" text-anchor="middle">Protists</text>
+<g id="icon_protists" transform="translate(480,108) scale(0.9)" stroke="#3B6FD4" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M -13.5 -3 C -15 -9 -9.5 -13.5 -4.5 -11 C -2.5 -16 5.5 -16 7 -10 C 13 -12.5 16.5 -5 12 -1 C 16 3.5 12.5 10 6.5 8 C 4.5 13.5 -3 14.5 -6 8.5 C -12 10.5 -16 3 -13.5 -3 Z" fill="#3B6FD4" fill-opacity="0.12"/>
+  <circle cx="2.5" cy="-2" r="3.2" fill="#3B6FD4" fill-opacity="0.32"/>
+  <circle cx="-6.5" cy="3.5" r="1.9"/>
 </g>
 <line x1="30.0" y1="128.0" x2="526.0" y2="128.0" stroke="#DDDDDD" stroke-width="1"/>
 <text x="278.0" y="144.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#1A1A1A" font-weight="normal" text-anchor="middle">109 organisms (105 in statistics)   |   19 collection phyla (16 analysis)   |   168 POS / 195 NEG samples   |   6 batches</text>
@@ -55,7 +64,7 @@
 <line x1="119.0" y1="191.0" x2="131.0" y2="191.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <rect x="132.0" y="170.0" width="88.0" height="42.0" rx="5" fill="#FAFAFA" stroke="#BFBFBF" stroke-width="1"/>
 <text x="176.0" y="187.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Lipid extraction</text>
-<text x="176.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">(modified BlighDyer)</text>
+<text x="176.0" y="200.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">(modified Bligh–Dyer)</text>
 <line x1="221.0" y1="191.0" x2="233.0" y2="191.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <rect x="234.0" y="170.0" width="88.0" height="42.0" rx="5" fill="#FAFAFA" stroke="#BFBFBF" stroke-width="1"/>
 <text x="278.0" y="187.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">C30 reversed-phase</text>
@@ -82,7 +91,7 @@
 <rect x="410.0" y="258.0" width="116.0" height="42.0" rx="4" fill="#F1F1F1" stroke="#1A1A1A" stroke-width="1.2"/>
 <text x="468.0" y="272.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Consensus atlas</text>
 <text x="468.0" y="284.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#1A1A1A" font-weight="normal" text-anchor="middle">273,248 features</text>
-<text x="468.0" y="294.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(1.525.0 min RT)</text>
+<text x="468.0" y="294.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(1.5–25.0 min RT)</text>
 <text x="278.0" y="312.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">Negative mode processed in parallel</text>
 </g>
 <g id="panel_b">
@@ -91,7 +100,7 @@
 <rect x="562.0" y="50.0" width="246.0" height="268.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
 <text x="685.0" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#7B52AB" font-weight="bold" text-anchor="middle">1. Phylum-enriched biomarker atlas</text>
 <text x="685.0" y="90.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Cross-batch composite score</text>
-<text x="685.0" y="102.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(w�=0.30, w�=0.25, w�=0.20, w�=0.15, w�=0.10)</text>
+<text x="685.0" y="102.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(w₁=0.30, w₂=0.25, w₃=0.20, w₄=0.15, w₅=0.10)</text>
 <text x="685.0" y="114.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">+ cross-batch IndVal (P &lt; 0.05, FDR)</text>
 <line x1="685.0" y1="120.0" x2="685.0" y2="132.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <text x="685.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#7B52AB" font-weight="bold" text-anchor="middle">11,371 biomarkers</text>
@@ -114,15 +123,15 @@
 <rect x="685.0" y="232.0" width="9.0" height="9.0" rx="0" fill="#E3E3E3" stroke="#BFBFBF" stroke-width="0.5"/>
 <text x="698.0" y="240.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">Unidentified</text>
 <line x1="685.0" y1="250.0" x2="685.0" y2="262.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
-<text x="685.0" y="276.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#6E6E6E" font-weight="bold" text-anchor="middle">External validation</text>
-<text x="685.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">fastMASST | Pan-ReDU  [rerun pending for this atlas]</text>
+<text x="685.0" y="276.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#6E6E6E" font-weight="bold" text-anchor="middle">External validation (public soil data)</text>
+<text x="685.0" y="288.0" font-family="Helvetica, Arial, sans-serif" font-size="7.6" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">fastMASST: IndVal 31% / composite 15% soil-detected</text>
 <rect x="822.0" y="50.0" width="246.0" height="268.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
 <text x="945.0" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#2E5FA3" font-weight="bold" text-anchor="middle">2. Distributed fingerprint analysis</text>
 <text x="945.0" y="90.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Quality-filtered cross-batch feature space</text>
 <text x="945.0" y="102.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(45,525 positive-mode features</text>
 <text x="945.0" y="114.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">across 16 phyla for fingerprinting)</text>
 <line x1="945.0" y1="120.0" x2="945.0" y2="132.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
-<text x="945.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">BrayCurtis dissimilarity</text>
+<text x="945.0" y="146.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Bray–Curtis dissimilarity</text>
 <text x="945.0" y="158.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">Ordination &amp; UPGMA dendrograms</text>
 <text x="945.0" y="169.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">(chemotaxonomic structure)</text>
 <line x1="945.0" y1="175.0" x2="945.0" y2="187.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
@@ -187,16 +196,16 @@
 <rect x="742.0" y="332.0" width="9.0" height="9.0" rx="2" fill="#D9A420" stroke="none" stroke-width="1"/>
 <text x="755.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Fungi</text>
 <rect x="810.0" y="332.0" width="9.0" height="9.0" rx="2" fill="#3E9C35" stroke="none" stroke-width="1"/>
-<text x="823.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Plantae</text>
-<rect x="892.4" y="332.0" width="9.0" height="9.0" rx="2" fill="#D64541" stroke="none" stroke-width="1"/>
-<text x="905.4" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Animalia</text>
-<rect x="982.0" y="332.0" width="9.0" height="9.0" rx="2" fill="#3B6FD4" stroke="none" stroke-width="1"/>
-<text x="995.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Protozoa</text>
+<text x="823.0" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Viridiplantae</text>
+<rect x="935.6" y="332.0" width="9.0" height="9.0" rx="2" fill="#D64541" stroke="none" stroke-width="1"/>
+<text x="948.6" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Animalia</text>
+<rect x="1025.2" y="332.0" width="9.0" height="9.0" rx="2" fill="#3B6FD4" stroke="none" stroke-width="1"/>
+<text x="1038.2" y="340.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="normal" text-anchor="start">Protists</text>
 </g>
 <g id="panel_c">
 <text x="16.0" y="402.0" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1A1A1A" font-weight="bold" text-anchor="start">c</text>
 <text x="40.0" y="402.0" font-family="Helvetica, Arial, sans-serif" font-size="14.5" fill="#1A1A1A" font-weight="bold" text-anchor="start">Soil community decoding (ClimGrass experiment)</text>
-<text x="30.0" y="430.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="start">ClimGrass 2 � 2 factorial design</text>
+<text x="30.0" y="430.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="start">ClimGrass 2 × 2 factorial design</text>
 <text x="30.0" y="442.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#6E6E6E" font-weight="normal" text-anchor="start">n = 3 per treatment (12 soils)</text>
 <text x="140.0" y="460.0" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Drought</text>
 <text x="101.0" y="474.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">No</text>
@@ -222,8 +231,8 @@
 <text x="178.0" y="579.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">(n = 3)</text>
 <text x="310.0" y="430.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Soil lipidomes (positive mode)</text>
 <text x="310.0" y="460.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Atlas matching by MS/MS</text>
-<text x="310.0" y="472.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(spectral cosine e 0.70 and</text>
-<text x="310.0" y="484.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">e 4 matched peaks)</text>
+<text x="310.0" y="472.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">(spectral cosine ≥ 0.70 and</text>
+<text x="310.0" y="484.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle">≥ 4 matched peaks)</text>
 <line x1="264.0" y1="536.0" x2="356.0" y2="536.0" stroke="#1A1A1A" stroke-width="0.8"/>
 <line x1="270.0" y1="536.0" x2="270.0" y2="519.6" stroke="#B9B9B9" stroke-width="1.4"/>
 <line x1="270.0" y1="536.0" x2="270.0" y2="547.9" stroke="#D3D3D3" stroke-width="1.4"/>
@@ -250,7 +259,7 @@
 <circle cx="350.0" cy="508.7" r="1.6" fill="#7B52AB" stroke="none" stroke-width="1"/>
 <text x="310.0" y="580.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">Soil spectrum (top) vs reference (bottom)</text>
 <text x="464.0" y="430.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">2,313 verified spectral</text>
-<text x="464.0" y="442.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">matches � 736 diagnostic</text>
+<text x="464.0" y="442.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">matches → 736 diagnostic</text>
 <text x="464.0" y="454.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">fingerprint features (16 phyla)</text>
 <rect x="424.0" y="468.0" width="10.5" height="10.5" rx="1.5" fill="#3D55A8" stroke="none" stroke-width="1"/>
 <rect x="436.0" y="468.0" width="10.5" height="10.5" rx="1.5" fill="#C3CfEC" stroke="none" stroke-width="1"/>
@@ -299,7 +308,7 @@
 <line x1="150.0" y1="598.0" x2="150.0" y2="624.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <line x1="464.0" y1="556.0" x2="464.0" y2="624.0" stroke="#6E6E6E" stroke-width="1.2" marker-end="url(#arr)"/>
 <rect x="96.0" y="628.0" width="356.0" height="34.0" rx="5" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="1"/>
-<text x="274.0" y="643.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Fold-change-weighted BrayCurtis decomposition</text>
+<text x="274.0" y="643.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Fold-change-weighted Bray–Curtis decomposition</text>
 <text x="274.0" y="655.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">(against phylum reference fingerprints)</text>
 </g>
 <g id="panel_d">
@@ -309,7 +318,7 @@
 <text x="680.0" y="437.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Quantification correction</text>
 <rect x="574.0" y="447.0" width="52.0" height="16.0" rx="3" fill="#F1F1F1" stroke="#BFBFBF" stroke-width="0.8"/>
 <text x="600.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Rule A</text>
-<text x="632.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">out-of-range RIE � uncalibrated (1.0)</text>
+<text x="632.0" y="458.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">out-of-range RIE → uncalibrated (1.0)</text>
 <line x1="600.0" y1="464.0" x2="600.0" y2="468.0" stroke="#6E6E6E" stroke-width="0.9" marker-end="url(#arr)"/>
 <rect x="574.0" y="469.0" width="52.0" height="16.0" rx="3" fill="#F1F1F1" stroke="#BFBFBF" stroke-width="0.8"/>
 <text x="600.0" y="480.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Rule C</text>
@@ -318,11 +327,16 @@
 <rect x="574.0" y="491.0" width="52.0" height="16.0" rx="3" fill="#F1F1F1" stroke="#BFBFBF" stroke-width="0.8"/>
 <text x="600.0" y="502.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">ArchLips</text>
 <text x="632.0" y="502.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#1A1A1A" font-weight="normal" text-anchor="start">restricted archaeal reference</text>
-<rect x="562.0" y="542.0" width="236.0" height="92.0" rx="8" fill="#FCFCFC" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="5 4"/>
-<text x="680.0" y="559.0" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Framework validation</text>
-<text x="680.0" y="582.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">[TBD  negative-control rerun pending</text>
-<text x="680.0" y="594.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">on the current substrate; old n=163 /</text>
-<text x="680.0" y="606.0" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">80% / &lt;2% claims are pre-correction]</text>
+<rect x="562.0" y="542.0" width="236.0" height="92.0" rx="8" fill="white" stroke="#BFBFBF" stroke-width="1.2"/>
+<text x="680.0" y="558.0" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Framework validation (Supp. Fig. 5)</text>
+<text x="680.0" y="570.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">leave-one-out, 164 pure isolates</text>
+<text x="694.0" y="583.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#6E6E6E" font-weight="normal" text-anchor="middle">uncorrected → corrected</text>
+<text x="574.0" y="597.0" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#1A1A1A" font-weight="normal" text-anchor="start">Dominant group correct</text>
+<text x="786.0" y="597.0" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#1A1A1A" font-weight="bold" text-anchor="end">75% → 79%</text>
+<text x="574.0" y="610.0" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#1A1A1A" font-weight="normal" text-anchor="start">Archaeal self-recovery</text>
+<text x="786.0" y="610.0" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#1A1A1A" font-weight="bold" text-anchor="end">68% → 93%</text>
+<text x="574.0" y="623.0" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#1A1A1A" font-weight="normal" text-anchor="start">Non-archaeal → Archaea sink</text>
+<text x="786.0" y="623.0" font-family="Helvetica, Arial, sans-serif" font-size="8.2" fill="#1A1A1A" font-weight="bold" text-anchor="end">≤ 0.8%</text>
 <text x="954.0" y="424.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">Lipid-derived proportion of</text>
 <text x="954.0" y="436.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle">matched &amp; corrected signal</text>
 <text x="858.0" y="465.7" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#7B52AB" font-weight="bold" text-anchor="end">Bacteria</text>
@@ -330,7 +344,7 @@
 <line x1="952.3" y1="462.7" x2="1034.2" y2="462.7" stroke="#7B52AB" stroke-width="1.4"/>
 <circle cx="1000.5" cy="462.7" r="3.4" fill="#7B52AB" stroke="none" stroke-width="1"/>
 <circle cx="1042.2" cy="462.7" r="2.6" fill="#3F8E3F" stroke="none" stroke-width="1"/>
-<text x="858.0" y="499.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1B9E8F" font-weight="bold" text-anchor="end">Archaea </text>
+<text x="858.0" y="499.0" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#1B9E8F" font-weight="bold" text-anchor="end">Archaea†</text>
 <rect x="873.0" y="490.0" width="21.1" height="12.0" rx="0" fill="#DCDCDC" stroke="none" stroke-width="1"/>
 <line x1="875.0" y1="496.0" x2="890.2" y2="496.0" stroke="#1B9E8F" stroke-width="1.4"/>
 <circle cx="885.5" cy="496.0" r="3.4" fill="#1B9E8F" stroke="none" stroke-width="1"/>
@@ -340,7 +354,7 @@
 <line x1="929.1" y1="529.3" x2="990.4" y2="529.3" stroke="#D9A420" stroke-width="1.4"/>
 <circle cx="963.9" cy="529.3" r="3.4" fill="#D9A420" stroke="none" stroke-width="1"/>
 <circle cx="998.4" cy="529.3" r="2.6" fill="#3F8E3F" stroke="none" stroke-width="1"/>
-<text x="858.0" y="565.7" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#3E9C35" font-weight="bold" text-anchor="end">Plantae</text>
+<text x="858.0" y="565.7" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#3E9C35" font-weight="bold" text-anchor="end">Viridiplantae</text>
 <rect x="918.8" y="556.7" width="52.8" height="12.0" rx="0" fill="#DCDCDC" stroke="none" stroke-width="1"/>
 <line x1="891.4" y1="562.7" x2="924.4" y2="562.7" stroke="#3E9C35" stroke-width="1.4"/>
 <circle cx="899.8" cy="562.7" r="3.4" fill="#3E9C35" stroke="none" stroke-width="1"/>
@@ -350,7 +364,7 @@
 <line x1="903.8" y1="596.0" x2="954.6" y2="596.0" stroke="#D64541" stroke-width="1.4"/>
 <circle cx="917.8" cy="596.0" r="3.4" fill="#D64541" stroke="none" stroke-width="1"/>
 <path d="M 962.6 592.6 l 3.4 6 l -6.8 0 z" fill="#C46210"/>
-<text x="858.0" y="632.3" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#3B6FD4" font-weight="bold" text-anchor="end">Protozoa</text>
+<text x="858.0" y="632.3" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#3B6FD4" font-weight="bold" text-anchor="end">Protists</text>
 <rect x="866.0" y="623.3" width="3.5" height="12.0" rx="0" fill="#DCDCDC" stroke="none" stroke-width="1"/>
 <line x1="876.7" y1="629.3" x2="897.0" y2="629.3" stroke="#3B6FD4" stroke-width="1.4"/>
 <circle cx="880.5" cy="629.3" r="3.4" fill="#3B6FD4" stroke="none" stroke-width="1"/>
@@ -380,6 +394,6 @@
 <path d="M 664 682 l 3 -5.4 l -6 0 z" fill="#666666"/>
 <text x="671.0" y="683.0" font-family="Helvetica, Arial, sans-serif" font-size="7.5" fill="#6E6E6E" font-weight="normal" text-anchor="start">below expected</text>
 <text x="816.0" y="700.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">Note: values are lipid-derived proportions of matched &amp; corrected signal, not absolute biomass fractions.</text>
-<text x="816.0" y="712.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">Archaea scale uncertain without ether-lipid RIE standards ( ).  Animalia reflects the known holobiont-reference bias.</text>
+<text x="816.0" y="712.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#6E6E6E" font-weight="normal" text-anchor="middle" font-style="italic">Archaea scale uncertain without ether-lipid RIE standards (†).  Animalia reflects the known holobiont-reference bias.</text>
 </g>
 </svg>
