@@ -1,0 +1,138 @@
+{
+  "status": "reimplementation - submitted producer (analysis-19/16_negative_control/build_figure.py) not in repository; published panel values are not reproducible and are not interchangeable",
+  "taxonomy_release": "ncbi-phylum-2026-08-04-v1 (locked strict policy)",
+  "supersedes": "manuscript_2_clean/06_figures/figures_r/data/supp_negative_control (163 isolates, 18 legacy phyla incl. Amoebozoa/Euryarchaeota/Bryophyta/Marchantiophyta/Trachaeophyta)",
+  "built_on": "Figure 5 v2 ArchLips machinery (figure5_redesign_v2.build_inputs_extended)",
+  "substrate": "736 features: 722 SIMPER + 14 spectrally matched archaeol markers",
+  "analysis_units": [
+    "Actinomycetota",
+    "Arthropoda",
+    "Ascomycota",
+    "Bacillota",
+    "Basidiomycota",
+    "Chlorophyta",
+    "Discosea",
+    "Evosea",
+    "Heterolobosea",
+    "Methanobacteriota",
+    "Mollusca",
+    "Mucoromycota",
+    "Nematoda",
+    "Pseudomonadota",
+    "Streptophyta",
+    "Thermoproteota"
+  ],
+  "group_labels": [
+    "Bacteria",
+    "Archaea",
+    "Fungi",
+    "Plantae",
+    "Animalia",
+    "Protozoa"
+  ],
+  "group_label_note": "display summaries only, identical to Figure 5 v2 kingdom_composition.csv; never analysis units",
+  "n_isolates": 164,
+  "isolate_count_reconciliation": "164 strict isolates vs 163 in the legacy figure: the legacy set used the 2026-08-03 partition and included 2 Cyanobacteriota samples, which the locked release excludes as below-threshold (n>=2 in both polarities); 164 matches the Supplementary Fig 4 denominator",
+  "design": "leave-one-out: phylum centroid reference rebuilt with the test isolate removed; same substrate and same isolates in both panels, so the a->b delta is the correction stack alone",
+  "corrections_in_panel_b": [
+    "IS normalisation",
+    "rule A RIE correction (0.20 floor, uncalibrated 1.0)",
+    "ArchLips-restricted archaeal reference",
+    "rule C (enriched weight split across k enriched phyla)"
+  ],
+  "n_archlips_diagnostic_features": 14,
+  "estimators": {
+    "primary": "fc_weighted_bc (Figure 5 v2 bars; living-community estimate)",
+    "secondary": "marker_panel (Figure 5 v2 diamonds; mixture-benchmark winner)"
+  },
+  "uncorrected": {
+    "dominant_correct_pct": 75.0,
+    "dominant_correct_n": 123,
+    "n_samples": 164,
+    "self_recovery_pct": {
+      "Bacteria": 63.2,
+      "Archaea": 68.2,
+      "Fungi": 48.4,
+      "Plantae": 30.4,
+      "Animalia": 34.9,
+      "Protozoa": 50.7
+    },
+    "mean_self_recovery_pct": 49.3,
+    "max_nonarchaeal_to_archaea_pct": 23.3,
+    "worst_nonarchaeal_sink_group": "Plantae"
+  },
+  "corrected": {
+    "dominant_correct_pct": 79.3,
+    "dominant_correct_n": 130,
+    "n_samples": 164,
+    "self_recovery_pct": {
+      "Bacteria": 79.2,
+      "Archaea": 93.1,
+      "Fungi": 68.6,
+      "Plantae": 40.0,
+      "Animalia": 37.0,
+      "Protozoa": 59.4
+    },
+    "mean_self_recovery_pct": 62.9,
+    "max_nonarchaeal_to_archaea_pct": 0.8,
+    "worst_nonarchaeal_sink_group": "Fungi"
+  },
+  "corrected_marker_panel": {
+    "dominant_correct_pct": 83.5,
+    "dominant_correct_n": 137,
+    "n_samples": 164,
+    "self_recovery_pct": {
+      "Bacteria": 71.6,
+      "Archaea": 57.9,
+      "Fungi": 67.7,
+      "Plantae": 70.0,
+      "Animalia": 41.3,
+      "Protozoa": 77.0
+    },
+    "mean_self_recovery_pct": 64.2,
+    "max_nonarchaeal_to_archaea_pct": 0.1,
+    "worst_nonarchaeal_sink_group": "Fungi"
+  },
+  "published_panel_distance": {
+    "uncorrected": {
+      "published_rows": [
+        "Bacteria",
+        "Fungi",
+        "Plantae",
+        "Archaea",
+        "Animalia",
+        "Protozoa"
+      ],
+      "compared_rows": [
+        "Bacteria",
+        "Archaea",
+        "Fungi",
+        "Plantae",
+        "Animalia",
+        "Protozoa"
+      ],
+      "max_abs_delta_pct": 24.3,
+      "mean_abs_delta_pct": 5.8
+    },
+    "corrected": {
+      "published_rows": [
+        "Bacteria",
+        "Fungi",
+        "Plantae",
+        "Archaea",
+        "Animalia",
+        "Protozoa"
+      ],
+      "compared_rows": [
+        "Bacteria",
+        "Archaea",
+        "Fungi",
+        "Plantae",
+        "Animalia",
+        "Protozoa"
+      ],
+      "max_abs_delta_pct": 44.1,
+      "mean_abs_delta_pct": 7.6
+    }
+  }
+}

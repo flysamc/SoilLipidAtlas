@@ -1,0 +1,7 @@
+group,n,uncorrected_pct,corrected_pct,marker_panel_pct,delta_pp
+Bacteria,48,63.2,79.2,71.6,16.0
+Archaea,19,68.2,93.1,57.9,24.9
+Fungi,44,48.4,68.6,67.7,20.2
+Plantae,19,30.4,40.0,70.0,9.6
+Animalia,17,34.9,37.0,41.3,2.1
+Protozoa,17,50.7,59.4,77.0,8.7
