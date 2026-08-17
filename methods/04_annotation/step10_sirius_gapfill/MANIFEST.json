@@ -1,0 +1,47 @@
+{
+  "created": "2026-08-12",
+  "mz_max_inclusive": 850.0,
+  "modes": {
+    "POS": {
+      "eligible_unsubmitted": 2209,
+      "spectra_written": 2209,
+      "by_kingdom": {
+        "Bacteria": 1407,
+        "Fungi": 573,
+        "Archaea": 132,
+        "Viridiplantae": 44,
+        "Animalia": 34,
+        "Protists": 19
+      },
+      "mgf": {
+        "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/external_annotation_package/gapfill_2026-08-12/sirius_gapfill_POS_mzle850.mgf",
+        "sha256": "cce00bab2bce6e9ccf9daf89dae8817d553062f4436cb60dc9d54967746f25a3",
+        "bytes": 5941610
+      },
+      "features_csv": {
+        "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/external_annotation_package/gapfill_2026-08-12/sirius_gapfill_POS_mzle850_features.csv",
+        "sha256": "67f8a48428f9c390e202725da130e3b9ed086223a7397f5915fb705ea2f1cc13"
+      },
+      "source_mgf": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/external_annotation_package/figure2a_strict_atlas_with_usable_ms2.mgf"
+    },
+    "NEG": {
+      "eligible_unsubmitted": 80,
+      "spectra_written": 80,
+      "by_kingdom": {
+        "Protozoa": 42,
+        "Animalia": 33,
+        "Plantae": 5
+      },
+      "mgf": {
+        "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/external_annotation_package/gapfill_2026-08-12/sirius_gapfill_NEG_mzle850.mgf",
+        "sha256": "57e7482b9ac65392a4ca1db7286ee3d247fe2d1153549663bb56cde079bfd611",
+        "bytes": 165190
+      },
+      "features_csv": {
+        "path": "outputs/analysis/ncbi-phylum-2026-08-04-v1/biomarker_discovery/external_annotation_package/gapfill_2026-08-12/sirius_gapfill_NEG_mzle850_features.csv",
+        "sha256": "5bcbca24c3d0bbcfc16ce0e290a0882f002e298a5ed39dd495c49b99a68fb5f3"
+      },
+      "source_mgf": "outputs/analysis/ncbi-phylum-2026-08-04-v1/annotation_recovery_neg/spectra/strict_full_usable_ms2_NEG.mgf"
+    }
+  }
+}

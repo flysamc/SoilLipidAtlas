@@ -152,6 +152,21 @@ def build(polarity: str) -> None:
     denovo_cache = load_top_structure(denovo_cache_path)
     denovo_new = load_top_structure(denovo_new_path)
 
+    # --- Gap-fill sources: SIRIUS/CANOPUS/CSI/de-novo for the eligible-unsubmitted
+    # strict biomarkers (POS 2,209 / NEG 80). LISC jobs 5862224 (formula/CANOPUS/
+    # de-novo) + 5869613 (CSI structures over BIO,PUBCHEM,HMDB,... union), 2026-08-12/13.
+    # Disjoint from the submitted (cache union new) universe by construction;
+    # mappingFeatureId == strict feature_id.
+    gapfill_dir = RELEASE / f"biomarker_discovery/external_annotation_package/gapfill_2026-08-12/results/gapfill_{polarity}"
+    formula_gapfill_path = gapfill_dir / "formula_identifications.tsv"
+    canopus_gapfill_path = gapfill_dir / "canopus_formula_summary.tsv"
+    csi_gapfill_path = gapfill_dir / "structure_identifications.tsv"
+    denovo_gapfill_path = gapfill_dir / "denovo_structure_identifications.tsv"
+    formula_gapfill = load_rank1(formula_gapfill_path)
+    canopus_gapfill = load_rank1(canopus_gapfill_path)
+    csi_gapfill = load_top_structure(csi_gapfill_path)
+    denovo_gapfill = load_top_structure(denovo_gapfill_path)
+
     formula_cache_ids = set(formula_cache["mappingFeatureId"]) & retained_ids
     formula_new_ids = set(formula_new["mappingFeatureId"]) & new_ids
     canopus_cache_ids = set(canopus_cache["mappingFeatureId"]) & retained_ids
@@ -160,16 +175,21 @@ def build(polarity: str) -> None:
     csi_new_ids = set(csi_new["mappingFeatureId"]) & new_ids
     denovo_cache_ids = set(denovo_cache["mappingFeatureId"]) & retained_ids
     denovo_new_ids = set(denovo_new["mappingFeatureId"]) & new_ids
+    formula_gapfill_ids = set(formula_gapfill["mappingFeatureId"]) & strict_ids
+    canopus_gapfill_ids = set(canopus_gapfill["mappingFeatureId"]) & strict_ids
+    csi_gapfill_ids = set(csi_gapfill["mappingFeatureId"]) & strict_ids
+    denovo_gapfill_ids = set(denovo_gapfill["mappingFeatureId"]) & strict_ids
 
-    ledger["has_sirius_formula"] = ledger["feature_id"].isin(formula_cache_ids | formula_new_ids)
+    ledger["has_sirius_formula"] = ledger["feature_id"].isin(formula_cache_ids | formula_new_ids | formula_gapfill_ids)
     ledger["sirius_formula_provenance"] = np.select(
-        [ledger["feature_id"].isin(formula_new_ids), ledger["feature_id"].isin(formula_cache_ids)],
-        ["fresh_new_or_changed", "exact_retained_cache"], default="none",
+        [ledger["feature_id"].isin(formula_new_ids), ledger["feature_id"].isin(formula_gapfill_ids), ledger["feature_id"].isin(formula_cache_ids)],
+        ["fresh_new_or_changed", "gapfill_2026_08_12", "exact_retained_cache"], default="none",
     )
     formulas = pd.concat(
         [
             formula_cache[formula_cache["mappingFeatureId"].isin(formula_cache_ids)],
             formula_new[formula_new["mappingFeatureId"].isin(formula_new_ids)],
+            formula_gapfill[formula_gapfill["mappingFeatureId"].isin(formula_gapfill_ids)],
         ], ignore_index=True,
     ).drop_duplicates("mappingFeatureId")
     ledger = ledger.merge(
@@ -178,15 +198,16 @@ def build(polarity: str) -> None:
         ), on="feature_id", how="left", validate="one_to_one",
     )
 
-    ledger["has_canopus_class"] = ledger["feature_id"].isin(canopus_cache_ids | canopus_new_ids)
+    ledger["has_canopus_class"] = ledger["feature_id"].isin(canopus_cache_ids | canopus_new_ids | canopus_gapfill_ids)
     ledger["canopus_provenance"] = np.select(
-        [ledger["feature_id"].isin(canopus_new_ids), ledger["feature_id"].isin(canopus_cache_ids)],
-        ["fresh_new_or_changed", "exact_retained_cache"], default="none",
+        [ledger["feature_id"].isin(canopus_new_ids), ledger["feature_id"].isin(canopus_gapfill_ids), ledger["feature_id"].isin(canopus_cache_ids)],
+        ["fresh_new_or_changed", "gapfill_2026_08_12", "exact_retained_cache"], default="none",
     )
     canopus = pd.concat(
         [
             canopus_cache[canopus_cache["mappingFeatureId"].isin(canopus_cache_ids)],
             canopus_new[canopus_new["mappingFeatureId"].isin(canopus_new_ids)],
+            canopus_gapfill[canopus_gapfill["mappingFeatureId"].isin(canopus_gapfill_ids)],
         ], ignore_index=True,
     ).drop_duplicates("mappingFeatureId")
     canopus_cols = ["mappingFeatureId", "NPC#pathway", "NPC#superclass", "NPC#class", "ClassyFire#most specific class"]
@@ -195,8 +216,8 @@ def build(polarity: str) -> None:
         on="feature_id", how="left", validate="one_to_one",
     )
 
-    ledger["has_csi_fingerid_structure"] = ledger["feature_id"].isin(csi_cache_ids | csi_new_ids)
-    ledger["has_denovo_structure"] = ledger["feature_id"].isin(denovo_cache_ids | denovo_new_ids)
+    ledger["has_csi_fingerid_structure"] = ledger["feature_id"].isin(csi_cache_ids | csi_new_ids | csi_gapfill_ids)
+    ledger["has_denovo_structure"] = ledger["feature_id"].isin(denovo_cache_ids | denovo_new_ids | denovo_gapfill_ids)
 
     dreams_cache = best_dreams(dreams_cache_path)
     dreams_new = best_dreams(dreams_new_path)
@@ -318,6 +339,14 @@ def build(polarity: str) -> None:
         "fresh_and_cached_csi_sets_disjoint": not (csi_cache_ids & csi_new_ids),
         "fresh_and_cached_denovo_sets_disjoint": not (denovo_cache_ids & denovo_new_ids),
         "fresh_and_cached_dreams_sets_disjoint": not (dreams_cache_ids & dreams_new_ids),
+        "all_gapfill_formula_ids_are_exact_strict_ids": set(formula_gapfill["mappingFeatureId"]) <= strict_ids,
+        "all_gapfill_canopus_ids_are_exact_strict_ids": set(canopus_gapfill["mappingFeatureId"]) <= strict_ids,
+        "all_gapfill_csi_ids_are_exact_strict_ids": csi_gapfill_ids <= strict_ids,
+        "all_gapfill_denovo_ids_are_exact_strict_ids": denovo_gapfill_ids <= strict_ids,
+        "gapfill_formula_disjoint_from_submitted": not (formula_gapfill_ids & (formula_cache_ids | formula_new_ids)),
+        "gapfill_canopus_disjoint_from_submitted": not (canopus_gapfill_ids & (canopus_cache_ids | canopus_new_ids)),
+        "gapfill_csi_disjoint_from_submitted": not (csi_gapfill_ids & (csi_cache_ids | csi_new_ids)),
+        "gapfill_denovo_disjoint_from_submitted": not (denovo_gapfill_ids & (denovo_cache_ids | denovo_new_ids)),
     }
     manifest = {
         "schema_version": 1,
@@ -333,6 +362,7 @@ def build(polarity: str) -> None:
                 formula_cache_path, formula_new_path, canopus_cache_path, canopus_new_path,
                 csi_cache_path, csi_new_path, denovo_cache_path, denovo_new_path,
                 dreams_cache_path, dreams_new_path, ms2lda_path, propagation_path, archlips_path,
+                formula_gapfill_path, canopus_gapfill_path, csi_gapfill_path, denovo_gapfill_path,
             ]
         ],
         "outputs": [

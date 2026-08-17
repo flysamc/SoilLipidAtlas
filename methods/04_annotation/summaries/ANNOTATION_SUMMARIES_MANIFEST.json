@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "taxonomy_release": "ncbi-phylum-2026-08-04-v1",
-  "generated_utc": "2026-08-06T10:44:06.117367+00:00",
+  "generated_utc": "2026-08-13T09:41:53.328128+00:00",
   "producer": "C:\\Users\\Shadow\\Desktop\\P2R\\paper2_repro\\annotation_summaries.py",
   "producer_sha256": "7cf8dc8a9b612d549737aedac7100836541764e459dd2f8eb092c7f0ad7a32bc",
   "status": "complete_with_declared_blocked_steps_no_invented_tier_actions",
@@ -14,8 +14,8 @@
       "archlips_rt_exclusions": 86,
       "release_eligible_annotated": 6360,
       "release_gold_silver": 1668,
-      "sirius_formula_evidence": 5865,
-      "canopus_class_evidence": 5325,
+      "sirius_formula_evidence": 8004,
+      "canopus_class_evidence": 7336,
       "dreams_evidence": 7095,
       "ms2lda_membership": 10611
     },
@@ -27,8 +27,8 @@
       "archlips_rt_exclusions": 0,
       "release_eligible_annotated": 1889,
       "release_gold_silver": 512,
-      "sirius_formula_evidence": 3862,
-      "canopus_class_evidence": 3495,
+      "sirius_formula_evidence": 3914,
+      "canopus_class_evidence": 3531,
       "dreams_evidence": 5695,
       "ms2lda_membership": 5466
     }
@@ -46,16 +46,16 @@
   ],
   "outputs": {
     "annotation_evidence_neg.csv": {
-      "bytes": 2260204,
-      "sha256": "4fac5e492ef41c147c85a872ee6fde98376b4ecc1a03686fd8402c6b80fcd884"
+      "bytes": 2265240,
+      "sha256": "72e4038509046f87bcbbbe7e1dc9ac75a36803e96e7f52dd1b3400160ff63f55"
     },
     "annotation_evidence_pos.csv": {
-      "bytes": 4098897,
-      "sha256": "74903392e9206903558e667ded12485eccfe4bfc7284bd2389c2f94706773c64"
+      "bytes": 4361860,
+      "sha256": "608516146ce49e5194261f0e2bcd7c73e4aafcf5b4bdba597a7eb9a80ba7a9ba"
     },
     "annotation_release_summary.csv": {
       "bytes": 326,
-      "sha256": "c164ad95a709dd9572d9aa9bbe0be7828a0bb4eacf037eca8326bd3a476b29ec"
+      "sha256": "0d2e35ce6cce197ef9478c7d46cc269bb1349cd8f82c7794e041f4de6874e5c6"
     },
     "lipid_classes.csv": {
       "bytes": 9749,
@@ -67,7 +67,7 @@
     },
     "waterfall.csv": {
       "bytes": 3381,
-      "sha256": "ab32ecbc64a5ee680e3ecd2c7da2627f783e4f035dbebad5a2dba3d5202d9333"
+      "sha256": "8f13f4ee3eb5b8fb44910a545bd849294d6eac126fd1c4aa40cb4e292178014b"
     }
   }
 }

@@ -29,7 +29,7 @@ exceptions, never guessed. Headline tables in `summaries/`
 | 7 | Custom 124-entry archaeal DB | ❌ database absent from every archive | — |
 | 8 | ArchLips archaeal library | POS 546 validated after RT screen (27.6% G+S — use this, not unscreened 30.5%); NEG 10 Bronze, 0 G+S, zero diagnostic ions | `step08_archlips*/` |
 | 9 | Evidence-depth → tier corrections | Audit done; the producer behind the submitted 564+640+12 tier changes is lost — **not reproduced, not faked** | in `evidence/` |
-| 10 | SIRIUS / CANOPUS / CSI:FingerID (LISC cluster) | POS 5,865 formulas / 5,325 classes / 5,243 structures; NEG 3,862 / 3,495 / 3,325 — hash-validated, exact-ID integrated | in `evidence/` |
+| 10 | SIRIUS / CANOPUS / CSI:FingerID (LISC cluster) | **Gap-fill complete 2026-08-13:** POS 8,004 formulas (70.4%) / 7,336 classes / 7,199 structures; NEG 3,914 / 3,531 / 3,352 — hash-validated, exact-ID integrated | in `evidence/` + `step10_sirius_gapfill/` |
 | 11 | DreaMS deep-learning similarity | 7,095 POS + all 5,695 usable NEG features | in `evidence/` |
 | M5 | MS2LDA substructure motifs | Deterministic (bit-for-bit across reruns); 134 POS / 103 NEG significant motif–phylum pairs | in `evidence/` |
 | M6 | fastMASST + Pan-ReDU public search | ⏳ running (13,103 queries; resumed 2026-08-08) | step 05 of this repo |
@@ -37,13 +37,36 @@ exceptions, never guessed. Headline tables in `summaries/`
 `scripts/` holds all producers written for this release. Step-6 recovery
 evidence (35 MB) stays in P2R (`biomarker_discovery/rt_prediction_recovery_pos/`).
 
+## The SIRIUS submission-gap fill (2026-08-12 → 13)
+
+An audit found only ~52% of POS strict biomarkers had ever been submitted to
+SIRIUS (Bacteria 3%, Fungi 10% of their biomarkers), while SIRIUS succeeds on
+98% of what it receives — the low per-phylum coverage was a **submission gap,
+not an instrument limit**. The 2,209 SIRIUS-eligible unsubmitted POS features
+(usable MS2, m/z ≤ 850) + 80 NEG were exported
+(`scripts/build_sirius_gapfill_package.py`), run on the LISC cluster (SLURM
+scripts + sha256 manifest in `step10_sirius_gapfill/`), and integrated by
+exact feature ID. CSI:FingerID initially returned 0 structures in both modes
+(a structure-DB cache glitch); a corrected structure-only re-run over the
+BIO ∪ PubChem ∪ HMDB ∪ GNPS ∪ YMDB ∪ PLANTCYC ∪ KNAPSACK union recovered
+POS 3,911 / NEG 27 structures. Primary per-adduct result TSVs are in
+`step10_sirius_gapfill/results/` (top-5 variants and input MGFs stay in the
+data registry).
+
+Net effect: POS SIRIUS coverage 5,865 → **8,004** biomarkers (70.4%), CANOPUS
+5,325 → 7,336, CSI 5,243 → 7,199; per-phylum Bacteria/Fungi SIRIUS coverage
+rose from near-zero to 74–88%. Validations: gap-fill features are disjoint
+from previously-submitted and a subset of the strict atlas. Confidence-**tier**
+counts are unchanged (no tier transition is inferred from Step-10 evidence
+alone), so the release-eligible annotated totals (6,360 POS / 1,889 NEG) and
+every tier-based figure stay frozen.
+
 ## Open items
 
-1. ⏳ fastMASST/Pan-ReDU completion (running).
-2. Lost producers blocking restated numbers: Step 5's "104 RT-uncertain",
-   Step 6 POS caller, Step 7 database, Step 9 tier-action producer.
-3. Decisions needed (Rahul): Step 1 mapping choice (direct 1,304 A/B —
+1. Lost producers blocking restated numbers: Step 5's "104 RT-uncertain",
+   Step 6 POS caller, Step 7 database, Step 9 tier-action producer — declared
+   exceptions, not reproduced.
+2. Decisions needed (Rahul): Step 1 mapping choice (direct 1,304 A/B —
    recommended — vs stale-network 592); Step 5 grouping wording (text says
    family, recovered code groups by class); how to phrase unvalidated NEG
    archaeal annotation.
-4. Manuscript numbers update only after the release completes.

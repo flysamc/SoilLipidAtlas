@@ -7,7 +7,7 @@ POS,5,Step 6,RT sum-composition prediction,review_only_pos_blocked_neg,11371,,0,
 POS,6,Step 7,custom 124-entry archaeal database,blocked_asset_missing,11371,,0,0,6360,No substitute database used.
 POS,7,Step 8,ArchLips,complete_rt_screened,11371,,0,0,6360,Eligible ArchLips calls are included through the harmonisation source; screened calls remain auditable.
 POS,8,Step 9,annotation-depth tier actions,evidence_complete_actions_blocked,11371,,0,0,6360,SIRIUS/DreaMS/MS2LDA evidence attached without recreating missing 564/640/12 tier rules.
-POS,9,Step 10,SIRIUS/CANOPUS/CSI,complete_review_only_evidence,11371,5865.0,0,0,6360,Exact-ID evidence attached; no tier mutation.
+POS,9,Step 10,SIRIUS/CANOPUS/CSI,complete_review_only_evidence,11371,8004.0,0,0,6360,Exact-ID evidence attached; no tier mutation.
 POS,10,Step 11,DreaMS,complete_review_only_evidence,11371,7095.0,0,0,6360,Exact-ID top-1 evidence attached; no tier mutation.
 POS,11,Method 5,MS2LDA,complete_review_only_evidence,11371,10611.0,0,0,6360,Strict model membership attached; no tier mutation.
 NEG,1,Step 1-2,harmonised primary annotation,complete,5697,1791.0,0,0,1791,Direct LipidSearch mapping plus declared harmonisation hierarchy.
@@ -18,6 +18,6 @@ NEG,5,Step 6,RT sum-composition prediction,review_only_pos_blocked_neg,5697,,0,0
 NEG,6,Step 7,custom 124-entry archaeal database,blocked_asset_missing,5697,,0,0,1889,No substitute database used.
 NEG,7,Step 8,ArchLips,complete_rt_screened,5697,,0,0,1889,Eligible ArchLips calls are included through the harmonisation source; screened calls remain auditable.
 NEG,8,Step 9,annotation-depth tier actions,evidence_complete_actions_blocked,5697,,0,0,1889,SIRIUS/DreaMS/MS2LDA evidence attached without recreating missing 564/640/12 tier rules.
-NEG,9,Step 10,SIRIUS/CANOPUS/CSI,complete_review_only_evidence,5697,3862.0,0,0,1889,Exact-ID evidence attached; no tier mutation.
+NEG,9,Step 10,SIRIUS/CANOPUS/CSI,complete_review_only_evidence,5697,3914.0,0,0,1889,Exact-ID evidence attached; no tier mutation.
 NEG,10,Step 11,DreaMS,complete_review_only_evidence,5697,5695.0,0,0,1889,Exact-ID top-1 evidence attached; no tier mutation.
 NEG,11,Method 5,MS2LDA,complete_review_only_evidence,5697,5466.0,0,0,1889,Strict model membership attached; no tier mutation.
