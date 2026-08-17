@@ -1,0 +1,86 @@
+{
+  "substrate": "736 features: 722 SIMPER + 14 spectrally matched archaeol markers; ArchLips-restricted archaeal reference",
+  "upstream": "C:\\Users\\Shadow\\Desktop\\P2R\\outputs\\analysis\\ncbi-phylum-2026-08-04-v1\\climgrass\\strict16_archlips_extended_2026-08-08_v1",
+  "benchmark_winner": "marker_panel",
+  "winner_score": 0.5279449816210335,
+  "kingdom_ci": [
+    {
+      "kingdom": "Animalia",
+      "mean": 0.14221095697270628,
+      "ci_lo": 0.11744344170531938,
+      "ci_hi": 0.17616232152469155
+    },
+    {
+      "kingdom": "Archaea",
+      "mean": 0.002953777039603325,
+      "ci_lo": 0.000907410039345674,
+      "ci_hi": 0.0037960898659465665
+    },
+    {
+      "kingdom": "Bacteria",
+      "mean": 0.1866425114784417,
+      "ci_lo": 0.11966643856732744,
+      "ci_hi": 0.22357782976523377
+    },
+    {
+      "kingdom": "Fungi",
+      "mean": 0.27275636830328165,
+      "ci_lo": 0.16061109455715702,
+      "ci_hi": 0.3134056449031277
+    },
+    {
+      "kingdom": "Plantae",
+      "mean": 0.286347224292872,
+      "ci_lo": 0.25902398390446224,
+      "ci_hi": 0.3510662708442973
+    },
+    {
+      "kingdom": "Protozoa",
+      "mean": 0.10908916191309495,
+      "ci_lo": 0.0966677685572381,
+      "ci_hi": 0.14420599224416164
+    }
+  ],
+  "top_drought_hits": [
+    {
+      "unit": "Pseudomonadota",
+      "set_mean_log2fc": -0.5950461369242687,
+      "p_perm": 0.005,
+      "q_bh": 0.08
+    },
+    {
+      "unit": "Evosea",
+      "set_mean_log2fc": -0.40926074478666546,
+      "p_perm": 0.05,
+      "q_bh": 0.4
+    },
+    {
+      "unit": "Discosea",
+      "set_mean_log2fc": -0.3531405990841851,
+      "p_perm": 0.125,
+      "q_bh": 0.6666666666666666
+    },
+    {
+      "unit": "Heterolobosea",
+      "set_mean_log2fc": -0.058061750736001574,
+      "p_perm": 0.34,
+      "q_bh": 0.97
+    }
+  ],
+  "qsip_replication": [
+    {
+      "unit": "Pseudomonadota",
+      "predicted_direction": "decrease",
+      "p_one_sided": 0.0025,
+      "q_bh_family2": 0.005,
+      "observed_log2fc": -0.5950461369242687
+    },
+    {
+      "unit": "Actinomycetota",
+      "predicted_direction": "increase",
+      "p_one_sided": 0.2025,
+      "q_bh_family2": 0.2025,
+      "observed_log2fc": 0.38325821983991826
+    }
+  ]
+}
