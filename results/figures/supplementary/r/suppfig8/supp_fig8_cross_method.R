@@ -136,7 +136,7 @@ pb <- ggplot() +
   method_line_layers(loo, "acc_pct") +
   method_scales() +
   scale_linetype_manual(values = setNames("dashed", baseline_lab), name = NULL) +
-  coord_cartesian(ylim = c(45, 85)) +
+  coord_cartesian(ylim = c(28, 85)) +
   labs(x = "Top-K features per phylum",
        y = "Leave-one-out classification accuracy (%)",
        title = "Sample classification") +
