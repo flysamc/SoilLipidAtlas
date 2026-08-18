@@ -30,7 +30,7 @@ One R bundle per figure in `supplementary/r/suppfig{1..8}/` (render script +
 | SF | What it shows | R render | Notes |
 |---|---|---|---|
 | 1 | PCoA ordination + within-batch Mantel | `r/suppfig1/supp_fig1_submitted_layout.R` | Streptophyta tree placement follows the five-rank framework (Table S15 notes) |
-| 2 | Clade-conserved vs clade-exclusive features | `r/suppfig2/supp_fig2_clade.R` | Uses the Table S15 five-rank framework |
+| 2 | Clade-conserved vs clade-exclusive features (a, b) + pairwise phylum-level feature sharing (c, d) | `r/suppfig2/supp_fig2_clade.R` | Clades use the Table S15 five-rank framework. Panels c–d: shared detected features as % of the smaller phylum repertoire on the quality-filtered substrate (`data/supp_clade/pairwise_sharing.csv`); POS floor 18 %, NEG minimum 4 % |
 | 3 | MS2LDA motif enrichment | `r/suppfig3/supp_fig3_ms2lda.R` | Motif–phylum pairs from `methods/06_fingerprints/` |
 | 4 | Leave-one-out confusion matrix | `r/suppfig4/supp_fig4_loo.R` | **64.6 %** (106/164) on the 45,525-feature substrate |
 | 5 | Negative control (pure-isolate decomposition) | `r/suppfig5/supp_fig5_negative_control.R` | Data in `methods/07_decomposition/` |

@@ -26,7 +26,8 @@ dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 # Display names for clade keys that are opaque in the frozen data.
 # 'Euryarchaeota_sg' = {Euryarchaeota + Methanobacteriota} = Euryarchaeota sensu lato.
-CLADE_LABEL <- c("Euryarchaeota_sg" = "Euryarchaeota s.l.")
+CLADE_LABEL <- c("Euryarchaeota_sg" = "Euryarchaeota s.l.",
+                 "All Plantae"      = "All Viridiplantae")  # locked display policy
 
 clade <- read.csv(file.path(data_dir, "clade_counts.csv"), check.names = FALSE)
 clade <- clade[order(clade$pos_shared), ]          # ascending: smallest at bottom
@@ -102,9 +103,61 @@ p_pos <- clade_panel("pos_shared", "pos_exclusive", "Positive mode",
 p_neg <- clade_panel("neg_shared", "neg_exclusive", "Negative mode",
                      show_y = FALSE, show_legend = TRUE)
 
+# -- Pairwise phylum-level sharing heatmaps (panels c, d) ---------
+pair <- read.csv(file.path(data_dir, "pairwise_sharing.csv"), check.names = FALSE)
+
+# Locked display groups (Viridiplantae/Protists) -> legacy palette keys.
+GROUP_PALETTE_KEY <- c(Viridiplantae = "Plantae", Protists = "Protozoa")
+
+heat_panel <- function(mode_key, title, show_legend) {
+  pd <- pair[pair$mode == mode_key, ]
+  ord    <- unique(pd[order(pd$rank_1), "phylum_1"])
+  ord    <- unique(c(ord, pd[order(pd$rank_2), "phylum_2"]))
+  grp_of <- setNames(c(pd$group_1, pd$group_2), c(pd$phylum_1, pd$phylum_2))
+  # lower triangle: x = earlier-ranked phylum (no last), y = later-ranked (no first)
+  x_ord <- ord[-length(ord)]
+  y_ord <- ord[-1]
+  pd$xf <- factor(pd$phylum_1, levels = x_ord)
+  pd$yf <- factor(pd$phylum_2, levels = rev(y_ord))
+  pd$pct <- pd$frac_of_smaller * 100
+  grp_key <- function(g) ifelse(g %in% names(GROUP_PALETTE_KEY), GROUP_PALETTE_KEY[g], g)
+  lab_html <- function(phy) sprintf("<span style='color:%s'>%s</span>",
+                                    KINGDOM_COLOURS[grp_key(grp_of[phy])], phy)
+  x_labs <- lab_html(x_ord)
+  y_labs <- lab_html(rev(y_ord))
+
+  ggplot(pd, aes(x = xf, y = yf, fill = pct)) +
+    geom_tile(colour = "white", linewidth = 0.25) +
+    geom_text(aes(label = sprintf("%.0f", pct)),
+              size = pt2mm(4.4), colour = "black") +
+    scale_fill_gradient(low = "#FDF6EC", high = "#D9820F",
+                        limits = c(0, 100), name = "Shared (%)") +
+    scale_x_discrete(labels = x_labs, drop = FALSE) +
+    scale_y_discrete(labels = y_labs, drop = FALSE) +
+    coord_fixed(clip = "off") +
+    labs(x = NULL, y = NULL, title = title) +
+    theme_nature() +
+    theme(
+      axis.text.x  = element_markdown(size = 5.4, angle = 45, hjust = 1),
+      axis.text.y  = element_markdown(size = 5.4),
+      axis.ticks   = element_blank(),
+      panel.grid   = element_blank(),
+      plot.title   = element_text(size = 7, face = "bold", hjust = 0),
+      legend.position = if (show_legend) "right" else "none",
+      legend.title = element_text(size = 5.5),
+      legend.text  = element_text(size = 5),
+      legend.key.height = unit(6, "mm"),
+      legend.key.width  = unit(2.5, "mm")
+    )
+}
+
+p_heat_pos <- heat_panel("POS", "Positive mode", show_legend = FALSE)
+p_heat_neg <- heat_panel("NEG", "Negative mode", show_legend = TRUE)
+
 # -- Compose ------------------------------------------------------
-ed3 <- (p_pos | p_neg) +
-  plot_layout(widths = c(1, 1)) +
+ed3 <- ((p_pos | p_neg) + plot_layout(widths = c(1, 1))) /
+  ((p_heat_pos | p_heat_neg) + plot_layout(widths = c(1, 1.12))) +
+  plot_layout(heights = c(78, 100)) +
   plot_annotation(tag_levels = "a") &
   theme(plot.tag = element_text(size = NC_TAG_PT, face = "bold"))
 
@@ -121,5 +174,5 @@ save_all <- function(plot, stem, w_mm, h_mm) {
   }
 }
 
-save_all(ed3, file.path(out_dir, "Supplementary_Fig2_clade"), NC_DOUBLE, 78)
+save_all(ed3, file.path(out_dir, "Supplementary_Fig2_clade"), NC_DOUBLE, 185)
 cat("Supplementary Fig 2 ->", out_dir, "\n")
