@@ -1,14 +1,7 @@
 #!/usr/bin/env Rscript
-# Fig 5 — ClimGrass: two-estimator community composition (a) +
-# phylum treatment responses (b).
-#
-# Panel a: pooled fc-weighted estimate (bars, 95% reference-sample
-# bootstrap CI), marker-panel estimator (diamonds), literature biomass
-# ranges (grey segments). Panel b: CLR fingerprint-set effect map.
-# Display labels follow the locked ecological_group policy
-# (Viridiplantae / Protists); CSV keys remain Plantae / Protozoa.
-#
-# This folder re-renders with only R: plotted CSVs live in r/data/.
+# Fig 5 — ClimGrass: biomass-converted community composition (a) + phylum responses (b)
+# Public polished version: Panel a bars are biomass estimates (lipid signal / lipid content, Table S6)
+# No internal datafile table in legend; methods pointer only.
 
 suppressPackageStartupMessages({
   library(ggplot2); library(dplyr); library(tidyr)
@@ -23,19 +16,16 @@ FONT <- "Arial"
 data_dir <- file.path(SCRIPT_DIR, "data")
 
 boot_df   <- read.csv(file.path(data_dir, "composition_fcweighted_kingdom_ci.csv"))
-marker_df <- read.csv(file.path(data_dir, "kingdom_ci_marker_panel.csv"))
 eff_df    <- read.csv(file.path(data_dir, "phylum_effects.csv"))
 
-# Locked display labels (ecological_group policy).
 DISPLAY <- c(Bacteria = "Bacteria", Fungi = "Fungi",
              Plantae = "Viridiplantae", Animalia = "Animalia",
              Protozoa = "Protists", Archaea = "Archaea")
-
-# Panel-a bar order (top to bottom).
 BAR_ORDER <- c("Bacteria", "Fungi", "Plantae", "Animalia", "Protozoa", "Archaea")
 
-# Literature biomass ranges (%), Table S6; aligned to KINGDOM_ORDER
-# (Bacteria, Archaea, Fungi, Plantae, Animalia, Protozoa).
+# Lipid content as conversion factor (% dry mass, Table S6 v2)
+LIPID_CONTENT <- c(Bacteria=7, Fungi=10, Plantae=2.5, Animalia=18, Protozoa=10, Archaea=6)
+
 EXPECTED <- data.frame(
   kingdom = KINGDOM_ORDER,
   lo = c(35, 2, 15, 15, 1, 0),
@@ -43,7 +33,6 @@ EXPECTED <- data.frame(
   stringsAsFactors = FALSE
 )
 
-# Strict-16 scheme (ncbi-phylum-2026-08-04-v1)
 PHYLUM_KINGDOM <- c(
   Pseudomonadota    = "Bacteria",  Bacillota      = "Bacteria",
   Actinomycetota    = "Bacteria",
@@ -58,54 +47,47 @@ PHYLUM_KINGDOM <- c(
 )
 
 stopifnot(all(BAR_ORDER %in% boot_df$kingdom),
-          all(BAR_ORDER %in% marker_df$kingdom),
           all(eff_df$phylum %in% names(PHYLUM_KINGDOM)))
 
-# ==================== Panel a ====================
-pa_df <- boot_df |>
-  mutate(mean_pct = mean * 100, lo_pct = ci_lo * 100, hi_pct = ci_hi * 100,
+# Biomass conversion: biomass = (lipid_signal / lipid_content) / sum, renormalised
+# Use single sum_mean denominator for mean and CI to preserve ordering (approx. from CI bounds)
+bio <- boot_df %>%
+  mutate(content = LIPID_CONTENT[kingdom],
+         mean_raw = mean / content,
+         lo_raw = ci_lo / content,
+         hi_raw = ci_hi / content)
+sum_mean <- sum(bio$mean_raw)
+pa_df <- bio %>%
+  mutate(mean_pct = mean_raw / sum_mean * 100,
+         lo_pct = lo_raw / sum_mean * 100,
+         hi_pct = hi_raw / sum_mean * 100,
          kingdom = factor(kingdom, levels = rev(BAR_ORDER)))
 
-pa_marker <- marker_df |>
-  mutate(marker_pct = mean * 100,
-         kingdom = factor(kingdom, levels = rev(BAR_ORDER)))
-
-pa_expected <- EXPECTED |>
+pa_expected <- EXPECTED %>%
   mutate(kingdom = factor(kingdom, levels = rev(BAR_ORDER)))
 
-# Compact visual key in the lower-right (Archaea = 1, Protists = 2).
-# Numeric y is safe here because the discrete scale maps those levels to 1–2.
+# No marker diamonds in polished biomass version — keep clean
 key_x0 <- 36.5
 pa_key_bar <- data.frame(xmin = key_x0, xmax = key_x0 + 3.6,
-                         ymin = 2.28, ymax = 2.58)
-pa_key_dia <- data.frame(x = key_x0 + 1.8, y = 1.72)
+                         ymin = 1.72, ymax = 2.02)
 pa_key_seg <- data.frame(x = key_x0, xend = key_x0 + 3.6, y = 1.18)
 
 pa <- ggplot(pa_df, aes(y = kingdom, x = mean_pct)) +
   geom_col(aes(fill = as.character(kingdom)), width = 0.62,
            colour = "black", linewidth = 0.25, show.legend = FALSE) +
-  geom_errorbarh(aes(xmin = lo_pct, xmax = hi_pct),
-                 height = 0.18, linewidth = 0.45, colour = "black") +
+  geom_errorbar(aes(xmin = lo_pct, xmax = hi_pct),
+                width = 0.18, linewidth = 0.45, colour = "black", orientation = "y") +
   geom_segment(data = pa_expected,
                aes(y = as.numeric(kingdom) - 0.46,
                    yend = as.numeric(kingdom) - 0.46,
                    x = lo, xend = hi),
                inherit.aes = FALSE, colour = "grey35", linewidth = 1.8,
                lineend = "butt") +
-  geom_point(data = pa_marker, aes(y = kingdom, x = marker_pct),
-             shape = 23, size = 2.6, fill = "white", colour = "black",
-             stroke = 0.5) +
   geom_rect(data = pa_key_bar,
             aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax),
             inherit.aes = FALSE, fill = KINGDOM_COLOURS[["Bacteria"]],
             colour = "black", linewidth = 0.25) +
-  annotate("text", x = key_x0 + 4.3, y = 2.43, label = "fc-weighted",
-           hjust = 0, vjust = 0.5, size = pt2mm(6), colour = "grey20",
-           family = FONT) +
-  geom_point(data = pa_key_dia, aes(x = x, y = y), inherit.aes = FALSE,
-             shape = 23, size = 2.4, fill = "white", colour = "black",
-             stroke = 0.5) +
-  annotate("text", x = key_x0 + 4.3, y = 1.72, label = "marker panel",
+  annotate("text", x = key_x0 + 4.3, y = 1.87, label = "biomass estimate",
            hjust = 0, vjust = 0.5, size = pt2mm(6), colour = "grey20",
            family = FONT) +
   geom_segment(data = pa_key_seg,
@@ -119,7 +101,7 @@ pa <- ggplot(pa_df, aes(y = kingdom, x = mean_pct)) +
   scale_y_discrete(labels = DISPLAY[rev(BAR_ORDER)]) +
   scale_x_continuous(expand = expansion(mult = c(0, 0.02)),
                      limits = c(0, 52)) +
-  labs(x = "Mean fraction of matched soil lipid signal (%)", y = NULL) +
+  labs(x = "Estimated biomass (%)", y = NULL) +
   theme_nature() +
   theme(
     text = element_text(family = FONT),
@@ -127,36 +109,33 @@ pa <- ggplot(pa_df, aes(y = kingdom, x = mean_pct)) +
     panel.grid.major.x = element_line(colour = "grey92", linewidth = 0.2)
   )
 
-# ==================== Panel b ====================
-eff <- eff_df |>
+# Panel b unchanged
+eff <- eff_df %>%
   mutate(kingdom = factor(PHYLUM_KINGDOM[phylum], levels = KINGDOM_ORDER),
          min_p = pmin(drought_p, climate_p))
-
 xa <- max(abs(eff$drought_log2FC), 0.7) * 1.18
 ya <- max(abs(eff$climate_log2FC), 0.4) * 1.28
-
-# Call out the drought signal and the one nominal decline. No omnibus
-# q < 0.05 exists; the unused FDR stroke encoding is not drawn.
 label_specs <- tribble(
   ~phylum,          ~dx,   ~dy,   ~hjust, ~label_text,
-  "Pseudomonadota", 0.08, -0.16,  0,      "Pseudomonadota\np = 0.005, q = 0.08",
-  "Evosea",         0.07,  0.12,  0,      "Evosea\n(nominal)"
+  "Pseudomonadota", 0.08, -0.16,  0,      "Pseudomonadota\np = 0.005, FDR q = 0.08",
+  "Evosea",        -0.09,  0.13,  1,      "Evosea\nnominal p = 0.050",
+  "Actinomycetota", 0.08,  0.06,  0,      "Actinomycetota",
+  "Bacillota",      0.08, -0.08,  0,      "Bacillota",
+  "Ascomycota",    -0.12,  0.12,  1,      "Ascomycota",
+  "Basidiomycota",  0.09,  0.09,  0,      "Basidiomycota",
+  "Mucoromycota",   0.07,  0.07,  0,      "Mucoromycota"
 )
-
-label_data <- label_specs |>
-  left_join(eff, by = "phylum") |>
+label_data <- label_specs %>%
+  left_join(eff, by = "phylum") %>%
   mutate(x_end = drought_log2FC + dx,
          y_end = climate_log2FC + dy)
-
 present_k <- KINGDOM_ORDER[KINGDOM_ORDER %in% levels(droplevels(eff$kingdom))]
-
 stroke_key <- data.frame(
   x = -xa * 0.90,
   y = c(ya * 0.84, ya * 0.62),
   stroke = c(0.9, 0.4),
   lab = c("p < 0.05", "n.s.")
 )
-
 pb <- ggplot(eff, aes(x = drought_log2FC, y = climate_log2FC)) +
   geom_hline(yintercept = 0, colour = "#CCCCCC", linewidth = 0.4) +
   geom_vline(xintercept = 0, colour = "#CCCCCC", linewidth = 0.4) +
@@ -234,4 +213,6 @@ ggsave(file.path(outdir, "Fig5_final.pdf"), fig,
        width = w, height = h, device = cairo_pdf, bg = "white")
 ggsave(file.path(outdir, "Fig5_final.png"), fig,
        width = w, height = h, dpi = 600, bg = "white", device = ragg::agg_png)
-cat("Fig5 final (R) ->", outdir, "\n")
+cat("Fig5 biomass (public) ->", outdir, "\n")
+# print biomass values for verification
+print(pa_df[, c("kingdom","mean_pct","lo_pct","hi_pct")])

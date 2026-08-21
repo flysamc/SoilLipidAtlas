@@ -1,0 +1,7 @@
+Organism group,Expected (%),Basis,Key references,Lipid content (% DM),Lipid content source
+Bacteria,35-50,Dominant prokaryotic biomass in temperate grassland topsoil,Bar-On et al. 2018; Joergensen 2022; Frostegard et al. 2011; Delgado-Baquerizo et al. 2018,7,Taipale et al. 2015 (7.3±0.8%); Beck et al. 2018
+Fungi,15-30,Fungal biomass 10-60% of microbial biomass in arable/grassland soils,Joergensen & Wichern 2008; Strickland & Rousk 2010; Frostegard et al. 2011,10,Jones 1969 (10-20%); Weete et al. 1985; Raju et al. 1976
+Viridiplantae,15-30,Root material + exudates; grasslands have high root:shoot allocation,Jackson et al. 1996; Bardgett & van der Putten 2014,2.5,Poorter & Bergkotte 1992 (roots 1.6-2.6%)
+Archaea,2-8,"Archaea average approximately 2% of soil prokaryotes, mainly ammonia-oxidising Thaumarchaeota",Bates et al. 2011; Leininger et al. 2006,6,Kates et al. 1962 (~2%); Langworthy et al. 1974 (~2.5%); Ferrante et al. 1988 (~10%); midpoint 5-7% assumed
+Animalia,1-5,Soil meso/microfauna are a small fraction of soil biomass,Bar-On et al. 2018; van den Hoogen et al. 2019,18,Hutzell & Krusberg 1982 (19.6-22.1% nematodes); Convey 1992 (mites 10-15%)*; Dai et al. 2021; Kavle et al. 2023
+Protists,<1,"Protists a minor biomass fraction, difficult to resolve biochemically",Geisen et al. 2018; Adl & Coleman 2005,10,Bowers & Korn 1968 (Acanthamoeba ~10%); Finkel et al. 2016 (algae median 17-22%)*
