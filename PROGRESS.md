@@ -10,7 +10,7 @@ Each folder's `README.md` documents the step in full.
 | 03 Biomarker atlas | Selects phylum-enriched features | **11,371 POS / 5,697 NEG** biomarkers | full (`methods/03_biomarker_atlas/`) |
 | 04 Annotation | Identifies the biomarker lipids (11-step pipeline) | 6,360 POS / 1,889 NEG annotated; SIRIUS coverage **70.4 % POS** | full (`methods/04_annotation/`) |
 | 05 Public validation | Searches biomarkers in public MS/MS data | **2,287 POS / 486 NEG** soil-detected | summaries in git; per-feature match sets on Zenodo |
-| 06 Fingerprints | SIMPER fingerprints, MS2LDA motifs, cross-method checks | 4 methods agree; **134/103** motif–phylum pairs | full; SIMPER atlas on Zenodo |
+| 06 Fingerprints | SIMPER fingerprints, MS2LDA motifs, cross-method checks | 4 methods agree; **80/68** motif–phylum pairs (Supp. Fig. 3; strict candidate re-run: 134/103) | full; SIMPER atlas on Zenodo |
 | 07 Decomposition | Source decomposition + pure-isolate negative control | **79.3 %** correct dominant group (n = 164) | full (`methods/07_decomposition/`) |
 | 08 ClimGrass | Decodes real field soil; quantification correction | qSIP drought replication **q = 0.005** | full (`methods/08_climgrass/`) |
 | 09 Phylogeny | SSU rRNA tree and lipid–evolution Mantel (Figure 3) | Mantel r **0.509 POS / 0.553 NEG** | `methods/09_phylogeny/`; plotted data in `results/figures/figure3/r/data/` |

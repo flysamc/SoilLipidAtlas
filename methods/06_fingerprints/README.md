@@ -14,11 +14,20 @@ and K-vs-recovery curves stay in the data registry.
 
 ## MS2LDA substructure motifs (`scripts/run_ms2lda_deterministic.py`)
 
-Deterministic MS2LDA (fixed seeds, sorted inputs) on the atlas MS2 spectra,
-then motif–phylum enrichment
-(`../04_annotation/scripts/strict_ms2lda_phylum_enrichment.py`):
-**134 POS / 103 NEG significant motif–phylum pairs**. The enrichment table
-feeds Supplementary Fig. 3.
+Two enrichment analyses exist and must not be conflated:
+
+- **Supplementary Fig. 3 (figure of record)** plots the legacy MS2LDA model
+  (analysis-15 doc-topic matrix) with unit labels remapped to the corrected
+  strict-16 taxonomy and enrichment recomputed by the published method
+  (one-sided Fisher, BH across all tests, adjusted *p* < 0.05):
+  **80 POS / 68 NEG significant motif–phylum pairs**. The plotted tables are
+  `results/figures/supplementary/r/suppfig3/data/supp_ms2lda/`.
+- **Strict candidate re-run** — deterministic MS2LDA (fixed seeds, sorted
+  inputs) on the strict-atlas usable-MS2 spectra, then enrichment with the
+  stricter criterion (adjusted *p* < 0.05 and ratio ≥ 2) via
+  `../04_annotation/scripts/strict_ms2lda_phylum_enrichment.py`:
+  **134 POS / 103 NEG pairs**. Its manifest marks it a candidate analysis,
+  not connected to the supplementary figure or table.
 
 ## Cross-method validation (`cross_method/`, producer `scripts/suppfig8_cross_method_rerun.py`)
 
